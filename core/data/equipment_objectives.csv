@@ -1,0 +1,108 @@
+equipment_id,objective_id,usage_description
+1,1,Clinical trial procedure rooms enable faster trial activation
+1,2,Dedicated spaces support participant recruitment and procedures
+1,3,First-in-human trial infrastructure
+2,1,Temperature-controlled IP storage enables compliant trial operations
+2,2,Secure storage supports multi-site trial coordination
+3,1,Automated dispensing reduces medication errors and trial delays
+3,2,Supports safe participant drug administration
+4,1,High-acuity monitoring for complex trial procedures
+4,2,Real-time vitals for participant safety monitoring
+4,3,Required for first-in-human and advanced therapy trials
+5,1,Programmable infusion for protocol-specific dosing
+5,2,Precise drug delivery for participant care
+5,3,Essential for cell therapy and advanced therapeutic trials
+6,1,Emergency response capability for trial procedures
+6,2,Participant safety during trial interventions
+6,3,Required safety infrastructure for first-in-human trials
+7,1,Point-of-care testing accelerates trial workflows
+7,4,Real-time biomarker data integration
+8,3,Automated sample processing for cell therapy manufacturing
+8,4,High-throughput biospecimen processing for multi-omics
+9,3,GMP-compliant cell manufacturing for advanced therapies
+9,4,Bioreactor products for biospecimen-integrated trials
+10,3,Cell processing for advanced therapeutic trials
+10,4,Sample processing for biospecimen pipelines
+11,3,Automated PSC culture for cell therapy development
+11,4,Standardized cell production for research integration
+12,4,Ultra-low storage for biospecimen preservation
+12,3,Sample storage for advanced therapy manufacturing
+13,4,Long-term biospecimen storage in LN2 vapor phase
+13,3,Cryopreservation for cell therapy products
+14,3,Biosafety containment for cell manufacturing
+14,4,Protected environment for biospecimen processing
+15,3,Biocontainment centrifugation for cell processing
+15,4,Sample preparation for multi-omics analysis
+16,3,Environmental monitoring for GMP compliance
+16,4,Quality assurance for biospecimen storage
+17,3,Clinical-grade imaging for cell therapy QC
+17,4,Cell counting and characterization for biospecimens
+18,4,High-throughput imaging for multi-omics integration
+18,5,AI-enabled image analysis for trial data
+19,4,Cryo-EM sample prep for structural analysis
+19,5,Automated vitrification supports AI-driven workflows
+20,4,Grid preparation for cryo-EM analysis
+20,5,Sample prep automation for AI integration
+21,4,Metabolomics and glycomics for multi-omics pipelines
+21,5,UHPLC data for AI-enabled biomarker analysis
+22,4,High-throughput sampling for multi-omics workflows
+22,5,Automated sampling enables AI data integration
+23,4,Cold-chain logistics for biospecimen transport
+23,6,National sample sharing infrastructure
+24,5,GPU compute for CRAIDL AI agent deployment
+24,6,Secure compute for national data interoperability
+25,5,Secure storage for AI model training data
+25,6,On-prem storage for national data backbone
+26,5,Network security for AI agent communications
+26,6,Secure networking for national interoperability
+27,5,Clinical trial platform for AI-enabled trial management
+27,6,Platform integration with national networks
+28,5,Cloud compute for CRAIDL AI development
+28,6,Scalable infrastructure for national collaboration
+29,5,AWS consulting for AI infrastructure optimization
+29,6,Architecture support for national interoperability
+30,2,eConsent platform increases recruitment efficiency
+30,5,AI-enabled consent and recruitment automation
+30,7,Training platform for HQP in digital trial tools
+31,2,Wearables enable decentralized participant monitoring
+31,5,Continuous data streams for AI analysis
+31,6,Standardized wearables for multi-site trials
+32,2,Remote monitoring expands recruitment reach
+32,5,Telehealth data integration with AI systems
+32,6,Decentralized infrastructure for national trials
+33,2,Mobile kiosks for community-based recruitment
+33,5,Real-time data capture for AI processing
+33,7,Training tools for participant engagement
+34,5,AI-powered dashboards for trial monitoring
+34,6,Visualization tools for national data sharing
+34,7,Dashboard training for HQP development
+67,1,Research-grade tilt testing enables rapid autonomic trial activation
+67,2,Standardized POTS diagnosis supports Long COVID trial recruitment
+67,3,Essential for autonomic function endpoint assessment in clinical trials
+68,1,Continuous hemodynamics accelerates autonomic trial protocols
+68,2,Beat-to-beat monitoring supports complex participant phenotyping
+68,4,Real-time hemodynamic data for autonomic function integration
+69,1,QSART testing enables rapid small fiber neuropathy trial enrollment
+69,2,Sudomotor assessment supports diabetic neuropathy recruitment
+69,3,Gold standard postganglionic testing for autonomic trials
+70,4,Integrated analysis software for autonomic endpoint data harmonization
+70,5,Standardized CASS scoring for AI-enabled autonomic data analysis
+71,1,Research ECG enables rapid cardiovagal function assessment
+71,2,HRV monitoring supports autonomic trial participant characterization
+71,4,High-resolution ECG data for multi-modal integration
+72,1,Standardized Valsalva testing for consistent trial protocols
+72,2,Adrenergic function assessment supports participant phenotyping
+73,2,Respiratory monitoring enables controlled cardiovagal testing
+73,4,Respiratory data integration for autonomic function analysis
+74,4,End-tidal CO2 for enhanced cardiovagal assessment protocols
+74,5,Capnography data supports AI-enabled autonomic analysis
+75,1,TCD enables rapid cerebral autoregulation assessment
+75,2,Cerebral blood flow monitoring for Long COVID trial phenotyping
+75,4,Cerebral hemodynamic data for multi-modal integration
+76,1,NIRS enables continuous cerebral oxygenation monitoring
+76,2,Cerebral oximetry supports orthostatic stress characterization
+76,4,NIRS data integration with autonomic function outcomes
+77,2,Pediatric tilt adaptations enable rare disease trial recruitment
+77,3,Age-appropriate autonomic testing for pediatric Phase I trials
+78,2,Pediatric QSART capsules support pediatric autonomic trials
+78,3,Small fiber assessment for pediatric rare disease trials

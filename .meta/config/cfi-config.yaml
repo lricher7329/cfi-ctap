@@ -1,0 +1,217 @@
+# CFI Innovation Fund Extension Configuration
+# Extracted from context.yaml during v2.0 migration on 2025-12-28
+# Contains CFI-specific fields (institutional_alignment, flagship_programs, suites)
+
+institutional_alignment:
+  strategic_plan: Forward with Purpose
+  provincial_strategy: Alberta Technology and Innovation Strategy (ATIS)
+  research_priorities:
+  - Clinical trial innovation
+  - AI-augmented research
+  - Precision medicine
+  - Pediatric and rare disease
+flagship_programs:
+- name: Neuro-immunology and MS
+  short_name: neuro_ms
+  suites:
+  - 1
+  - 2
+  - 4
+  key_equipment:
+  - CSF processing and cryopreservation
+  - EHR integration for outcomes
+  - MS-specific biomarker panels
+  national_networks:
+  - CIHR MS Research Network
+  - Brain Canada
+- name: Hepatitis C and Vaccines
+  short_name: hcv_vaccines
+  suites:
+  - 1
+  - 2
+  - 3
+  key_equipment:
+  - BSL-2+ containment facilities
+  - Challenge agent preparation
+  - Vaccine formulation support
+  national_networks:
+  - VIDO-InterVac
+  - Canadian Immunization Research Network
+- name: Cardio-renal
+  short_name: cardio_renal
+  suites:
+  - 1
+  - 2
+  - 3
+  key_equipment:
+  - Cardiac monitoring systems
+  - Renal biomarker panels
+  - TMIC metabolomics access
+  national_networks:
+  - Heart & Stroke Foundation
+  - Can-SOLVE CKD
+- name: Pediatric Rare Disease
+  short_name: peds_rare
+  suites:
+  - 1
+  - 4
+  key_equipment:
+  - Child-friendly clinical space
+  - Remote monitoring devices
+  - Federated data access
+  national_networks:
+  - RareKids-CAN
+  - Genome Canada
+  - CIHR Rare Disease Network
+- name: CRAIDL Development
+  short_name: craidl
+  suites:
+  - 4
+  - 5
+  key_equipment:
+  - GPU compute cluster
+  - FHIR integration servers
+  - Wearable device validation lab
+  development_partners:
+  - Amii (Alberta Machine Intelligence Institute)
+  - AHS Analytics
+suites:
+- number: 1
+  name: Clinical Trials Infrastructure
+  short_name: clinical_trials
+  description_file: core/suites/suite_1_clinical_trials_infrastructure.md
+- number: 2
+  name: Living Biorepository
+  short_name: biorepository
+  description_file: core/suites/suite_2_living_biorepository.md
+  special_concepts:
+  - name: Real-time EMR linkage
+    description: Connect Care FHIR API integration for live clinical data
+  - name: Automated outcome annotation
+    description: Clinical events automatically annotate stored samples
+  - name: Predictive inventory management
+    description: AI predicts sample expiration and utilization
+  - name: AI-assisted sample selection
+    description: Recommends samples based on research questions
+  differentiators:
+  - NOT a static biobank - samples are annotated with outcomes in real-time
+  - Researchers query for specimens with specific outcome trajectories
+  - AI recommends sample retrieval based on research questions
+- number: 3
+  name: Translational Science
+  short_name: translational
+  description_file: core/suites/suite_3_translational_science.md
+- number: 4
+  name: Data Platform
+  short_name: data_platform
+  description_file: core/suites/suite_4_data_platform.md
+  special_concepts:
+  - name: CRAIDL AI Agents
+    description: Seven specialized AI agents for trial operations (four validated via prototype)
+    agents:
+    - name: Protocol Agent
+      function: Protocol generation from research objectives
+      tre_zone: 3
+    - name: Data Management Agent
+      function: CDM transformation, data quality
+      tre_zone:
+      - 2
+      - 3
+    - name: Events Agent
+      function: AE detection and reporting
+      tre_zone: 2
+    - name: Ethics Agent
+      function: Consent management, protocol amendments
+      tre_zone:
+      - 2
+      - 3
+    - name: Regulatory Agent
+      function: Submission package preparation
+      tre_zone: 3
+    - name: Budget & Contracts Agent
+      function: Site payments, milestone tracking
+      tre_zone: 3
+  - name: Three-zone TRE architecture
+    description: Trusted Research Environment with graduated access
+    zones:
+    - zone: 1
+      name: Identifiable
+      access: AHS-controlled, no AI agent access
+    - zone: 2
+      name: Controlled Processing
+      access: Limited access, some agents operate here
+    - zone: 3
+      name: Research
+      access: De-identified outputs, most agent operations
+- number: 5
+  name: Trial Innovation
+  short_name: innovation
+  description_file: core/suites/suite_5_trial_innovation.md
+# =============================================================================
+# Paths Configuration
+# =============================================================================
+# All paths are relative to the project root (projects/$PROJECT/)
+# Skills should read these paths rather than hardcoding folder structure
+# =============================================================================
+
+paths:
+  # Core directories (sources of truth - edit these)
+  core:
+    root: core/
+    master: core/MASTER.md
+    suites: core/suites/
+    data: core/data/
+
+  # Derived directories (generated - regenerate, don't edit)
+  derived:
+    root: derived/
+    rta: derived/rta/
+    rta_document: derived/rta/rta.md
+    briefs: derived/briefs/
+    includes: derived/includes/
+    budget: derived/budget/
+    compliance: derived/compliance/
+    infrastructure: derived/infrastructure/
+    full_app: derived/full_app/
+
+  # Reference directories (supporting materials - read-only)
+  reference:
+    root: reference/
+    background: reference/background/
+    team: reference/team/
+    letters: reference/team/letters/
+    cvs: reference/team/cvs/
+    competition_instructions: reference/competition_instructions/
+    docs: reference/docs/
+
+  # Assets (media files)
+  assets:
+    root: assets/
+    figures: assets/figures/
+
+  # Working directories (active work in progress)
+  working:
+    root: working/
+    ideas: working/ideas/
+    actions: working/actions/
+    collab: working/collab/
+
+  # Metadata (configuration and sync)
+  meta:
+    root: .meta/
+    config: .meta/config/
+    sync: .meta/sync/
+    dependency_graph: .meta/sync/dependency_graph.json
+    gdoc_mapping: .meta/gdoc_mapping.json
+    hedgedoc_mapping: .meta/hedgedoc_mapping.json
+
+# Legacy alias for backward compatibility
+documents:
+  master: core/MASTER.md
+  rta: derived/rta/rta.md
+  briefs_directory: derived/briefs/
+  suites_directory: core/suites/
+  includes_directory: derived/includes/
+  data_directory: core/data/
+
+objectives_count: 7

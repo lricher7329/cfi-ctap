@@ -1,0 +1,46 @@
+participant_id,objective_id,role,contribution_description
+8,1,lead,Overall leadership of trial acceleration initiatives
+8,2,lead,Strategic oversight of recruitment and equity initiatives
+8,5,lead,CRAIDL AI integration leadership
+8,6,lead,National network coordination and partnerships
+8,7,lead,HQP training program oversight
+2,1,co-lead,Challenge Trials Unit - trial activation leadership
+2,2,contributor,Clinical translation recruitment strategies
+2,3,co-lead,First-in-human trial expertise
+3,1,contributor,Rare Disease Trials Unit operations
+3,2,contributor,Pediatric and rare disease recruitment
+3,3,contributor,Complex trial protocol development
+4,1,contributor,Rare Disease Trials Unit operations
+4,2,contributor,Pediatric trial recruitment
+4,3,contributor,Rare disease trial expertise
+5,2,co-lead,Connect1D decentralized recruitment leadership
+5,6,co-lead,National decentralized trial network development
+6,2,contributor,Chronic disease management and remote monitoring
+6,6,contributor,Decentralized trial implementation
+7,1,contributor,CRAIDL trial design methodology
+7,5,co-lead,CRAIDL AI agent development leadership
+7,6,contributor,AI-enabled national interoperability
+9,1,contributor,ARISE and REBx ethics streamlining
+9,6,contributor,National REB harmonization initiatives
+10,1,contributor,Research ethics process optimization
+10,6,contributor,Cross-institutional ethics coordination
+1,4,co-lead,Islet cell biorepository leadership
+1,3,contributor,Biospecimen support for cell therapies
+11,4,co-lead,CBSR biorepository and cryopreservation leadership
+11,3,contributor,Cryopreservation expertise for cell therapies
+12,1,contributor,UAH Clinical Investigation Unit operations
+12,2,contributor,Clinical trial participant care
+12,3,contributor,First-in-human trial support
+13,1,contributor,SCH Clinical Investigation Unit operations
+13,2,contributor,Pediatric trial support
+13,3,contributor,Clinical trial participant care
+14,1,contributor,ADI Clinical Research Unit operations
+14,2,contributor,Diabetes trial recruitment
+14,3,contributor,Clinical trial procedures
+15,3,co-lead,ACTM cell manufacturing leadership
+15,4,contributor,Cell therapy biospecimen integration
+15,7,contributor,HQP training in cell manufacturing
+16,3,contributor,DDIC drug development expertise
+16,4,contributor,Translational science integration
+17,3,contributor,ADI biomanufacturing operations
+17,4,contributor,Cell therapy development

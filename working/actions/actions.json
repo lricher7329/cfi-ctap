@@ -1,0 +1,567 @@
+{
+  "schema_version": "1.0",
+  "project": "cfi-ctap",
+  "created": "2025-12-28T00:00:00Z",
+  "updated": "2025-12-30T18:00:00Z",
+  "sync": {
+    "sheet_id": "1toKJmShkKehSk9e8p28Mp4wcAkIM8erWdfgVsauudoI",
+    "tab": "Actions",
+    "last_sync": "2025-12-30T18:15:00Z"
+  },
+  "actions": [
+    {
+      "id": "ACT-2025-12-28-001",
+      "title": "Request letter of support from Cross Cancer Institute",
+      "description": "Contact Dr. Michael Chiu to request CCI letter for CAR-T cell therapy partnership.",
+      "phase": "immediate",
+      "status": "pending",
+      "priority": "high",
+      "source": {
+        "type": "idea",
+        "ref": "2025-12-24_003",
+        "extracted_at": "2025-12-28T00:00:00Z"
+      },
+      "assignee": null,
+      "deadline": null,
+      "tags": ["letters", "suite-2", "partnerships"],
+      "context": {
+        "documents": ["suites/suite_2_living_biorepository.md"],
+        "objectives": [4],
+        "suites": [2]
+      },
+      "created": "2025-12-28T00:00:00Z",
+      "updated": "2025-12-28T00:00:00Z",
+      "completed_at": null,
+      "notes": []
+    },
+    {
+      "id": "ACT-2025-12-28-002",
+      "title": "Verify Michael Chiu's role and title",
+      "description": "Confirm Dr. Chiu's official title for inclusion in CFI proposal team section.",
+      "phase": "immediate",
+      "status": "pending",
+      "priority": "medium",
+      "source": {
+        "type": "idea",
+        "ref": "2025-12-24_003",
+        "extracted_at": "2025-12-28T00:00:00Z"
+      },
+      "assignee": null,
+      "deadline": null,
+      "tags": ["team", "suite-2"],
+      "context": {
+        "documents": ["suites/suite_2_living_biorepository.md"],
+        "objectives": [4],
+        "suites": [2]
+      },
+      "created": "2025-12-28T00:00:00Z",
+      "updated": "2025-12-28T00:00:00Z",
+      "completed_at": null,
+      "notes": []
+    },
+    {
+      "id": "ACT-2025-12-29-001",
+      "title": "Include evidence for the use of AI in trial development, implementation, and management",
+      "description": "Include evidence for the use of AI in trial development, implementation, and management - projects/cfi-ctap/ideas/research/ct-spending.md",
+      "phase": "short-term",
+      "status": "completed",
+      "priority": "medium",
+      "source": {
+        "type": "markdown-todo",
+        "ref": "MASTER.md:41",
+        "extracted_at": "2025-12-29T18:45:00Z"
+      },
+      "assignee": null,
+      "deadline": null,
+      "tags": ["todo", "research", "ai-evidence"],
+      "context": {
+        "documents": ["MASTER.md"],
+        "line_number": 41
+      },
+      "created": "2025-12-29T18:45:00Z",
+      "updated": "2025-12-29T19:20:00Z",
+      "completed_at": "2025-12-29T19:20:00Z",
+      "notes": [
+        {
+          "timestamp": "2025-12-29T19:20:00Z",
+          "text": "Added comprehensive AI evidence section with citations to systematic reviews (Chow 2023, Lu 2024, Saady 2025) and implementation studies (Beck 2020, Calaprice-Whitty 2020). Source TODO removed from MASTER.md."
+        }
+      ]
+    },
+    {
+      "id": "ACT-2025-12-29-002",
+      "title": "AI is but one Gap in the system - other gaps outlined in ct-gaps.md",
+      "description": "AI is but one Gap in the system - other gaps outlined in projects/cfi-ctap/ideas/research/ct-gaps.md",
+      "phase": "short-term",
+      "status": "completed",
+      "priority": "medium",
+      "source": {
+        "type": "markdown-todo",
+        "ref": "MASTER.md:42",
+        "extracted_at": "2025-12-29T18:45:00Z"
+      },
+      "assignee": null,
+      "deadline": null,
+      "tags": ["todo", "research", "gaps"],
+      "context": {
+        "documents": ["MASTER.md"],
+        "line_number": 42
+      },
+      "created": "2025-12-29T18:45:00Z",
+      "updated": "2025-12-29T19:20:00Z",
+      "completed_at": "2025-12-29T19:20:00Z",
+      "notes": [
+        {
+          "timestamp": "2025-12-29T19:20:00Z",
+          "text": "Addressed in revised AI evidence section - fragmentation identified as dominant barrier, not AI performance. Source TODO removed from MASTER.md."
+        }
+      ]
+    },
+    {
+      "id": "ACT-2025-12-29-003",
+      "title": "Include the following three references",
+      "description": "include the following three references (Matthew Purri et al., 2025; J. Beck et al., 2020; F. Cascini et al., 2022)",
+      "phase": "short-term",
+      "status": "completed",
+      "priority": "medium",
+      "source": {
+        "type": "markdown-todo",
+        "ref": "MASTER.md:53",
+        "extracted_at": "2025-12-29T18:45:00Z"
+      },
+      "assignee": null,
+      "deadline": null,
+      "tags": ["todo", "references"],
+      "context": {
+        "documents": ["MASTER.md"],
+        "line_number": 53
+      },
+      "created": "2025-12-29T18:45:00Z",
+      "updated": "2025-12-29T19:20:00Z",
+      "completed_at": "2025-12-29T19:20:00Z",
+      "notes": [
+        {
+          "timestamp": "2025-12-29T19:20:00Z",
+          "text": "References integrated inline with citations: [@beck2020; @purri2025; @cascini2022]. Source TODO and explanatory notes removed from MASTER.md."
+        }
+      ]
+    },
+    {
+      "id": "ACT-2025-12-29-004",
+      "title": "Bridging argument for biobanks and their value in accelerating clinical trials",
+      "description": "We need a bridging argument for biobanks and there value in acclerating clinical trials. Why is biobanking relevant to rapid translation? see projects/cfi-ctap/ideas/research/why-biobanking.md",
+      "phase": "short-term",
+      "status": "completed",
+      "priority": "medium",
+      "source": {
+        "type": "markdown-todo",
+        "ref": "MASTER.md:64",
+        "extracted_at": "2025-12-29T18:45:00Z"
+      },
+      "assignee": null,
+      "deadline": null,
+      "tags": ["todo", "research", "biobanking"],
+      "context": {
+        "documents": ["MASTER.md"],
+        "line_number": 64
+      },
+      "created": "2025-12-29T18:45:00Z",
+      "updated": "2025-12-29T19:35:00Z",
+      "completed_at": "2025-12-29T19:35:00Z",
+      "notes": [
+        {
+          "timestamp": "2025-12-29T19:35:00Z",
+          "text": "Added new section 1.2 'The Role of Integrated Biobanking in Trial Acceleration' covering pre-screened cohorts, molecular stratification, platform trial enablement, passive follow-up, and CTAP-specific translation benefits. Source TODO removed from MASTER.md. Section numbering updated (1.3 Competitive Landscape, 1.4 Market Gap)."
+        }
+      ]
+    },
+    {
+      "id": "ACT-2025-12-30-001",
+      "title": "Review ct-spending.md and update spending paragraph",
+      "description": "Review the ct-spending.md file and update and expand the next paragraph about Canadian clinical trial spending compared to Australia and UK.",
+      "phase": "short-term",
+      "status": "completed",
+      "priority": "medium",
+      "source": {
+        "type": "markdown-todo",
+        "ref": "MASTER.md:30",
+        "extracted_at": "2025-12-30T05:15:00Z"
+      },
+      "assignee": null,
+      "deadline": null,
+      "tags": ["todo", "research", "spending-data"],
+      "context": {
+        "documents": ["MASTER.md", "ideas/research/ct-spending.md"],
+        "line_number": 30
+      },
+      "created": "2025-12-30T05:15:00Z",
+      "updated": "2025-12-30T05:20:00Z",
+      "completed_at": "2025-12-30T05:20:00Z",
+      "notes": [
+        {
+          "timestamp": "2025-12-30T05:20:00Z",
+          "text": "Updated MASTER.md with comparative spending data: Canada C$0.8-1.0B (~C$20-26/capita), Australia A$1.6B (~A$62/capita), UK £2.45B (~£36/capita). Removed TODO marker. Data sourced from ct-spending.md research file."
+        }
+      ]
+    },
+    {
+      "id": "ACT-2025-12-30-002",
+      "title": "Implement Unified Grant Metadata Architecture",
+      "description": "Create base 6-layer grant schema (scripts/models/grant.py), agency extension schemas (CFI, CIHR-CT, CIHR-Project), migrate cfi-ctap/config/context.yaml to split base + extension format, update skills to load context.yaml + *-config.yaml. See docs/plans/unified-project-metadata-architecture.md",
+      "phase": "short-term",
+      "status": "pending",
+      "priority": "high",
+      "source": {
+        "type": "manual",
+        "ref": "docs/plans/unified-project-metadata-architecture.md",
+        "extracted_at": "2025-12-30T18:00:00Z"
+      },
+      "assignee": null,
+      "deadline": null,
+      "tags": ["implementation", "grant-schema", "workspace-improvement"],
+      "context": {
+        "documents": ["docs/plans/unified-project-metadata-architecture.md"],
+        "scope": "workspace"
+      },
+      "created": "2025-12-30T18:00:00Z",
+      "updated": "2025-12-30T18:00:00Z",
+      "completed_at": null,
+      "notes": []
+    },
+    {
+      "id": "ACT-2025-12-30-003",
+      "title": "Create grant lifecycle commands (/grant-submit, /grant-decision, /grant-resubmit)",
+      "description": "Create commands for grant lifecycle management: /grant-submit (mark submitted, record date/status), /grant-decision (record funded/declined), /grant-resubmit (start resubmission cycle with version tracking). Part of unified grant architecture.",
+      "phase": "short-term",
+      "status": "pending",
+      "priority": "high",
+      "source": {
+        "type": "manual",
+        "ref": "docs/plans/unified-project-metadata-architecture.md",
+        "extracted_at": "2025-12-30T18:00:00Z"
+      },
+      "assignee": null,
+      "deadline": null,
+      "tags": ["implementation", "commands", "grant-lifecycle", "workspace-improvement"],
+      "context": {
+        "documents": ["docs/plans/unified-project-metadata-architecture.md"],
+        "scope": "workspace"
+      },
+      "created": "2025-12-30T18:00:00Z",
+      "updated": "2025-12-30T18:00:00Z",
+      "completed_at": null,
+      "notes": []
+    },
+    {
+      "id": "ACT-2025-12-30-004",
+      "title": "Implement Action Items Management System",
+      "description": "Build full /actions command implementation: local storage (actions/actions.json), extraction from ideas/markdown TODOs/compliance/gdoc-comments, two-way Google Sheets sync, auto-update markdown checkboxes. See .claude/commands/actions.md for spec.",
+      "phase": "short-term",
+      "status": "pending",
+      "priority": "high",
+      "source": {
+        "type": "manual",
+        "ref": ".claude/commands/actions.md",
+        "extracted_at": "2025-12-30T18:00:00Z"
+      },
+      "assignee": null,
+      "deadline": null,
+      "tags": ["implementation", "commands", "actions-system", "workspace-improvement"],
+      "context": {
+        "documents": [".claude/commands/actions.md"],
+        "scope": "workspace"
+      },
+      "created": "2025-12-30T18:00:00Z",
+      "updated": "2025-12-30T18:00:00Z",
+      "completed_at": null,
+      "notes": []
+    },
+    {
+      "id": "ACT-2025-12-30-005",
+      "title": "Implement protocol import mode for /new-protocol",
+      "description": "Add --from flag to /new-protocol for importing existing protocol documents. Support sources: docx:<path>, gdoc:<id>, url:<url>, pdf:<path>. Implement 4-stage extraction with SPIRIT 2025 mapping, SOA table detection, interactive corrections. See .claude/commands/new-protocol.md",
+      "phase": "short-term",
+      "status": "pending",
+      "priority": "medium",
+      "source": {
+        "type": "manual",
+        "ref": ".claude/commands/new-protocol.md",
+        "extracted_at": "2025-12-30T18:00:00Z"
+      },
+      "assignee": null,
+      "deadline": null,
+      "tags": ["implementation", "commands", "protocol", "workspace-improvement"],
+      "context": {
+        "documents": [".claude/commands/new-protocol.md"],
+        "scope": "workspace"
+      },
+      "created": "2025-12-30T18:00:00Z",
+      "updated": "2025-12-30T18:00:00Z",
+      "completed_at": null,
+      "notes": []
+    },
+    {
+      "id": "ACT-2025-12-30-006",
+      "title": "Option A: Root folder naming convention migration",
+      "description": "Rename ~/writing_projects → ~/writing-projects and ~/mcp_servers → ~/mcp-servers. Update ~45 files with hardcoded paths including MCP configs, Python scripts, documentation. Prerequisites: confirm Option B stability, plan GitHub rename if applicable.",
+      "phase": "long-term",
+      "status": "deferred",
+      "priority": "low",
+      "source": {
+        "type": "manual",
+        "ref": "docs/plans/naming-convention-migration.md",
+        "extracted_at": "2025-12-30T18:00:00Z"
+      },
+      "assignee": null,
+      "deadline": null,
+      "tags": ["implementation", "migration", "naming-convention", "workspace-improvement"],
+      "context": {
+        "documents": ["docs/plans/naming-convention-migration.md"],
+        "scope": "workspace"
+      },
+      "created": "2025-12-30T18:00:00Z",
+      "updated": "2025-12-30T18:00:00Z",
+      "completed_at": null,
+      "notes": [
+        {
+          "timestamp": "2025-12-30T18:00:00Z",
+          "text": "Deferred - Option B (project folder rename) complete and stable. Option A deferred until needs warrant the disruption."
+        }
+      ]
+    },
+    {
+      "id": "ACT-2025-12-30-007",
+      "title": "HedgeDoc integration for collaborative markdown editing",
+      "description": "Create scripts/hedgedoc_sync.py, push/pull/status skills, bidirectional markdown sync with conflict resolution. Enables real-time collaborative editing while keeping local markdown as source of truth. See docs/plans/future-enhancements/hedgedoc-integration.md",
+      "phase": "long-term",
+      "status": "pending",
+      "priority": "low",
+      "source": {
+        "type": "manual",
+        "ref": "docs/plans/future-enhancements/hedgedoc-integration.md",
+        "extracted_at": "2025-12-30T18:00:00Z"
+      },
+      "assignee": null,
+      "deadline": null,
+      "tags": ["implementation", "collaboration", "hedgedoc", "workspace-improvement"],
+      "context": {
+        "documents": ["docs/plans/future-enhancements/hedgedoc-integration.md"],
+        "scope": "workspace"
+      },
+      "created": "2025-12-30T18:00:00Z",
+      "updated": "2025-12-30T18:00:00Z",
+      "completed_at": null,
+      "notes": []
+    },
+    {
+      "id": "ACT-2025-12-30-008",
+      "title": "Update /new-project to add grant type with agency selection",
+      "description": "Modify .claude/commands/new-project.md and new_project.sh to support 'grant' project type. Add agency selection prompt (CFI, CIHR-CT, CIHR-Project). Generate appropriate templates based on agency. Part of unified grant architecture.",
+      "phase": "short-term",
+      "status": "pending",
+      "priority": "high",
+      "source": {
+        "type": "manual",
+        "ref": "docs/plans/unified-project-metadata-architecture.md",
+        "extracted_at": "2025-12-30T18:00:00Z"
+      },
+      "assignee": null,
+      "deadline": null,
+      "tags": ["implementation", "commands", "grant-schema", "workspace-improvement"],
+      "context": {
+        "documents": ["docs/plans/unified-project-metadata-architecture.md", ".claude/commands/new-project.md"],
+        "scope": "workspace"
+      },
+      "created": "2025-12-30T18:00:00Z",
+      "updated": "2025-12-30T18:00:00Z",
+      "completed_at": null,
+      "notes": []
+    },
+    {
+      "id": "ACT-2026-01-06-001",
+      "title": "Finalize Living Biorepository technical architecture with Suite 4 Data Platform team",
+      "description": "Coordinate with Suite 4 team to finalize the technical architecture for Living Biorepository integration including Zone 1/2/3 data flows, consent registry integration, and OMOP query capabilities.",
+      "phase": "short-term",
+      "status": "pending",
+      "priority": "high",
+      "source": {
+        "type": "brief-next-steps",
+        "ref": "briefs/suite_2_biospecimen.md:140",
+        "extracted_at": "2026-01-06T00:00:00Z"
+      },
+      "assignee": null,
+      "deadline": null,
+      "tags": ["suite-2", "suite-4", "architecture", "integration"],
+      "context": {
+        "documents": ["briefs/suite_2_biospecimen.md", "suites/suite_2_living_biorepository.md", "suites/suite_4_data_platform.md"],
+        "objectives": [4, 5, 6],
+        "suites": [2, 4]
+      },
+      "created": "2026-01-06T00:00:00Z",
+      "updated": "2026-01-06T00:00:00Z",
+      "completed_at": null,
+      "notes": []
+    },
+    {
+      "id": "ACT-2026-01-06-002",
+      "title": "Implement real-time FHIR linkage to Connect Care via platform DSA",
+      "description": "Establish FHIR API integration with Connect Care for real-time specimen-to-EMR linkage. Requires DSA with AHS and coordination with Suite 4 TRE architecture.",
+      "phase": "short-term",
+      "status": "pending",
+      "priority": "high",
+      "source": {
+        "type": "brief-next-steps",
+        "ref": "briefs/suite_2_biospecimen.md:141",
+        "extracted_at": "2026-01-06T00:00:00Z"
+      },
+      "assignee": null,
+      "deadline": null,
+      "tags": ["suite-2", "suite-4", "fhir", "connect-care", "integration"],
+      "context": {
+        "documents": ["briefs/suite_2_biospecimen.md", "suites/suite_2_living_biorepository.md"],
+        "objectives": [4, 5],
+        "suites": [2, 4]
+      },
+      "created": "2026-01-06T00:00:00Z",
+      "updated": "2026-01-06T00:00:00Z",
+      "completed_at": null,
+      "notes": []
+    },
+    {
+      "id": "ACT-2026-01-06-003",
+      "title": "Deploy predictive inventory management algorithms",
+      "description": "Develop and deploy AI/ML algorithms for predictive biospecimen inventory management including sample depletion forecasting, optimal aliquoting strategies, and underutilized specimen identification.",
+      "phase": "short-term",
+      "status": "pending",
+      "priority": "medium",
+      "source": {
+        "type": "brief-next-steps",
+        "ref": "briefs/suite_2_biospecimen.md:142",
+        "extracted_at": "2026-01-06T00:00:00Z"
+      },
+      "assignee": null,
+      "deadline": null,
+      "tags": ["suite-2", "ai", "inventory", "algorithms"],
+      "context": {
+        "documents": ["briefs/suite_2_biospecimen.md", "suites/suite_2_living_biorepository.md"],
+        "objectives": [4],
+        "suites": [2]
+      },
+      "created": "2026-01-06T00:00:00Z",
+      "updated": "2026-01-06T00:00:00Z",
+      "completed_at": null,
+      "notes": []
+    },
+    {
+      "id": "ACT-2026-01-06-004",
+      "title": "Establish cross-trial reuse governance framework with Data Access Committee",
+      "description": "Develop governance framework for cross-trial specimen reuse including consent categories, DAC review processes, and researcher discovery portal integration.",
+      "phase": "short-term",
+      "status": "pending",
+      "priority": "medium",
+      "source": {
+        "type": "brief-next-steps",
+        "ref": "briefs/suite_2_biospecimen.md:143",
+        "extracted_at": "2026-01-06T00:00:00Z"
+      },
+      "assignee": null,
+      "deadline": null,
+      "tags": ["suite-2", "governance", "data-access", "ethics"],
+      "context": {
+        "documents": ["briefs/suite_2_biospecimen.md", "suites/suite_2_living_biorepository.md"],
+        "objectives": [4],
+        "suites": [2]
+      },
+      "created": "2026-01-06T00:00:00Z",
+      "updated": "2026-01-06T00:00:00Z",
+      "completed_at": null,
+      "notes": []
+    },
+    {
+      "id": "ACT-2026-01-06-005",
+      "title": "Coordinate GMP cleanroom specifications for ACTM expansion",
+      "description": "Work with ACTM team to finalize GMP cleanroom specifications for expanded cell manufacturing capacity including bioreactor installation, cell washer requirements, and environmental monitoring.",
+      "phase": "short-term",
+      "status": "pending",
+      "priority": "medium",
+      "source": {
+        "type": "brief-next-steps",
+        "ref": "briefs/suite_2_biospecimen.md:144",
+        "extracted_at": "2026-01-06T00:00:00Z"
+      },
+      "assignee": null,
+      "deadline": null,
+      "tags": ["suite-2", "actm", "gmp", "facilities"],
+      "context": {
+        "documents": ["briefs/suite_2_biospecimen.md", "suites/suite_2_living_biorepository.md"],
+        "objectives": [3, 4],
+        "suites": [2]
+      },
+      "created": "2026-01-06T00:00:00Z",
+      "updated": "2026-01-06T00:00:00Z",
+      "completed_at": null,
+      "notes": []
+    },
+    {
+      "id": "ACT-2026-01-06-006",
+      "title": "Develop consent-aware routing logic with participant portal (Suite 5)",
+      "description": "Implement consent-aware sample routing logic that integrates with Suite 5 participant engagement portal for dynamic consent updates and automated sample release decisions.",
+      "phase": "short-term",
+      "status": "pending",
+      "priority": "medium",
+      "source": {
+        "type": "brief-next-steps",
+        "ref": "briefs/suite_2_biospecimen.md:145",
+        "extracted_at": "2026-01-06T00:00:00Z"
+      },
+      "assignee": null,
+      "deadline": null,
+      "tags": ["suite-2", "suite-5", "consent", "integration"],
+      "context": {
+        "documents": ["briefs/suite_2_biospecimen.md", "suites/suite_2_living_biorepository.md"],
+        "objectives": [4],
+        "suites": [2, 5]
+      },
+      "created": "2026-01-06T00:00:00Z",
+      "updated": "2026-01-06T00:00:00Z",
+      "completed_at": null,
+      "notes": []
+    },
+    {
+      "id": "ACT-2026-01-06-007",
+      "title": "Add MANTA and Precision Medicine Initiative details to Radiogenomic Integration section",
+      "description": "Expand Capability 5 (Radiogenomic Integration) in Suite 2 technical spec with details about MANTA system. Contact James White for information. Reference Calgary's Precision Medicine Initiative (https://libin.ucalgary.ca/initiatives/precision-medicine-initiative).",
+      "phase": "short-term",
+      "status": "pending",
+      "priority": "medium",
+      "source": {
+        "type": "markdown-todo",
+        "ref": "suites/suite_2_living_biorepository.md:99",
+        "extracted_at": "2026-01-06T00:00:00Z"
+      },
+      "assignee": null,
+      "deadline": null,
+      "tags": ["suite-2", "todo", "radiogenomics", "imaging", "manta"],
+      "context": {
+        "documents": ["suites/suite_2_living_biorepository.md"],
+        "objectives": [4, 5],
+        "suites": [2]
+      },
+      "created": "2026-01-06T00:00:00Z",
+      "updated": "2026-01-06T00:00:00Z",
+      "completed_at": null,
+      "notes": []
+    }
+  ],
+  "phase_counts": {
+    "immediate": 2,
+    "short-term": 17,
+    "long-term": 2
+  },
+  "status_counts": {
+    "pending": 14,
+    "in_progress": 0,
+    "completed": 5,
+    "deferred": 1
+  }
+}

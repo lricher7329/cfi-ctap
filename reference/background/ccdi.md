@@ -1,0 +1,57 @@
+# Drug manufacturing facility gets green light thanks to federal dollars
+
+Canadian Critical Drug Initiative will commercialize new drug discoveries and prevent future shortages by producing homegrown supply.
+
+- March 17, 2023
+-  
+- By Gillian Rutherford
+
+Alberta’s burgeoning biomanufacturing and life sciences industry got an $80.5-million boost in federal funding today, putting it at the centre of efforts to commercialize new discoveries and give Canadians a reliable national supply of life-saving drugs, including antivirals.
+
+The [announcement](https://www.canada.ca/en/prairies-economic-development/news/2023/03/minister-vandal-announces-federal-investment-to-increase-canadas-capacity-to-develop-and-manufacture-critical-medicines.html) gives the green light for the [Canadian Critical Drug Initiative](https://www.ualberta.ca/folio/2021/11/u-of-a-industry-partnership-poised-to-close-canadas-drug-supply-gaps.html#:~:text=The Canadian Critical Drug Initiative,development of life-saving therapies.&text=A gap in homegrown drug,to the drugs they need.) (CCDI) — a partnership between the not-for-profit [Applied Pharmaceutical Innovation](https://appliedpharma.ca/) (API) and the University of Alberta’s [Li Ka Shing Applied Virology Institute](https://www.ualberta.ca/li-ka-shing-institute-virology/li-ka-shing-applied-virology-institute/index.html) (LKSAVI) — to create an integrated research, development and manufacturing cluster in Edmonton.
+
+“This investment, through the Regional Innovation Ecosystem (RIE) program, provides these Canadian firms with the resources and support they need to grow our country’s expertise in the life sciences sector and increase Canada’s competitiveness in global markets,” said Dan Vandal, minister for [Prairies Economic Development Canada](https://www.canada.ca/en/prairies-economic-development.html), in today’s announcement. “Today’s launch of the Canadian Critical Drug Initiative will help enable Canadian innovators to strengthen our local supply chain for critical medicines while supporting the expansion of early-stage companies and creating good jobs.”
+
+CCDI brings together governments, industry partners and research institutions from across Canada to research, develop, test and manufacture new drugs and produce widely used generic drugs that are chronically in short supply. It builds on the proven track record of Li Ka Shing members in developing diagnostics, vaccines and drugs. LKSAVI researchers have [numerous discovery projects underway](https://www.ualberta.ca/li-ka-shing-institute-virology/li-ka-shing-applied-virology-institute/current-projects/index.html) to treat or prevent hepatitis C, COVID-19, herpes viruses, cancer, group A streptococcus, Alzheimer’s disease and others. CCDI creates a commercialization pipeline so those discoveries can be tested and produced locally.
+
+“This extraordinary federal investment — one of the largest in the university’s history — will build on the University of Alberta’s global leadership in biomedical research, including the Nobel Prize in medicine in 2020,” said [Bill Flanagan](https://www.ualberta.ca/president/index.html), U of A president and vice-chancellor.
+
+“Along with the recent exciting announcement of federal funding in support of the [PRAIRIE research hub for pandemic preparedness](https://www.ualberta.ca/folio/2023/03/u-of-a-to-lead-new-prairie-research-hub-for-pandemic-preparedness.html) — with the U of A in the lead — today’s announcement will position the U of A and Alberta to play a leading role in strengthening Canada’s health-care system,” Flanagan said. “The Canadian Critical Drug Initiative sets the standard for how partnerships between government, industry and universities can advance research and improve health outcomes for all.”
+
+“CCDI fills a gap in manufacturing small-molecule therapeutics for the country,” said [Sir Michael Houghton](https://www.ualberta.ca/li-ka-shing-institute-virology/li-ka-shing-applied-virology-institute/about-avi/director.html.), co-recipient of the [2020 Nobel Prize in medicine](https://www.nobelprize.org/prizes/medicine/2020/press-release/), director of the LKSAVI and professor of [medical microbiology and immunology](https://www.ualberta.ca/medical-microbiology/index.html).
+
+“It will help Canada be better prepared for future and current pandemics, as well as helping to develop drugs and vaccines against common major diseases for which we have no preventatives currently available,” Houghton said.
+
+“The official death toll for COVID-19 is 6.8 million worldwide, but many people believe it is closer to 15 to 20 million. If we have another virus that spreads as quickly as COVID has, with a higher mortality rate, we're in huge trouble,” said [D. Lorne Tyrrell](https://www.ualberta.ca/li-ka-shing-institute-virology/about/founder-and-director.html), founding director of the [Li Ka Shing Institute of Virology](https://www.ualberta.ca/li-ka-shing-institute-virology/index.html) and [University of Alberta Distinguished Professor](https://www.ualberta.ca/provost/funding/awards/faculty-excellence-awards/uofa-distinguished-professor.html), who served on [Canada’s COVID-19 Vaccine Task Force](https://nrc.canada.ca/en/corporate/covid-19-vaccine-task-force). “This underscores the need to prepare for another pandemic, which is the equivalent to climate change as a threat to the world.”
+
+![D. Lorne Tyrrell (left) and Michael Houghton (Photo: John Ulan)](https://www.ualberta.ca/en/folio/media-library/2023/03/230317-ccdi-lorne-tyrrell-michael-houghton-2400px-john-ulan.jpg)D. Lorne Tyrrell (left) and Michael Houghton, two of the world's foremost virologists and key U of A collaborators in the Canadian Critical Drug Initiative, say the initiative will help meet a crucial need for Canada to be better prepared for both future and current pandemics. (Photo: John Ulan)
+
+### Benefiting people around the world
+
+Small-molecule drugs — tiny organic compounds that can enter cells easily to target a particular biological process — make up as much as [90 per cent of the medicines we use](https://www.sciencedirect.com/topics/biochemistry-genetics-and-molecular-biology/small-molecule#:~:text=Small molecules make up 90,and natural phenols [44]), including drugs such as anesthetics, antihistamines or steroids. While there is not yet a decision about which individual drugs will be manufactured at the plant, the plan is to identify up to four most-needed generic drugs for regular production.
+
+With this funding, API will build a new 40,000-square-foot manufacturing facility and upgrade its existing Biotechnology Business Development Centre. When completed, the facilities will have the capacity to produce up to 70 million doses annually of a wide range of small-molecule drugs. Edmonton will now become a significant site in Canada for their manufacture.
+
+![Rendering of a new 40,000-square-foot biomanufacturing facility that will be built with funding for the Canadian Critical Drug Initiative (Photo: API)](https://www.ualberta.ca/en/folio/media-library/2023/03/ccdi-api-manufacturing-facility-main-16x9-3000px.jpg)Funding for the Canadian Critical Drug Initiative will support a new, 40,000-square-foot biomanufacturing facility that will produce a wide range of small-molecule drugs. (Photo: API)
+
+These facilities will also expand API’s production of pharmaceutical ingredients for new drug development and enable the incubation of companies looking to scale up their business.
+
+“CCDI will provide a broad spectrum of value to Canadians by reducing drug shortages, employing Canadians in high-paying jobs, and providing better support for researchers and innovators to develop their discoveries into drugs that cure diseases, which can benefit people around the world,” said [Andrew MacIsaac](https://www.linkedin.com/in/andrewkieranmacisaac/?originalSubdomain=ca), CEO of API.
+
+![Andrew MacIsaac, CEO of Applied Pharmaceutical Innovation, is pictured working with API researchers in a lab. (Photo: Chad Kruger)](https://www.ualberta.ca/en/folio/media-library/2023/03/230317-ccdi-andrew-macisaac-3000px.jpg)Andrew MacIsaac, CEO of Applied Pharmaceutical Innovation (API), says the new funding for the Canadian Critical Drug Initiative will result in more homegrown innovations, diversify Canada's economy and create a domestic supply of critical medications, which can also benefit people around the world. (Photo: Chad Kruger)
+
+The announcement is part of the federal [biomanufacturing and life sciences strategy](https://www.ic.gc.ca/eic/site/151.nsf/eng/00019.html) and is expected to generate more than 350 high-quality jobs in Edmonton.
+
+“CCDI will create many jobs in the biotechnology area and help this critical industrial sector grow in Alberta and Canada,” said Houghton. “It will allow us to perform clinical efficacy of several of our novel drugs and vaccines targeting major diseases with no adequate standard of care.”
+
+### A competitive advantage
+
+[Canada imports 85 per cent of the drugs it needs](https://ised-isde.canada.ca/site/biomanufacturing/en/about-biomanufacturing-and-life-sciences-canada), up from just 20 per cent 50 years ago. The [lack of domestic drug manufacturing and scale-up capabilities in Canada](https://www.cmaj.ca/content/194/23/E801) came into sharp focus when supply chains were interrupted during the COVID-19 pandemic. The federal government has since made several [announcements ramping up Canadian vaccine capacity](https://pm.gc.ca/en/news/news-releases/2022/04/29/producing-made-canada-vaccines-and-creating-hundreds-good-jobs#:~:text=The Prime Minister%2C Justin Trudeau,million mRNA vaccine doses annually.), and with this CCDI announcement is now addressing the need to produce antivirals, small-molecule vaccine components and drugs affected by supply chain shortages.
+
+“News of the CCDI plan is already attracting interest from potential collaborative partners among the large biotech companies in Canada and the United States, which is likely to further enhance the Alberta biomanufacturing ecosystem,” said Houghton.
+
+CCDI will work with [Alberta Health Services](https://www.albertahealthservices.ca/) and other provincial health systems to identify the most-needed generic drugs for regular production.
+
+Alberta’s life sciences industry is worth more than $1 billion in annual revenue, according to a [2021 report](https://bioalberta.com/wp-content/uploads/2022/01/BioAlberta-State-of-the-Industry-2021_Final_Nov-10-2021.pdf) prepared by Deloitte for [BioAlberta](https://bioalberta.com/). The Edmonton International Airport is one of the few airports in Western Canada with the [cold storage facilities required for pharmaceuticals](https://flyeia.com/business/cargo/ceiv/). [Gilead Sciences](https://www.gilead.ca/)’ Edmonton office, where the COVID-19 antiviral drug remdesivir is produced, already employs about 500 people. The well-established petrochemical industry in northern Alberta means there is a depth of expertise in organic chemistry.
+
+“This funding addresses gaps that limited Canada’s potential for a robust life sciences industry. This will result in more Canadian innovations being developed here and diversify our economy, while also creating a domestic supply of critical medications,” said MacIsaac.

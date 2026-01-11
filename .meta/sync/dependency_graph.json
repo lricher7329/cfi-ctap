@@ -1,0 +1,252 @@
+{
+  "project": "cfi-ctap",
+  "generated": "2026-01-11T00:00:00Z",
+  "schema_version": "2.1",
+  "data_backend": {
+    "type": "local_csv",
+    "path": "core/data/",
+    "query_engine": "duckdb",
+    "legacy_google_sheets": {
+      "sheet_id": "1toKJmShkKehSk9e8p28Mp4wcAkIM8erWdfgVsauudoI",
+      "status": "archived",
+      "last_export": "2026-01-06",
+      "note": "Google Sheets archived for backup; local CSV is now source of truth"
+    }
+  },
+  "sources_of_truth": {
+    "strategic_content": {
+      "source": "local",
+      "file": "core/MASTER.md",
+      "description": "Master coordinating document - single source of truth for all strategic arguments",
+      "includes_generated": [
+        "derived/includes/why_now.md",
+        "derived/includes/why_ualberta.md",
+        "derived/includes/benefits_summary.md"
+      ]
+    },
+    "objectives": {
+      "source": "local_csv",
+      "file": "core/data/objectives.csv",
+      "local_copy": "derived/includes/objectives.md",
+      "query": "SELECT * FROM objectives ORDER BY objective_number"
+    },
+    "equipment": {
+      "source": "local_csv",
+      "file": "core/data/equipment.csv",
+      "local_copy": null,
+      "queries": {
+        "by_suite": "SELECT * FROM equipment WHERE suite_number = ? ORDER BY id",
+        "totals": "SELECT suite_number, suite_name, SUM(total_cost) as total FROM equipment WHERE status = 'confirmed' GROUP BY suite_number, suite_name",
+        "by_category": "SELECT item_category, SUM(total_cost) as total FROM equipment GROUP BY item_category"
+      }
+    },
+    "participants": {
+      "source": "local_csv",
+      "file": "core/data/participants.csv",
+      "local_copy": "derived/includes/team_overview.md",
+      "queries": {
+        "confirmed": "SELECT * FROM participants WHERE status = 'confirmed'",
+        "by_role": "SELECT role, COUNT(*) as count FROM participants GROUP BY role"
+      }
+    },
+    "budget_items": {
+      "source": "local_csv",
+      "file": "core/data/budget_items.csv",
+      "queries": {
+        "capital": "SELECT * FROM budget_items WHERE year = 0",
+        "om_by_year": "SELECT suite, year, SUM(amount) as total FROM budget_items WHERE category = 'om' GROUP BY suite, year"
+      }
+    },
+    "spaces": {
+      "source": "local_csv",
+      "file": "core/data/spaces.csv"
+    },
+    "equipment_objectives": {
+      "source": "local_csv",
+      "file": "core/data/equipment_objectives.csv",
+      "description": "Junction table linking equipment to objectives"
+    },
+    "participant_objectives": {
+      "source": "local_csv",
+      "file": "core/data/participant_objectives.csv",
+      "description": "Junction table linking participants to objectives"
+    },
+    "suite_descriptions": {
+      "source": "local",
+      "files": ["core/suites/suite_*.md"],
+      "summaries": ["derived/includes/suite_*_description.md"]
+    }
+  },
+  "sql_views": {
+    "v_funding_summary": {
+      "description": "Suite budget totals for derived/includes/funding_summary.md",
+      "sql": "SELECT suite_number, suite_name, SUM(total_cost) as cfi_request FROM equipment WHERE status = 'confirmed' GROUP BY suite_number, suite_name ORDER BY suite_number"
+    },
+    "v_alignment_gaps": {
+      "description": "Objectives without equipment or participants",
+      "sql": "SELECT o.* FROM objectives o LEFT JOIN equipment_objectives eo ON o.id = eo.objective_id WHERE eo.equipment_id IS NULL"
+    },
+    "v_orphaned_equipment": {
+      "description": "Equipment not linked to any objective",
+      "sql": "SELECT e.* FROM equipment e LEFT JOIN equipment_objectives eo ON e.id = eo.equipment_id WHERE eo.objective_id IS NULL"
+    },
+    "v_objective_coverage": {
+      "description": "Equipment count per objective",
+      "sql": "SELECT o.objective_number, o.title, COUNT(eo.equipment_id) as equipment_count FROM objectives o LEFT JOIN equipment_objectives eo ON o.id = eo.objective_id GROUP BY o.id, o.objective_number, o.title"
+    },
+    "v_renovation_costs": {
+      "description": "Renovation costs by suite",
+      "sql": "SELECT suite_number, suite_name, SUM(total_cost) as renovation_total FROM equipment WHERE item_category = 'renovation' GROUP BY suite_number, suite_name"
+    }
+  },
+  "propagation_rules": [
+    {
+      "id": "suite_1_to_include",
+      "description": "Suite 1 document changes should update corresponding includes description",
+      "from": "core/suites/suite_1_clinical_trials_infrastructure.md",
+      "to": "derived/includes/suite_1_description.md",
+      "direction": "manual",
+      "notification": true
+    },
+    {
+      "id": "suite_2_to_include",
+      "description": "Suite 2 document changes should update corresponding includes description",
+      "from": "core/suites/suite_2_living_biorepository.md",
+      "to": "derived/includes/suite_2_description.md",
+      "direction": "manual",
+      "notification": true
+    },
+    {
+      "id": "suite_3_to_include",
+      "description": "Suite 3 document changes should update corresponding includes description",
+      "from": "core/suites/suite_3_translational_science.md",
+      "to": "derived/includes/suite_3_description.md",
+      "direction": "manual",
+      "notification": true
+    },
+    {
+      "id": "suite_4_to_include",
+      "description": "Suite 4 document changes should update corresponding includes description",
+      "from": "core/suites/suite_4_data_platform.md",
+      "to": "derived/includes/suite_4_description.md",
+      "direction": "manual",
+      "notification": true
+    },
+    {
+      "id": "suite_5_to_include",
+      "description": "Suite 5 document changes should update corresponding includes description",
+      "from": "core/suites/suite_5_trial_innovation.md",
+      "to": "derived/includes/suite_5_description.md",
+      "direction": "manual",
+      "notification": true
+    },
+    {
+      "id": "csv_to_objectives",
+      "description": "objectives.csv is source of truth for derived/includes/objectives.md",
+      "from": "core/data/objectives.csv",
+      "to": "derived/includes/objectives.md",
+      "direction": "manual",
+      "notification": true,
+      "query": "SELECT * FROM objectives ORDER BY objective_number"
+    },
+    {
+      "id": "csv_to_funding",
+      "description": "equipment.csv totals are source of truth for derived/includes/funding_summary.md",
+      "from": "core/data/equipment.csv",
+      "to": "derived/includes/funding_summary.md",
+      "direction": "manual",
+      "notification": true,
+      "query": "v_funding_summary"
+    },
+    {
+      "id": "master_to_why_now",
+      "description": "MASTER.md Section 2.1 is source of truth for derived/includes/why_now.md",
+      "from": "core/MASTER.md",
+      "to": "derived/includes/why_now.md",
+      "direction": "manual",
+      "notification": true
+    },
+    {
+      "id": "master_to_why_ualberta",
+      "description": "MASTER.md Section 2.2 is source of truth for derived/includes/why_ualberta.md",
+      "from": "core/MASTER.md",
+      "to": "derived/includes/why_ualberta.md",
+      "direction": "manual",
+      "notification": true
+    },
+    {
+      "id": "master_to_benefits",
+      "description": "MASTER.md Section 5 is source of truth for derived/includes/benefits_summary.md",
+      "from": "core/MASTER.md",
+      "to": "derived/includes/benefits_summary.md",
+      "direction": "manual",
+      "notification": true
+    },
+    {
+      "id": "master_to_rta",
+      "description": "RTA strategic sections should align with MASTER.md (manual sync)",
+      "from": "core/MASTER.md",
+      "to": "derived/rta/rta.md",
+      "direction": "manual",
+      "notification": true,
+      "notes": "RTA is constrained by page limits; MASTER contains full development"
+    }
+  ],
+  "document_dependencies": {
+    "core/MASTER.md": {
+      "description": "Master coordinating document - source of all strategic content",
+      "data_sources": ["core/data/objectives.csv", "core/data/participants.csv"],
+      "generates": [
+        "derived/includes/why_now.md",
+        "derived/includes/why_ualberta.md",
+        "derived/includes/benefits_summary.md"
+      ]
+    },
+    "derived/rta/rta.md": {
+      "includes": [
+        "derived/includes/project_overview.md",
+        "derived/includes/objectives.md",
+        "derived/includes/funding_summary.md",
+        "derived/includes/suite_1_description.md",
+        "derived/includes/suite_2_description.md",
+        "derived/includes/suite_3_description.md",
+        "derived/includes/suite_4_description.md",
+        "derived/includes/suite_5_description.md"
+      ],
+      "references": ["references.bib"],
+      "data_sources": ["core/data/equipment.csv", "core/data/participants.csv"],
+      "aligns_with": "core/MASTER.md"
+    },
+    "derived/briefs/executive_brief.md": {
+      "includes": [
+        "derived/includes/project_overview.md",
+        "derived/includes/objectives.md",
+        "derived/includes/funding_summary.md",
+        "derived/includes/why_now.md",
+        "derived/includes/why_ualberta.md",
+        "derived/includes/benefits_summary.md"
+      ],
+      "references": ["references.bib"]
+    },
+    "derived/briefs/suite_1_clinical_trials.md": {
+      "includes": ["derived/includes/objectives.md", "derived/includes/suite_1_description.md"],
+      "derived_from": ["core/suites/suite_1_clinical_trials_infrastructure.md"]
+    },
+    "derived/briefs/suite_2_biospecimen.md": {
+      "includes": ["derived/includes/objectives.md", "derived/includes/suite_2_description.md"],
+      "derived_from": ["core/suites/suite_2_living_biorepository.md"]
+    },
+    "derived/briefs/suite_3_translational.md": {
+      "includes": ["derived/includes/objectives.md", "derived/includes/suite_3_description.md"],
+      "derived_from": ["core/suites/suite_3_translational_science.md"]
+    },
+    "derived/briefs/suite_4_data_platform.md": {
+      "includes": ["derived/includes/objectives.md", "derived/includes/suite_4_description.md"],
+      "derived_from": ["core/suites/suite_4_data_platform.md"]
+    },
+    "derived/briefs/suite_5_innovation.md": {
+      "includes": ["derived/includes/objectives.md", "derived/includes/suite_5_description.md"],
+      "derived_from": ["core/suites/suite_5_trial_innovation.md"]
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "project": "cfi-ctap",
+  "hedgedoc_url": "http://localhost:3000",
+  "created": "2025-12-30T05:02:31.818924Z",
+  "updated": "2026-01-11T00:00:00Z",
+  "documents": {
+    "core/MASTER.md": {
+      "note_id": "ROLIM-SSQVGQLi2VHx3LKA",
+      "url": "http://localhost:3000/ROLIM-SSQVGQLi2VHx3LKA",
+      "local_path": "core/MASTER.md",
+      "last_push": "2025-12-30T05:02:31.875818Z",
+      "last_pull": "2025-12-30T05:10:14.799451Z",
+      "hedgedoc_modified": "2025-12-30T05:02:31.875827Z",
+      "local_hash": "52bf7c809201a86d005697aea17d0d004af75290ea73073d75106a7a4286b445"
+    },
+    "derived/rta/rta.md": {
+      "note_id": "olKl0fA8T2a-bJFliP0LGA",
+      "url": "http://localhost:3000/olKl0fA8T2a-bJFliP0LGA",
+      "local_path": "derived/rta/rta.md",
+      "last_push": "2025-12-30T05:02:38.682668Z",
+      "last_pull": "2025-12-30T05:10:14.808938Z",
+      "hedgedoc_modified": "2025-12-30T05:02:38.682915Z",
+      "local_hash": "49b48f38a5a7f1e4bfdc61f4a2a083680f17e28939426e35702103f8d3168573"
+    },
+    "core/suites/suite_1_clinical_trials_infrastructure.md": {
+      "note_id": "s1CRkr0zS86PLFFYRG2U_g",
+      "url": "http://localhost:3000/s1CRkr0zS86PLFFYRG2U_g",
+      "local_path": "core/suites/suite_1_clinical_trials_infrastructure.md",
+      "last_push": "2025-12-30T05:02:38.701440Z",
+      "last_pull": "2025-12-30T05:10:14.816025Z",
+      "hedgedoc_modified": "2025-12-30T05:02:38.701449Z",
+      "local_hash": "cfef35fd8d37bd6b6278f01afe5fd2bf10cd151b6485e43bf12102306f0a8395"
+    },
+    "core/suites/suite_2_living_biorepository.md": {
+      "note_id": "FIIjjwEEToOMLj2hJKthDQ",
+      "url": "http://localhost:3000/FIIjjwEEToOMLj2hJKthDQ",
+      "local_path": "core/suites/suite_2_living_biorepository.md",
+      "last_push": "2025-12-30T05:02:38.716620Z",
+      "last_pull": "2025-12-30T05:10:14.823300Z",
+      "hedgedoc_modified": "2025-12-30T05:02:38.716627Z",
+      "local_hash": "05f8273efb3ad32e4cfd0fc8867837e7028fe5644437f30f8e1dbbef2f75fd9c"
+    },
+    "core/suites/suite_3_translational_science.md": {
+      "note_id": "oIEXwH59SXW9V-1HxZcIaA",
+      "url": "http://localhost:3000/oIEXwH59SXW9V-1HxZcIaA",
+      "local_path": "core/suites/suite_3_translational_science.md",
+      "last_push": "2025-12-30T05:02:38.723429Z",
+      "last_pull": "2025-12-30T05:10:14.828114Z",
+      "hedgedoc_modified": "2025-12-30T05:02:38.723437Z",
+      "local_hash": "9bf00ce42739508982e29131c146d2db219feecd0538e26521f9e095b348064d"
+    },
+    "core/suites/suite_4_data_platform.md": {
+      "note_id": "PX8hMaf7RmCLEjqq0UurIg",
+      "url": "http://localhost:3000/PX8hMaf7RmCLEjqq0UurIg",
+      "local_path": "core/suites/suite_4_data_platform.md",
+      "last_push": "2025-12-30T05:02:38.745172Z",
+      "last_pull": "2025-12-30T05:10:14.833975Z",
+      "hedgedoc_modified": "2025-12-30T05:02:38.745179Z",
+      "local_hash": "53ce8163123272be1314bfbe9ef9bee75bd9331618b6a6eb06b58d4779f872ca"
+    },
+    "core/suites/suite_5_trial_innovation.md": {
+      "note_id": "KxmiXV7VQzCQxQGYijmhtQ",
+      "url": "http://localhost:3000/KxmiXV7VQzCQxQGYijmhtQ",
+      "local_path": "core/suites/suite_5_trial_innovation.md",
+      "last_push": "2025-12-30T05:02:38.754150Z",
+      "last_pull": "2025-12-30T05:10:14.839904Z",
+      "hedgedoc_modified": "2025-12-30T05:02:38.754157Z",
+      "local_hash": "80f4bc063f4d9bcf9bddaf1b3590d4a2af3ad66f1d502ddb95b0255068c48ae8"
+    }
+  }
+}

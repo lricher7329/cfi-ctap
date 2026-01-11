@@ -1,0 +1,72 @@
+# Grant Project Context Configuration
+# Migrated to v2.0 schema on 2025-12-28
+# Base 6-layer schema - agency-specific fields in cfi-config.yaml
+
+project: cfi-ctap
+project_title: Clinical Trials Acceleration Platform (CTAP)
+scientific:
+  title: Clinical Trials Acceleration Platform (CTAP)
+  short_title: null
+  lay_abstract:
+    text: ''
+    word_limit: 250
+  scientific_abstract:
+    text: ''
+    word_limit: 500
+  objectives: []
+  research_plan_file: proposal/research_plan.md
+team:
+  pi:
+    name: ''
+    role: Principal Investigator
+    institution: University of Alberta
+  co_investigators: []
+  collaborators: []
+  institution: University of Alberta
+  department: null
+  facilities: []
+  cv_directory: reference/team/cvs/
+  team_overview_file: derived/includes/team_overview.md
+budget:
+  total_requested: 0.0
+  currency: CAD
+  categories: []
+  in_kind_total: 0.0
+  in_kind_sources: []
+  budget_spreadsheet: derived/budget/budget.xlsx
+  justification_file: derived/budget/budget_justification.md
+compliance:
+  ethics:
+    status: pending
+  edi_statement_file: null
+  sgba_plus: false
+  indigenous_engagement: false
+  data_management_plan_file: null
+partnerships:
+  partners: []
+  letters_directory: reference/team/letters/
+lifecycle:
+  schema_version: '2.0'
+  version: '1.0'
+  status: draft
+  agency: cfi
+  competition: null
+  deadline: null
+  submissions: []
+  git_tag: null
+google_workspace:
+  drive_folder: writing_projects/cfi-ctap
+  sheets:
+    objectives:
+      sheet_id: '1toKJmShkKehSk9e8p28Mp4wcAkIM8erWdfgVsauudoI'
+      tab: Objectives
+    budget:
+      sheet_id: '1toKJmShkKehSk9e8p28Mp4wcAkIM8erWdfgVsauudoI'
+      tab: Budget
+    team:
+      sheet_id: '1toKJmShkKehSk9e8p28Mp4wcAkIM8erWdfgVsauudoI'
+      tab: Team
+    actions:
+      sheet_id: '1toKJmShkKehSk9e8p28Mp4wcAkIM8erWdfgVsauudoI'
+      tab: Actions
+  documents: {}

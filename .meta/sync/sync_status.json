@@ -1,0 +1,97 @@
+{
+  "project": "cfi-ctap",
+  "last_check": "2025-12-24T00:00:00Z",
+  "git_head": "b43a7aa",
+  "documents": {
+    "suites/suite_1_clinical_trials_infrastructure.md": {
+      "git_hash": "b43a7aa",
+      "status": "current",
+      "propagates_to": ["includes/suite_1_description.md"],
+      "stale_propagations": []
+    },
+    "suites/suite_2_living_biorepository.md": {
+      "git_hash": "b43a7aa",
+      "status": "current",
+      "propagates_to": ["includes/suite_2_description.md"],
+      "stale_propagations": []
+    },
+    "suites/suite_3_translational_science.md": {
+      "git_hash": "b43a7aa",
+      "status": "current",
+      "propagates_to": ["includes/suite_3_description.md"],
+      "stale_propagations": []
+    },
+    "suites/suite_4_data_platform.md": {
+      "git_hash": "b43a7aa",
+      "status": "current",
+      "propagates_to": ["includes/suite_4_description.md"],
+      "stale_propagations": []
+    },
+    "suites/suite_5_trial_innovation.md": {
+      "git_hash": "b43a7aa",
+      "status": "current",
+      "propagates_to": ["includes/suite_5_description.md"],
+      "stale_propagations": []
+    },
+    "rta/rta.md": {
+      "git_hash": "b43a7aa",
+      "status": "current",
+      "propagates_to": [],
+      "stale_propagations": []
+    }
+  },
+  "includes_status": {
+    "project_overview.md": {
+      "status": "current",
+      "source": "rta/rta.md",
+      "used_by": ["briefs/executive_brief.md"]
+    },
+    "objectives.md": {
+      "status": "current",
+      "source": "google_sheets:Objectives",
+      "used_by": ["rta/rta.md", "briefs/executive_brief.md", "briefs/suite_1_clinical_trials.md", "briefs/suite_2_biospecimen.md", "briefs/suite_3_translational.md", "briefs/suite_4_data_platform.md", "briefs/suite_5_innovation.md"]
+    },
+    "funding_summary.md": {
+      "status": "current",
+      "source": "google_sheets:Equipment",
+      "used_by": ["briefs/executive_brief.md"]
+    },
+    "team_overview.md": {
+      "status": "current",
+      "source": "google_sheets:Participants",
+      "used_by": ["briefs/executive_brief.md"]
+    },
+    "suite_1_description.md": {
+      "status": "current",
+      "source": "suites/suite_1_clinical_trials_infrastructure.md",
+      "used_by": ["rta/rta.md", "briefs/suite_1_clinical_trials.md"]
+    },
+    "suite_2_description.md": {
+      "status": "current",
+      "source": "suites/suite_2_living_biorepository.md",
+      "used_by": ["rta/rta.md", "briefs/suite_2_biospecimen.md"]
+    },
+    "suite_3_description.md": {
+      "status": "current",
+      "source": "suites/suite_3_translational_science.md",
+      "used_by": ["rta/rta.md", "briefs/suite_3_translational.md"]
+    },
+    "suite_4_description.md": {
+      "status": "current",
+      "source": "suites/suite_4_data_platform.md",
+      "used_by": ["rta/rta.md", "briefs/suite_4_data_platform.md"]
+    },
+    "suite_5_description.md": {
+      "status": "current",
+      "source": "suites/suite_5_trial_innovation.md",
+      "used_by": ["rta/rta.md", "briefs/suite_5_innovation.md"]
+    }
+  },
+  "summary": {
+    "total_documents": 6,
+    "current": 6,
+    "stale": 0,
+    "modified_sincesync": 0,
+    "pendingideas": 0
+  }
+}

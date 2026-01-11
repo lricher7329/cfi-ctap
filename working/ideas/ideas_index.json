@@ -1,0 +1,733 @@
+{
+  "project": "cfi-ctap",
+  "created": "2025-12-24T00:00:00Z",
+  "updated": "2026-01-08T00:00:00Z",
+  "ideas": [
+    {
+      "id": "2025-12-24_001",
+      "type": "text",
+      "title": "Add regulatory compliance matrix for NIST CSF 2.0 alignment",
+      "status": "incorporated",
+      "priority": "high",
+      "created": "2025-12-24T18:02:22Z",
+      "reviewed": "2025-12-25T14:00:00Z",
+      "incorporated": "2025-12-25T16:00:00Z",
+      "incorporated_in": ["suites/suite_4_data_platform.md", "includes/suite_4_description.md", "briefs/suite_4_data_platform.md", "rta/rta.md"],
+      "links": {
+        "documents": ["suites/suite_4_data_platform.md"],
+        "objectives": [5],
+        "suites": [4]
+      },
+      "file": "text/2025-12-24_001.md"
+    },
+    {
+      "id": "2025-12-24_002",
+      "type": "text",
+      "title": "VITAL/GEMINI already funding OMOP ETL work - describe as already funded",
+      "status": "incorporated",
+      "priority": "high",
+      "created": "2025-12-24T18:05:47Z",
+      "reviewed": "2025-12-25T14:00:00Z",
+      "incorporated": "2025-12-25T16:00:00Z",
+      "incorporated_in": ["suites/suite_4_data_platform.md", "includes/suite_4_description.md", "briefs/suite_4_data_platform.md", "rta/rta.md"],
+      "links": {
+        "documents": ["suites/suite_4_data_platform.md"],
+        "objectives": [6],
+        "suites": [4]
+      },
+      "file": "text/2025-12-24_002.md"
+    },
+    {
+      "id": "2025-12-24_003",
+      "type": "text",
+      "title": "Michael Chiu CAR-T/ACTM pipeline - existing translational success",
+      "status": "incorporated",
+      "priority": "high",
+      "created": "2025-12-24T18:09:40Z",
+      "reviewed": "2025-12-28T00:00:00Z",
+      "incorporated": "2025-12-28T00:00:00Z",
+      "incorporated_in": ["suites/suite_2_living_biorepository.md", "includes/suite_2_description.md", "briefs/suite_2_biospecimen.md", "rta/rta.md"],
+      "links": {
+        "documents": ["suites/suite_2_living_biorepository.md"],
+        "objectives": [4],
+        "suites": [2]
+      },
+      "file": "text/2025-12-24_003.md"
+    },
+    {
+      "id": "2025-12-24_004",
+      "type": "text",
+      "title": "Challenge trial unit needs research - vaccine program & Houghton",
+      "status": "incorporated",
+      "priority": "high",
+      "created": "2025-12-24T18:12:50Z",
+      "reviewed": "2025-12-24T19:30:00Z",
+      "incorporated": "2025-12-25T01:10:00Z",
+      "incorporated_in": ["suites/suite_1_clinical_trials_infrastructure.md", "rta/rta.md", "briefs/suite_1_brief.md", "includes/suite_1_description.md"],
+      "links": {
+        "documents": ["suites/suite_1_clinical_trials_infrastructure.md"],
+        "objectives": [1, 2],
+        "suites": [1]
+      },
+      "file": "text/2025-12-24_004.md"
+    },
+    {
+      "id": "2025-12-24_005",
+      "type": "text",
+      "title": "Rare disease clinical trials unit - needs research & governance",
+      "status": "incorporated",
+      "priority": "high",
+      "created": "2025-12-24T18:16:28Z",
+      "reviewed": "2025-12-24T20:00:00Z",
+      "incorporated": "2025-12-25T01:15:00Z",
+      "incorporated_in": ["suites/suite_1_clinical_trials_infrastructure.md", "rta/rta.md", "briefs/suite_1_brief.md", "includes/suite_1_description.md"],
+      "links": {
+        "documents": ["suites/suite_1_clinical_trials_infrastructure.md"],
+        "objectives": [1, 3],
+        "suites": [1]
+      },
+      "file": "text/2025-12-24_005.md"
+    },
+    {
+      "id": "2025-12-24_006",
+      "type": "text",
+      "title": "Existing NACTRC CIU capabilities - gap analysis and Challenge Unit integration",
+      "status": "incorporated",
+      "priority": "high",
+      "created": "2025-12-24T21:30:00Z",
+      "reviewed": "2025-12-24T22:45:00Z",
+      "incorporated": "2025-12-25T01:20:00Z",
+      "incorporated_in": ["suites/suite_1_clinical_trials_infrastructure.md"],
+      "links": {
+        "documents": ["suites/suite_1_clinical_trials_infrastructure.md"],
+        "objectives": [1, 2, 3],
+        "suites": [1]
+      },
+      "file": "text/2025-12-24_006.md"
+    },
+    {
+      "id": "2025-12-24_007",
+      "type": "text",
+      "title": "ADI Clinical Research Unit integration and Challenge Unit siting strategy",
+      "status": "incorporated",
+      "priority": "high",
+      "created": "2025-12-24T22:00:00Z",
+      "reviewed": "2025-12-24T22:45:00Z",
+      "incorporated": "2025-12-25T01:25:00Z",
+      "incorporated_in": ["suites/suite_1_clinical_trials_infrastructure.md"],
+      "links": {
+        "documents": ["suites/suite_1_clinical_trials_infrastructure.md"],
+        "objectives": [1, 2, 3],
+        "suites": [1]
+      },
+      "file": "text/2025-12-24_007.md"
+    },
+    {
+      "id": "2025-12-25_001",
+      "type": "text",
+      "title": "Biobank/biorepository integration: IsletCore model and new use cases",
+      "status": "new",
+      "priority": "high",
+      "created": "2025-12-25T00:00:00Z",
+      "links": {
+        "documents": ["suites/suite_2_living_biorepository.md"],
+        "objectives": [4],
+        "suites": [2]
+      },
+      "file": "text/2025-12-25_001.md"
+    },
+    {
+      "id": "2025-12-25_002",
+      "type": "text",
+      "title": "DHDP integration opportunity: federated learning and pan-Canadian AI",
+      "status": "incorporated",
+      "priority": "high",
+      "created": "2025-12-25T00:15:00Z",
+      "reviewed": "2025-12-25T14:00:00Z",
+      "incorporated": "2025-12-25T16:00:00Z",
+      "incorporated_in": ["suites/suite_4_data_platform.md", "includes/suite_4_description.md", "briefs/suite_4_data_platform.md", "rta/rta.md"],
+      "links": {
+        "documents": ["suites/suite_4_data_platform.md"],
+        "objectives": [5, 6],
+        "suites": [4]
+      },
+      "file": "text/2025-12-25_002.md"
+    },
+    {
+      "id": "2025-12-25_003",
+      "type": "text",
+      "title": "Connect1d as core Suite 5 use case: decentralized T1D trials",
+      "status": "incorporated",
+      "priority": "high",
+      "created": "2025-12-25T00:30:00Z",
+      "reviewed": "2025-12-25T14:00:00Z",
+      "incorporated": "2025-12-25T16:00:00Z",
+      "incorporated_in": ["suites/suite_4_data_platform.md", "includes/suite_4_description.md", "briefs/suite_4_data_platform.md", "rta/rta.md"],
+      "links": {
+        "documents": ["suites/suite_5_trial_innovation.md", "suites/suite_4_data_platform.md"],
+        "objectives": [2, 5, 7],
+        "suites": [4, 5]
+      },
+      "file": "text/2025-12-25_003.md"
+    },
+    {
+      "id": "2025-12-25_004",
+      "type": "text",
+      "title": "Peter Light/Baghelani non-invasive glucose sensor: infrastructure & trials",
+      "status": "incorporated",
+      "priority": "high",
+      "created": "2025-12-25T00:45:00Z",
+      "reviewed": "2025-12-25T23:30:00Z",
+      "incorporated": "2025-12-25T23:45:00Z",
+      "incorporated_in": ["suites/suite_5_trial_innovation.md", "suites/suite_4_data_platform.md", "includes/suite_5_description.md"],
+      "links": {
+        "documents": ["suites/suite_5_trial_innovation.md", "suites/suite_4_data_platform.md"],
+        "objectives": [4, 7],
+        "suites": [4, 5]
+      },
+      "file": "text/2025-12-25_004.md"
+    },
+    {
+      "id": "2025-12-25_005",
+      "type": "text",
+      "title": "Digital Health ecosystem: sensors, devices, and clinical validation hub",
+      "status": "incorporated",
+      "priority": "high",
+      "created": "2025-12-25T00:50:00Z",
+      "reviewed": "2025-12-25T23:30:00Z",
+      "incorporated": "2025-12-25T23:45:00Z",
+      "incorporated_in": ["suites/suite_5_trial_innovation.md", "suites/suite_4_data_platform.md", "includes/suite_5_description.md", "includes/suite_4_description.md"],
+      "links": {
+        "documents": ["suites/suite_5_trial_innovation.md", "suites/suite_4_data_platform.md"],
+        "objectives": [4, 7],
+        "suites": [4, 5]
+      },
+      "file": "text/2025-12-25_005.md"
+    },
+    {
+      "id": "2025-12-25_006",
+      "type": "text",
+      "title": "BioBank software modernization: caTissue migration, dynamic consent, and TRE integration",
+      "status": "incorporated",
+      "priority": "high",
+      "created": "2025-12-25T02:00:00Z",
+      "reviewed": "2025-12-25T14:00:00Z",
+      "incorporated": "2025-12-25T16:00:00Z",
+      "incorporated_in": ["suites/suite_4_data_platform.md", "suites/suite_2_living_biorepository.md", "includes/suite_4_description.md", "briefs/suite_4_data_platform.md"],
+      "links": {
+        "documents": ["suites/suite_2_living_biorepository.md", "background/CBRF2_2023_00132_UAlberta_Biorepository_Summary.md", "background/CBRF2_2023_00132_Data_Infrastructure_Summary.md", "background/UAlberta_AWS_TRE_Assessment.md"],
+        "objectives": [4, 5, 6],
+        "suites": [2, 4]
+      },
+      "file": "text/2025-12-25_006.md"
+    },
+    {
+      "id": "2025-12-25_007",
+      "type": "text",
+      "title": "AWS TRE Assessment integration into Suite 4 Data Platform",
+      "status": "incorporated",
+      "priority": "high",
+      "created": "2025-12-25T02:30:00Z",
+      "reviewed": "2025-12-25T14:00:00Z",
+      "incorporated": "2025-12-25T16:00:00Z",
+      "incorporated_in": ["suites/suite_4_data_platform.md", "includes/suite_4_description.md", "briefs/suite_4_data_platform.md", "rta/rta.md"],
+      "links": {
+        "documents": ["suites/suite_4_data_platform.md", "background/UAlberta_AWS_TRE_Assessment.md"],
+        "objectives": [5, 6],
+        "suites": [4]
+      },
+      "file": "text/2025-12-25_007.md"
+    },
+    {
+      "id": "2025-12-25_008",
+      "type": "text",
+      "title": "Challenge unit space requirements - quarantine, living quarters, amenities",
+      "status": "incorporated",
+      "priority": "high",
+      "created": "2025-12-25T22:30:00Z",
+      "reviewed": "2025-12-25T23:00:00Z",
+      "incorporated": "2025-12-25T23:15:00Z",
+      "incorporated_in": ["suites/suite_1_clinical_trials_infrastructure.md"],
+      "links": {
+        "documents": ["suites/suite_1_clinical_trials_infrastructure.md"],
+        "objectives": [1, 2],
+        "suites": [1]
+      },
+      "file": "text/2025-12-25_008.md"
+    },
+    {
+      "id": "2025-12-25_009",
+      "type": "text",
+      "title": "Mohamed Abdalla de-identification expertise for TRE and CRAIDL",
+      "status": "new",
+      "priority": "high",
+      "created": "2025-12-25T23:55:00Z",
+      "links": {
+        "documents": ["suites/suite_4_data_platform.md", "suites/suite_1_clinical_trials_infrastructure.md"],
+        "objectives": [5, 6],
+        "suites": [1, 4]
+      },
+      "file": "text/2025-12-25_009.md"
+    },
+    {
+      "id": "2025-12-25_010",
+      "type": "text",
+      "title": "BeTheCure.ca semantic search for improved trial discovery and EDI",
+      "status": "new",
+      "priority": "high",
+      "created": "2025-12-25T16:30:00Z",
+      "links": {
+        "documents": ["suites/suite_1_clinical_trials_infrastructure.md", "suites/suite_4_data_platform.md"],
+        "objectives": [1, 7],
+        "suites": [1, 4]
+      },
+      "file": "text/2025-12-25_010.md"
+    },
+    {
+      "id": "2025-12-29_001",
+      "type": "research",
+      "title": "AI Scribe integration for AI-first clinical trial workflow",
+      "status": "incorporated",
+      "priority": "high",
+      "created": "2025-12-29T23:45:00Z",
+      "reviewed": "2025-12-29T23:55:00Z",
+      "incorporated": "2025-12-30T00:15:00Z",
+      "incorporated_in": ["suites/suite_4_data_platform.md", "suites/suite_5_trial_innovation.md", "rta/rta.md", "includes/suite_4_description.md", "includes/suite_5_description.md"],
+      "links": {
+        "documents": ["suites/suite_4_data_platform.md", "suites/suite_5_trial_innovation.md"],
+        "objectives": [5, 6, 7],
+        "suites": [4, 5]
+      },
+      "file": "text/2025-12-29_001.md"
+    },
+    {
+      "id": "2025-12-30_001",
+      "type": "research",
+      "title": "TRE value proposition integration (GEMINI/Chartwatch/learning health system)",
+      "status": "incorporated",
+      "priority": "high",
+      "created": "2025-12-30T00:30:00Z",
+      "reviewed": "2025-12-30T00:30:00Z",
+      "incorporated": "2025-12-30T01:00:00Z",
+      "incorporated_in": ["rta/rta.md", "suites/suite_4_data_platform.md", "briefs/suite_4_data_platform.md", "briefs/executive_brief.md", "includes/suite_4_description.md"],
+      "links": {
+        "documents": ["rta/rta.md", "suites/suite_4_data_platform.md"],
+        "objectives": [4, 5, 6],
+        "suites": [4]
+      },
+      "file": "text/2025-12-30_001.md"
+    },
+    {
+      "id": "2025-12-30_002",
+      "type": "research",
+      "title": "Canadian Regulatory Framework Integration (Local Compliance, International Harmonization)",
+      "status": "incorporated",
+      "priority": "high",
+      "created": "2025-12-30T02:00:00Z",
+      "reviewed": "2025-12-30T02:00:00Z",
+      "incorporated": "2025-12-30T03:00:00Z",
+      "incorporated_in": ["suites/suite_4_data_platform.md", "suites/suite_2_living_biorepository.md", "rta/rta.md", "briefs/suite_4_data_platform.md", "briefs/executive_brief.md", "includes/suite_4_description.md"],
+      "links": {
+        "documents": ["suites/suite_4_data_platform.md", "suites/suite_2_living_biorepository.md", "rta/rta.md"],
+        "objectives": [4, 5, 6],
+        "suites": [2, 4]
+      },
+      "file": "text/2025-12-30_002.md"
+    },
+    {
+      "id": "2025-12-30_003",
+      "type": "research",
+      "title": "Research Security Integration (TRE & Biobanking as Compliance Engines)",
+      "status": "incorporated",
+      "priority": "high",
+      "created": "2025-12-30T04:00:00Z",
+      "reviewed": "2025-12-30T04:00:00Z",
+      "incorporated": "2025-12-30T05:00:00Z",
+      "incorporated_in": ["rta/rta.md", "suites/suite_4_data_platform.md", "suites/suite_2_living_biorepository.md", "includes/suite_4_description.md", "includes/suite_2_description.md", "briefs/executive_brief.md"],
+      "links": {
+        "documents": ["rta/rta.md", "suites/suite_4_data_platform.md", "suites/suite_2_living_biorepository.md"],
+        "objectives": [4, 5, 6],
+        "suites": [2, 4]
+      },
+      "file": "text/2025-12-30_003.md"
+    },
+    {
+      "id": "2025-12-30_005",
+      "type": "text",
+      "title": "Add Lazar Atanackovic to the team - AI/biology intersection expertise",
+      "status": "incorporated",
+      "priority": "high",
+      "created": "2025-12-30T05:35:00Z",
+      "reviewed": "2025-12-29T00:00:00Z",
+      "incorporated": "2025-12-29T00:00:00Z",
+      "incorporated_in": ["rta/rta.md", "suites/suite_4_data_platform.md", "includes/team_overview.md"],
+      "links": {
+        "documents": ["suites/suite_4_data_platform.md", "suites/suite_5_trial_innovation.md"],
+        "objectives": [5, 6, 7],
+        "suites": [4, 5]
+      },
+      "file": "text/2025-12-30_005.md"
+    },
+    {
+      "id": "2025-12-30_006",
+      "type": "text",
+      "title": "Add Amber Simpson to the team - CRC in Biomedical Computing & Informatics",
+      "status": "incorporated",
+      "priority": "high",
+      "created": "2025-12-30T05:40:00Z",
+      "reviewed": "2025-12-30T06:00:00Z",
+      "incorporated": "2025-12-30T06:30:00Z",
+      "incorporated_in": ["suites/suite_4_data_platform.md", "suites/suite_3_translational_science.md", "suites/suite_2_living_biorepository.md", "rta/rta.md"],
+      "links": {
+        "documents": ["suites/suite_4_data_platform.md", "suites/suite_3_translational_science.md", "suites/suite_2_living_biorepository.md"],
+        "objectives": [4, 5, 6],
+        "suites": [2, 3, 4]
+      },
+      "file": "text/2025-12-30_006.md"
+    },
+    {
+      "id": "2025-12-30_007",
+      "type": "research",
+      "title": "AI Drug Discovery Integration: Single-Cell Stack, Drug Discovery Team, QSP Loop",
+      "status": "incorporated",
+      "priority": "high",
+      "created": "2025-12-30T06:30:00Z",
+      "reviewed": "2025-12-30T06:30:00Z",
+      "incorporated": "2025-12-30T06:30:00Z",
+      "incorporated_in": ["suites/suite_3_translational_science.md", "suites/suite_4_data_platform.md", "rta/rta.md", "includes/team_overview.md"],
+      "links": {
+        "documents": ["suites/suite_3_translational_science.md", "suites/suite_4_data_platform.md", "rta/rta.md"],
+        "objectives": [3, 4, 5],
+        "suites": [3, 4]
+      },
+      "file": "text/2025-12-30_007.md"
+    },
+    {
+      "id": "2026-01-06_001",
+      "type": "text",
+      "title": "Need to include Martin Fergusson-Pell",
+      "status": "new",
+      "priority": "medium",
+      "created": "2026-01-06T00:00:00Z",
+      "links": {
+        "documents": [],
+        "objectives": [],
+        "suites": []
+      },
+      "file": "text/2026-01-06_001.md"
+    },
+    {
+      "id": "2026-01-06_002",
+      "type": "text",
+      "title": "Add reference to SMART Institute Rehabilitation Innovations in Suite 1",
+      "status": "incorporated",
+      "priority": "medium",
+      "created": "2026-01-06T00:00:00Z",
+      "reviewed": "2026-01-06T00:00:00Z",
+      "incorporated": "2026-01-06T00:00:00Z",
+      "incorporated_in": ["suites/suite_1_clinical_trials_infrastructure.md"],
+      "links": {
+        "documents": ["suites/suite_1_clinical_trials_infrastructure.md"],
+        "objectives": [],
+        "suites": [1]
+      },
+      "file": "text/2026-01-06_002.md"
+    },
+    {
+      "id": "2026-01-06_003",
+      "type": "text",
+      "title": "Clarify Pluripotent Stem Cell Core status and facility details",
+      "status": "new",
+      "priority": "medium",
+      "created": "2026-01-06T00:00:00Z",
+      "links": {
+        "documents": ["suites/suite_2_living_biorepository.md", "briefs/suite_2_biospecimen.md"],
+        "objectives": [4],
+        "suites": [2]
+      },
+      "file": "text/2026-01-06_003.md"
+    },
+    {
+      "id": "2026-01-06_004",
+      "type": "text",
+      "title": "Identify named personnel for Suite 2 key roles",
+      "status": "new",
+      "priority": "medium",
+      "created": "2026-01-06T00:00:00Z",
+      "links": {
+        "documents": ["suites/suite_2_living_biorepository.md", "briefs/suite_2_biospecimen.md"],
+        "objectives": [4],
+        "suites": [2]
+      },
+      "file": "text/2026-01-06_004.md"
+    },
+    {
+      "id": "2026-01-06_005",
+      "type": "text",
+      "title": "Update pricing data for OpenSpecimen based on current website",
+      "status": "incorporated",
+      "priority": "medium",
+      "created": "2026-01-06T00:00:00Z",
+      "reviewed": "2026-01-06T00:00:00Z",
+      "incorporated": "2026-01-06T00:00:00Z",
+      "incorporated_in": ["suites/suite_2_living_biorepository.md", "briefs/suite_2_biospecimen.md"],
+      "links": {
+        "documents": ["suites/suite_2_living_biorepository.md", "briefs/suite_2_biospecimen.md"],
+        "objectives": [4],
+        "suites": [2, 4]
+      },
+      "file": "text/2026-01-06_005.md"
+    },
+    {
+      "id": "2026-01-07_001",
+      "type": "review",
+      "title": "Suite 3: Reframe Gap-Filling Equipment as High-Throughput Clinical Instrumentation",
+      "status": "incorporated",
+      "priority": "high",
+      "created": "2026-01-07T21:16:00Z",
+      "reviewed": "2026-01-07T22:00:00Z",
+      "incorporated": "2026-01-07T22:30:00Z",
+      "incorporated_in": ["suites/suite_3_translational_science.md", "includes/suite_3_description.md"],
+      "source": "Antigravity Agent Review - January 2026",
+      "links": {
+        "documents": ["suites/suite_3_translational_science.md", "includes/suite_3_description.md"],
+        "objectives": [3, 4, 5],
+        "suites": [3]
+      },
+      "file": "text/2026-01-07_001.md"
+    },
+    {
+      "id": "2026-01-07_002",
+      "type": "review",
+      "title": "Suite 1: Explicitly Link Physical Units to AI Backbone",
+      "status": "incorporated",
+      "priority": "high",
+      "created": "2026-01-07T21:16:00Z",
+      "reviewed": "2026-01-08T00:30:00Z",
+      "incorporated": "2026-01-08T00:45:00Z",
+      "incorporated_in": ["includes/suite_1_description.md"],
+      "source": "Antigravity Agent Review - January 2026",
+      "links": {
+        "documents": ["suites/suite_1_clinical_trials_infrastructure.md", "includes/suite_1_description.md"],
+        "objectives": [1, 2, 5, 6],
+        "suites": [1]
+      },
+      "file": "text/2026-01-07_002.md"
+    },
+    {
+      "id": "2026-01-07_003",
+      "type": "review",
+      "title": "Suite 2: Emphasize Reverse Data Flow (AI-Triggered Sample Retrieval)",
+      "status": "incorporated",
+      "priority": "high",
+      "created": "2026-01-07T21:16:00Z",
+      "reviewed": "2026-01-08T01:00:00Z",
+      "incorporated": "2026-01-08T01:15:00Z",
+      "incorporated_in": ["includes/suite_2_description.md"],
+      "source": "Antigravity Agent Review - January 2026",
+      "links": {
+        "documents": ["suites/suite_2_living_biorepository.md", "includes/suite_2_description.md"],
+        "objectives": [4, 5],
+        "suites": [2]
+      },
+      "file": "text/2026-01-07_003.md"
+    },
+    {
+      "id": "2026-01-07_004",
+      "type": "review",
+      "title": "Suite 4: Strengthen AWS TRE Feasibility with Assessment Metrics",
+      "status": "incorporated",
+      "priority": "medium",
+      "created": "2026-01-07T21:16:00Z",
+      "reviewed": "2026-01-08T02:00:00Z",
+      "incorporated": "2026-01-08T02:15:00Z",
+      "incorporated_in": ["includes/suite_4_description.md"],
+      "source": "Antigravity Agent Review - January 2026",
+      "links": {
+        "documents": ["suites/suite_4_data_platform.md", "background/UAlberta_AWS_TRE_Assessment.md"],
+        "objectives": [5, 6],
+        "suites": [4]
+      },
+      "file": "text/2026-01-07_004.md"
+    },
+    {
+      "id": "2026-01-07_005",
+      "type": "review",
+      "title": "Suite 5: Tighten Digital Health Device Validation Focus",
+      "status": "incorporated",
+      "priority": "medium",
+      "created": "2026-01-07T21:16:00Z",
+      "reviewed": "2026-01-08T02:30:00Z",
+      "incorporated": "2026-01-08T02:45:00Z",
+      "incorporated_in": ["includes/suite_5_description.md"],
+      "source": "Antigravity Agent Review - January 2026",
+      "links": {
+        "documents": ["suites/suite_5_trial_innovation.md", "includes/suite_5_description.md"],
+        "objectives": [4, 7],
+        "suites": [5]
+      },
+      "file": "text/2026-01-07_005.md"
+    },
+    {
+      "id": "2026-01-07_006",
+      "type": "review",
+      "title": "MASTER.md: Strengthen Why Now Urgency with 2027 Window",
+      "status": "incorporated",
+      "priority": "high",
+      "created": "2026-01-07T21:16:00Z",
+      "reviewed": "2026-01-08T00:00:00Z",
+      "incorporated": "2026-01-08T00:15:00Z",
+      "incorporated_in": ["includes/why_now.md"],
+      "source": "Antigravity Agent Review - January 2026",
+      "links": {
+        "documents": ["MASTER.md", "includes/why_now.md"],
+        "objectives": [],
+        "suites": []
+      },
+      "file": "text/2026-01-07_006.md"
+    },
+    {
+      "id": "2026-01-07_007",
+      "type": "review",
+      "title": "MASTER.md: Add AI Regulation Risk Section with TRE as Safety Mechanism",
+      "status": "incorporated",
+      "priority": "high",
+      "created": "2026-01-07T21:16:00Z",
+      "reviewed": "2026-01-08T01:30:00Z",
+      "incorporated": "2026-01-08T01:45:00Z",
+      "incorporated_in": ["MASTER.md"],
+      "source": "Antigravity Agent Review - January 2026",
+      "links": {
+        "documents": ["MASTER.md", "suites/suite_4_data_platform.md"],
+        "objectives": [5, 6],
+        "suites": [4]
+      },
+      "file": "text/2026-01-07_007.md"
+    },
+    {
+      "id": "2026-01-07_008",
+      "type": "review",
+      "title": "CRAIDL: Strengthen Agent Maturity Differentiation",
+      "status": "incorporated",
+      "priority": "high",
+      "created": "2026-01-07T21:16:00Z",
+      "reviewed": "2026-01-07T23:00:00Z",
+      "incorporated": "2026-01-07T23:30:00Z",
+      "incorporated_in": ["MASTER.md", "includes/suite_4_description.md", "rta/rta.md"],
+      "source": "Antigravity Agent Review - January 2026",
+      "links": {
+        "documents": ["MASTER.md", "suites/suite_4_data_platform.md", "rta/rta.md"],
+        "objectives": [5],
+        "suites": [4]
+      },
+      "file": "text/2026-01-07_008.md"
+    },
+    {
+      "id": "2026-01-07_009",
+      "type": "review",
+      "title": "In Silico Agent: Ground the Digital Twin with Data Volume Requirements",
+      "status": "incorporated",
+      "priority": "medium",
+      "created": "2026-01-07T21:16:00Z",
+      "reviewed": "2026-01-08T03:00:00Z",
+      "incorporated": "2026-01-08T03:15:00Z",
+      "incorporated_in": ["MASTER.md"],
+      "source": "Antigravity Agent Review - January 2026",
+      "links": {
+        "documents": ["MASTER.md", "suites/suite_4_data_platform.md"],
+        "objectives": [5, 6],
+        "suites": [2, 4]
+      },
+      "file": "text/2026-01-07_009.md"
+    },
+    {
+      "id": "2026-01-07_010",
+      "type": "review",
+      "title": "Figures and Visuals: Ensure High-Quality Diagrams",
+      "status": "reviewed",
+      "priority": "high",
+      "created": "2026-01-07T21:16:00Z",
+      "reviewed": "2026-01-08T03:30:00Z",
+      "notes": "Reviewed existing figures. ctap-overall-preferred.png is professional quality and shows five suites, CRAIDL, budgets, and ecosystem. AWS TRE diagram is technical but adequate. Main overview figure accomplishes the 50% explanatory work goal. No immediate action needed - figures are submission-ready.",
+      "source": "Antigravity Agent Review - January 2026",
+      "links": {
+        "documents": ["figures/", "MASTER.md", "rta/rta.md"],
+        "objectives": [],
+        "suites": []
+      },
+      "file": "text/2026-01-07_010.md"
+    },
+    {
+      "id": "2026-01-07_011",
+      "type": "review",
+      "title": "Budget Alignment: Verify Equipment Lines Are Infrastructure Not Operating Costs",
+      "status": "new",
+      "priority": "high",
+      "created": "2026-01-07T21:16:00Z",
+      "source": "Antigravity Agent Review - January 2026",
+      "links": {
+        "documents": ["_data/equipment.csv", "budget/budget_justification.md"],
+        "objectives": [],
+        "suites": []
+      },
+      "file": "text/2026-01-07_011.md"
+    },
+    {
+      "id": "2026-01-07_012",
+      "type": "text",
+      "title": "Strengthen SCA/rare disease link (rare = <5 per 10,000)",
+      "status": "incorporated",
+      "priority": "medium",
+      "created": "2026-01-07T22:00:00Z",
+      "reviewed": "2026-01-07T22:30:00Z",
+      "incorporated": "2026-01-07T22:45:00Z",
+      "incorporated_in": ["suites/suite_4_data_platform.md", "includes/suite_4_description.md"],
+      "links": {
+        "documents": ["suites/suite_4_data_platform.md", "background/synthetic-control-arm/synthetic-control-arm.md"],
+        "objectives": [3, 5],
+        "suites": [4]
+      },
+      "file": "text/2026-01-07_012.md"
+    },
+    {
+      "id": "2026-01-07_013",
+      "type": "text",
+      "title": "Strengthen In Silico Assessment Agent positioning with feasibility & TRE integration",
+      "status": "incorporated",
+      "priority": "high",
+      "created": "2026-01-07T23:00:00Z",
+      "reviewed": "2026-01-07T23:30:00Z",
+      "incorporated": "2026-01-07T23:45:00Z",
+      "incorporated_in": ["suites/suite_4_data_platform.md", "includes/suite_4_description.md", "MASTER.md", "rta/rta.md"],
+      "links": {
+        "documents": ["suites/suite_4_data_platform.md", "background/data-innovations/in-silico-control-arm.md"],
+        "objectives": [1, 5],
+        "suites": [4]
+      },
+      "file": "text/2026-01-07_013.md"
+    },
+    {
+      "id": "2026-01-08_001",
+      "type": "text",
+      "title": "David Diachinsky is the Director of the Adult CIU",
+      "status": "incorporated",
+      "priority": "medium",
+      "created": "2026-01-08T00:00:00Z",
+      "reviewed": "2026-01-08T00:00:00Z",
+      "incorporated": "2026-01-08T00:00:00Z",
+      "incorporated_in": ["suites/suite_1_clinical_trials_infrastructure.md", "includes/team_overview.md", "_data/participants.csv"],
+      "links": {
+        "documents": ["suites/suite_1_clinical_trials_infrastructure.md"],
+        "objectives": [1, 2],
+        "suites": [1]
+      },
+      "file": "text/2026-01-08_001.md"
+    }
+  ],
+  "status_counts": {
+    "new": 7,
+    "reviewed": 1,
+    "incorporated": 36,
+    "archived": 0
+  }
+}

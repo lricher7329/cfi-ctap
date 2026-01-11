@@ -1,0 +1,8 @@
+roles,statuses,suites,categories,biosafety,los_status,relationships
+PI,confirmed,1,equipment,BSL-1,pending,operator
+Co-PI,pending,2,renovation,BSL-2,requested,supervisor
+Co-I,suggested,3,om,BSL-3,received,user
+Collaborator,declined,4,service,GMP,not_required,trainer
+HQP,flagged,5,personnel,Standard,,maintainer
+Staff,removed,,other,,,
+Advisor,,,,,,
