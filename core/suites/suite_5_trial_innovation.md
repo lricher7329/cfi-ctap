@@ -4,7 +4,7 @@
 
 **Budget: $1,305,000 CAD**
 
-**Version:** 1.2
+**Version:** 1.3
 **Date:** January 2026
 
 ---
@@ -12,6 +12,8 @@
 ## Executive Summary
 
 Suite 5 enables decentralized, patient-centric clinical trials through modern eConsent platforms, wearable devices, telehealth infrastructure, and participant engagement tools. This suite is critical for equity objectives—reaching Indigenous communities, rural populations, and participants who cannot travel to urban academic centres.
+
+**Pediatric Rare Disease Innovation:** Suite 5 addresses a fundamental gap in clinical trials infrastructure by implementing caregiver-first design for pediatric rare disease trials (Section 13). Where standard platforms assume adult self-management, CTAP provides family-centric operations including multi-caregiver access, pediatric eConsent/assent orchestration, home procedures logistics, and AI-augmented small-N trial designs. Integration with CRAIDL's In Silico Assessment Agent enables synthetic control arms for rare diseases where placebo controls are ethically problematic.
 
 ---
 
@@ -119,8 +121,9 @@ The following UAlberta-developed devices and platforms represent the initial val
 | Objective             | Suite 5 Contribution                            |
 | --------------------- | ----------------------------------------------- |
 | **Objective 2** | 15% Indigenous, 20% rural participation targets |
-| **Objective 5** | CRAIDL Ethics Agent → eConsent integration     |
-| **Objective 7** | HQP training in decentralized trial methods     |
+| **Objective 3** | RareKids-CAN pediatric rare disease infrastructure (Section 13) |
+| **Objective 5** | CRAIDL Ethics Agent → eConsent integration; In Silico Assessment → synthetic controls |
+| **Objective 7** | HQP training in decentralized trial methods, pediatric trial operations |
 
 ---
 
@@ -426,15 +429,265 @@ Industry-sponsored research follows enhanced governance requirements:
 
 | Program                          | Suite 5 Tools                                   |
 | -------------------------------- | ----------------------------------------------- |
-| MS Cell Therapies                | Long-term wearable monitoring post-infusion     |
+| **Chronic Complications of Infection** | **Autonomic wearables, remote monitoring, decentralized trial operations, ePRO fatigue/cognition instruments (Section 11.1)** |
 | Precision Population Health      | Decentralized recruitment, Indigenous co-design |
 | Pediatric Rare Disease           | Family-friendly eConsent, remote monitoring     |
+| Cardio-Renal-Metabolic           | BP/glucose wearables, telehealth follow-up, **Connect1D Canada integration** |
+| **Pediatric Rare Disease**       | **Caregiver Operations Hub, eConsent/Assent Orchestrator, Home Procedures Module, ObsRO outcomes, synthetic control arms (Section 13)** |
 | Cardio-Renal-Metabolic           | BP/glucose wearables, telehealth follow-up      |
 | Digital Health Device Validation | Device validation pathway, iSMART partnership   |
 
+### 11.1 Chronic Complications of Infection Program
+
+Suite 5 provides decentralized trial infrastructure for the **Chronic Complications of Infection** flagship program, which addresses Long COVID, post-viral fatigue syndromes, and neuroinflammatory conditions arising from infectious triggers.
+
+**Exemplar Trial:** Dr. Lawrence Richer's Phase 2/3 multi-site trial "[Taurine Supplementation in Long COVID](https://www.clinicaltrials.gov/study/NCT06721949)" (NCT06721949, n=300, CIHR-funded $3M) demonstrates the infrastructure requirements for this program: decentralized recruitment across Edmonton, Toronto, Montreal, and Sherbrooke; remote neurocognitive assessments; wearable monitoring for fatigue and activity levels; and integration with autonomic function testing (Suite 1, Section 1.0.5).
+
+#### Integrated Physiological Assessment Suite
+
+The Chronic Complications of Infection program leverages an **integrated suite of physiological measures** spanning autonomic, cardiovascular, cerebrovascular, and neurocognitive domains. This multi-system approach is essential for translational research—linking mechanistic biomarkers to clinical endpoints and enabling precision phenotyping of complex post-infectious syndromes.
+
+**Translational Research Architecture:**
+
+The integration of Suite 1's Autonomic Function Laboratories with Suite 5's wearable and remote monitoring creates a bidirectional translational pipeline:
+
+```
+┌─────────────────────────────────────────────────────────────────────────────┐
+│           INTEGRATED PHYSIOLOGICAL ASSESSMENT: BENCH TO BEDSIDE             │
+├─────────────────────────────────────────────────────────────────────────────┤
+│                                                                              │
+│  IN-CLINIC (Suite 1)                        REMOTE (Suite 5)                │
+│  Deep Phenotyping                           Continuous Monitoring           │
+│  ┌─────────────────────────┐               ┌─────────────────────────┐     │
+│  │ Autonomic Function:     │               │ Wearable Physiology:    │     │
+│  │ • Tilt table (POTS dx)  │◄────────────▶│ • ECG patches (HRV)     │     │
+│  │ • Finapres (baroreflex) │  Calibration │ • Ambulatory BP         │     │
+│  │ • QSART (small fiber)   │  & Validation│ • Actigraphy (activity) │     │
+│  └─────────────────────────┘               └─────────────────────────┘     │
+│              │                                        │                     │
+│              ▼                                        ▼                     │
+│  ┌─────────────────────────┐               ┌─────────────────────────┐     │
+│  │ Cerebrovascular:        │               │ Neurocognitive (ePRO):  │     │
+│  │ • TCD (flow velocity)   │◄────────────▶│ • PROMIS fatigue        │     │
+│  │ • NIRS (oxygenation)    │  Correlation │ • MoCA (cognition)      │     │
+│  │ • Autoregulation        │  Analysis    │ • PEM questionnaires    │     │
+│  └─────────────────────────┘               └─────────────────────────┘     │
+│                                                                              │
+│  ┌──────────────────────────────────────────────────────────────────────┐  │
+│  │                    Suite 4: Data Integration Hub                      │  │
+│  │  • Time-series harmonization across modalities                        │  │
+│  │  • ML-derived composite autonomic dysfunction score                   │  │
+│  │  • Correlation of wearable signals with gold-standard lab measures    │  │
+│  │  • Biomarker discovery: physiology ↔ omics integration               │  │
+│  └──────────────────────────────────────────────────────────────────────┘  │
+│                                                                              │
+└─────────────────────────────────────────────────────────────────────────────┘
+```
+
+**Physiological Domain Integration:**
+
+| Domain | In-Clinic Assessment (Suite 1) | Remote Monitoring (Suite 5) | Translational Link |
+|--------|-------------------------------|----------------------------|-------------------|
+| **Cardiovascular** | Finapres beat-to-beat BP, tilt table | BP wearables, ECG patches | Baroreflex sensitivity validation → home orthostatic tracking |
+| **Autonomic** | QSART, HRV during Valsalva | Continuous HRV, nocturnal HR | Postganglionic function → daily autonomic variability |
+| **Cerebrovascular** | TCD flow velocity, NIRS oxygenation | Cognitive ePRO batteries | Cerebral autoregulation → brain fog correlation |
+| **Sudomotor** | QSART sweat response | Symptom diaries, thermal comfort | Small fiber neuropathy staging → neuropathy progression |
+| **Fatigue/Cognition** | Formal neuropsychological testing | PROMIS fatigue, MoCA, PEM | Objective function → patient-reported outcomes |
+
+**AI-Enabled Physiological Signal Analysis:**
+
+Suite 4's CRAIDL framework processes integrated physiological data to derive composite endpoints:
+
+| Analysis | Input Signals | Output | Clinical Application |
+|----------|---------------|--------|---------------------|
+| **Composite Autonomic Dysfunction Score** | HRV, BP variability, QSART, tilt response | Single severity metric | Treatment response tracking |
+| **Cerebral Autoregulation Index** | TCD + BP time series | Dynamic autoregulation curve | Brain fog phenotyping |
+| **Post-Exertional Malaise Detector** | Actigraphy + HRV + ePRO | Activity-symptom correlation | PEM episode identification |
+| **Wearable-Lab Calibration** | Paired in-clinic + home recordings | Device-specific correction factors | Remote endpoint validation |
+
+**Living Biorepository Integration (Suite 2):**
+
+Physiological assessments are linked to biospecimen collection for mechanistic studies:
+
+| Physiological State | Biospecimen | Translational Research |
+|---------------------|-------------|----------------------|
+| During tilt (orthostatic stress) | Catecholamine panel | Sympathetic activation biomarkers |
+| Pre/post QSART | Inflammatory cytokines | Neuroinflammation correlation |
+| Fasting metabolic | Taurine, amino acid panel | Metabolic derangement in Long COVID |
+| Cognitive battery | cfDNA, neurofilament light | Neurodegeneration markers |
+
+#### MS Health Research Data Platform Foundation
+
+The Chronic Complications of Infection program builds on the **MS Health Research Data Platform**—an existing collaboration between UAlberta neurology, AHS, and AWS that forms the operational foundation of Suite 4's TRE architecture. This platform, already deployed in AWS Cloud, demonstrates the technical feasibility of CTAP's three-zone TRE model.
+
+**NLP-Enabled Outcomes Extraction:** The MS platform's AI capabilities extend to extract structured outcomes from unstructured clinical documentation:
+
+| Outcome | Source Document | Extraction Method |
+|---------|-----------------|-------------------|
+| **EDSS (Expanded Disability Status Scale)** | Neurology clinic notes | NLP entity extraction with clinical validation |
+| **Functional outcomes** | Rehabilitation assessments, nursing notes | Structured field mapping + free-text extraction |
+| **MS medications** | Pharmacy records, clinic letters | Drug name recognition with dosing context |
+| **MRI changes** | Radiology reports | NLP extraction of lesion counts, locations, activity |
+
+**AI Scribe Integration:** For prospective trials, AI Scribe captures EDSS assessments and functional outcomes during clinic visits, generating structured data directly from the neurologist-patient conversation—eliminating manual abstraction while maintaining audit trails.
+
+**Cross-Suite Data Flows:**
+
+```
+┌─────────────────────────────────────────────────────────────────────────────┐
+│              CHRONIC COMPLICATIONS OF INFECTION DATA FLOWS                    │
+├─────────────────────────────────────────────────────────────────────────────┤
+│                                                                              │
+│  Suite 1: Autonomic Labs              Suite 5: Decentralized Operations     │
+│  ┌──────────────────────────┐        ┌──────────────────────────┐          │
+│  │ Tilt table, QSART,       │        │ Wearables, ePRO,         │          │
+│  │ TCD/NIRS testing         │───────▶│ remote monitoring        │          │
+│  │ (in-clinic phenotyping)  │        │ (between-visit tracking) │          │
+│  └──────────────────────────┘        └──────────────────────────┘          │
+│              │                                   │                          │
+│              ▼                                   ▼                          │
+│  ┌──────────────────────────────────────────────────────────────┐          │
+│  │                      Suite 4: TRE                              │          │
+│  │  • MS Health Research Data Platform (operational foundation)   │          │
+│  │  • NLP extraction: EDSS, functional outcomes, MRI changes      │          │
+│  │  • OMOP CDM: standardized Long COVID phenotypes                │          │
+│  │  • CRAIDL: AI-enabled trial analytics                          │          │
+│  └──────────────────────────────────────────────────────────────┘          │
+│                                                                              │
+└─────────────────────────────────────────────────────────────────────────────┘
+```
+
 ---
 
-## 12. Digital Health Ecosystem Partners
+## 12. Connect1D Canada: Cardio-Renal-Metabolic Flagship Partnership
+
+### 12.1 Strategic Overview
+
+**Connect1D Canada** represents a transformative partnership that positions CTAP as the national hub for Type 1 Diabetes (T1D) clinical trials innovation. As Canada's premier patient-driven T1D registry—connecting over 6,000 Canadians living with T1D to research opportunities—Connect1D will be **hosted within CTAP's Trusted Research Environment (TRE)**, establishing Alberta as the data home for pan-Canadian diabetes research.
+
+This integration directly supports CTAP's **Cardio-Renal-Metabolic (CRM) Program**, recognizing that T1D is fundamentally a cardio-renal-metabolic condition: cardiovascular disease remains the leading cause of death in T1D, diabetic kidney disease affects 30-40% of patients, and metabolic dysregulation drives complications across organ systems.
+
+**Leadership:**
+- **Dr. Peter Senior** (Scientific Co-Lead, Connect1D Canada; Director, Alberta Diabetes Institute; Charles A. Allard Chair in Diabetes Research)
+- **Kate Farnsworth** (Patient Co-Lead, Connect1D Canada)
+- **Dr. Justin Ezekowitz** (Canadian VIGOUR Centre; cardiovascular trials expertise)
+- **Alberta Diabetes Institute Clinical Research Unit** (Phase II-III trial capabilities)
+
+### 12.2 Connect1D TRE Integration Architecture
+
+Connect1D Canada will be hosted within Suite 4's three-zone TRE, enabling unprecedented integration between patient-reported data, continuous glucose monitoring (CGM) streams, and Alberta's Connect Care electronic health records.
+
+```
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                    CONNECT1D DATA ECOSYSTEM IN CTAP TRE                      │
+├─────────────────────────────────────────────────────────────────────────────┤
+│                                                                              │
+│  ┌──────────────────┐    ┌──────────────────┐    ┌──────────────────┐       │
+│  │   Connect1D      │    │   CGM Wearable   │    │   Connect Care   │       │
+│  │   Registry       │    │   Data Streams   │    │   EHR Linkage    │       │
+│  │   (Patient PROs) │    │   (Dexcom, Libre)│    │   (4.4M Albertans)│      │
+│  └────────┬─────────┘    └────────┬─────────┘    └────────┬─────────┘       │
+│           │                       │                       │                  │
+│           └───────────────────────┼───────────────────────┘                  │
+│                                   ▼                                          │
+│  ┌─────────────────────────────────────────────────────────────────────┐    │
+│  │                    ZONE 1: Identifiable (Custodian Control)          │    │
+│  │   • Consent verification    • Identity resolution                    │    │
+│  │   • Alberta participant linkage to Connect Care                      │    │
+│  └─────────────────────────────────┬───────────────────────────────────┘    │
+│                                    ▼                                         │
+│  ┌─────────────────────────────────────────────────────────────────────┐    │
+│  │                    ZONE 2: Controlled Processing                     │    │
+│  │   • OMOP CDM transformation    • CGM data standardization            │    │
+│  │   • Glycemic variability metrics    • Cardiorenal phenotyping        │    │
+│  └─────────────────────────────────┬───────────────────────────────────┘    │
+│                                    ▼                                         │
+│  ┌─────────────────────────────────────────────────────────────────────┐    │
+│  │                    ZONE 3: Research Environment                      │    │
+│  │   • AI-powered trial matching    • Federated T1D Exchange queries    │    │
+│  │   • CRM outcome analytics    • CGM-phenotype correlation             │    │
+│  └─────────────────────────────────────────────────────────────────────┘    │
+│                                                                              │
+└─────────────────────────────────────────────────────────────────────────────┘
+```
+
+### 12.3 Cardio-Renal-Metabolic Research Capabilities
+
+The Connect1D-CTAP integration enables a comprehensive CRM research platform:
+
+| Capability | Description | Suite Integration |
+|------------|-------------|-------------------|
+| **Glycemic-Cardiovascular Correlation** | Link CGM time-in-range to cardiovascular outcomes via Connect Care | Suite 4 TRE Zone 2/3 |
+| **Diabetic Kidney Disease Cohorts** | Identify DKD progression using eGFR trajectories + glycemic patterns | Suite 4 OMOP CDM |
+| **Decentralized CGM Trials** | Remote CGM monitoring with telehealth follow-up for national reach | Suite 5 wearables + telehealth |
+| **AI-Assisted Recruitment** | CRAIDL matching engine identifies eligible T1D participants | Suite 4 CRAIDL agents |
+| **Biomarker Discovery** | Link biospecimens to CGM patterns and CRM outcomes | Suite 2 Living Biorepository |
+| **Novel Device Validation** | Testbed for Light/Baghelani microwave glucose sensor | Suite 5 Device Validation |
+
+### 12.4 T1D Exchange Partnership & International Federation
+
+Connect1D Canada's partnership with the **T1D Exchange** (US-based, 100,000+ participants) positions CTAP for international federated research:
+
+| Network | Participants | CTAP Integration |
+|---------|-------------|------------------|
+| Connect1D Canada | 6,000+ Canadians with T1D | **Primary host in TRE** |
+| T1D Exchange (USA) | 100,000+ Americans with T1D | Federated OMOP queries |
+| Diabetes Action Canada | Pan-Canadian SPOR network | Research coordination |
+| CanScreen T1D | T1D screening consortium | Prevention trial pathway |
+
+**Federated Query Capability:** Researchers can execute privacy-preserving queries across Connect1D and T1D Exchange populations without data leaving respective jurisdictions—enabling North American-scale T1D research while maintaining Canadian data sovereignty.
+
+### 12.5 Suite 5 Tools for Connect1D Trials
+
+| Tool | Connect1D Application |
+|------|----------------------|
+| **eConsent Platform** | Streamlined enrollment with dynamic consent for CGM data sharing |
+| **Continuous Glucose Monitors** | 100 CGM devices for decentralized trial participants |
+| **Trial Matching Engine** | AI-powered notification of relevant CRM trials to registry participants |
+| **Telehealth Kits** | Remote trial visits for participants outside major centres |
+| **Participant Portal** | Transparency dashboard showing CGM data contributions and research impact |
+| **Blood Pressure Monitors** | Integrated BP/glucose monitoring for comprehensive CRM phenotyping |
+
+### 12.6 Exemplar Use Cases
+
+#### Use Case 1: SGLT2 Inhibitor Cardioprotection in T1D
+A pragmatic trial evaluating SGLT2 inhibitors for cardiovascular risk reduction in T1D. Connect1D identifies eligible participants nationally; Alberta participants receive CGM + BP monitors with data flowing to TRE; Connect Care provides outcome adjudication; federated analysis includes T1D Exchange comparator data.
+
+#### Use Case 2: CGM-Guided A1C Targets for Renal Protection
+An adaptive platform trial testing individualized glycemic targets based on CGM time-in-range to prevent DKD progression. Registry recruitment enables rapid enrollment; Living Biorepository collects serial biospecimens for nephropathy biomarker discovery; CRAIDL Events Agent monitors safety signals.
+
+#### Use Case 3: Microwave Glucose Sensor Validation
+Connect1D participants serve as validation cohort for the Light/Baghelani non-invasive microwave glucose sensor. CGM provides gold-standard comparator; TRE enables correlation analysis; successful validation creates pathway to replace finger-stick monitoring.
+
+### 12.7 Patient-Oriented Research Excellence
+
+Connect1D embodies SPOR principles that align with CTAP's participant engagement vision:
+
+| SPOR Principle | Connect1D Implementation |
+|----------------|-------------------------|
+| **Patient Governance** | Kate Farnsworth (patient co-lead); T1D community governance committee |
+| **Co-Design** | Platform designed with T1D community input |
+| **Research Priorities** | Community-identified priorities drive trial selection |
+| **Return of Results** | Participants receive individual CGM insights and aggregate research findings |
+| **Accessibility** | National reach enables rural and remote T1D participation |
+
+### 12.8 Alberta Diabetes Institute Clinical Research Unit
+
+The **Alberta Diabetes Institute Clinical Research Unit (ADI CRU)**, located in the Li Ka Shing Centre for Health Research Innovation, provides specialized infrastructure for Connect1D-enabled CRM trials:
+
+| Capability | Equipment/Resource | CRM Application |
+|------------|-------------------|-----------------|
+| **Body Composition** | BOD POD | Metabolic phenotyping for insulin resistance studies |
+| **Metabolic Testing** | Whole Body Calorimetry Unit | Energy expenditure in T1D trials |
+| **Nutrition Research** | Fully-equipped research kitchen | Dietary intervention trials |
+| **Islet Biology** | Islet Cell Core (Dr. Patrick MacDonald) | Beta cell function studies |
+| **Phase II-III Trials** | Clinical trial beds, monitoring | Interventional CRM studies |
+
+This infrastructure complements Suite 1's clinical spaces, enabling deep metabolic phenotyping that links to Connect1D registry data and CGM streams within the TRE.
+
+---
+
+## 13. Digital Health Ecosystem Partners
 
 Suite 5's Digital Health Device Validation Program integrates multiple UAlberta research groups and facilities:
 
@@ -475,4 +728,152 @@ CTAP provides validation infrastructure for digital health innovations developed
 
 ---
 
-*Document Version: 1.2 | January 2026 | CFI Innovation Fund 2027*
+*Document Version: 1.3 | January 2026 | CFI Innovation Fund 2027*
+
+*v1.3 Changes: Added Section 12 (Connect1D Canada: Cardio-Renal-Metabolic Flagship Partnership) featuring TRE-hosted pan-Canadian T1D registry integration*
+## 13. Pediatric Rare Disease Trial Operations
+
+Suite 5 addresses a critical gap in clinical trials infrastructure: most trial platforms assume adult participants who self-manage study procedures. **Pediatric rare disease trials require fundamentally different architecture**—where caregivers are the primary users, participants may be nonverbal or technology-dependent, and families face extraordinary care burdens that standard trial designs ignore.
+
+### 13.1 The Rare Disease Challenge
+
+~75% of rare diseases manifest in childhood, and a meaningful fraction of pediatric rare disease participants meet criteria for "children with medical complexity" (CMC)—technology-dependent, high care burden, requiring caregiver-mediated participation. CTAP addresses this population through purpose-built infrastructure.
+
+| Challenge | Prevalence | CTAP Response |
+|-----------|------------|---------------|
+| **Pediatric onset** | ~75% of rare diseases | Family-centric design as default |
+| **Medical complexity** | 0.7-11.4% of children (CMC) | Accessibility-first interfaces |
+| **Geographic dispersion** | ~4 patients per 100,000 (typical RD) | Decentralized trial operations |
+| **Caregiver burden** | Exhausted families | Low-burden, 30-second workflows |
+| **Small N trials** | Often N<50 | AI-augmented synthetic controls |
+
+### 13.2 Caregiver Operations Hub
+
+**CRAIDL Integration:** The Caregiver Operations Hub extends CRAIDL's Data Management Agent capabilities to family-centric trial operations.
+
+Unlike standard participant portals, the Caregiver Operations Hub treats caregivers as first-class users:
+
+| Feature | Specification | Rationale |
+|---------|---------------|-----------|
+| **Multi-caregiver access** | Up to 4 designated caregivers per participant | Parents, grandparents, respite care, teachers |
+| **Caregiver attestation** | "Who completed this assessment?" attribution | Source documentation for GCP compliance |
+| **Role-based permissions** | Primary vs. backup vs. observer roles | HIPAA/HIA compliance with practical flexibility |
+| **Low-burden workflows** | Target: 30 seconds per data capture | Exhausted families cannot sustain long assessments |
+| **Intelligent scheduling** | Visit windows with flexible reminders | Accommodates medical crises, hospitalizations |
+| **Escalation pathways** | One-tap "call study team" with audit trail | Support when families need help |
+
+**AI Scribe Integration:** For families unable to complete written assessments, AI Scribe captures caregiver verbal reports during study calls or telehealth visits, generating structured ObsRO (Observer-Reported Outcome) data with full audit trails. This voice-first approach reduces burden while maintaining regulatory-grade documentation.
+
+### 13.3 Pediatric eConsent/Assent Orchestrator
+
+**CRAIDL Integration:** The Ethics Agent generates consent/assent forms that feed directly into the eConsent Orchestrator, maintaining version control and audit trails across the consent lifecycle.
+
+Pediatric consent is not a single event—it's a lifecycle of evolving capacity, multiple decision-makers, and regulatory milestones:
+
+| Workflow | Complexity Addressed | Implementation |
+|----------|---------------------|----------------|
+| **Dual-parent consent** | Both parents must consent (or document exception) | Role-based signature collection with exception workflows |
+| **Single-parent exceptions** | Sole custody, military deployment, incapacity | Documented attestation with legal basis |
+| **Assent tracks** | Age-appropriate assent evolves with development | 7-11 year, 12-17 year, and cognitively-adapted versions |
+| **Re-consent at majority** | 18th birthday requires transition to adult consent | Automated milestone tracking with reminder cascade |
+| **Comprehension verification** | Especially for complex cell/gene therapies | Embedded knowledge checks per E6(R3) |
+| **Ongoing consent** | Trial modifications require re-consent | Version-controlled consent with change documentation |
+
+**AI Scribe Consent Documentation:** For consent conversations, AI Scribe generates transcripts documenting comprehension markers, questions asked, and the complete consent dialogue—creating regulatory-compliant audit trails that protect both families and investigators.
+
+### 13.4 Home Procedures & Logistics Module
+
+**Suite Integration:** Logistics data flows to Suite 4's TRE for monitoring; integrates with Suite 2's Living Biorepository for chain-of-custody on biological specimens.
+
+Rare disease + pediatrics magnifies travel burden. CTAP's logistics module brings the trial to the family:
+
+| Component | Specification | Integration Point |
+|-----------|---------------|-------------------|
+| **Kit fulfillment** | Automated shipment of home collection supplies | REDCap event triggers → logistics vendor API |
+| **Chain-of-custody** | Temperature logging, timestamp capture, condition verification | Living Biorepository (Suite 2) specimen intake |
+| **Home nursing coordination** | Mobile phlebotomy, vital signs, physical assessments | Partner nursing network with scheduling API |
+| **Completion confirmation** | Real-time notification when home visit completes | EDC auto-population from nursing documentation |
+| **Protocol deviation capture** | Missed window, compromised sample, equipment failure | Suite 4 safety monitoring dashboard |
+| **Return logistics** | Pre-paid shipping labels, pickup scheduling | Integration with cold-chain couriers |
+
+**Decentralized Trial Support:** For families >200km from Edmonton, Suite 5's telehealth infrastructure enables fully decentralized participation with only biospecimen collection requiring in-person contact.
+
+### 13.5 Outcomes for Very Young and Low-Function Children
+
+**Metricis Partnership:** CTAP's outcomes framework leverages Metricis (a specialized pediatric neurodevelopmental outcomes platform) for video-based and caregiver-reported assessments.
+
+Standard eCOA/ePRO platforms fail children who cannot self-report. Suite 5 provides:
+
+| Outcome Type | Population | Implementation |
+|--------------|------------|----------------|
+| **Observer-Reported Outcomes (ObsRO)** | All pediatric | Caregiver-completed instruments with attribution |
+| **Video-based motor assessments** | Ambulatory children | Home capture with structured scoring rubrics |
+| **Adaptive testing** | Variable cognitive function | Dynamic item selection based on ability |
+| **Ability gating** | Nonverbal, motor-impaired, ventilated | Pre-assessment screening determines valid instruments |
+| **Clinician-alternative scoring** | When caregivers cannot assess | Central rater review of video/telehealth recordings |
+
+**CRAIDL Data Management Agent:** Configurable instrument schemas enable rapid deployment of disease-specific outcome measures. JSON Schema definitions support epilepsy seizure diaries, neuromuscular video tasks, and other rare disease-specific instruments with study-configurable taxonomies, validation rules, and quality flags.
+
+**AI-Assisted Video Scoring:** For video-based motor assessments, computer vision algorithms provide preliminary scoring that trained raters verify, reducing turnaround time while maintaining clinical-grade accuracy.
+
+### 13.6 Registry-to-Trial Readiness
+
+**Suite Integration:** Connects to Suite 4's OMOP CDM for phenotype standardization; leverages RareKids-CAN federated network for cross-site recruitment.
+
+Rare disease trials depend on natural history registries for recruitment and outcome selection. Suite 5 bridges registry data to trial operations:
+
+| Capability | Function | Integration |
+|------------|----------|-------------|
+| **Phenotype structuring** | Standardized disease characterization | OMOP CDM rare disease extensions (Suite 4) |
+| **Pre-screening dashboards** | Real-time view of potentially eligible participants | Connect Care linkage (enrolled participants only) |
+| **Clinician packets** | Generated pre-screen summaries for referring physicians | CRAIDL Protocol Agent templates |
+| **Family onboarding** | Trial expectations, burden estimates, support resources | Patient Engagement Portal (Section 4) |
+| **Feasibility simulation** | Enrollment projections from registry prevalence | In Silico Assessment Agent (Suite 4) |
+
+### 13.7 AI-Augmented Small-N Trial Design
+
+**CRAIDL Integration:** The In Silico Assessment Agent enables small-sample rare disease trials through synthetic control generation.
+
+For rare diseases where traditional RCT sample sizes are impossible, CTAP enables rigorous evidence generation:
+
+| Capability | Description | AI Component |
+|------------|-------------|--------------|
+| **Synthetic control arms** | Generate matched controls from historical RWE | In Silico Assessment Agent / Digital Twin Engine (Suite 4, Section 4.1A) |
+| **N-of-1 trial infrastructure** | Crossover designs with intensive monitoring | Wearables + REDCap + TRE analytics |
+| **Bayesian adaptive designs** | Update enrollment based on accumulating evidence | CRAIDL Protocol Agent sample size calculations |
+| **External control optimization** | Match historical controls on prognostic factors | OMOP CDM federated queries |
+| **Causal inference methods** | Rigorous treatment effect estimation | Digital Twin Engine GFlowNet architecture |
+
+**Digital Twin Application:** For rare disease trials where placebo controls are ethically problematic (e.g., progressive pediatric neuromuscular conditions), the Digital Twin Engine generates synthetic control arms from historical RWE data, enabling single-arm trials with rigorous causal inference per FDA guidance on RWE.
+
+### 13.8 Rare Disease Integration Map
+
+| CTAP Component | Rare Disease Function | Cross-Reference |
+|----------------|----------------------|-----------------|
+| **Caregiver Operations Hub** | Family-first trial operations | Suite 5, Section 13.2 |
+| **AI Scribe** | Voice-first data capture for families | Suite 5, Section 1.1; Suite 4, Section 1.3 |
+| **CRAIDL Ethics Agent** | Consent/assent document generation | Suite 4, Section 4.1 |
+| **CRAIDL Data Management Agent** | Disease-specific instrument schemas | Suite 4, Section 4.1 |
+| **In Silico Assessment Agent** | Synthetic controls, feasibility simulation | Suite 4, Section 4.1A |
+| **Living Biorepository** | Outcome-annotated specimen management | Suite 2 |
+| **RareKids-CAN Network** | Federated recruitment, registry integration | Suite 1, Section 11 |
+| **OMOP Rare Disease Extensions** | Standardized phenotyping | Suite 4, Section 3.2 |
+| **Telehealth Infrastructure** | Decentralized participation | Suite 5, Section 1.4 |
+
+### 13.9 Budget Impact
+
+Pediatric rare disease capabilities are embedded within existing Suite 5 allocations:
+
+| Component | Allocation Source | Rare Disease Enhancement |
+|-----------|-------------------|-------------------------|
+| eConsent platform | $250,000 base | Assent orchestration, re-consent workflows |
+| Digital recruitment | $100,000 base | Registry-to-trial matching, feasibility dashboards |
+| Patient portal | $80,000 base | Caregiver Operations Hub functionality |
+| Telehealth kits | $100,000 base | Prioritized allocation to rare disease sites |
+| Device integration APIs | $75,000 base | Metricis outcomes platform connectivity |
+
+**No additional budget required**—rare disease capabilities are implemented through configuration and integration rather than separate infrastructure.
+
+---
+
+*Document Version: 1.3 | January 2026 | CFI Innovation Fund 2027*
