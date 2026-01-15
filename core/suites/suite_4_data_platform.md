@@ -943,7 +943,9 @@ CRAIDL agents operate under human oversight:
 
 ### 4A.1 Integration with CRAIDL Ecosystem
 
-Dr. Ross Mitchell's **AI Scribe** ("Jenkins") represents a critical extension of CTAP's AI-first vision, moving AI integration beyond trial design (CRAIDL) into real-time clinical data capture. Developed with Amii and already deployed across 10 Alberta emergency departments with 58 physicians, AI Scribe has processed over 7,500 clinical conversations and demonstrated remarkable efficiency gains—approximately 3 additional patients seen per physician per shift.
+Dr. Ross Mitchell's **AI Scribe** ("Jenkins"), developed through the **PHAIR Lab** (Precision Health AI Research), represents a critical extension of CTAP's AI-first vision, moving AI integration beyond trial design (CRAIDL) into real-time clinical data capture. As Canada CIFAR AI Chair and Alberta Health Services Chair in AI in Health, Dr. Mitchell anchors CTAP's **Applied AI Innovation in Healthcare** flagship program—the institutional home within the AI + Health Hub (led by Drs. Neesh Pannu and Gillian Lemermeyer) that generates implementation science knowledge for clinical AI deployment.
+
+Already deployed across 10 Alberta emergency departments with 58 physicians, AI Scribe has processed over 7,500 clinical conversations and demonstrated remarkable efficiency gains—approximately 3 additional patients seen per physician per shift. This proven track record demonstrates what successful AI implementation looks like, providing the model that CRAIDL development will follow.
 
 **Learning Health System Connection:** AI Scribe exemplifies the learning health system model demonstrated by Ontario's GEMINI/Chartwatch project: high-quality clinical documentation flows into the research environment, enables AI-driven insights, and returns validated tools to clinical practice. Just as Chartwatch achieved 26% mortality reduction by transforming structured clinical data into actionable early warnings, AI Scribe provides the data foundation for CRAIDL's clinical trial agents—extending the learning health system from quality improvement into therapeutic innovation.
 
@@ -976,19 +978,21 @@ AI Scribe's architecture aligns with CTAP's three-zone TRE model and NIST CSF 2.
 - **Open-Source Platform**: Being released for commercial and research use, enabling CTAP customization
 - **Health Canada GCP Compatible**: Audit trails, version control, and electronic signature integration meeting ICH E6(R3) and CAN/CGSB-72.34-2017 requirements; 21 CFR Part 11 modules available for FDA-bound trials
 
-### 4A.4 Amii Partnership Value
+### 4A.4 Amii Partnership and PHAIR Lab Value
 
-The AI Scribe integration exemplifies CTAP's partnership with Amii:
+The AI Scribe integration exemplifies CTAP's partnership with Amii and the **Applied AI Innovation in Healthcare** flagship:
 
 | Contribution                       | Description                                                                                  |
 | ---------------------------------- | -------------------------------------------------------------------------------------------- |
-| **Dr. Ross Mitchell**        | Amii Fellow, Canada CIFAR AI Chair, AI Scribe creator, Division of General Internal Medicine |
-| **Existing Deployment**      | 10 Alberta ED facilities, 6,700+ clinical sessions, proven at scale                          |
-| **$1M External Funding**     | Healthcare Unburdened Grant (CMA, MD Financial, Scotiabank)                                  |
-| **850+ Physician Expansion** | Roll-out to Edmonton, Calgary, Red Deer emergency departments                                |
-| **Open-Source Release**      | Platform available for research and commercial adaptation                                    |
+| **Dr. Ross Mitchell (PHAIR Lab)**  | Amii Fellow, Canada CIFAR AI Chair, AHS Chair in AI in Health, AI Scribe creator           |
+| **AI + Health Hub**                | Institutional home (Pannu, Lemermeyer); implementation science research framework           |
+| **Existing Deployment**            | 10 Alberta ED facilities, 6,700+ clinical sessions, proven at scale                          |
+| **$1M External Funding**           | Healthcare Unburdened Grant (CMA, MD Financial, Scotiabank)                                  |
+| **850+ Physician Expansion**       | Roll-out to Edmonton, Calgary, Red Deer emergency departments                                |
+| **Open-Source Release**            | Platform available for research and commercial adaptation                                    |
+| **CIFAR AI Chair Network**         | Collaboration with Abdalla (de-identification), Atanackovic (generative AI), Simpson (radiomics) |
 
-This partnership transforms AI Scribe from an emergency department efficiency tool into a clinical trials data capture innovation—extending Amii's health AI expertise into the regulatory-compliant trial environment.
+**CFI Investment → Research Innovation:** This partnership transforms AI Scribe from an emergency department efficiency tool into a clinical trials data capture innovation—extending Amii's health AI expertise into the regulatory-compliant trial environment. The CFI investment directly enables research that cannot occur without it: validating AI Scribe in trial settings, developing CRAIDL agents with clinical trial data, and generating implementation science publications that advance the field nationally.
 
 ---
 

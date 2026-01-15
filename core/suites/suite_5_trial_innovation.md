@@ -370,23 +370,29 @@ Industry-sponsored research follows enhanced governance requirements:
 
 ## 6. Integration Points
 
-- **Suite 2:** Consent status flows to Living Biorepository for sample release; Researcher Discovery Portal queries OpenSpecimen inventory; transparency dashboard pulls sample utilization data
-- **Suite 4:** eConsent data captured in EDC; CRAIDL Ethics Agent integration; participant matching uses Zone 1 identifiable data; researcher queries use Zone 3 de-identified OMOP data
+- **Suite 1:** Telehealth kits and remote monitoring equipment deployed to Indigenous community sites; ICTU-informed culturally safe clinical spaces (Suite 1, Section 2.6); specimen transport logistics for remote communities
+- **Suite 2:** Consent status flows to Living Biorepository for sample release; Researcher Discovery Portal queries OpenSpecimen inventory; transparency dashboard pulls sample utilization data; OCAP-compliant specimen handling for Indigenous participants
+- **Suite 4:** eConsent data captured in EDC; CRAIDL Ethics Agent integration; participant matching uses Zone 1 identifiable data; researcher queries use Zone 3 de-identified OMOP data; Indigenous Data Steward approval required for Indigenous participant data access
 - **Wearables → Suite 4:** Continuous data streams to TRE Zone 3
 
 ---
 
 ## 7. Budget Summary
 
-| Category                         | Amount               |
-| -------------------------------- | -------------------- |
-| eConsent platform                | $400,000             |
-| Mobile devices and kiosks        | $200,000             |
-| Wearable devices                 | $325,000             |
-| Telehealth infrastructure        | $175,000             |
-| Dashboards and apps              | $130,000             |
-| Digital Health Device Validation | $175,000             |
-| **Total**                  | **$1,305,000** |
+**CFI RTA Budget: $1,056,000 CAD** (consolidated for RTA submission)
+
+| Category                         | Full Scope | RTA Request |
+| -------------------------------- | ---------- | ----------- |
+| eConsent platform                | $400,000   | $300,000    |
+| Mobile devices and kiosks        | $200,000   | $175,000    |
+| Wearable devices                 | $325,000   | $250,000    |
+| Telehealth infrastructure        | $175,000   | $150,000    |
+| Dashboards and apps              | $130,000   | $100,000    |
+| Digital Health Device Validation | $175,000   | $81,000     |
+| **Full Scope Total**             | $1,305,000 |             |
+| **RTA Request**                  |            | **$1,056,000** |
+
+*Note: RTA budget prioritizes core decentralized trial infrastructure. Additional wearable device inventory and device validation capacity may be expanded through industry partnerships and per-study budgets. Core platform costs are included; consumable device costs for specific trials are budgeted per-study.*
 
 ---
 

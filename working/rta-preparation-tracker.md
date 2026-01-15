@@ -6,8 +6,8 @@
 **Target Competition:** CFI Innovation Fund 2027
 **Budget Request:** $10.4M CAD (40% CFI = $4.9M envelope)
 
-**Last Updated:** 2026-01-14
-**Overall Readiness:** 75-80%
+**Last Updated:** 2026-01-15
+**Overall Readiness:** 85% (budget reconciled, narrative strengthened)
 
 ---
 
@@ -488,6 +488,61 @@ _Use this section for ongoing notes during preparation._
   - Updated budget tables to $2,020,000
   - Clarified ACTM as partner facility (not equipment request)
 - Google Sheet budget template updated with 36 line items (was 37)
+
+### 2026-01-15 - Applied AI Innovation Flagship and PHAIR Lab Integration
+
+**New Flagship Program Added:**
+- Added "Applied AI Innovation in Healthcare" as 5th flagship program
+- PHAIR Lab (Dr. Ross Mitchell, CIFAR AI Chair) anchors the program
+- AI + Health Hub (Drs. Neesh Pannu, Gillian Lemermeyer) provides institutional home
+- Emphasizes science of AI implementation as research frontier
+- CFI Investment → Research Innovation linkage strengthened throughout
+
+**Key Additions:**
+- MASTER.md: Full flagship program section with CFI-research innovation table
+- objectives.csv: Updated Objectives 1 & 5 to reference Applied AI Innovation flagship
+- Suite 4: Enhanced PHAIR Lab and AI + Health Hub integration in Section 4A
+- RTA: Added Applied AI Innovation flagship and strengthened AI + Health Hub narrative
+
+**Collaborator Network:**
+- Amber Simpson (Queen's, CRC in Biomedical Computing): Radiomics, federated learning
+- Lazar Atanackovic (Amii Fellow): Generative AI, Digital Twin Engine
+- Mohamed Abdalla (CIFAR AI Chair): Clinical NLP, de-identification
+- Randy Goebel (Amii Co-Founder): Explainable AI, AI governance
+
+### 2026-01-15 - Budget Reconciliation and Narrative Strengthening
+
+**Budget Reconciliation Completed:**
+- Reconciled all budget figures to match Google Sheet authoritative source ($10,365,000 total)
+- MASTER.md updated: Suite 1 → $3,004,000, Suite 2 → $2,020,000, Suite 3 → $1,480,000
+- Suite 1 file: Updated to show $3,004,000 total (includes Suite 1a Challenge Unit)
+- Suite 3 file: Added RTA Request column showing prioritized $1,480,000 allocation
+- Suite 5 file: Added RTA Request column showing prioritized $1,056,000 allocation
+
+**Narrative Strengthening:**
+- Added H200 GPU compute narrative (up to 1,000 GPUs) to MASTER.md and RTA
+- Added urgency messaging ("Patients cannot wait") to research problem and strategic sections
+- Positioned CTAP as "the glue" connecting Alberta's AI compute, discovery, and biomanufacturing investments
+- Strengthened AI-first strategy narrative throughout
+
+**Data Quality Fixes:**
+- Fixed objectives.csv: Realigned success_metrics for Objectives 6, 7, and 8
+- Removed duplicate ADI IsletCore entry from Suite 3 partnership table
+
+**Files Modified:**
+- core/MASTER.md
+- core/data/objectives.csv
+- core/suites/suite_1_clinical_trials_infrastructure.md
+- core/suites/suite_3_translational_science.md
+- core/suites/suite_5_trial_innovation.md
+- derived/rta/rta.md
+- working/rta-preparation-tracker.md
+
+**Next Priority Actions:**
+1. Letter of Support signatures (CRITICAL)
+2. Space documentation and sketches
+3. Vendor quotes for items >$50K
+4. Team CV collection
 
 ---
 

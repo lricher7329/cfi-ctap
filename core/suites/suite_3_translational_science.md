@@ -36,8 +36,7 @@ Suite 3 operates through formal partnerships with existing core facilities rathe
 | **TMIC** | Metabolomics (50K samples/year) | Quality-controlled trial samples | Biomarker discovery |
 | **Alberta Proteomics (APM)** | Protein identification | Pre-analytical quality assurance | Protein biomarker analysis |
 | **Peter Allen MRI Research Centre** | Advanced multi-organ MRI (brain, cardiac, musculoskeletal), quantitative imaging, novel MR sequences | Trial imaging protocols, longitudinal phenotyping, outcome data linkage | 3T/7T imaging, MR physics expertise, sequence development |
-| **ADI IsletCore** | Human pancreatic islet isolation, biobanking, cryopreservation, research distribution (international reach) | Trial sample pipeline for diabetes/metabolic studies, clinical outcome linkage, Edmonton Protocol integration | Research-grade islet preparations, 20+ year cryopreservation expertise, donor phenotyping |
-| **ADI IsletCore** | Human pancreatic islet isolation, biobanking, and distribution; islet functional characterization; research-grade tissue procurement | Trial sample integration, clinical metadata linkage, outcome correlation for diabetes therapeutics | Research islet isolations, tissue biobanking, international distribution network, islet biology expertise (Senior, MacDonald) |
+| **ADI IsletCore** | Human pancreatic islet isolation, biobanking, cryopreservation, research distribution (international reach); islet functional characterization | Trial sample pipeline for diabetes/metabolic studies, clinical outcome linkage, Edmonton Protocol integration | Research-grade islet preparations, 20+ year cryopreservation expertise, donor phenotyping, islet biology expertise (Senior, MacDonald) |
 
 **Note:** The WCHRI Translational Genomics Hub is a research coordination platform (not an instrumentation core) that aligns with CTAP's Pediatric Rare Disease Clinical Trials Unit (Suite 1). The Hub facilitates genomic characterization for undiagnosed families by coordinating ethics, enrollment, sample logistics, and connections to scientists—a complementary coordination function rather than an omics facility partnership.
 
@@ -515,16 +514,21 @@ Trial Participant → Sample Collection → CBSR Processing → Quality Bridge �
 
 ## 7. Budget Summary
 
-| Category | Amount |
-|----------|--------|
-| **Pillar 1: Protocol Integration Services** | $300,000 |
-| **Pillar 2: Quality Bridge Infrastructure** | $550,000 |
-| **Pillar 3: Data Return Pipeline** | $350,000 |
-| **Pillar 4: CTMS Integration Layer** | $200,000 |
-| **Pillar 5: AI/ML Development Workstations** | $250,000 |
-| **ACE Core Access & Coordination** | $150,000 |
-| **High-Throughput Clinical Instrumentation** | $550,000 |
-| **Total** | **$2,350,000** |
+**CFI RTA Budget: $1,480,000 CAD** (consolidated for RTA submission)
+
+| Category | Full Scope | RTA Request |
+|----------|-----------|-------------|
+| **Pillar 1: Protocol Integration Services** | $300,000 | $200,000 |
+| **Pillar 2: Quality Bridge Infrastructure** | $550,000 | $400,000 |
+| **Pillar 3: Data Return Pipeline** | $350,000 | $280,000 |
+| **Pillar 4: CTMS Integration Layer** | $200,000 | $150,000 |
+| **Pillar 5: AI/ML Development Workstations** | $250,000 | $200,000 |
+| **ACE Core Access & Coordination** | $150,000 | $100,000 |
+| **High-Throughput Clinical Instrumentation** | $550,000 | $150,000 |
+| **Full Scope Total** | $2,350,000 | |
+| **RTA Request** | | **$1,480,000** |
+
+*Note: RTA budget prioritizes core integration infrastructure. Additional high-throughput instrumentation may be phased or funded through partner facility contributions. Suite 3's primary value is integration, not instrumentation—equipment beyond core QC is accessed through established facility partnerships.*
 
 **Budget Change from v2.0:** +$650,000 reflecting addition of:
 - CTMS Integration Layer ($200,000) - leverages existing OnCore deployment
