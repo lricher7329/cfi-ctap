@@ -1,19 +1,21 @@
 <!-- Shared funding summary - used by executive brief and suite briefs -->
-<!-- Source of truth: Google Sheets cfi-ctap-data > Equipment tab -->
-<!-- Last synced: 2026-01-06 -->
+<!-- Source of truth: core/data/equipment.csv and core suite documents -->
+<!-- Last synced: 2026-01-15 -->
 
 ## Infrastructure Investment
 
 | Suite           | Name                                                   | CFI Request           |
 | --------------- | ------------------------------------------------------ | --------------------- |
-| 1               | Clinical Trials Participant & Procedure Infrastructure | $2,904,000            |
-| 2               | Living Biorepository              | $3,860,000            |
+| 1               | Clinical Trials Participant & Procedure Infrastructure | $3,004,000            |
+| 2               | Living Biorepository                                   | $2,020,000            |
 | 3               | Translational Science Integration                      | $1,480,000            |
 | 4               | Data Platform, Secure Environments, AI/HPC             | $2,805,000            |
 | 5               | Trial Innovation Tools & Wearables                     | $1,056,000            |
-| **Total** |                                                        | **$12,105,000** |
+| **Total** |                                                        | **$10,365,000** |
 
 **Funding Model:** CFI Innovation Fund (40%) + Provincial/Institutional Matching (60%)
+
+*Note: Cell therapy manufacturing capabilities are provided through existing ACTM infrastructure and are not included in this CFI request.*
 
 ## Sustainability
 
