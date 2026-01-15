@@ -6,33 +6,33 @@ id,category,equipment_id,suite,description,amount,funding_source,year,status,om_
 5,equipment,5,1,Programmable Infusion Pumps,100000,CFI/institutional,0,estimated,,Capital,
 6,equipment,6,1,Resuscitation Equipment (Crash Carts/Defibs),100000,CFI/institutional,0,estimated,,Capital,
 7,equipment,7,1,Point-of-Care Lab Analyzers,200000,CFI/institutional,0,estimated,,Capital,
-8,equipment,8,2,Automated Liquid Handling System,650000,CFI/institutional,0,estimated,,Capital,suite_2_biorepository/hamilton_tecan_liquid_handler.pdf
-12,equipment,12,2,Ultra-Low Temp Freezers (-80C),200000,CFI/institutional,0,estimated,,Capital,suite_2_biorepository/thermofisher_tsx_freezers.pdf
-13,equipment,13,2,LN2 Vapour-Phase Storage System,200000,CFI/institutional,0,estimated,,Capital,suite_2_biorepository/chart_mve_ln2_dewars.pdf
-14,equipment,14,2,Class II Biosafety Cabinets,90000,CFI/institutional,0,estimated,,Capital,suite_2_biorepository/baker_nuaire_bsc.pdf
-15,equipment,15,2,Refrigerated Centrifuges (Biocontainment),100000,CFI/institutional,0,estimated,,Capital,suite_2_biorepository/beckman_avanti_centrifuges.pdf
-16,equipment,16,2,Environmental Monitoring System,140000,CFI/institutional,0,estimated,,Capital,suite_2_biorepository/rees_vaisala_monitoring.pdf
-17,equipment,17,2,Clinical Grade Microscopes & Counters,70000,CFI/institutional,0,estimated,,Capital,suite_2_biorepository/keyence_countess_microscopy.pdf
+8,equipment,8,2,Automated Liquid Handling System,650000,CFI/institutional,0,estimated,,Capital,suite_2_biorepository/hamilton_tecan_liquid_handler.md
+12,equipment,12,2,Ultra-Low Temp Freezers (-80C),200000,CFI/institutional,0,estimated,,Capital,suite_2_biorepository/thermofisher_tsx_freezers.md
+13,equipment,13,2,LN2 Vapour-Phase Storage System,200000,CFI/institutional,0,estimated,,Capital,suite_2_biorepository/chart_mve_ln2_dewars.md
+14,equipment,14,2,Class II Biosafety Cabinets,90000,CFI/institutional,0,estimated,,Capital,suite_2_biorepository/baker_nuaire_bsc.md
+15,equipment,15,2,Refrigerated Centrifuges (Biocontainment),100000,CFI/institutional,0,estimated,,Capital,suite_2_biorepository/beckman_avanti_centrifuges.md
+16,equipment,16,2,Environmental Monitoring System,140000,CFI/institutional,0,estimated,,Capital,suite_2_biorepository/rees_vaisala_monitoring.md
+17,equipment,17,2,Clinical Grade Microscopes & Counters,70000,CFI/institutional,0,estimated,,Capital,suite_2_biorepository/keyence_countess_microscopy.md
 18,equipment,18,3,High-Throughput Imaging Cytometer,500000,CFI/institutional,0,estimated,,Capital,
 19,equipment,19,3,Cryo-EM Sample Prep Robotics (Vitrification),150000,CFI/institutional,0,estimated,,Capital,
 20,equipment,20,3,Plunge Freezers & Grid Prep Tools,100000,CFI/institutional,0,estimated,,Capital,
 21,equipment,21,3,UHPLC Systems (Metabolomics/Glycomics),300000,CFI/institutional,0,estimated,,Capital,
 22,equipment,22,3,High-Throughput Autosamplers,150000,CFI/institutional,0,estimated,,Capital,
 23,equipment,23,3,Cold-Chain Logistics Equipment,200000,CFI/institutional,0,estimated,,Capital,
-24,equipment,24,4,GPU-Enabled Secure Compute Nodes,800000,CFI/institutional,0,estimated,,Capital,
-25,equipment,25,4,Secure Storage Nodes (On-Prem),400000,CFI/institutional,0,estimated,,Capital,
-26,equipment,26,4,Networking & Security Core,180000,CFI/institutional,0,estimated,,Capital,
-27,software,27,4,Clinical Trial Data Platform Licenses,300000,CFI/institutional,0,estimated,,Capital - 5yr license,
-28,software,28,4,AWS Cloud Credits & Compute Reserve,500000,CFI/institutional,0,estimated,,Capital - 5yr,
-29,service,29,4,AWS Pro-Serve / Architecture Consulting,300000,CFI/institutional,0,estimated,,Capital - one-time,
+24,equipment,24,4,GPU-Enabled Secure Compute Nodes,800000,CFI/institutional,0,estimated,,Capital,suite_4_data_platform/aws_cloud_bedrock.md
+25,equipment,25,4,Secure Storage Nodes (On-Prem),400000,CFI/institutional,0,estimated,,Capital,suite_4_data_platform/secure_storage_nodes.md
+26,equipment,26,4,Networking & Security Core,180000,CFI/institutional,0,estimated,,Capital,suite_4_data_platform/networking_security.md
+27,software,27,4,Clinical Trial Data Platform Licenses,300000,CFI/institutional,0,estimated,,Capital - 5yr license,suite_4_data_platform/clinical_data_platform.md
+28,software,28,4,AWS Cloud Credits & Compute Reserve,500000,CFI/institutional,0,estimated,,Capital - 5yr,suite_4_data_platform/aws_cloud_bedrock.md
+29,service,29,4,AWS Pro-Serve / Architecture Consulting,300000,CFI/institutional,0,estimated,,Capital - one-time,suite_4_data_platform/aws_cloud_bedrock.md
 30,software,30,5,Enterprise eConsent & Recruitment Platform,300000,CFI/institutional,0,estimated,,Capital,
 31,equipment,31,5,Wearable Sensors (ECG/Activity),1000,CFI/institutional,0,estimated,,Capital,
 32,equipment,32,5,Remote Monitoring / Telehealth Kits,100000,CFI/institutional,0,estimated,,Capital,
 33,equipment,33,5,Mobile Data Capture Kiosks/Tablets,100000,CFI/institutional,0,estimated,,Capital,
 34,software,34,5,Data Visualization & Dashboard Software,380000,CFI/institutional,0,estimated,,Capital - 5yr,
-35,software,35,4,Identity Management System (Zero-Trust),100000,CFI/institutional,0,estimated,,Capital - 5yr,
-36,software,36,4,EDC/eSource Platform (21 CFR 11 Compliant),400000,CFI/institutional,0,estimated,,Capital - 5yr,
-37,service,37,4,OMOP ETL & OHDSI Tooling,100000,CFI/institutional,0,estimated,,Capital - one-time,
+35,software,35,4,Identity Management System (Zero-Trust),100000,CFI/institutional,0,estimated,,Capital - 5yr,suite_4_data_platform/identity_management.md
+36,software,36,4,EDC/eSource Platform (21 CFR 11 Compliant),400000,CFI/institutional,0,estimated,,Capital - 5yr,suite_4_data_platform/edc_esource_platform.md
+37,service,37,4,OMOP ETL & OHDSI Tooling,100000,CFI/institutional,0,estimated,,Capital - one-time,suite_4_data_platform/omop_ohdsi_tooling.md
 38,renovation,38,1,Challenge Isolation Room Fit-Out,300000,CFI/institutional,0,estimated,,Capital,
 39,renovation,39,1,HEPA Filtration System Upgrade,80000,CFI/institutional,0,estimated,,Capital,
 40,equipment,40,1,Challenge Unit Continuous Monitoring Stations,60000,CFI/institutional,0,estimated,,Capital,
@@ -42,13 +42,13 @@ id,category,equipment_id,suite,description,amount,funding_source,year,status,om_
 44,equipment,44,1,Long-Term Monitoring Stations,40000,CFI/institutional,0,estimated,,Capital,
 45,equipment,45,1,Telehealth/Remote Monitoring System,30000,CFI/institutional,0,estimated,,Capital,
 46,service,46,1,Data Integration (Connect Care),30000,CFI/institutional,0,estimated,,Capital - one-time,
-47,service,47,4,BioBank-TRE Integration,75000,CFI/institutional,0,estimated,,Capital - one-time,
-48,software,48,2,OpenSpecimen Enterprise License,200000,CFI/institutional,0,estimated,,Capital - 5yr,suite_2_biorepository/openspecimen_pricing.pdf
-49,service,49,2,OpenSpecimen Plugin Development,125000,CFI/institutional,0,estimated,,Capital - one-time,suite_2_biorepository/openspecimen_pricing.pdf
-50,service,50,2,OpenSpecimen Data Migration,60000,CFI/institutional,0,estimated,,Capital - one-time,suite_2_biorepository/openspecimen_pricing.pdf
-51,service,51,2,Connect Care FHIR Integration,90000,CFI/institutional,0,estimated,,Capital - one-time,suite_2_biorepository/epic_fhir_integration.pdf
-52,service,52,2,Dynamic Consent Module,60000,CFI/institutional,0,estimated,,Capital - one-time,suite_2_biorepository/openspecimen_pricing.pdf
-53,service,53,2,BioBank Staff Training,35000,CFI/institutional,0,estimated,,Capital - one-time,suite_2_biorepository/openspecimen_pricing.pdf
+47,service,47,4,BioBank-TRE Integration,75000,CFI/institutional,0,estimated,,Capital - one-time,suite_4_data_platform/biobank_tre_integration.md
+48,software,48,2,OpenSpecimen Enterprise License,200000,CFI/institutional,0,estimated,,Capital - 5yr,suite_2_biorepository/openspecimen_pricing.md
+49,service,49,2,OpenSpecimen Plugin Development,125000,CFI/institutional,0,estimated,,Capital - one-time,suite_2_biorepository/openspecimen_pricing.md
+50,service,50,2,OpenSpecimen Data Migration,60000,CFI/institutional,0,estimated,,Capital - one-time,suite_2_biorepository/openspecimen_pricing.md
+51,service,51,2,Connect Care FHIR Integration,90000,CFI/institutional,0,estimated,,Capital - one-time,suite_2_biorepository/epic_fhir_integration.md
+52,service,52,2,Dynamic Consent Module,60000,CFI/institutional,0,estimated,,Capital - one-time,suite_2_biorepository/openspecimen_pricing.md
+53,service,53,2,BioBank Staff Training,35000,CFI/institutional,0,estimated,,Capital - one-time,suite_2_biorepository/openspecimen_pricing.md
 54,service,54,5,Device Data Integration APIs,75000,CFI/institutional,0,estimated,,Capital - one-time,
 55,service,55,5,Validation Protocol Library,25000,CFI/institutional,0,estimated,,Capital - one-time,
 56,equipment,56,5,Sensor Development Equipment,50000,CFI/institutional,0,estimated,,Capital,
