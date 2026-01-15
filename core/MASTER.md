@@ -158,9 +158,17 @@ The timing for CTAP is uniquely favourable due to an unprecedented convergence o
 - **RareKids-CAN**: National pediatric rare disease network (CIHR Institute of Genetics, 2024)
 - **DHDP**: Digital Health and Discovery Platform ($49M federal + $108M partner + $165M in-kind)
 
-#### Institutional Commitment
+#### Institutional Commitment: Kipnes Health Research Institute as CTAP's Functional Home
 
-- **Kipnes Health Research Institute**: $25M philanthropic investment signaling institutional priority
+**The Dianne and Irving Kipnes Health Research Institute** (established September 2025, $25M philanthropic gift) is CTAP's functional home. The Institute is an organizational entity—not a building—housed within the College of Health Sciences in the renamed Dianne and Irving Kipnes Health Research Academy. Its vision: "to create a learning health system where artificial intelligence enhances care, clinical trials validate breakthroughs, and specialized programs demonstrate the full cycle of research from insight to impact."
+
+The Institute provides CTAP's governance and operational framework through two key components:
+
+- **AI + Health Hub** (Pannu, Lemermeyer): Bridges academic AI research and clinical deployment; home to Applied AI Innovation flagship
+- **Health Research Translation Unit**: Clinical trials project management, regulatory navigation, data analysis infrastructure
+
+Additional institutional alignment:
+
 - **Forward with Purpose**: UAlberta strategic plan prioritizing health/life sciences, AI, digital innovation
 - **College of Health Sciences**: Commitment to shared platforms and learning health systems
 - **Alberta Technology and Innovation Strategy (ATIS)**: Provincial priority on technology hub development
@@ -897,7 +905,8 @@ Ongoing support through Alberta Innovates, CIHR, and NFRF competitions—CTAP in
 
 The University of Alberta and College of Health Sciences have committed to:
 
-- Allocating and maintaining space in the Kipnes Health Research Academy for the Kipnes Health Research Institute
+- Providing CTAP operational governance through the **Kipnes Health Research Institute**—CTAP's functional home within the College of Health Sciences
+- Allocating and maintaining physical space in the Kipnes Health Research Academy and associated clinical facilities for CTAP operations
 - Providing base support for key personnel (Program Director, Operations Manager, Data Architect)
 - Integrating CTAP into institutional strategic plans and core-facility frameworks
 
