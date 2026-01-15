@@ -302,7 +302,7 @@
 
 ### Outstanding Items for RTA Submission
 
-1. ⚠️ **RTA Narrative (rta.md)** references older budget figures ($12.4M, $12,235,000) - requires update
+1. ✓ **RTA Narrative (rta.md)** updated to reflect $10.4M/$10,365,000 (2026-01-15)
 2. Add 13% contingency to final total for renovation reserve
 3. Confirm envelope amount with RAS-IP before finalizing
 
@@ -374,9 +374,9 @@
 - [x] Reconcile Suite 1 discrepancy ($100K) - RESOLVED 2026-01-15
 - [x] Reconcile Suite 2 cell manufacturing scope - RESOLVED 2026-01-15
 - [x] Update O&M calculations to match capital bases - RESOLVED 2026-01-15
+- [x] Update RTA narrative (rta.md) budget figures - RESOLVED 2026-01-15 (now shows $10.4M/$10.365M)
 - [ ] Download official RTA Budget Template from RAS-IP
 - [ ] Transfer this working document to official template format
-- [ ] **Update RTA narrative (rta.md) budget figures** - currently shows $12.4M/$12.235M
 - [ ] Prioritize quote collection (start with >$100K items)
 - [ ] Confirm envelope amount with RAS-IP
 - [ ] Develop detailed O&M revenue projections
