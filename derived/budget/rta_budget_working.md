@@ -2,7 +2,7 @@
 
 **Project:** Clinical Trials Acceleration Platform (CTAP)
 **PI:** Lawrence Richer
-**Date:** 2026-01-14
+**Date:** 2026-01-15
 **Status:** Working draft - transfer to official RTA Budget Template when obtained
 
 ---
@@ -11,22 +11,24 @@
 
 | Suite | Description | Capital Cost | % of Total |
 |-------|-------------|-------------|------------|
-| 1 | Clinical Trials Participant & Procedure Infrastructure | $2,904,000 | 23.4% |
-| 2 | Living Biorepository & Cell Manufacturing | $3,860,000 | 31.1% |
-| 3 | Translational Science Integration | $1,480,000 | 11.9% |
-| 4 | Data Platform, Secure Environments, AI/HPC | $2,805,000 | 22.6% |
-| 5 | Trial Innovation Tools & Wearables | $1,056,000 | 8.5% |
-| **Subtotal** | | **$12,105,000** | **97.4%** |
-| **Contingency (13%)** | Renovations reserve | **$1,573,650** | |
-| **Total with Contingency** | | **$13,678,650** | |
+| 1 | Clinical Trials Participant & Procedure Infrastructure | $3,004,000 | 29.0% |
+| 2 | Living Biorepository | $2,020,000 | 19.5% |
+| 3 | Translational Science Integration | $1,480,000 | 14.3% |
+| 4 | Data Platform, Secure Environments, AI/HPC | $2,805,000 | 27.1% |
+| 5 | Trial Innovation Tools & Wearables | $1,056,000 | 10.2% |
+| **Subtotal** | | **$10,365,000** | **100%** |
+| **Contingency (13%)** | Renovations reserve | **$1,347,450** | |
+| **Total with Contingency** | | **$11,712,450** | |
 
 ### Funding Structure (40/60 Model)
 
 | Source | Percentage | Amount |
 |--------|------------|--------|
-| CFI Request (Envelope) | 40% | $4,842,000 |
-| Matching Funds Required | 60% | $7,263,000 |
-| **Total Project Cost** | 100% | $12,105,000 |
+| CFI Request (Envelope) | 40% | $4,146,000 |
+| Matching Funds Required | 60% | $6,219,000 |
+| **Total Project Cost** | 100% | $10,365,000 |
+
+**Note:** Cell therapy manufacturing capabilities (GMP bioreactors, cell processors) are provided through existing ACTM infrastructure and are not included in this CFI request per Suite 2 specifications.
 
 **Note:** Contingency is separate from project cost calculation per RTA instructions.
 
@@ -34,7 +36,9 @@
 
 ## Suite 1: Clinical Trials Participant & Procedure Infrastructure
 
-**Suite Total:** $2,904,000
+**Suite Total:** $3,004,000
+
+*Includes Suite 1a (Vaccine Challenge Trial Unit) per equipment.csv consolidation.*
 
 ### Renovations
 
@@ -100,57 +104,59 @@
 | Data Integration (Connect Care) | EDC/CDASH linkage for rare disease registry | $30,000 |
 | **Subtotal Services** | | **$30,000** |
 
-**Suite 1 Verification:** $1,280,000 + $900,000 + $110,000 + $170,000 + $514,000 + $30,000 = **$3,004,000**
-
-⚠️ **Discrepancy:** Calculated $3,004,000 vs stated $2,904,000 (-$100,000 difference). Requires reconciliation.
+**Suite 1 Verification:** $1,280,000 + $900,000 + $110,000 + $170,000 + $514,000 + $30,000 = **$3,004,000** ✓
 
 ---
 
-## Suite 2: Living Biorepository & Cell Manufacturing
+## Suite 2: Living Biorepository
 
-**Suite Total:** $3,860,000
+**Suite Total:** $2,020,000
 
-### Equipment - Cell Manufacturing
+*Note: Cell therapy manufacturing capabilities (GMP bioreactors, cell processors) are provided through existing ACTM infrastructure and are not included in this CFI request per core Suite 2 specifications.*
+
+### Equipment - Automated Sample Processing
 
 | Item | Model Example | Quantity | Unit Cost | Total |
 |------|---------------|----------|-----------|-------|
 | Automated Liquid Handling System | Hamilton Microlab STAR / Tecan | 1 | $650,000 | $650,000 |
-| GMP Bioreactors (Cell Therapy) | Cytiva Xuri / Miltenyi Prodigy | 2 | $450,000 | $900,000 |
-| Automated Cell Washers/Processors | LOVO Cell Processing System | 2 | $120,000 | $240,000 |
-| Automated PSC Culture Platform | Sartorius CompacT SelecT | 1 | $700,000 | $700,000 |
-| Clinical Grade Microscopes & Counters | Keyence / Countess 3 FL | 1 | $70,000 | $70,000 |
-| **Subtotal Cell Manufacturing** | | | | **$2,560,000** |
+| **Subtotal Sample Processing** | | | | **$650,000** |
 
-### Equipment - Biorepository Storage
+### Equipment - Cryogenic Storage
 
 | Item | Model Example | Quantity | Unit Cost | Total |
 |------|---------------|----------|-----------|-------|
 | Ultra-Low Temp Freezers (-80°C) | Thermo Fisher TSX Series | 10 | $20,000 | $200,000 |
 | LN2 Vapour-Phase Storage System | Chart MVE High Efficiency | 4 | $50,000 | $200,000 |
+| **Subtotal Cryogenic Storage** | | | | **$400,000** |
+
+### Equipment - Biocontainment
+
+| Item | Model Example | Quantity | Unit Cost | Total |
+|------|---------------|----------|-----------|-------|
 | Class II Biosafety Cabinets | Baker / NuAire | 6 | $15,000 | $90,000 |
 | Refrigerated Centrifuges | Beckman Coulter Avanti | 4 | $25,000 | $100,000 |
+| **Subtotal Biocontainment** | | | | **$190,000** |
+
+### Equipment - Monitoring & Microscopy
+
+| Item | Model Example | Quantity | Unit Cost | Total |
+|------|---------------|----------|-----------|-------|
 | Environmental Monitoring System | Rees Scientific / Vaisala | 1 | $140,000 | $140,000 |
-| **Subtotal Storage** | | | | **$730,000** |
+| Clinical Grade Microscopes & Counters | Keyence / Countess 3 FL | 1 | $70,000 | $70,000 |
+| **Subtotal Monitoring & Microscopy** | | | | **$210,000** |
 
-### Software
-
-| Item | Description | Amount |
-|------|-------------|--------|
-| OpenSpecimen Enterprise License | 5-year, 21 CFR Part 11 compliant | $200,000 |
-| **Subtotal Software** | | **$200,000** |
-
-### Services
+### BioBank LIMS Platform
 
 | Item | Description | Amount |
 |------|-------------|--------|
-| OpenSpecimen Plugin Development | Dynamic consent, FHIR integration | $125,000 |
-| OpenSpecimen Data Migration | caTissue to OpenSpecimen | $60,000 |
-| Connect Care FHIR Integration | Epic FHIR API for BioBank | $90,000 |
-| Dynamic Consent Module | Renewable consent workflow | $60,000 |
-| BioBank Staff Training | OpenSpecimen certification | $35,000 |
-| **Subtotal Services** | | **$370,000** |
+| OpenSpecimen Enterprise License | 5-year, 21 CFR Part 11 compliant, multi-site | $200,000 |
+| Plugin Development & Data Migration | Dynamic consent, FHIR integration, caTissue migration | $185,000 |
+| Connect Care FHIR Integration | Epic API integration for specimen-EHR linkage | $90,000 |
+| Dynamic Consent Module | Renewable consent workflow implementation | $60,000 |
+| Staff Training | OpenSpecimen certification | $35,000 |
+| **Subtotal LIMS Platform** | | **$570,000** |
 
-**Suite 2 Verification:** $2,560,000 + $730,000 + $200,000 + $370,000 = **$3,860,000** ✓
+**Suite 2 Verification:** $650,000 + $400,000 + $190,000 + $210,000 + $570,000 = **$2,020,000** ✓
 
 ---
 
@@ -255,14 +261,14 @@
 
 ## Operations & Maintenance (5-Year Projection)
 
-| Suite | Description | O&M Rate | Year 1 | Year 2 | Year 3 | Year 4 | Year 5 | 5-Year Total |
-|-------|-------------|----------|--------|--------|--------|--------|--------|--------------|
-| 1 | Clinical Trials Infrastructure | 5% | $119,500 | $119,500 | $119,500 | $119,500 | $119,500 | $597,500 |
-| 2 | Biorepository & Cell Mfg | 6% | $213,600 | $213,600 | $213,600 | $213,600 | $213,600 | $1,068,000 |
-| 3 | Translational Science | 7% | $98,000 | $98,000 | $98,000 | $98,000 | $98,000 | $490,000 |
-| 4 | Data Platform & AI/HPC | 12% | $330,600 | $330,600 | $330,600 | $330,600 | $330,600 | $1,653,000 |
-| 5 | Trial Innovation & Wearables | 8% | $84,480 | $84,480 | $84,480 | $84,480 | $84,480 | $422,400 |
-| **Total** | | | **$846,180** | **$846,180** | **$846,180** | **$846,180** | **$846,180** | **$4,230,900** |
+| Suite | Description | Capital | O&M Rate | Year 1 | Year 2 | Year 3 | Year 4 | Year 5 | 5-Year Total |
+|-------|-------------|---------|----------|--------|--------|--------|--------|--------|--------------|
+| 1 | Clinical Trials Infrastructure | $3,004,000 | 5% | $150,200 | $150,200 | $150,200 | $150,200 | $150,200 | $751,000 |
+| 2 | Living Biorepository | $2,020,000 | 6% | $121,200 | $121,200 | $121,200 | $121,200 | $121,200 | $606,000 |
+| 3 | Translational Science | $1,480,000 | 7% | $103,600 | $103,600 | $103,600 | $103,600 | $103,600 | $518,000 |
+| 4 | Data Platform & AI/HPC | $2,805,000 | 12% | $336,600 | $336,600 | $336,600 | $336,600 | $336,600 | $1,683,000 |
+| 5 | Trial Innovation & Wearables | $1,056,000 | 8% | $84,480 | $84,480 | $84,480 | $84,480 | $84,480 | $422,400 |
+| **Total** | | **$10,365,000** | | **$796,080** | **$796,080** | **$796,080** | **$796,080** | **$796,080** | **$3,980,400** |
 
 ### O&M Revenue Sources
 
@@ -276,30 +282,29 @@
 
 ---
 
-## Budget Reconciliation Issues
+## Budget Reconciliation Status
 
-### Discrepancy Analysis
+### Discrepancies Resolved (2026-01-15)
 
-| Item | Amount |
-|------|--------|
-| RTA Narrative Opening (rta.md:46) | $12.4M |
-| RTA Section 6 Total (rta.md:314) | $12,235,000 |
-| Suite Totals (this document) | $12,105,000 |
-| equipment.csv calculated total | TBD (run SQL) |
+| Issue | Resolution |
+|-------|------------|
+| Suite 1 total ($2,904K stated vs $3,004K calculated) | ✓ Corrected to $3,004,000 (includes Suite 1a Challenge Unit) |
+| Suite 2 cell manufacturing inclusion | ✓ Removed $1,840,000 in cell manufacturing per core doc (ACTM provides) |
+| O&M calculations | ✓ Updated to reflect correct capital bases |
 
-### Suite 1 Discrepancy
+### Current Budget Alignment
 
-- **Calculated:** $3,004,000
-- **Stated in tracker:** $2,904,000
-- **Difference:** $100,000 over
-- **Action:** Review Autonomic Lab items for consolidation or removal
+| Source | Amount | Status |
+|--------|--------|--------|
+| This document (Suite totals) | $10,365,000 | ✓ Verified |
+| equipment.csv calculated total | $10,365,000 | ✓ Aligned |
+| Core suite documents | $10,365,000 | ✓ Aligned |
 
-### Recommendations
+### Outstanding Items for RTA Submission
 
-1. Reconcile Suite 1 total (remove $100K or adjust stated total)
-2. Align RTA narrative figures with final budget
-3. Add 13% contingency to final total for renovation reserve
-4. Confirm envelope amount with RAS-IP before finalizing
+1. ✓ **RTA Narrative (rta.md)** updated to reflect $10.4M/$10,365,000 (2026-01-15)
+2. Add 13% contingency to final total for renovation reserve
+3. Confirm envelope amount with RAS-IP before finalizing
 
 ---
 
@@ -366,16 +371,19 @@
 
 ## Action Items
 
+- [x] Reconcile Suite 1 discrepancy ($100K) - RESOLVED 2026-01-15
+- [x] Reconcile Suite 2 cell manufacturing scope - RESOLVED 2026-01-15
+- [x] Update O&M calculations to match capital bases - RESOLVED 2026-01-15
+- [x] Update RTA narrative (rta.md) budget figures - RESOLVED 2026-01-15 (now shows $10.4M/$10.365M)
 - [ ] Download official RTA Budget Template from RAS-IP
 - [ ] Transfer this working document to official template format
-- [ ] Reconcile Suite 1 discrepancy ($100K)
-- [ ] Align all RTA narrative budget figures
 - [ ] Prioritize quote collection (start with >$100K items)
 - [ ] Confirm envelope amount with RAS-IP
 - [ ] Develop detailed O&M revenue projections
 
 ---
 
-**Document Version:** 1.0
+**Document Version:** 1.1
 **Created:** 2026-01-14
+**Updated:** 2026-01-15 - Budget reconciliation completed; aligned with core suite documents
 **Next Update:** Upon receipt of official RTA Budget Template

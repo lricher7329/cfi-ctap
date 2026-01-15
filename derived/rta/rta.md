@@ -43,15 +43,15 @@ CTAP operationalizes this learning health system vision through a closed-loop ar
 
 ## 2.1 The Opportunity
 
-The University of Alberta requests **$12.4 million** to establish the Clinical Trials Acceleration Platform (CTAP)—an AI-enabled, health-system-embedded infrastructure that will position Alberta as a national leader in next-generation clinical trials.
+**The bottleneck to transforming scientific breakthroughs into patient benefit is no longer discovery—it is validation.** Advances in AI, molecular biology, and biomanufacturing have dramatically expanded the pipeline of vaccines, biologics, and cell therapies. Yet the fundamental constraint remains unchanged: the speed, cost, and integration of human clinical trials. In Canada, annual spending on clinical trials is estimated at C$0.8–1.0 billion, with industry contributing approximately 80%. Despite this substantial investment, much of the trial lifecycle—from conception through knowledge mobilization—remains manual, fragmented, and inefficient. Patients face barriers to discovering and participating in randomized clinical trials (RCTs), trialists cannot efficiently deploy available resources, and AI tools are deployed in isolated, non-interoperable workflows.
 
-Advances in AI, molecular biology, and biomanufacturing have dramatically expanded the pipeline of vaccines, biologics, and cell therapies. Yet the fundamental bottleneck to patient benefit remains unchanged: the speed, cost, and integration of human clinical trials. In Canada, annual spending on clinical trials is estimated at C$0.8–1.0 billion, with industry contributing approximately 80%. Despite this substantial investment, much of the trial lifecycle—from conception through knowledge mobilization—remains manual, fragmented, and inefficient. Patients face barriers to discovering and participating in randomized clinical trials (RCTs), trialists cannot efficiently deploy available resources, and AI tools are deployed in isolated, non-interoperable workflows.
-
-Recent systematic reviews demonstrate that AI integration can address these bottlenecks: meta-analytic evidence shows AI screening tools achieve 90.5% sensitivity and 99.3% specificity for identifying eligible trial patients, with predictive models achieving AUC scores of 0.81-0.92. AI-assisted processes have reduced eligibility screening time by 78% and transformed patient identification from 19-263 days to minutes. However, current AI applications remain fragmented—deployed in only a fraction of trial components—and the gap between patient identification and actual enrollment remains substantial, with conversion rates as low as 7%.
+**AI has proven it can solve these problems—but only when integrated across the entire trial lifecycle.** Recent systematic reviews demonstrate that AI screening tools achieve 90.5% sensitivity and 99.3% specificity for identifying eligible trial patients, with predictive models achieving AUC scores of 0.81-0.92. AI-assisted processes have reduced eligibility screening time by 78% and transformed patient identification from 19-263 days to minutes. However, current AI applications remain fragmented—deployed in only a fraction of trial components—and the gap between patient identification and actual enrollment remains substantial, with conversion rates as low as 7%.
 
 **This fragmentation—rather than limitations in AI performance—now represents the dominant barrier to accelerating clinical trials and translating scientific advances into patient benefit.**
 
-CTAP addresses this bottleneck by treating clinical trials not as episodic projects but as a continuously learning ecosystem where data, biospecimens, and operational knowledge cycle back to accelerate subsequent discoveries.
+The University of Alberta possesses a unique convergence of capabilities to solve this problem: the Alberta Machine Intelligence Institute (Amii) with 10+ CIFAR AI Chairs; Connect Care—a province-wide Epic-based EMR spanning 682 sites and 4.4 million Albertans; over $400M in cumulative discovery infrastructure (PRAIRIE Hub, ACTM, Li Ka Shing Institute of Virology, Cryo-EM Facility, Glycomics Institute, TMIC Metabolomics); and a proven AI deployment track record (Dr. Mitchell's AI Scribe already operational across 10 Alberta emergency departments with 58 physicians). No other Canadian institution combines AI leadership, unified health system integration, advanced biomanufacturing, and mature translational infrastructure in a single ecosystem.
+
+**The Clinical Trials Acceleration Platform (CTAP)** is Canada's first AI-native clinical trials infrastructure—a **$10.4 million** investment that embeds AI not as a bolt-on tool but as the foundational architecture for trial design, recruitment, monitoring, and analysis. CTAP treats clinical trials not as episodic projects but as a continuously learning ecosystem where data, biospecimens, and operational knowledge cycle back to accelerate subsequent discoveries.
 
 ## 2.2 Why the University of Alberta, Why Now
 
@@ -311,9 +311,9 @@ CRAIDL agents will be developed using open-source architecture, enabling deploym
 
 # 6. Infrastructure Request Justification
 
-The total infrastructure request is **$12,235,000 CAD**, organized into five suites aligned with the platform's five integrated domains.
+The total infrastructure request is **$10,365,000 CAD**, organized into five suites aligned with the platform's five integrated domains.
 
-## Suite 1: Clinical Trials Participant & Procedure Infrastructure ($2,390,000)
+## Suite 1: Clinical Trials Participant & Procedure Infrastructure ($3,004,000)
 
 This suite enhances an existing network of three clinical research units while establishing two specialized units:
 
@@ -328,21 +328,23 @@ This suite enhances an existing network of three clinical research units while e
 
 **Pediatric Rare Disease Unit ($200,000 CTAP + $200,000 Stollery Foundation):** Specialized infrastructure at Stollery CIU for gene therapy and cell therapy trials requiring 15+ year follow-up. Connects to national RareKids-CAN network and WCHRI Translational Genomics Hub.
 
-**Components:** Procedure room renovations ($750,000), monitoring equipment ($385,000), POC laboratory ($265,000), IP pharmacy ($300,000), Challenge Unit ($590,000), Pediatric Unit ($200,000).
+**Components:** Renovations & fit-out ($800,000), Challenge Unit renovation & equipment ($590,000), monitoring equipment ($400,000), POC laboratory ($200,000), IP pharmacy ($300,000), Autonomic Function Labs ($514,000), Pediatric Unit ($170,000), services ($30,000).
 
-## Suite 2: Living Biorepository & Cell Manufacturing ($3,860,000)
+## Suite 2: Living Biorepository ($2,020,000)
 
-This suite establishes the **Living Biorepository** concept and expands cell manufacturing capacity:
+This suite establishes the **Living Biorepository** concept—a fundamental reconceptualization that transforms biospecimen management from static storage into an intelligent, continuously-updated discovery engine:
 
-**OpenSpecimen Platform Migration ($570,000):** Migration from legacy caTissue to OpenSpecimen—the recognized successor with full FHIR R4 support, dynamic consent, and cloud-native architecture. Includes enterprise license, custom plugin development, Connect Care FHIR integration, data migration, and training.
+**Automated Sample Processing ($650,000):** Hamilton/Tecan automated liquid handling system for high-throughput sample aliquoting and preparation.
 
-**Cold Storage & Processing ($850,000):** 10 ULT freezers (-80°C), 4 LN₂ vapor-phase tanks, 24/7 monitoring systems, automated liquid handler, Class II biosafety cabinets, refrigerated centrifuges.
+**Cryogenic Storage ($400,000):** 10 ULT freezers (-80°C Thermo Fisher TSX Series), 4 LN₂ vapor-phase tanks (Chart MVE High Efficiency), enabling expanded capacity for PRAIRIE Hub and trial specimens.
 
-**Cell Manufacturing Expansion ($850,000):** GMP bioreactors, cell washers, clinical-grade incubators, environmental monitoring for ACTM expansion. Supports proven CAR-T cell therapy pipeline (Dr. Michael Chiu, Cross Cancer Institute).
+**Biocontainment Equipment ($190,000):** 6 Class II biosafety cabinets (Baker/NuAire), 4 refrigerated centrifuges (Beckman Coulter Avanti) for biocontainment-compatible sample processing.
 
-**iPSC Platform ($400,000):** Automated culture system and QC equipment for induced pluripotent stem cell platform development.
+**Monitoring & Microscopy ($210,000):** 24/7 environmental monitoring system (Rees Scientific/Vaisala), clinical-grade microscopes and counters (Keyence/Countess 3 FL).
 
-**Infrastructure ($490,000):** Facility renovations, backup power, IT infrastructure.
+**BioBank LIMS Platform ($570,000):** OpenSpecimen enterprise license (5-year, 21 CFR Part 11 compliant), plugin development & data migration, Connect Care FHIR integration, dynamic consent module, and staff training.
+
+*Note: Cell therapy manufacturing capabilities (GMP bioreactors, cell processors) are provided through existing ACTM infrastructure and are not included in this CFI request.*
 
 ## Suite 3: Clinical Trials Omics Integration Hub ($1,480,000)
 
@@ -371,46 +373,51 @@ This suite provides the trial-to-facility interface layer—connecting clinical 
 
 **Gap-Filling Equipment Reserve ($500,000):** Reserved for targeted equipment purchases identified through facility engagement that address genuine capability gaps not available through partnerships.
 
-## Suite 4: Data Platform, Secure Environments, AI/HPC ($3,655,000)
+## Suite 4: Data Platform, Secure Environments, AI/HPC ($2,805,000)
 
 This suite builds the unified data architecture connecting trial data to the three-zone TRE and CRAIDL AI agents:
 
-**On-Premises Infrastructure ($880,000):**
-- Secure compute nodes ($400,000): Zone 2 processing, OMOP ETL, CDISC transforms
-- Storage ($300,000): Trial data lake, Zone 2/3 storage
+**On-Premises Infrastructure ($580,000):**
+- Secure compute nodes ($200,000): Zone 2 processing, OMOP ETL, CDISC transforms
+- Secure storage infrastructure ($200,000): Trial data lake, Zone 2/3 storage
 - Networking and security ($180,000): Zero-trust perimeter, zone isolation
 
-**Clinical Trials Platform ($500,000):**
+**Clinical Trials Platform ($1,350,000):**
 - EDC/eSource platform ($400,000): Health Canada GCP compliant, CDASH-configured
 - Identity management ($100,000): RBAC, MFA, audit integration
-
-**AI/HPC Infrastructure ($500,000):**
-- GPU compute cluster ($300,000): CRAIDL development, LLM inference, NVIDIA BioNeMo
+- AWS cloud credits (5-year) ($500,000): Zone 3 compute, AI services, storage
 - AWS professional services ($200,000): Architecture, security, MLOps
+- PACS/DICOM integration gateway ($150,000)
 
-**Cloud Infrastructure ($600,000):** AWS cloud credits (5-year) for Zone 3 compute, AI services, storage.
-
-**Imaging AI Infrastructure ($500,000):**
-- PACS/DICOM integration gateway ($100,000)
+**AI/HPC & Imaging Infrastructure ($875,000):**
+- GPU compute cluster ($300,000): CRAIDL development, LLM inference, NVIDIA BioNeMo
 - Radiomics GPU compute nodes ($200,000)
 - Image harmonization software ($50,000)
 - Raw sensor data storage ($150,000)
+- OMOP/OHDSI tooling ($100,000)
+- Biobank TRE integration ($75,000)
 
 ## Suite 5: Trial Innovation Tools & Wearables ($1,056,000)
 
 This suite enables decentralized, patient-centric trials:
 
-**eConsent Platform ($400,000):** Enterprise platform with patient portal, digital recruitment, multilingual support. CRAIDL Ethics Agent integrates directly for consent form generation.
+**Software & Platforms ($276,000):**
+- eConsent Platform ($150,000): Enterprise platform with patient portal, digital recruitment, multilingual support
+- Participant Engagement App ($50,000): Mobile engagement for trial participants
+- Trial Oversight Dashboard ($76,000): Real-time monitoring and analytics
 
-**Mobile Devices & Kiosks ($200,000):** 40 tablets, 20 clinic kiosks, 20 study smartphones, connectivity.
+**Digital Tools & Services ($680,000):**
+- Operational Analytics Dashboard ($300,000): AI-powered trial operations intelligence
+- Participant Engagement Platform ($280,000): Multi-channel participant communication
+- Device Data Integration APIs ($75,000): Wearable and sensor data pipelines
+- Validation Protocol Library ($25,000): Standards for digital health validation
 
-**Wearables ($325,000):** ECG patches (100), BP monitors (100), actigraphy devices (50), CGM integration.
+**Hardware & Devices ($100,000):**
+- Sensor Development Equipment ($50,000): Testing and calibration infrastructure
+- Reference Device Pool ($25,000): Standardized devices for validation studies
+- Telehealth Equipment ($25,000): Remote visit capability for rural/Indigenous sites
 
-**Telehealth Infrastructure ($175,000):** 20 telehealth kits for rural/Indigenous sites, remote monitoring platform, secure video.
-
-**Dashboards & Apps ($130,000):** Trial oversight dashboard, participant engagement app.
-
-**Digital Health Device Validation ($175,000):** Infrastructure for validating UAlberta-developed sensors and digital therapeutics in partnership with iSMART (Western Canada's only GLP facility) and the Digital Health Unit. Active pipeline includes: Light/Baghelani microwave glucose sensor, Gupta diabetic wound sensors, Mushahwar Smart-e-Pants, Mitchell AI Scribe, HiMARC 3MDR VR therapy.
+*Digital Health Device Validation: Infrastructure for validating UAlberta-developed sensors and digital therapeutics in partnership with iSMART (Western Canada's only GLP facility). Active pipeline includes: Light/Baghelani microwave glucose sensor, Gupta diabetic wound sensors, Mushahwar Smart-e-Pants, Mitchell AI Scribe, HiMARC 3MDR VR therapy.*
 
 # 7. Sustainability
 
@@ -521,6 +528,6 @@ Given scale and integration requirements, we anticipate 4-5 years from initiatio
 
 # Conclusion
 
-This proposal requests **$12.4 million** to build the physical and digital backbone of a system uniquely suited to Alberta. By integrating Amii's computational capacity, Connect Care's clinical reach, and an automated biorepository's precision, CTAP will establish the University of Alberta as a permanent national hub for advanced therapeutic validation—transforming clinical trials from bottlenecks into accelerators of human health.
+This proposal requests **$10.4 million** to build the physical and digital backbone of a system uniquely suited to Alberta. By integrating Amii's computational capacity, Connect Care's clinical reach, and an automated biorepository's precision, CTAP will establish the University of Alberta as a permanent national hub for advanced therapeutic validation—transforming clinical trials from bottlenecks into accelerators of human health.
 
 CTAP creates a future where clinical trials are not episodic projects but components of a continuously learning ecosystem—where data, biospecimens, and operational knowledge cycle back to accelerate discovery, and where the promise of AI-enabled medicine becomes operational reality for patients across Alberta and beyond.
