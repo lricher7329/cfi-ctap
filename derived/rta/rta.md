@@ -303,19 +303,49 @@ CTAP's physical infrastructure is designed in collaboration with ICTU to reflect
 
 ## Health and Social Benefits
 
-By reducing trial start-up times—potentially from months to weeks via CRAIDL—CTAP will bring promising vaccines, cell therapies, biologics, and precision therapies to patients more quickly and safely. Evidence from existing AI implementations demonstrates: 78% reduction in screening time, 4.5-fold faster eligibility determinations, and 83% reduction in data extraction effort.
+**Patients Cannot Wait.** CTAP directly addresses the most critical bottleneck in translating scientific discovery into patient benefit: the speed and accessibility of clinical trials. By reducing trial start-up times from 12+ months to under 6 months—with AI-augmented trials targeting 4-week activation—CTAP will accelerate access to curative and disease-modifying therapies for patients who are currently waiting.
 
-Alberta patients—including those with multiple sclerosis, chronic hepatitis C, cardio-renal-metabolic disease, and rare pediatric conditions—will gain earlier access to novel therapies. The CRAIDL system will democratize access to sophisticated trial design, enabling investigators who currently lack infrastructure to translate discovery science into human trials. Indigenous and rural communities will benefit from co-designed, culturally safe, and geographically accessible trials.
+**Quantified Impact Projections:**
+
+| Patient Population | Burden | CTAP Benefit |
+|-------------------|--------|--------------|
+| **Multiple Sclerosis** | 90,000+ Canadians; Alberta has highest incidence globally | Earlier access to cell therapies; reduced relapse rates; potential remyelination |
+| **Long COVID** | 1.4M+ Canadians with persistent symptoms | First integrated autonomic function trial infrastructure; taurine and emerging therapies |
+| **Hepatitis C** | 250,000+ Canadians living with HCV | Accelerated vaccine development via CHIM facility; potential elimination |
+| **Rare Pediatric Diseases** | 1 in 12 Canadians affected by rare disease; 75% pediatric onset | RareKids-CAN network access; gene therapy trials; reduced diagnostic odyssey |
+| **Type 1 Diabetes** | 300,000+ Canadians | Connect1D registry enabling precision trials; islet and beta cell therapies |
+| **Indigenous Health** | Health outcomes gap of 10-15 years life expectancy | First culturally safe, ICTU-co-designed trials infrastructure; community-led research |
+
+**Trial Acceleration:** Evidence from existing AI implementations demonstrates transformative efficiency gains: 78% reduction in screening time, 4.5-fold faster eligibility determinations, 83% reduction in data extraction effort, and patient identification compressed from weeks to minutes. CRAIDL will embed these capabilities across the entire trial lifecycle.
+
+**Equity Impact:** CTAP's explicit targets—15% Indigenous participation, 20% rural/remote participation—address the systematic exclusion of underserved populations from clinical research. Decentralized trial infrastructure (telehealth, wearables, AI Scribe) extends participation beyond urban academic centres, ensuring that Albertans across 682 AHS sites can benefit from research advances.
 
 ## Economic and Innovation Benefits
 
-CTAP will strengthen Alberta's position as an international technology and innovation hub, directly supporting ATIS goals. Clinical trials in Canada contribute $15 billion annually; CRAIDL will attract R&D from industrial partners, biotech developers, and external academics seeking AI-augmented trial design efficiency.
+**National Economic Impact:** Clinical trials contribute approximately **$1 billion annually** to Canada's health research economy. CTAP positions Alberta to capture increased share of this investment through:
 
-The platform will generate new IP in AI algorithms for trial design, analytical pipelines, and platform technologies. Training at the intersection of clinical research, data science, AI, and biomanufacturing creates highly qualified personnel with globally competitive skills.
+- **Reduced trial costs:** AI-augmented design reduces per-trial costs by 20-30% through optimized protocols and reduced screening failures
+- **Increased trial volume:** 40-50% faster startup enables more trials within existing infrastructure
+- **Industry attraction:** CRAIDL's AI capabilities attract pharmaceutical and biotech R&D investment seeking efficiency gains
+- **Spinoff potential:** AI algorithms, platform technologies, and analytical pipelines represent commercializable IP
 
-## Knowledge Mobilization and Technology Transfer
+**Alignment with Alberta Technology and Innovation Strategy (ATIS):** CTAP directly supports provincial goals to establish Alberta as an international technology hub. The platform leverages Alberta's unique convergence of H200 GPU compute infrastructure (up to 1,000 GPUs), Amii AI expertise (10+ CIFAR AI Chairs), and Connect Care's province-wide health data—assets unmatched elsewhere in Canada.
 
-CRAIDL agents will be developed using open-source architecture, enabling deployment across the ACT-AEC network nationally and internationally—extending AI-enabled trial capabilities beyond well-resourced academic centres. Knowledge mobilization includes: rapid dissemination through open-access publications; co-development of clinical guidelines with professional societies; integration of findings into provincial care pathways; and patient-facing summaries.
+**Manufacturing-to-Trials Pathway:** Integration with the **Critical Medicines Production Centre (CMPC)**—Canada's largest pharmaceutical manufacturing capacity at 70M+ doses/year—and **Applied Pharmaceutical Innovation (API)** creates a complete discovery-to-production pathway. Products validated through CTAP trials can scale immediately to population-level manufacturing, eliminating the gap between clinical success and patient access.
+
+**HQP Training:** CTAP will train **150+ highly qualified personnel** in AI-enabled trial design, creating a workforce with globally competitive skills at the intersection of clinical research, data science, AI, and biomanufacturing. This addresses a critical national skills gap as AI transforms health research methodology.
+
+## Pandemic Preparedness
+
+CTAP's **Vaccine Challenge Trial Unit**—Canada's first academic controlled human infection model (CHIM) facility—provides essential pandemic preparedness infrastructure. CHIM studies can provide vaccine efficacy signals in months rather than years, with dramatically smaller participant numbers. This capability supports PRAIRIE Hub's vaccine development platform and positions Canada for rapid response to emerging pathogens.
+
+## National and International Impact
+
+**Western Canadian Anchor:** CTAP will serve as the Western anchor for national clinical trials networks including ACT-AEC, PRAIRIE Hub, and RareKids-CAN, providing critical infrastructure capacity west of Ontario and ensuring geographic equity in Canadian research infrastructure.
+
+**Open Infrastructure Model:** CRAIDL agents will be developed using open-source architecture and deployed across the ACT-AEC network nationally—extending AI-enabled trial capabilities beyond well-resourced academic centres. This democratizes access to sophisticated trial design for investigators across Canada.
+
+**Knowledge Mobilization:** Rapid dissemination through open-access publications; co-development of clinical guidelines with professional societies; integration of findings into provincial care pathways via Connect Care; and patient-facing research summaries through the Participant Engagement Portal.
 
 # 6. Infrastructure Request Justification
 
