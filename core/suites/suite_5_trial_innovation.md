@@ -429,12 +429,140 @@ Industry-sponsored research follows enhanced governance requirements:
 | MS Cell Therapies                | Long-term wearable monitoring post-infusion     |
 | Precision Population Health      | Decentralized recruitment, Indigenous co-design |
 | Pediatric Rare Disease           | Family-friendly eConsent, remote monitoring     |
-| Cardio-Renal-Metabolic           | BP/glucose wearables, telehealth follow-up      |
+| Cardio-Renal-Metabolic           | BP/glucose wearables, telehealth follow-up, **Connect1D Canada integration** |
 | Digital Health Device Validation | Device validation pathway, iSMART partnership   |
 
 ---
 
-## 12. Digital Health Ecosystem Partners
+## 12. Connect1D Canada: Cardio-Renal-Metabolic Flagship Partnership
+
+### 12.1 Strategic Overview
+
+**Connect1D Canada** represents a transformative partnership that positions CTAP as the national hub for Type 1 Diabetes (T1D) clinical trials innovation. As Canada's premier patient-driven T1D registry—connecting over 6,000 Canadians living with T1D to research opportunities—Connect1D will be **hosted within CTAP's Trusted Research Environment (TRE)**, establishing Alberta as the data home for pan-Canadian diabetes research.
+
+This integration directly supports CTAP's **Cardio-Renal-Metabolic (CRM) Program**, recognizing that T1D is fundamentally a cardio-renal-metabolic condition: cardiovascular disease remains the leading cause of death in T1D, diabetic kidney disease affects 30-40% of patients, and metabolic dysregulation drives complications across organ systems.
+
+**Leadership:**
+- **Dr. Peter Senior** (Scientific Co-Lead, Connect1D Canada; Director, Alberta Diabetes Institute; Charles A. Allard Chair in Diabetes Research)
+- **Kate Farnsworth** (Patient Co-Lead, Connect1D Canada)
+- **Dr. Justin Ezekowitz** (Canadian VIGOUR Centre; cardiovascular trials expertise)
+- **Alberta Diabetes Institute Clinical Research Unit** (Phase II-III trial capabilities)
+
+### 12.2 Connect1D TRE Integration Architecture
+
+Connect1D Canada will be hosted within Suite 4's three-zone TRE, enabling unprecedented integration between patient-reported data, continuous glucose monitoring (CGM) streams, and Alberta's Connect Care electronic health records.
+
+```
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                    CONNECT1D DATA ECOSYSTEM IN CTAP TRE                      │
+├─────────────────────────────────────────────────────────────────────────────┤
+│                                                                              │
+│  ┌──────────────────┐    ┌──────────────────┐    ┌──────────────────┐       │
+│  │   Connect1D      │    │   CGM Wearable   │    │   Connect Care   │       │
+│  │   Registry       │    │   Data Streams   │    │   EHR Linkage    │       │
+│  │   (Patient PROs) │    │   (Dexcom, Libre)│    │   (4.4M Albertans)│      │
+│  └────────┬─────────┘    └────────┬─────────┘    └────────┬─────────┘       │
+│           │                       │                       │                  │
+│           └───────────────────────┼───────────────────────┘                  │
+│                                   ▼                                          │
+│  ┌─────────────────────────────────────────────────────────────────────┐    │
+│  │                    ZONE 1: Identifiable (Custodian Control)          │    │
+│  │   • Consent verification    • Identity resolution                    │    │
+│  │   • Alberta participant linkage to Connect Care                      │    │
+│  └─────────────────────────────────┬───────────────────────────────────┘    │
+│                                    ▼                                         │
+│  ┌─────────────────────────────────────────────────────────────────────┐    │
+│  │                    ZONE 2: Controlled Processing                     │    │
+│  │   • OMOP CDM transformation    • CGM data standardization            │    │
+│  │   • Glycemic variability metrics    • Cardiorenal phenotyping        │    │
+│  └─────────────────────────────────┬───────────────────────────────────┘    │
+│                                    ▼                                         │
+│  ┌─────────────────────────────────────────────────────────────────────┐    │
+│  │                    ZONE 3: Research Environment                      │    │
+│  │   • AI-powered trial matching    • Federated T1D Exchange queries    │    │
+│  │   • CRM outcome analytics    • CGM-phenotype correlation             │    │
+│  └─────────────────────────────────────────────────────────────────────┘    │
+│                                                                              │
+└─────────────────────────────────────────────────────────────────────────────┘
+```
+
+### 12.3 Cardio-Renal-Metabolic Research Capabilities
+
+The Connect1D-CTAP integration enables a comprehensive CRM research platform:
+
+| Capability | Description | Suite Integration |
+|------------|-------------|-------------------|
+| **Glycemic-Cardiovascular Correlation** | Link CGM time-in-range to cardiovascular outcomes via Connect Care | Suite 4 TRE Zone 2/3 |
+| **Diabetic Kidney Disease Cohorts** | Identify DKD progression using eGFR trajectories + glycemic patterns | Suite 4 OMOP CDM |
+| **Decentralized CGM Trials** | Remote CGM monitoring with telehealth follow-up for national reach | Suite 5 wearables + telehealth |
+| **AI-Assisted Recruitment** | CRAIDL matching engine identifies eligible T1D participants | Suite 4 CRAIDL agents |
+| **Biomarker Discovery** | Link biospecimens to CGM patterns and CRM outcomes | Suite 2 Living Biorepository |
+| **Novel Device Validation** | Testbed for Light/Baghelani microwave glucose sensor | Suite 5 Device Validation |
+
+### 12.4 T1D Exchange Partnership & International Federation
+
+Connect1D Canada's partnership with the **T1D Exchange** (US-based, 100,000+ participants) positions CTAP for international federated research:
+
+| Network | Participants | CTAP Integration |
+|---------|-------------|------------------|
+| Connect1D Canada | 6,000+ Canadians with T1D | **Primary host in TRE** |
+| T1D Exchange (USA) | 100,000+ Americans with T1D | Federated OMOP queries |
+| Diabetes Action Canada | Pan-Canadian SPOR network | Research coordination |
+| CanScreen T1D | T1D screening consortium | Prevention trial pathway |
+
+**Federated Query Capability:** Researchers can execute privacy-preserving queries across Connect1D and T1D Exchange populations without data leaving respective jurisdictions—enabling North American-scale T1D research while maintaining Canadian data sovereignty.
+
+### 12.5 Suite 5 Tools for Connect1D Trials
+
+| Tool | Connect1D Application |
+|------|----------------------|
+| **eConsent Platform** | Streamlined enrollment with dynamic consent for CGM data sharing |
+| **Continuous Glucose Monitors** | 100 CGM devices for decentralized trial participants |
+| **Trial Matching Engine** | AI-powered notification of relevant CRM trials to registry participants |
+| **Telehealth Kits** | Remote trial visits for participants outside major centres |
+| **Participant Portal** | Transparency dashboard showing CGM data contributions and research impact |
+| **Blood Pressure Monitors** | Integrated BP/glucose monitoring for comprehensive CRM phenotyping |
+
+### 12.6 Exemplar Use Cases
+
+#### Use Case 1: SGLT2 Inhibitor Cardioprotection in T1D
+A pragmatic trial evaluating SGLT2 inhibitors for cardiovascular risk reduction in T1D. Connect1D identifies eligible participants nationally; Alberta participants receive CGM + BP monitors with data flowing to TRE; Connect Care provides outcome adjudication; federated analysis includes T1D Exchange comparator data.
+
+#### Use Case 2: CGM-Guided A1C Targets for Renal Protection
+An adaptive platform trial testing individualized glycemic targets based on CGM time-in-range to prevent DKD progression. Registry recruitment enables rapid enrollment; Living Biorepository collects serial biospecimens for nephropathy biomarker discovery; CRAIDL Events Agent monitors safety signals.
+
+#### Use Case 3: Microwave Glucose Sensor Validation
+Connect1D participants serve as validation cohort for the Light/Baghelani non-invasive microwave glucose sensor. CGM provides gold-standard comparator; TRE enables correlation analysis; successful validation creates pathway to replace finger-stick monitoring.
+
+### 12.7 Patient-Oriented Research Excellence
+
+Connect1D embodies SPOR principles that align with CTAP's participant engagement vision:
+
+| SPOR Principle | Connect1D Implementation |
+|----------------|-------------------------|
+| **Patient Governance** | Kate Farnsworth (patient co-lead); T1D community governance committee |
+| **Co-Design** | Platform designed with T1D community input |
+| **Research Priorities** | Community-identified priorities drive trial selection |
+| **Return of Results** | Participants receive individual CGM insights and aggregate research findings |
+| **Accessibility** | National reach enables rural and remote T1D participation |
+
+### 12.8 Alberta Diabetes Institute Clinical Research Unit
+
+The **Alberta Diabetes Institute Clinical Research Unit (ADI CRU)**, located in the Li Ka Shing Centre for Health Research Innovation, provides specialized infrastructure for Connect1D-enabled CRM trials:
+
+| Capability | Equipment/Resource | CRM Application |
+|------------|-------------------|-----------------|
+| **Body Composition** | BOD POD | Metabolic phenotyping for insulin resistance studies |
+| **Metabolic Testing** | Whole Body Calorimetry Unit | Energy expenditure in T1D trials |
+| **Nutrition Research** | Fully-equipped research kitchen | Dietary intervention trials |
+| **Islet Biology** | Islet Cell Core (Dr. Patrick MacDonald) | Beta cell function studies |
+| **Phase II-III Trials** | Clinical trial beds, monitoring | Interventional CRM studies |
+
+This infrastructure complements Suite 1's clinical spaces, enabling deep metabolic phenotyping that links to Connect1D registry data and CGM streams within the TRE.
+
+---
+
+## 13. Digital Health Ecosystem Partners
 
 Suite 5's Digital Health Device Validation Program integrates multiple UAlberta research groups and facilities:
 
@@ -475,4 +603,6 @@ CTAP provides validation infrastructure for digital health innovations developed
 
 ---
 
-*Document Version: 1.2 | January 2026 | CFI Innovation Fund 2027*
+*Document Version: 1.3 | January 2026 | CFI Innovation Fund 2027*
+
+*v1.3 Changes: Added Section 12 (Connect1D Canada: Cardio-Renal-Metabolic Flagship Partnership) featuring TRE-hosted pan-Canadian T1D registry integration*
