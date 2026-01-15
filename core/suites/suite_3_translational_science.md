@@ -35,6 +35,7 @@ Suite 3 operates through formal partnerships with existing core facilities rathe
 | **Glycomics Institute (GIA)** | Glycan profiling | Standardized sample handling, clinical metadata | Therapeutic glycoprotein analysis |
 | **TMIC** | Metabolomics (50K samples/year) | Quality-controlled trial samples | Biomarker discovery |
 | **Alberta Proteomics (APM)** | Protein identification | Pre-analytical quality assurance | Protein biomarker analysis |
+| **Peter Allen MRI Research Centre** | Advanced multi-organ MRI (brain, cardiac, musculoskeletal), quantitative imaging, novel MR sequences | Trial imaging protocols, longitudinal phenotyping, outcome data linkage | 3T/7T imaging, MR physics expertise, sequence development |
 
 **Note:** The WCHRI Translational Genomics Hub is a research coordination platform (not an instrumentation core) that aligns with CTAP's Pediatric Rare Disease Clinical Trials Unit (Suite 1). The Hub facilitates genomic characterization for undiagnosed families by coordinating ethics, enrollment, sample logistics, and connections to scientists—a complementary coordination function rather than an omics facility partnership.
 
@@ -347,9 +348,43 @@ This integration enables precision dosing that accounts for metabolic variabilit
 
 ### 5.2 Imaging Biomarker Development
 
-Flagship trials incorporating imaging endpoints benefit from radiomic biomarker validation capabilities, with particular strength in neuroimaging through the **MS Centre's imaging expertise** (Wilman, Beaulieu, Emery):
+#### Peter Allen MRI Research Centre Partnership
 
-**MS and Neuro-inflammatory Imaging:** MS Centre neuroimaging affiliates provide expertise in advanced MRI techniques for demyelination, neuroinflammation, and treatment response assessment. Christopher Power (Neurologic Infection & Immunity) and Jason Plemel (Glial Biology) contribute mechanistic understanding that informs imaging biomarker interpretation—correlating radiological findings with underlying glial pathology and neuroimmune processes. This enables development of imaging endpoints that reflect biological treatment effects rather than purely anatomical changes.
+The **Peter Allen MRI Research Centre (PAMRC)** provides CTAP's core advanced imaging infrastructure, supporting both clinical trials and translational research studies requiring deep multi-organ phenotyping. PAMRC's research-dedicated scanners (3T and 7T) and MR physics expertise enable novel quantitative imaging protocols that go beyond standard clinical imaging.
+
+| Capability | Application | Trial Integration |
+|------------|-------------|-------------------|
+| **Neuroimaging** | Brain structure/function, white matter integrity, neuroinflammation | MS trials, neurodegenerative disease, post-infectious syndromes |
+| **Cardiac MRI** | Myocardial fibrosis, strain imaging, T1/T2 mapping | Cardio-renal-metabolic trials, cardiotoxicity monitoring |
+| **Musculoskeletal** | Muscle composition, fat infiltration, inflammation | Myopathies, sarcopenia, post-viral muscle dysfunction |
+| **Quantitative Methods** | MR spectroscopy, diffusion tensor imaging, perfusion | Metabolic characterization, tissue microstructure |
+
+**PAMRC-CTAP Workflow:**
+1. Trial protocols developed jointly with PAMRC MR physicists (Wilman, Beaulieu)
+2. Standardized acquisition sequences ensure reproducibility across timepoints
+3. Imaging data flows to Suite 4 OMOP data lake via DICOM adapters
+4. Quantitative features extracted for correlation with molecular and clinical endpoints
+
+#### Deep Phenotyping for Translational Studies
+
+PAMRC enables comprehensive multi-organ phenotyping studies that bridge observational research and interventional trials:
+
+**Long COVID Deep Phenotyping:** Post-acute sequelae of SARS-CoV-2 (PASC) manifests across multiple organ systems with poorly understood pathophysiology. PAMRC supports systematic characterization of:
+- **Brain**: White matter lesions, neuroinflammation markers, spectroscopy for metabolic dysfunction
+- **Heart**: Subclinical myocarditis, microvascular dysfunction, fibrosis quantification
+- **Muscle**: Skeletal muscle inflammation, composition changes, mitochondrial dysfunction markers
+
+This phenotyping infrastructure positions CTAP to rapidly translate observational findings into intervention trials—identifying imaging biomarkers that can serve as endpoints for therapeutic trials targeting post-viral syndromes.
+
+**Mechanistic Trial Support:** Beyond endpoint measurement, PAMRC imaging provides mechanistic insights that inform trial design. For example, cardiac MRI findings may stratify long COVID patients into inflammatory vs. fibrotic phenotypes, enabling targeted therapeutic selection.
+
+#### MS Centre Neuroimaging Expertise
+
+MS Centre neuroimaging affiliates (Wilman, Beaulieu, Emery) provide specialized expertise for neurological trials:
+
+**MS and Neuro-inflammatory Imaging:** Advanced MRI techniques for demyelination, neuroinflammation, and treatment response assessment. Christopher Power (Neurologic Infection & Immunity) and Jason Plemel (Glial Biology) contribute mechanistic understanding that informs imaging biomarker interpretation—correlating radiological findings with underlying glial pathology and neuroimmune processes. This enables development of imaging endpoints that reflect biological treatment effects rather than purely anatomical changes.
+
+#### Radiomic and AI-Enabled Imaging Analysis
 
 **Radiomic Endpoint Validation:** Quantitative imaging features (texture, entropy, wavelet frequencies) are correlated with treatment response to develop imaging-based surrogate endpoints. These radiomic delta endpoints can detect therapeutic response weeks earlier than standard RECIST measurements, enabling adaptive trial designs with earlier "Go/No-Go" decisions.
 
@@ -357,7 +392,17 @@ Flagship trials incorporating imaging endpoints benefit from radiomic biomarker 
 
 **Spatial Transcriptomics Validation:** ACE Core's MERSCOPE provides the molecular ground truth for validating "virtual biopsy" predictions from radiomics, correlating computational imaging biomarkers with spatial gene expression at single-cell resolution.
 
+**AI Model Development:** Suite 3's DGX Spark workstations support development of imaging AI models:
+- Automated segmentation for volumetric endpoints
+- Radiomic feature extraction pipelines
+- Deep learning models for lesion detection and characterization
+- Multi-modal fusion (imaging + omics + clinical)
+
+#### Multi-Site Imaging Quality Assurance
+
 **Image Harmonization:** To ensure imaging data from rural Alberta hospitals are mathematically comparable to academic centres, Suite 3 supports ComBat normalization and AI-calibration protocols that address scanner variability—a critical quality consideration for multi-site imaging trials.
+
+**PAMRC as Reference Standard:** PAMRC serves as the imaging reference site for multi-site trials, with standardized phantoms and quality assurance protocols that enable reliable pooling of imaging data across Alberta sites.
 
 ---
 
