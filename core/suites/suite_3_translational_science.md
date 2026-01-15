@@ -36,6 +36,7 @@ Suite 3 operates through formal partnerships with existing core facilities rathe
 | **TMIC** | Metabolomics (50K samples/year) | Quality-controlled trial samples | Biomarker discovery |
 | **Alberta Proteomics (APM)** | Protein identification | Pre-analytical quality assurance | Protein biomarker analysis |
 | **Peter Allen MRI Research Centre** | Advanced multi-organ MRI (brain, cardiac, musculoskeletal), quantitative imaging, novel MR sequences | Trial imaging protocols, longitudinal phenotyping, outcome data linkage | 3T/7T imaging, MR physics expertise, sequence development |
+| **ADI IsletCore** | Human pancreatic islet isolation, biobanking, cryopreservation, research distribution (international reach) | Trial sample pipeline for diabetes/metabolic studies, clinical outcome linkage, Edmonton Protocol integration | Research-grade islet preparations, 20+ year cryopreservation expertise, donor phenotyping |
 | **ADI IsletCore** | Human pancreatic islet isolation, biobanking, and distribution; islet functional characterization; research-grade tissue procurement | Trial sample integration, clinical metadata linkage, outcome correlation for diabetes therapeutics | Research islet isolations, tissue biobanking, international distribution network, islet biology expertise (Senior, MacDonald) |
 
 **Note:** The WCHRI Translational Genomics Hub is a research coordination platform (not an instrumentation core) that aligns with CTAP's Pediatric Rare Disease Clinical Trials Unit (Suite 1). The Hub facilitates genomic characterization for undiagnosed families by coordinating ethics, enrollment, sample logistics, and connections to scientists—a complementary coordination function rather than an omics facility partnership.
@@ -293,7 +294,8 @@ Development/Prototyping     Production Scale          Peak Demand
 |---------|-------------------|
 | MS Cell Therapies | **MS Centre Integration:** Immune profiling via GlycoNet glycomics (Mahal), cell product characterization via Cryo-EM, T-cell functional states via ACE Core single-cell analysis, neuroimmunology expertise via MS Experimental Therapeutics Program (Giuliani), glial biology collaboration (Voronova, Plemel, Todd). **CHARM Synergy:** Voronova's CHARM hiPSC platform (CFI IF 2025) provides patient-derived neural models for MS therapeutic target validation and cell therapy optimization. |
 | Hepatitis C/Vaccines | Vaccine antigen structure via Cryo-EM, immune response via TMIC metabolomics, spatial immune mapping via ACE Core MERSCOPE |
-| Cardio-Renal-Metabolic | Metabolic biomarkers via TMIC, glycan signatures via GlycoNet |
+| Cardio-Renal-Metabolic | Metabolic biomarkers via TMIC, glycan signatures via GIA, **islet biology via ADI IsletCore**, cardiac imaging via PAMRC |
+| Cardio-Renal-Metabolic | **ADI IsletCore Integration:** Human islet functional characterization for diabetes therapeutic trials, islet-derived biomarkers, beta-cell function assessment; metabolic biomarkers via TMIC, glycan signatures via GIA. IsletCore enables mechanistic studies linking trial outcomes to islet biology—critical for evaluating novel diabetes interventions targeting beta-cell preservation or regeneration. |
 | Pediatric Rare Disease | Genomic characterization coordinated via WCHRI Translational Genomics Hub, protein analysis via APM |
 | Oncology Trials | Radiomic biomarkers, tumor microenvironment spatial analysis via ACE Core MERSCOPE |
 
@@ -405,44 +407,80 @@ MS Centre neuroimaging affiliates (Wilman, Beaulieu, Emery) provide specialized 
 
 **PAMRC as Reference Standard:** PAMRC serves as the imaging reference site for multi-site trials, with standardized phantoms and quality assurance protocols that enable reliable pooling of imaging data across Alberta sites.
 
-### 5.3 ADI IsletCore: Cardio-Renal-Metabolic Flagship Integration
+### 5.3 ADI IsletCore & Diabetes Research Integration
 
-The **Alberta Diabetes Institute IsletCore** provides CTAP with access to human pancreatic islet cells—a critical resource for diabetes clinical trials within the Cardio-Renal-Metabolic flagship program. IsletCore represents a unique capability: research-focused islet isolation that enables mechanistic studies linking therapeutic interventions to beta-cell biology.
+The **Alberta Diabetes Institute IsletCore** provides CTAP's core infrastructure for diabetes and metabolic disease clinical trials, establishing a unique bridge between the world-renowned Edmonton Protocol islet transplantation program and translational clinical research.
 
 #### IsletCore Capabilities
 
-| Capability | Application | Trial Integration |
-|------------|-------------|-------------------|
-| **Research Islet Isolation** | High-purity (median 85%) human islet preparations from donor pancreata | Parallel islet studies for diabetes therapeutic trials |
-| **Tissue Biobanking** | Archived islets and associated pancreatic tissue | Retrospective biomarker correlation, longitudinal outcome linkage |
-| **Functional Characterization** | Insulin/glucagon secretion assays, metabolic analysis | Mechanistic endpoints for beta-cell targeting therapeutics |
-| **International Distribution** | Established network serving researchers globally | Multi-site collaboration, external validation studies |
+| Capability | Description | Clinical Trial Application |
+|------------|-------------|---------------------------|
+| **Research Islet Isolation** | Non-GMP isolations from cadaveric donors (research consent), median 85% purity | Mechanistic studies in diabetes interventional trials |
+| **Cryopreservation & Biobanking** | 20+ year proven viability retention, standardized protocols | Longitudinal islet studies, retrospective biomarker correlation |
+| **Diabetic Donor Islets** | Isolations from T1D and T2D donors with relaxed cold ischemia criteria | Disease-state comparisons, therapeutic target validation |
+| **International Distribution** | Established MTA framework, global research network | Multi-centre translational studies |
+| **Islet Function Assessment** | Glucose-stimulated insulin secretion (GSIS), viability testing | Quality-controlled samples for trial endpoints |
 
-#### Cardio-Renal-Metabolic Integration
+#### Edmonton Protocol Integration
 
-IsletCore directly supports the Cardio-Renal-Metabolic flagship program's diabetes research priorities:
+The Edmonton Protocol—developed at the University of Alberta and published in *The New England Journal of Medicine* (2000)—represents the most advanced approach to islet transplantation. Suite 3 leverages this world-leading expertise for clinical trial infrastructure:
 
-**Type 1 Diabetes Trials (Connect1d Canada):**
-- Islet-derived biomarkers for disease progression monitoring
-- Beta-cell function assessment as secondary endpoint in intervention trials
-- Mechanistic studies correlating clinical outcomes with islet biology
+**Translational Workflow:**
+1. **Islet transplant registry linkage**: Connect Care integration enables 20+ year outcome tracking for transplant recipients
+2. **Mechanistic sample pipeline**: Paired samples from transplant recipients and research donors feed Suite 4 OMOP data lake
+3. **Immunomodulation trials**: Challenge Unit (Suite 1) capabilities support novel tolerance induction protocols
+4. **Biomarker discovery**: TMIC metabolomics + IsletCore samples identify predictors of graft function
 
-**Type 2 Diabetes and Metabolic Disease:**
-- Islet functional characterization for GLP-1 receptor agonist trials
-- Beta-cell preservation assessment in metabolic surgery studies
-- Integration with TMIC metabolomics for comprehensive metabolic phenotyping
+**Key Personnel:**
+- **James Shapiro**: Transplant surgeon, Edmonton Protocol pioneer, clinical transplant trials
+- **Patrick Macdonald**: IsletCore Director, islet biology laboratory, research isolations
+- **Gregory Korbutt**: Islet development, stem cell-derived islet research, biomanufacturing integration (ACTM)
+- **Peter Senior**: Connect1d Canada leadership, clinical diabetes trials, decentralized trial design
 
-**CTAP-IsletCore Workflow:**
-1. Diabetes therapeutic trials enroll participants via Suite 1 infrastructure
-2. Parallel islet samples (from appropriate donors) processed at IsletCore
-3. Islet functional data (secretion, gene expression, morphology) linked to trial outcomes via Suite 4 OMOP extensions
-4. Mechanistic insights inform next-generation trial design via CRAIDL feedback loop
+#### Cardio-Renal-Metabolic Program Support
 
-#### Leadership and Expertise
+IsletCore provides critical infrastructure for the Cardio-Renal-Metabolic flagship program:
 
-IsletCore is led by **Dr. Peter Senior** (clinical diabetes, islet transplantation) and **Dr. Patrick MacDonald** (Canada Research Chair in Islet Biology), whose complementary expertise bridges clinical trials with fundamental islet biology. This leadership ensures that CTAP diabetes trials can incorporate cutting-edge mechanistic endpoints while maintaining clinical relevance.
+| Application | CTAP Integration | Endpoint Support |
+|-------------|------------------|------------------|
+| **Type 1 Diabetes Trials** | Connect1d Canada patient registry, ADI CRU clinical site | CGM endpoints, C-peptide preservation, autoantibody panels |
+| **Type 2 Diabetes Therapeutics** | SCOT inhibitor platform (Tabatabaei Dakhili), GLP-1 studies | Metabolic biomarkers, insulin sensitivity, beta-cell function |
+| **Diabetic Complications** | Cardiorenal syndrome, diabetic nephropathy | Renal biomarkers, cardiac imaging (PAMRC), glycomics (GIA) |
+| **Novel Glucose Sensing** | Microwave glucose sensor validation (Light, Baghelani) | Non-invasive monitoring endpoints, CGM comparator studies |
+| **Islet Transplantation** | Edmonton Protocol registry, mechanistic sub-studies | Long-term graft function, immunomodulation biomarkers |
 
-**Visiting Scientist Program:** IsletCore's visiting scientist awards enable external collaborators to conduct research at the facility, expanding CTAP's reach into the international diabetes research community and facilitating multi-site mechanistic substudies.
+#### IsletCore-CTAP Sample Workflow
+
+```
+Donor Pancreas → IsletCore Isolation → Quality Assessment → Research Distribution
+       │                │                      │                     │
+       ▼                ▼                      ▼                     ▼
+   Consent &       Research-Grade        GSIS Testing,          CTAP Trials,
+   Phenotyping     Processing (85%       Viability, RNA         International
+                   purity target)        Integrity              Collaborators
+       │                │                      │                     │
+       └────────────────┴──────────────────────┴─────────────────────┘
+                                    │
+                    ┌───────────────┴───────────────┐
+                    ▼                               ▼
+            Suite 2 Biobank                 Suite 4 Data Lake
+            (Cryopreservation)              (Outcome Linkage)
+                    │                               │
+                    └───────────────┬───────────────┘
+                                    ▼
+                        Integrated Diabetes
+                        Research Platform
+```
+
+#### ACE Core Integration for Islet Biology
+
+IsletCore samples processed through ACE Core capabilities enable advanced single-cell and spatial analyses:
+
+- **Single-cell transcriptomics (10x Chromium X)**: Beta-cell heterogeneity, immune infiltration in T1D
+- **Metabolic analysis (Seahorse XFe96)**: Mitochondrial function in diabetic islets, treatment response
+- **Spatial transcriptomics (MERSCOPE)**: Islet architecture, beta-cell interactions with immune cells
+
+This integration positions CTAP as a comprehensive diabetes clinical trials hub—connecting world-leading islet biology expertise with modern trial infrastructure for the next generation of diabetes therapeutics.
 
 ---
 
