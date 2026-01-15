@@ -35,7 +35,7 @@ The **Trusted Research Environment (TRE) and Data Platform** (Suite 4) establish
 
 ### 1.1 Why This Platform?
 
-CTAP addresses a critical gap: while the University of Alberta possesses exceptional discovery assets (Cryo-EM, TMIC, GIA) and manufacturing capabilities (ACTM, CMPC), there is no unified data architecture connecting these upstream investments to downstream clinical validation.
+CTAP addresses a critical gap: while the University of Alberta possesses exceptional discovery assets (Cryo-EM, TMIC, GlycoNet) and manufacturing capabilities (ACTM, CMPC), there is no unified data architecture connecting these upstream investments to downstream clinical validation.
 
 Suite 4 integrates three previously fragmented components:
 

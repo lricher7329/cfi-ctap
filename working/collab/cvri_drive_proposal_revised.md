@@ -99,7 +99,7 @@ Alberta possesses a convergence of advantages that cannot be easily replicated:
 
 **A Unified Health System.** Alberta's single-payer system, underpinned by Connect Care—a province-wide Epic-based clinical information system spanning 682 sites and serving 4.4 million Albertans—provides computable access to longitudinal records for population-scale phenotyping. DRIVE's CHPU can query this dataset to identify patient cohorts for phenotyping and biomarker discovery.
 
-**Mature Discovery Infrastructure.** The Alberta Cryo-EM Facility (the only one in Alberta, one of five in Canada), Glycomics Institute of Alberta (GIA), The Metabolomics Innovation Centre (TMIC), and Alberta Proteomics and Mass Spectrometry (APM) provide world-class structural and molecular characterization capabilities that DRIVE can leverage for structure-guided drug design.
+**Mature Discovery Infrastructure.** The Alberta Cryo-EM Facility (the only one in Alberta, one of five in Canada), GlycoNet (glycomics research network), The Metabolomics Innovation Centre (TMIC), and Alberta Proteomics and Mass Spectrometry (APM) provide world-class structural and molecular characterization capabilities that DRIVE can leverage for structure-guided drug design.
 
 **Expanding Biomanufacturing Capacity.** The Drug Development & Innovation Centre (DDIC), Alberta Cell Therapy Manufacturing (ACTM), and the under-construction Critical Medicines Production Centre (CMPC, $200M, 70M+ doses/year by 2026) provide pathways from DRIVE-validated candidates to clinical-grade manufacturing.
 
@@ -372,7 +372,7 @@ DRIVE leverages world-class discovery infrastructure at the U of A:
 | Facility | DRIVE Integration |
 |----------|-------------------|
 | **Alberta Cryo-EM Facility** | Structure-guided drug design; target identification |
-| **Glycomics Institute of Alberta (GIA)** | Glycan-based biomarkers; glycoprotein drug targets |
+| **GlycoNet** | Glycan-based biomarkers; glycoprotein drug targets |
 | **TMIC Metabolomics** | Metabolomic drug response profiling |
 | **Alberta Proteomics & MS (APM)** | Protein target validation |
 | **Amii** | AI/ML for drug discovery, QSAR modelling |
@@ -652,7 +652,7 @@ The DDSU has designed 3 novel small molecules over the past 3 years:
 | U of A Transgenic Core | Knockout/transgenic generation, cryopreservation |
 | Proteomics Centre (Dr. Fahlman) | Orbitrap placement, proteomics expertise |
 | Alberta Cryo-EM Facility | Structure-guided drug design |
-| Glycomics Institute of Alberta | Glycan biomarkers, drug targets |
+| GlycoNet | Glycan biomarkers, drug targets |
 | TMIC Metabolomics | Metabolomic profiling |
 | Amii | AI/ML for drug discovery |
 | NACTRC | Clinical trials |

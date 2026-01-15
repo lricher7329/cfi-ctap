@@ -36,7 +36,7 @@ The timing for CTAP is uniquely favourable due to an unprecedented convergence o
 | ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | **Amii**                     | 10+ CIFAR AI Chairs in health/life sciences; pioneers of modern reinforcement learning; Dr. Ross Mitchell's AI Scribe deployed across 10 Alberta EDs               |
 | **Connect Care**             | Province-wide Epic EMR spanning 682 sites and 4.4 million Albertans—no other Canadian province has this combination of scale, integration, and data accessibility |
-| **Discovery Infrastructure** | $400M+ cumulative investment: Cryo-EM ($20M, only one in Alberta), Glycomics (GIA), Metabolomics (TMIC, 50K samples/year), ACTM cell therapy manufacturing         |
+| **Discovery Infrastructure** | $400M+ cumulative investment: Cryo-EM ($20M, only one in Alberta), GlycoNet (glycomics), Metabolomics (TMIC, 50K samples/year), ACTM cell therapy manufacturing    |
 | **Biomanufacturing**         | Alberta Cell Therapy Manufacturing (ACTM), Applied Pharmaceutical Innovation (API) and the Critical Medicines Production Centre ($200M, 70M doses/year by 2026), PRAIRIE Hub ($109.9M) |
 | **Provincial Coordination** | Alberta Fast-track to Accelerate Start-up of Clinical Trials (Alberta FAST) program and Clinical Trials Alberta |
 | **National Networks**        | Acclerating Clinical Trials consortium (ACT-AEC), PRAIRIE Hub for pandemic preparedness, RareKids-CAN for rare disease clinical trials ($49M federal + $108M partner + $165M in-kind) |

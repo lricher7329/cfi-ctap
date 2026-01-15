@@ -32,7 +32,7 @@ Discovery omics prioritizes depth; clinical trials prioritize speed. A Phase I d
 |----------|------------|------------------|
 | ACE Core | Single-cell, spatial transcriptomics | Trial sample priority access |
 | Alberta Cryo-EM | Atomic-scale imaging | Structural biology endpoints |
-| Glycomics Institute (GIA) | Glycan profiling | Biologics QC correlation |
+| GlycoNet | Glycan profiling | Biologics QC correlation |
 | TMIC | Metabolomics (50K samples/year) | PK/PD biomarkers |
 | Alberta Proteomics (APM) | Protein identification | Treatment response markers |
 

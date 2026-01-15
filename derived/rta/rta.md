@@ -61,7 +61,7 @@ Alberta possesses a convergence of advantages that cannot be easily replicated:
 
 **A Unified Health System.** Alberta's single-payer system, underpinned by Connect Care—a province-wide Epic-based clinical information system spanning 682 sites and serving 4.4 million Albertans—provides computable access to longitudinal records for population-scale research. CTAP can query this dataset to identify rare phenotypes, model synthetic control arms, and track long-term outcomes with minimal friction.
 
-**Mature Discovery Infrastructure.** Over $400M in cumulative investment creates an unmatched bench-to-trials ecosystem: the Alberta Diabetes Institute, Li Ka Shing Institute of Virology, Drug Development and Innovation Centre (DDIC), Alberta Cell Therapy Manufacturing (ACTM), the new $20M Alberta Cryo-EM Facility (the only one in Alberta, one of five in Canada), and global-leading Glycomics (GIA) and Metabolomics (TMIC) facilities. These assets currently lack a unified downstream pathway to human validation. CTAP provides that pathway.
+**Mature Discovery Infrastructure.** Over $400M in cumulative investment creates an unmatched bench-to-trials ecosystem: the Alberta Diabetes Institute, Li Ka Shing Institute of Virology, Drug Development and Innovation Centre (DDIC), Alberta Cell Therapy Manufacturing (ACTM), the new $20M Alberta Cryo-EM Facility (the only one in Alberta, one of five in Canada), and global-leading GlycoNet (glycomics) and TMIC (metabolomics) facilities. These assets currently lack a unified downstream pathway to human validation. CTAP provides that pathway.
 
 **Expanding Biomanufacturing Capacity.** Alberta is rapidly becoming a national hub for biomanufacturing through the PRAIRIE Hub ($109.9M, 2024) and the Critical Medicines Production Centre (CMPC)—a $200M, 83,000 sq ft facility under construction in partnership with Applied Pharmaceutical Innovation (API). CMPC will provide Canada's largest pharmaceutical manufacturing capacity (70M+ doses/year) by 2026. CTAP positions these manufacturing assets alongside clinical trials infrastructure to create an end-to-end pathway from discovery to human validation.
 
@@ -161,7 +161,7 @@ CTAP partners with existing core facilities rather than building parallel capabi
 |-----------------|------------|---------------|
 | **ACE Core** | Single-cell sequencing (10x Chromium X), spatial transcriptomics (MERSCOPE), metabolic analysis (Seahorse) | Trial sample pipeline, regulatory context, outcome data linkage |
 | **Alberta Cryo-EM Facility** | Atomic-scale imaging | Structural biology endpoints in trial protocols |
-| **Glycomics Institute (GIA)** | Glycan profiling | Standardized sample handling, clinical metadata |
+| **GlycoNet** | Glycan profiling | Standardized sample handling, clinical metadata |
 | **TMIC** | Metabolomics (50K samples/year) | Quality-controlled trial samples |
 | **Alberta Proteomics (APM)** | Protein identification | Pre-analytical quality assurance |
 
@@ -205,9 +205,9 @@ By 2031, CTAP will:
 
 CTAP will be operationalized through five high-impact flagship programs:
 
-**Neuro-immunology and MS Cell Therapies:** Building on the University of Alberta's **MS Centre**—one of Canada's premier MS research hubs with 29 multidisciplinary affiliates spanning neuroimaging, neuroimmunology, glial biology, and clinical care—CTAP enables ACTM-manufactured cell products (regulatory T-cells, engineered lymphocytes) to be tested in early-phase MS and neuro-inflammatory trials. The MS Experimental Therapeutics Program (Giuliani) provides clinical trial expertise, while GIA glycomics (Mahal), TMIC metabolomics, and cryo-EM structural biology enable comprehensive immune profiling. **CHARM Synergy:** Dr. Voronova's CHARM platform (CFI IF 2025)—a hiPSC-based precision medicine infrastructure—complements CTAP by providing patient-derived neural and glial models for MS therapeutic target validation, bridging discovery research with CTAP's clinical trial capabilities. The existing CAR-T cell therapy program led by Dr. Michael Chiu at the Cross Cancer Institute demonstrates the complete translational pathway.
+**Neuro-immunology and MS Cell Therapies:** Building on the University of Alberta's **MS Centre**—one of Canada's premier MS research hubs with 29 multidisciplinary affiliates spanning neuroimaging, neuroimmunology, glial biology, and clinical care—CTAP enables ACTM-manufactured cell products (regulatory T-cells, engineered lymphocytes) to be tested in early-phase MS and neuro-inflammatory trials. The MS Experimental Therapeutics Program (Giuliani) provides clinical trial expertise, while GlycoNet glycomics (Mahal), TMIC metabolomics, and cryo-EM structural biology enable comprehensive immune profiling. **CHARM Synergy:** Dr. Voronova's CHARM platform (CFI IF 2025)—a hiPSC-based precision medicine infrastructure—complements CTAP by providing patient-derived neural and glial models for MS therapeutic target validation, bridging discovery research with CTAP's clinical trial capabilities. The existing CAR-T cell therapy program led by Dr. Michael Chiu at the Cross Cancer Institute demonstrates the complete translational pathway.
 
-**Hepatitis C and Vaccine Trials:** Led by Dr. Michael Houghton (Nobel laureate 2020), this program leverages Canada's first academic **Vaccine Challenge Trial Unit**—a controlled human infection model (CHIM) facility enabling accelerated vaccine efficacy evaluation with dramatically smaller participant numbers and compressed timelines. PRAIRIE Hub, Alberta Cryo-EM Facility, GIA, and TMIC enable structure-guided design and immunologic profiling.
+**Hepatitis C and Vaccine Trials:** Led by Dr. Michael Houghton (Nobel laureate 2020), this program leverages Canada's first academic **Vaccine Challenge Trial Unit**—a controlled human infection model (CHIM) facility enabling accelerated vaccine efficacy evaluation with dramatically smaller participant numbers and compressed timelines. PRAIRIE Hub, Alberta Cryo-EM Facility, GlycoNet, and TMIC enable structure-guided design and immunologic profiling.
 
 **Precision Cardio-Renal-Metabolic Population Health:** CVC-anchored pragmatic trials combined with CBSR biospecimens, TMIC metabolomics, and AI-based risk prediction. **Connect1d Canada**—a pan-Canadian Type 1 Diabetes patient registry transitioning to Alberta Diabetes Institute leadership—demonstrates Suite 4's data integration: patient-reported data, CGM wearable data, and Connect Care EHR data flow through the TRE, enabling decentralized diabetes trials that reach patients nationally.
 
@@ -224,7 +224,7 @@ CTAP is intentionally built on existing, operational strengths:
 - **Kipnes Health Research Institute** has a dedicated Health Research Translation Unit for clinical trials support
 - **CBSR and ACTM** are functioning facilities with trained staff and validated SOPs
 - **Amii and CIFAR AI Chairs** provide world-class AI expertise; Dr. Mitchell's AI Scribe is operational at scale (10 Alberta EDs, 6,700+ sessions)
-- **ACE Core, GIA, TMIC, and Cryo-EM** are established CFI-funded core facilities
+- **ACE Core, GlycoNet, TMIC, and Cryo-EM** are established CFI-funded core facilities
 - **CRAIDL Prototype** demonstrates 4 agents operational at investigator scale
 
 A phased implementation is planned over 4-5 years, with early wins (improved trial start-up metrics, initial CRAIDL agent deployment, integrated trial-biobank workflows) achievable within 18-24 months.
@@ -418,7 +418,7 @@ This suite enables decentralized, patient-centric trials:
 
 CTAP will be governed through a multi-tier structure:
 
-- **CTAP Steering Committee** chaired by UACT Director, with representation from CTO, Kipnes, NACTRC, CVC, WCHRI DCC, CBSR, ACTM, GIA, TMIC, Amii, Indigenous leadership, and patient partners
+- **CTAP Steering Committee** chaired by UACT Director, with representation from CTO, Kipnes, NACTRC, CVC, WCHRI DCC, CBSR, ACTM, GlycoNet, TMIC, Amii, Indigenous leadership, and patient partners
 - **Data Access Committee** responsible for researcher access, TRE workspace approvals—modeled on UK Biobank Access Committee
 - **Operations Committee** for day-to-day coordination across cores
 - **CRAIDL Development Committee** with AI/computer science and clinical trials expertise
