@@ -329,18 +329,19 @@ The Alberta Cryo-EM Facility houses one of only five cryo-electron microscopes i
 
 TMIC maintains most of the world's key metabolomic data resources including the Human Metabolome Database, DrugBank, and MetaboAnalyst—accessed roughly 15 million times per year by users in more than 120 countries.
 
-#### Glycomics Institute of Alberta (GIA)
+#### GlycoNet (Canadian Glycomics Network)
 
 | Attribute | Detail |
 |-----------|--------|
-| **Status** | UAlberta Institute (launched 2022) |
-| **Director** | Dr. Lara Mahal (Canada Excellence Research Chair in Glycomics) |
-| **Network** | Host institution for GlycoNet (National Centers of Excellence) |
+| **Status** | Networks of Centres of Excellence, led from UAlberta |
+| **UAlberta Lead** | Dr. Lara Mahal (Canada Excellence Research Chair in Glycomics) |
+| **CEO** | Elizabeth Nanak |
+| **Network** | 210+ researchers across 37 Canadian institutions; 180+ funded projects |
 | **Services** | High-throughput glycan screening, profiling, synthesis, glycoengineering |
-| **Funding** | $2M boost from Alberta Innovates + GlycoNet (2024) |
+| **Funding** | $38.9M federal funding + $54.4M partner funding since 2015; $2M boost from Alberta Innovates + GlycoNet (2025) |
 | **CTAP Role** | Glycan biomarker discovery; therapeutic glycoprotein characterization; vaccine glycan profiling |
 
-GIA builds on the University of Alberta's decades of glycosylation research excellence, tracing back to Dr. Raymond Lemieux's foundational work. Five of the world's 10 top-selling drugs in 2024—including Humira and Keytruda—relied on glycans, generating more than CAD$100 billion in sales.
+GlycoNet builds on the University of Alberta's decades of glycosylation research excellence, tracing back to Dr. Raymond Lemieux's foundational work. Five of the world's 10 top-selling drugs in 2024—including Humira and Keytruda—relied on glycans, generating more than CAD$100 billion in sales. GlycoNet has trained 740+ personnel and supported the creation of 7 Canadian companies.
 
 #### Drug Development + Innovation Centre (DDIC)
 
@@ -438,7 +439,7 @@ The facilities described above form an integrated translational pipeline from di
 ```
 DISCOVERY          →  CHARACTERIZATION    →  MANUFACTURING      →  CLINICAL TRIALS
 DDIC formulation      Cryo-EM structure      ACTM cell therapy     UACT coordination
-API drug synthesis    GIA glycomics          API/CMPC biologics    CVC trial design
+API drug synthesis    GlycoNet glycomics     API/CMPC biologics    CVC trial design
                       TMIC metabolomics      PRAIRIE Hub vaccines  CBSR biobanking
                       APM proteomics
                       TGH genomics
@@ -450,7 +451,7 @@ API drug synthesis    GIA glycomics          API/CMPC biologics    CVC trial des
 |----------|-------------|-------------------|
 | Cryo-EM | Domain 5 (Molecular Phenotyping) | MS Cell Therapies, Hepatitis C/Vaccines |
 | TMIC | Domain 5 | All flagships (metabolic profiling) |
-| GIA | Domain 5 | MS Cell Therapies, Hepatitis C/Vaccines |
+| GlycoNet | Domain 5 | MS Cell Therapies, Hepatitis C/Vaccines |
 | DDIC | Domain 1 (Manufacturing support) | All flagships requiring formulation |
 | ACTM | Domain 2 (Cell Manufacturing) | MS Cell Therapies |
 | CBSR | Domain 2 (Biorepository) | All flagships |
@@ -496,7 +497,7 @@ No existing Canadian platform deploys coordinated AI agents across the entire RC
 
 #### 4. Integrated Translational Pipeline
 
-- Discovery infrastructure (DDIC, Cryo-EM, TMIC, GIA) → Manufacturing (ACTM, PSC) → Trials (UACT, CVC)
+- Discovery infrastructure (DDIC, Cryo-EM, TMIC, GlycoNet) → Manufacturing (ACTM, PSC) → Trials (UACT, CVC)
 - Only proposal combining: GMP manufacturing + structural biology + national-scale omics + CIFAR AI institute + mature trials organization + provincial EMR
 
 ### 5.2 Competitive Differentiation Matrix
@@ -583,9 +584,8 @@ CTAP brings the TRI precinct model to Canada with three distinctive enhancements
 - [TMIC Official](https://metabolomicscentre.ca/) - The Metabolomics Innovation Centre
 - [TMIC CFI Navigator](https://navigator.innovation.ca/en/facility/university-alberta/metabolomics-innovation-centre-tmic) - CFI Navigator
 - [TMIC Genome Canada](https://genomecanada.ca/project/metabolomics-innovation-centre-2/) - Genome Canada
-- [Glycomics Institute of Alberta](https://glyco-alberta.ca/) - GIA Official
-- [GIA Launch](https://www.ualberta.ca/en/folio/2022/10/new-u-of-a-institute-highlights-impact-of-glycomics-research-on-health.html) - UAlberta Folio
-- [GIA $2M Funding](https://www.ualberta.ca/en/news/spotlights/2025/10-oct/glycomics-research-in-alberta-gets-2m-boost.html) - UAlberta News
+- [GlycoNet Official](https://canadianglycomics.ca/) - Canadian Glycomics Network
+- [GlycoNet $2M Funding](https://www.ualberta.ca/en/news/spotlights/2025/10-oct/glycomics-research-in-alberta-gets-2m-boost.html) - Alberta Innovates + GlycoNet investment (October 2025)
 - [GlycoNet Integrated Services](https://canadianglycomics.ca/integrated-services/) - Canadian Glycomics Network
 - [DDIC Official](https://www.ualberta.ca/pharmacy/research/drug-development-and-innovation-centre/index.html) - Faculty of Pharmacy
 - [DDIC Facility & Equipment](https://www.ualberta.ca/en/pharmacy/research/facilities-infrastructure/drug-development-and-innovation-centre/resources/facility-and-equipment.html) - DDIC Resources

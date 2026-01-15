@@ -74,7 +74,7 @@ Arrange as five segments around central hub, connected by bidirectional arrows:
 - **Partner Facilities (connected external nodes):**
   - ACE Core (single-cell, spatial transcriptomics)
   - Alberta Cryo-EM ($20M facility)
-  - Glycomics Institute (GIA)
+  - GlycoNet (glycomics)
   - TMIC Metabolomics (50K samples/year)
   - Alberta Proteomics
 

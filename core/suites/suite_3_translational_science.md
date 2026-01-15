@@ -32,7 +32,7 @@ Suite 3 operates through formal partnerships with existing core facilities rathe
 |------------------|------------|---------------|-------------------|
 | **ACE Core** | Single-cell sequencing (10x Chromium X), spatial transcriptomics (MERSCOPE), metabolic analysis (Seahorse) | Trial sample pipeline, regulatory context, outcome data linkage | Instrumentation, technical expertise, established workflows |
 | **Alberta Cryo-EM Facility** | Atomic-scale imaging | Structural biology endpoints in trial protocols | Structure-guided drug insights |
-| **Glycomics Institute (GIA)** | Glycan profiling | Standardized sample handling, clinical metadata | Therapeutic glycoprotein analysis |
+| **GlycoNet** | Glycan profiling | Standardized sample handling, clinical metadata | Therapeutic glycoprotein analysis |
 | **TMIC** | Metabolomics (50K samples/year) | Quality-controlled trial samples | Biomarker discovery |
 | **Alberta Proteomics (APM)** | Protein identification | Pre-analytical quality assurance | Protein biomarker analysis |
 | **Peter Allen MRI Research Centre** | Advanced multi-organ MRI (brain, cardiac, musculoskeletal), quantitative imaging, novel MR sequences | Trial imaging protocols, longitudinal phenotyping, outcome data linkage | 3T/7T imaging, MR physics expertise, sequence development |
@@ -215,7 +215,7 @@ Dedicated equipment that bridges the throughput gap between discovery-mode omics
 |-----------|---------------|-------------|---------------------|------|
 | **Rapid Proteomics System** | Bruker timsTOF HT with clinical batch automation | APM: 20 samples/week (discovery mode) | 50+ samples/day for real-time PD biomarkers | $300,000 |
 | **Clinical Metabolomics LC-MS/MS** | Triple-quad system with automated sample prep | TMIC: 24h/sample (comprehensive) | 15 min/sample for PK monitoring | $170,000 |
-| **High-Throughput Glycan Profiler** | Automated CE-LIF with 96-well format | GIA: Manual workflows | Batch glycan QC for biologics trials | $80,000 |
+| **High-Throughput Glycan Profiler** | Automated CE-LIF with 96-well format | GlycoNet: Manual workflows | Batch glycan QC for biologics trials | $80,000 |
 
 **Why Clinical-Mode Matters:**
 
@@ -290,9 +290,9 @@ Development/Prototyping     Production Scale          Peak Demand
 
 | Program | Omics Integration |
 |---------|-------------------|
-| MS Cell Therapies | **MS Centre Integration:** Immune profiling via GIA glycomics (Mahal), cell product characterization via Cryo-EM, T-cell functional states via ACE Core single-cell analysis, neuroimmunology expertise via MS Experimental Therapeutics Program (Giuliani), glial biology collaboration (Voronova, Plemel, Todd). **CHARM Synergy:** Voronova's CHARM hiPSC platform (CFI IF 2025) provides patient-derived neural models for MS therapeutic target validation and cell therapy optimization. |
+| MS Cell Therapies | **MS Centre Integration:** Immune profiling via GlycoNet glycomics (Mahal), cell product characterization via Cryo-EM, T-cell functional states via ACE Core single-cell analysis, neuroimmunology expertise via MS Experimental Therapeutics Program (Giuliani), glial biology collaboration (Voronova, Plemel, Todd). **CHARM Synergy:** Voronova's CHARM hiPSC platform (CFI IF 2025) provides patient-derived neural models for MS therapeutic target validation and cell therapy optimization. |
 | Hepatitis C/Vaccines | Vaccine antigen structure via Cryo-EM, immune response via TMIC metabolomics, spatial immune mapping via ACE Core MERSCOPE |
-| Cardio-Renal-Metabolic | Metabolic biomarkers via TMIC, glycan signatures via GIA |
+| Cardio-Renal-Metabolic | Metabolic biomarkers via TMIC, glycan signatures via GlycoNet |
 | Pediatric Rare Disease | Genomic characterization coordinated via WCHRI Translational Genomics Hub, protein analysis via APM |
 | Oncology Trials | Radiomic biomarkers, tumor microenvironment spatial analysis via ACE Core MERSCOPE |
 
@@ -304,14 +304,14 @@ Suite 3's omics infrastructure supports API's biomanufacturing programs by provi
 
 | Partner Facility | Manufacturing Application | Clinical Trial Endpoint | API Integration |
 |------------------|--------------------------|------------------------|-----------------|
-| **Glycomics Institute (GIA)** | Therapeutic glycoprotein batch consistency | Immunogenicity biomarkers, PK variability | Glycan profiles linked to manufacturing lot → efficacy correlations |
+| **GlycoNet** | Therapeutic glycoprotein batch consistency | Immunogenicity biomarkers, PK variability | Glycan profiles linked to manufacturing lot → efficacy correlations |
 | **Alberta Cryo-EM** | Therapeutic protein manufacturability assessment | Structural endpoints for biologics trials | Structure-guided process optimization |
 | **TMIC** | Metabolic dose optimization | PK/PD biomarkers, metabolic response | Metabolomics data feeds QSP model refinement |
 | **APM** | Product quality attributes | Degradation product biomarkers | Stability-outcome correlations |
 
 #### Glycomics for Biologics Manufacturing
 
-GIA glycomics analysis is particularly critical for biologic therapeutics manufactured at API's CMPC. Glycosylation patterns directly affect:
+GlycoNet glycomics analysis is particularly critical for biologic therapeutics manufactured at API's CMPC. Glycosylation patterns directly affect:
 
 - **Efficacy**: Receptor binding affinity, half-life, biodistribution
 - **Immunogenicity**: Antibody development risk, hypersensitivity
@@ -319,7 +319,7 @@ GIA glycomics analysis is particularly critical for biologic therapeutics manufa
 
 **CTAP-API Glycomics Workflow:**
 
-1. API manufacturing batches undergo glycan profiling at GIA
+1. API manufacturing batches undergo glycan profiling at GlycoNet
 2. Corresponding product batches enter CTAP clinical trials
 3. Trial outcomes (efficacy, safety, PK) link to batch-specific glycan profiles via Suite 4 OMOP extension
 4. Correlations inform API's Critical Process Parameters (CPPs) for manufacturing optimization

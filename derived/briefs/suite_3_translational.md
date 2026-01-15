@@ -24,7 +24,7 @@ Suite 3 connects CTAP's clinical trials to Alberta's world-class molecular chara
 | Facility | Capability | CTAP Integration |
 |----------|------------|------------------|
 | **Alberta Cryo-EM Facility** | Atomic-resolution imaging (Titan Krios G4) | Structure-based drug design from trial samples |
-| **Glycomics Institute of Alberta (GIA)** | Glycan profiling and screening | Biomarker discovery for immune responses |
+| **GlycoNet** | Glycan profiling and screening | Biomarker discovery for immune responses |
 | **TMIC Metabolomics** | 2,000+ metabolite identification | Pharmacodynamic endpoints |
 | **Alberta Proteomics (APM)** | Protein identification | Mechanism of action studies |
 
@@ -56,7 +56,7 @@ Clinical Trial
 Sample Collection
       ↓
 ┌─────────────────────────────────────────┐
-│  Cryo-EM   │   GIA      │   TMIC       │
+│  Cryo-EM   │  GlycoNet  │   TMIC       │
 │  Structure │  Glycomics │  Metabolomics│
 └─────────────────────────────────────────┘
       ↓

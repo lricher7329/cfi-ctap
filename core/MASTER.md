@@ -211,7 +211,7 @@ Over $400M in cumulative investment creates an unmatched bench-to-trials ecosyst
 | ---------------------------------------------- | ------------------------------------------------------ | -------------------------------------------------------- |
 | **Alberta Cryo-EM Facility**             | Structure-guided drug design, vaccine characterization | $20M SPP-ARC (only cryo-EM in Alberta, 1 of 5 in Canada) |
 | **TMIC (Metabolomics)**                  | 50K samples/year metabolomics                          | CFI MSI                                                  |
-| **GIA (Glycomics Institute of Alberta)** | Glycan profiling, GlycoNet NCE host                    | CFI + $2M AI/GlycoNet                                    |
+| **GlycoNet**                             | Glycan profiling, NCE network hub                      | CFI + $2M AI/GlycoNet                                    |
 | **APM (Alberta Proteomics)**             | Protein identification and characterization            | Established                                              |
 | **Translational Genomics Hub**           | Rare disease genomics, VUS resolution                  | WCHRI                                                    |
 | **ACTM**                                 | GMP cell therapy manufacturing                         | CFI                                                      |
@@ -262,7 +262,7 @@ The CTAP team brings together investigators and leaders spanning the full transl
 | **AI & Computer Science**             | Reinforcement learning, agentic design, health AI                                                               | Amii, CIFAR AI Chairs, DARC, QBI/UCSF partnership             |
 | **Biomanufacturing & Cell Therapies** | GMP manufacturing, regulatory compliance, first-in-human trials                                                 | ACTM, pluripotent stem cell core                              |
 | **Biobanking & Biospecimen Science**  | International biobanking expertise, biospecimen-trial integration                                               | CBSR                                                          |
-| **Structural Biology & Omics**        | Cryo-EM, glycomics, metabolomics, multi-omics integration                                                       | GIA, TMIC, Cryo-EM, APM                                       |
+| **Structural Biology & Omics**        | Cryo-EM, glycomics, metabolomics, multi-omics integration                                                       | GlycoNet, TMIC, Cryo-EM, APM                                  |
 | **Regulatory Science & Ethics**       | Health Canada, GCP/ICH, REB processes                                                                           | UACT, CTO                                                     |
 | **Indigenous Health & EDI**           | Data sovereignty, culturally safe practices, inclusive recruitment                                              | Indigenous scholars, patient partners                         |
 | **Disease Expertise**                 | Neurology, neuro-immunology, infectious diseases, hepatology, nephrology, cardiology, endocrinology, pediatrics | Flagship program leads                                        |
@@ -568,7 +568,7 @@ CTAP will be operationalized through four high-impact flagship programs represen
 
 #### Neuro-immunology, MS Cell Therapies, and Autonomic Dysfunction
 
-Building on the University of Alberta's **MS Centre**—one of Canada's premier MS research hubs with 29 multidisciplinary affiliates spanning neuroimaging, neuroimmunology, glial biology, and clinical care—ACTM-manufactured cell products (regulatory T-cells, engineered lymphocytes) will be tested in early-phase MS and neuro-inflammatory trials. The MS Experimental Therapeutics Program (Giuliani) provides clinical trial expertise, while longitudinal immune profiling via GIA glycomics (Mahal), TMIC metabolomics, and cryo-EM-supported structural insights enable comprehensive patient characterization. **CHARM Synergy:** Dr. Voronova's CHARM platform (CFI IF 2025)—a hiPSC-based precision medicine infrastructure—complements CTAP by providing patient-derived neural and glial models for MS therapeutic target validation.
+Building on the University of Alberta's **MS Centre**—one of Canada's premier MS research hubs with 29 multidisciplinary affiliates spanning neuroimaging, neuroimmunology, glial biology, and clinical care—ACTM-manufactured cell products (regulatory T-cells, engineered lymphocytes) will be tested in early-phase MS and neuro-inflammatory trials. The MS Experimental Therapeutics Program (Giuliani) provides clinical trial expertise, while longitudinal immune profiling via GlycoNet glycomics (Mahal), TMIC metabolomics, and cryo-EM-supported structural insights enable comprehensive patient characterization. **CHARM Synergy:** Dr. Voronova's CHARM platform (CFI IF 2025)—a hiPSC-based precision medicine infrastructure—complements CTAP by providing patient-derived neural and glial models for MS therapeutic target validation.
 
 **Autonomic Dysfunction Research Program:**
 
@@ -597,7 +597,7 @@ Led by Dr. Michael Houghton (Nobel laureate 2020 for Hepatitis C virus discovery
 
 **Infrastructure:**
 
-- PRAIRIE Hub, Alberta Cryo-EM Facility, GIA, TMIC for structure-guided design
+- PRAIRIE Hub, Alberta Cryo-EM Facility, GlycoNet, TMIC for structure-guided design
 - Li Ka Shing Applied Virology Institute for challenge protocol development
 - API/CMPC for large-scale vaccine manufacturing (70M+ doses/year)
 
@@ -1006,7 +1006,7 @@ CTAP is intentionally built on existing, operational strengths, significantly de
 | **CBSR**                   | Functioning facility with external clients   | Expansion and EMR integration                                   |
 | **ACTM**                   | Operational GMP cell therapy                 | Expansion and trial integration                                 |
 | **Amii/CIFAR AI Chairs**   | World-class AI expertise                     | CRAIDL co-development                                           |
-| **GIA, TMIC, Cryo-EM**     | CFI-funded core facilities                   | Pipeline connection to trials                                   |
+| **GlycoNet, TMIC, Cryo-EM** | CFI-funded core facilities                   | Pipeline connection to trials                                   |
 | **AWS clean room/DARC**    | Functioning secure data environments         | TRE deployment                                                  |
 | **CRAIDL Prototype**       | Investigator-developed; 4 agents operational | Enterprise scaling, Connect Care integration, multi-user access |
 
