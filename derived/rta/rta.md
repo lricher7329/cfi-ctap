@@ -2,20 +2,56 @@
 title: "Clinical Trials Acceleration Platform (CTAP)"
 shorttitle: "CFI 2027"
 principal_investigator:
-  name: Lawrence Richer
+  name: Lawrence Richer, MD, PhD
   affiliation: University of Alberta
+  role: Associate Dean Research, College of Health Sciences
+co_principal_investigators:
+  - name: Michael Houghton, PhD
+    affiliation: University of Alberta
+    role: Nobel Laureate (2020), Li Ka Shing Professor of Virology
+  - name: James Shapiro, MD, PhD
+    affiliation: University of Alberta
+    role: CRC Transplant Surgery, Edmonton Protocol Pioneer
+  - name: Greg Korbutt, PhD
+    affiliation: University of Alberta
+    role: Director, Alberta Cell Therapy Manufacturing
+  - name: Peter Senior, MD, PhD
+    affiliation: University of Alberta
+    role: Clinical Islet Transplant Program, Connect1D Canada Lead
 co_investigators:
-  - name: Co-Investigator Name
-    affiliation: Institution
+  - name: Ross Mitchell, PhD
+    affiliation: University of Alberta / Amii
+    role: Canada CIFAR AI Chair, AI Scribe Lead
+  - name: Lazar Atanackovic, PhD
+    affiliation: University of Alberta / Amii
+    role: Amii Fellow, CRAIDL In Silico Agent Lead
+  - name: Bruce Ritchie, MD
+    affiliation: University of Alberta
+    role: Canadian BioSample Repository Director
+  - name: Patrick Macdonald, PhD
+    affiliation: University of Alberta
+    role: IsletCore Director, ADI
+  - name: Todd Alexander, MD, PhD
+    affiliation: University of Alberta
+    role: Rare Disease Trials Lead, WCHRI
+  - name: Oana Caluseriu, MD
+    affiliation: University of Alberta
+    role: Translational Genomics Hub Co-Lead
 funding_agency: CFI
 program: Innovation Fund
 competition: 2027
+total_request: 10365000
 grant_id:
 document_type: grant
 word_limits:
-  summary: 250
-  research_plan: 5000
-date: 2025-01-01
+  strategic_alignment: "1-2 paragraphs"
+  research_plan: "3 pages"
+  research_team: "1 page"
+  edi: "1-2 paragraphs"
+  benefits: "1 page"
+  infrastructure_justification: "3 pages"
+  sustainability: "2 pages"
+date: 2025-01-15
 
 bibliography: ../refs/references.bib
 csl: ../../../shared/csl/vancouver.csl
@@ -31,127 +67,205 @@ NOTES
 
 # 1. Strategic Alignment
 
-The Clinical Trials Acceleration Platform (CTAP) directly operationalizes *Forward with Purpose: A Strategic Plan for Research and Innovation 2023-2028*, which calls for the University of Alberta to address grand challenges through interdisciplinary research, data-enabled discovery, and deep partnerships with health systems. CTAP embodies the plan's emphasis on health and life sciences, artificial intelligence, and digital innovation by creating an integrated, AI-enabled clinical trials infrastructure that links discovery to impact—from molecular design and GMP manufacturing to biospecimen-enabled trials and real-world evidence.
+The Clinical Trials Acceleration Platform (CTAP) directly operationalizes *Forward with Purpose: A Strategic Plan for Research and Innovation 2023-2028*, addressing grand challenges through interdisciplinary research, data-enabled discovery, and health system partnerships. CTAP's functional home is the **Dianne and Irving Kipnes Health Research Institute** (established September 2025 with a $25M philanthropic gift), whose vision is "to create a learning health system where AI enhances care, clinical trials validate breakthroughs, and specialized programs demonstrate the full cycle of research from insight to impact." The Institute's AI + Health Hub (Drs. Pannu and Lemermeyer) and Health Research Translation Unit provide governance and operational support—positioning Alberta as "the place where research discoveries reach patients not in decades, but in months." CTAP implements this vision through a closed-loop architecture: de-identified Connect Care data flows into the Trusted Research Environment for AI analysis, validated insights return to clinical teams, and outcomes data refines future discoveries—the same model that achieved 26% reduction in unexpected deaths in Ontario's GEMINI project, now extended to encompass clinical trials, biospecimens, and molecular characterization.
 
-**CTAP's Functional Home: The Dianne and Irving Kipnes Health Research Institute.** Established in September 2025 through a $25 million philanthropic gift, the Kipnes Institute is an organizational entity—not a building—housed within the College of Health Sciences (in the renamed Dianne and Irving Kipnes Health Research Academy). The Institute's vision is "to create a learning health system where artificial intelligence enhances care, clinical trials validate breakthroughs, and specialized programs demonstrate the full cycle of research from insight to impact—continuously improving outcomes." CTAP is the infrastructure backbone that realizes this vision. The Institute's **AI + Health Hub** (led by Drs. Neesh Pannu and Gillian Lemermeyer) and **Health Research Translation Unit** provide the governance, operational framework, and community within which CTAP operates—positioning Alberta as "the place where research discoveries reach patients in our communities not in decades, but in years or even months."
-
-CTAP operationalizes this learning health system vision through a closed-loop architecture: de-identified patient data from Connect Care flows into the Trusted Research Environment for analysis, validated AI-driven insights flow back to clinical teams for implementation, and outcomes data closes the loop to refine future discoveries. This is the same model that enabled Ontario's GEMINI project to achieve a **26% reduction in unexpected deaths** among hospitalized patients—now extended to encompass clinical trials, biospecimens, and molecular characterization in an integrated translational ecosystem.
-
-**Provincial Alignment:** CTAP strongly supports the Alberta Technology and Innovation Strategy (ATIS), which aims to make Alberta an internationally recognized technology and innovation hub. By integrating AI, advanced biomanufacturing (PRAIRIE Hub, ACTM, CMPC), secure cloud infrastructure (AWS Calgary region), and clinical trials at scale, CTAP directly advances ATIS goals in talent development, commercialization, data-driven innovation, and global competitiveness.
+**Provincial Alignment:** CTAP strongly supports the Alberta Technology and Innovation Strategy (ATIS), advancing its goals in talent development, commercialization, data-driven innovation, and global competitiveness by integrating AI (Amii, 10+ CIFAR AI Chairs), advanced biomanufacturing (PRAIRIE Hub $109.9M, ACTM, CMPC $200M), secure cloud infrastructure (AWS Calgary region), and clinical trials at scale into a unified ecosystem.
 
 # 2. Research Plan
 
-## 2.1 The Opportunity
+## 2.1 Innovation: AI-Native Clinical Trials Infrastructure
 
-**The bottleneck to transforming scientific breakthroughs into patient benefit is no longer discovery—it is validation.** Advances in AI, molecular biology, and biomanufacturing have expanded pipelines of vaccines, biologics, and cell therapies. Yet clinical trials remain manual, fragmented, and inefficient. AI screening tools achieve 90.5% sensitivity and 99.3% specificity for identifying eligible patients, with eligibility screening time reduced by 78%. However, current AI applications remain fragmented—this fragmentation represents the dominant barrier to accelerating trials.
+**The bottleneck to transforming scientific breakthroughs into patient benefit is no longer discovery—it is validation.** The University of Alberta possesses a unique convergence: Amii (10+ CIFAR AI Chairs, 1,000 H200 GPUs); Connect Care (682 sites, 4.4M Albertans); $400M+ discovery infrastructure (PRAIRIE Hub, ACTM, Li Ka Shing Virology, Cryo-EM, GlycoNet, TMIC); and proven AI deployment (Dr. Mitchell's AI Scribe across 10 Alberta EDs). No other Canadian institution combines AI leadership, unified health system integration, advanced biomanufacturing, and translational infrastructure in a single ecosystem.
 
-The University of Alberta possesses a unique convergence of capabilities: Amii with 10+ CIFAR AI Chairs; Connect Care spanning 682 sites and 4.4 million Albertans; over $400M in discovery infrastructure (PRAIRIE Hub, ACTM, Li Ka Shing Institute of Virology, Cryo-EM Facility, Glycomics Institute, TMIC); and proven AI deployment (Dr. Mitchell's AI Scribe across 10 Alberta EDs). No other Canadian institution combines AI leadership, unified health system integration, advanced biomanufacturing, and translational infrastructure in a single ecosystem.
+**The Clinical Trials Acceleration Platform (CTAP)** is Canada's first AI-native clinical trials infrastructure—a **$10,365,000** investment embedding AI as the foundational architecture for trial design, recruitment, monitoring, and analysis.
 
-**The Clinical Trials Acceleration Platform (CTAP)** is Canada's first AI-native clinical trials infrastructure—a **$10.4 million** investment that embeds AI as the foundational architecture for trial design, recruitment, monitoring, and analysis.
+**The Integrated Infrastructure Model** operates through five tightly coupled domains unified by a three-zone Trusted Research Environment (TRE):
 
-## 2.2 Why the University of Alberta, Why Now
+| Domain | Function | Key Capability |
+|--------|----------|----------------|
+| **AI-Enabled Operations** | CRAIDL: 8 AI agents for protocol simulation, recruitment prediction, regulatory automation | 40-50% reduction in trial startup |
+| **Living Biorepository** | Intelligent biospecimen management with real-time EMR linkage (Connect Care FHIR) | Automated outcome annotation |
+| **Secure Data Environment** | Three-zone TRE (AWS Calgary): identifiable → de-identification → research analytics | Health Canada Division 5 compliant |
+| **Open Science** | OMOP CDM enabling federated queries across OHDSI (100+ institutions), VITAL, PRAIRIE Hub | Pan-Canadian data sharing |
+| **Omics Integration** | Trial-to-facility interface for ACE Core, Cryo-EM, GlycoNet, TMIC | Quality bridge infrastructure |
 
-**Patients cannot wait.** Alberta has made transformative investments in compute, AI expertise, and biomanufacturing. What is missing is **the glue**: an AI-native platform connecting these assets into a seamless pathway from discovery to patient benefit.
+**CRAIDL (Clinical Research Assistants for Intelligent Design and anaLysis)** leverages agentic AI developed with Amii and CIFAR AI Chairs, built on Canadian VIGOUR Centre's 50+ trial templates. The **In Silico Assessment Agent**—led by Dr. Atanackovic (Amii Fellow)—simulates trial outcomes before enrollment, addressing the 40-60% trial failure rate through digital twin generation and synthetic control arms. All outputs require human review (PI/statistician for protocols, medical monitor for safety, regulatory affairs for submissions). Benchmark: RECOVERY trial achieved first patient within 9 days; CRAIDL democratizes this capability nationally via ACT-AEC.
 
-**Key Convergent Advantages:**
-- **SDRE/Amii AI Compute:** Up to 1,000 NVIDIA H200 GPUs; 10+ CIFAR AI Chairs
-- **AI + Health Hub (Kipnes Institute):** Bridges academic research to clinical AI deployment; Dr. Mitchell's AI Scribe deployed across 10 Alberta EDs
-- **Connect Care:** Province-wide Epic EMR (682 sites, 4.4M Albertans) enabling population-scale queries
-- **Discovery Infrastructure:** $400M+ including PRAIRIE Hub, ACTM, Li Ka Shing Virology, Cryo-EM, GlycoNet, TMIC
-- **Biomanufacturing:** PRAIRIE Hub ($109.9M) + CMPC ($200M, 70M+ doses/year by 2026)—Canada's largest pharmaceutical manufacturing capacity
+## 2.2 Feasibility: Operational Foundation and Team Readiness
 
-**PRAIRIE Hub Vaccine Feeder Programs:** Two CBRF-funded programs generate vaccine candidates for CTAP validation: saRNA Vaccine Platform ($35.3M, Houghton) and Comparative Vaccine Platform ($57M, Shmulevitz/Pelka).
+CTAP builds on extensive operational foundation: UACT/CTO coordinated trials infrastructure; Canadian VIGOUR Centre (50+ trial templates); CBSR and ACTM functioning facilities with validated SOPs; Amii/CIFAR AI Chairs with AI Scribe deployed at scale; ACE Core, GlycoNet, TMIC, Cryo-EM (established CFI-funded core facilities); and 4 CRAIDL agents operational at investigator scale.
 
-**API Partnership:** CTAP formalizes a strategic partnership with Applied Pharmaceutical Innovation (API) creating Canada's only fully integrated discovery-to-production pathway. The MOU establishes: trial-to-manufacturing workflow; data integration for manufacturing intelligence; shared GMP workforce development; and biorepository-manufacturing quality correlation.
+**Five Flagship Programs** operationalize CTAP with existing leadership and infrastructure:
 
-## 2.3 The Integrated Infrastructure Model
+1. **Applied AI Innovation:** Dr. Mitchell's PHAIR Lab enables TRE-scale AI validation and CRAIDL training
+2. **Neuro-immunology & MS Cell Therapies:** ACTM-manufactured products in early-phase MS trials (CHARM platform)
+3. **Hepatitis C & Vaccine Trials:** Dr. Houghton (Nobel 2020) leads Canada's first academic Challenge Trial Unit
+4. **Precision Cardio-Renal-Metabolic:** Connect1D Canada demonstrates decentralized methodology (Senior, Shapiro)
+5. **Pediatric Rare Disease (RareKids-CAN):** Stollery CIU—one of two Canadian pediatric Phase I centres (316,000+ patients annually)
 
-CTAP is led by UACT and governed through the **Kipnes Health Research Institute**. The platform operates through five tightly coupled domains unified by a three-zone Trusted Research Environment (TRE):
+**PRAIRIE Hub Vaccine Feeder Programs:** Two CBRF-funded programs generate candidates for CTAP validation: saRNA Vaccine Platform ($35.3M, Houghton) and Comparative Vaccine Platform ($57M, Shmulevitz/Pelka). Applied Pharmaceutical Innovation (API) partnership creates Canada's only fully integrated discovery-to-production pathway.
 
-**Domain 1: AI-Enabled Operations Hub.** CRAIDL (Clinical Research Assistants for Intelligent Design and anaLysis)—8 AI agents developed with Amii—simulate protocol feasibility, predict recruitment bottlenecks, and automate regulatory documentation. Four agents are validated at investigator scale; CFI investment enables enterprise deployment. Target: 40–50% reduction in trial startup time.
+## 2.3 International Context and Competitive Positioning
 
-**Domain 2: Living Biorepository.** Transforms biospecimen management from static storage into an intelligent discovery engine via: real-time EMR linkage (FHIR API to Connect Care); automated outcome annotation; predictive inventory management; and consent-aware sample routing.
+| Comparator | Capabilities | CTAP Advantage |
+|------------|--------------|----------------|
+| **UK Biobank** | 500K participants, biospecimens, genomics | CTAP adds GMP manufacturing + active trials |
+| **All of Us (NIH)** | 1M+ participants, EHR linkage | CTAP: unified provincial EMR (Connect Care) vs. fragmented US data |
+| **German National Decade Against Cancer** | Federated data, oncology focus | CTAP: broader therapeutic scope + AI-native design |
+| **TriNetX/Veeva** | Commercial trial platforms | CTAP: academic open-source + advanced AI |
 
-**Domain 3: Secure Research Data Environment.** Three-zone TRE (AWS Calgary): Zone 1 (identifiable, AHS-controlled); Zone 2 (de-identification, AI processing); Zone 3 (de-identified research data, OMOP analytics). Extends to prospective "Trials Zone" meeting Health Canada Division 5 and ICH E6(R3) requirements.
+**No platform globally integrates:** (1) GMP manufacturing, (2) structural/systems biology, (3) metabolomics/glycomics at scale, (4) top-tier AI institute, (5) mature trials organization, and (6) province-wide unified EMR. CTAP is Canada's first AI-native clinical trials platform.
 
-**Domain 4: Open Science Infrastructure.** OMOP Common Data Model enables federated queries across OHDSI (100+ institutions), VITAL, PRAIRIE Hub, and RareKids-CAN.
+## 2.4 Core Objectives (by 2031)
 
-**Domain 5: Clinical Trials Omics Integration.** Trial-to-facility interface layer connecting trials with UAlberta core facilities (ACE Core, Cryo-EM, GlycoNet, TMIC, Alberta Proteomics) through protocol integration services, quality bridge infrastructure, and data return pipelines.
-
-## 2.4 CRAIDL: The AI-First Clinical Trials Engine
-
-CRAIDL (Clinical Research Assistants for Intelligent Design and anaLysis) leverages agentic AI—agents functioning autonomously with human oversight—developed with Amii and CIFAR AI Chairs. Built on Canadian VIGOUR Centre's 50+ trial templates.
-
-**The In Silico Assessment Agent**—Canada's first prospective trial intelligence capability—simulates trial outcomes before enrollment, addressing the 40-60% trial failure rate. Led by Dr. Lazar Atanackovic (Amii Fellow), the agent enables digital twin generation and synthetic control arms for rare disease trials. AI Scribe (Mitchell) extends this vision into real-time clinical data capture.
-
-**Human-in-the-Loop:** All outputs require human review—protocol drafts by PI/statistician, safety flags by medical monitor, regulatory packages by regulatory affairs.
-
-Benchmark: RECOVERY trial achieved first patient within 9 days. CRAIDL democratizes this capability nationally via ACT-AEC.
-
-## 2.5 Core Objectives
-
-By 2031, CTAP will: **reduce trial start-up by 40-50%** (stretch: 4 weeks idea-to-activation); **double recruitment efficiency** with 15% Indigenous/20% rural targets; **enable first-in-human and advanced-therapy trials** (5+ FIH including challenge studies, 3+ cell therapy trials); **integrate biospecimens with 70%+ trials** having pre-planned pipelines; **deploy 8 CRAIDL agents** nationally via ACT-AEC; **establish pandemic preparedness capacity** through Challenge Trial Unit; **serve as Western anchor** for ACT-AEC, PRAIRIE Hub, RareKids-CAN (20+ sites, 100+ OHDSI institutions); and **train 150+ HQP** (20% from underrepresented groups).
-
-## 2.6 Flagship Programs
-
-Five high-impact programs operationalize CTAP:
-
-1. **Applied AI Innovation:** Dr. Mitchell's PHAIR Lab (AI + Health Hub) generates implementation science knowledge; CFI investment enables TRE-scale AI validation and CRAIDL training.
-
-2. **Neuro-immunology & MS Cell Therapies:** ACTM-manufactured cell products tested in early-phase MS trials; integrates with CHARM platform (CFI IF 2025).
-
-3. **Hepatitis C & Vaccine Trials:** Dr. Houghton (Nobel 2020) leads Canada's first academic Challenge Trial Unit (CHIM facility) for accelerated vaccine efficacy evaluation.
-
-4. **Precision Cardio-Renal-Metabolic:** CVC-anchored pragmatic trials; Connect1D Canada registry demonstrates decentralized trial methodology.
-
-5. **Pediatric Rare Disease (RareKids-CAN):** Stollery CIU—one of two Canadian pediatric Phase I centres (316,000+ patients annually)—serves as Western anchor with WCHRI Translational Genomics Hub.
-
-## 2.7 Feasibility and International Context
-
-**Operational Foundation:** UACT/CTO (coordinated trials infrastructure); Canadian VIGOUR Centre (50+ trial templates for CRAIDL training); CBSR and ACTM (functioning facilities with validated SOPs); Amii/CIFAR AI Chairs (AI Scribe at scale); ACE Core, GlycoNet, TMIC, Cryo-EM (established CFI-funded core facilities); 4 CRAIDL agents operational at investigator scale. Phased 4-5 year implementation with early wins within 18-24 months.
-
-**International Context:** While centres globally (UK Biobank, All of Us, German National Decade Against Cancer) are developing components, no platform integrates: (1) GMP manufacturing, (2) structural/systems biology, (3) metabolomics/glycomics at scale, (4) top-tier AI institute, (5) mature trials organization, and (6) province-wide EMR. **CTAP is Canada's first AI-native clinical trials platform.**
+| Objective | Target | Measurement |
+|-----------|--------|-------------|
+| Trial start-up reduction | 40-50% (stretch: 4 weeks idea-to-activation) | Time from concept to first patient |
+| Recruitment efficiency | 2x improvement; 15% Indigenous, 20% rural | Enrollment rates vs. national benchmarks |
+| Advanced therapy trials | 5+ FIH (including challenge studies), 3+ cell therapy | Trial count by type |
+| Biospecimen integration | 70%+ trials with pre-planned pipelines | Trials with biorepository SOPs |
+| CRAIDL deployment | 8 agents nationally via ACT-AEC | Agent availability at 20+ sites |
+| HQP training | 150+ (20% underrepresented groups) | Trained personnel count |
 
 # 3. Research Team
 
-**Leadership:** Lawrence Richer, MD, PhD (PI) - Associate Dean Research, College of Health Sciences.
+CTAP assembles an interdisciplinary team with demonstrated experience in clinical trials operations, AI implementation, biomanufacturing, and disease-area expertise. The team includes established investigators, early-career researchers, and patient partners as co-investigators.
 
-**Clinical Trials:** Canadian VIGOUR Centre (50+ trials); Dr. James Shapiro (CRC Transplant Surgery, Edmonton Protocol pioneer); Dr. Michael Houghton (Nobel 2020, vaccine challenge trials).
+## Leadership and Clinical Trials Operations
 
-**AI/Computer Science:** Amii CIFAR AI Chairs; Dr. Ross Mitchell (Canada CIFAR AI Chair, AI Scribe); Dr. Lazar Atanackovic (Amii Fellow, generative modeling); Dr. Amber Simpson (CRC Biomedical Computing, Queen's, radiomics).
+| Name | Position | Role in CTAP | Key Qualifications |
+|------|----------|--------------|-------------------|
+| **Lawrence Richer, MD, PhD** | PI; Associate Dean Research, College of Health Sciences | Overall leadership, governance, institutional integration | UACT Director; regulatory affairs expertise |
+| **Michael Houghton, PhD** | Co-PI; Li Ka Shing Professor of Virology | Challenge Trial Unit Director; vaccine trials | Nobel Prize 2020 (HCV discovery); CHIM protocol development |
+| **James Shapiro, MD, PhD** | Co-PI; CRC Transplant Surgery | Cell therapy trials; Edmonton Protocol integration | Edmonton Protocol pioneer (NEJM 2000); 20+ year transplant outcomes |
+| **Peter Senior, MD, PhD** | Co-PI; Clinical Islet Transplant Program | Decentralized trials; Connect1D Canada | T1D registry development; digital health trials |
 
-**Core Facilities:** ACE Core (single-cell, spatial transcriptomics); Alberta Cryo-EM (Young/Das); GlycoNet (Mahal); TMIC (Wishart/Li); ACTM (GMP cell manufacturing); CBSR (Ritchie, biospecimens); iSMART (Mushahwar, CRC Tier 1, GLP device validation).
+## AI and Computational Science (CRAIDL Development)
 
-**Patient Partners:** Connect1D Canada patient co-leads and Community Advisory Board members serve as co-investigators with governance authority.
+| Name | Position | Role in CTAP | Key Qualifications |
+|------|----------|--------------|-------------------|
+| **Ross Mitchell, PhD** | Canada CIFAR AI Chair; AHS Chair in AI | CRAIDL leadership; AI Scribe integration | AI Scribe deployed across 10 Alberta EDs (6,700+ sessions) |
+| **Lazar Atanackovic, PhD** | Amii Fellow; Asst. Professor ECE/Biochemistry | In Silico Assessment Agent; Digital Twin Engine | Incoming from MIT-Harvard Broad Institute; generative modeling |
+| **Amber Simpson, PhD** | CRC Biomedical Computing (Queen's) | Imaging/Radiomics Agent; federated learning | Medical Segmentation Decathlon (1,622 citations) |
+| **Patrick Pilarski, PhD** | Amii CIFAR AI Chair; iSMART | CRAIDL agent development | Former DeepMind researcher; reinforcement learning |
 
-**Key Partnerships:** Amii (10+ CIFAR AI Chairs); Canadian VIGOUR Centre (50+ trials); Connect Care/AHS (provincial EMR); AWS Calgary (secure cloud); iSMART (GLP facility).
+## Core Facilities Leadership
+
+| Facility | Director(s) | Role in CTAP |
+|----------|-------------|--------------|
+| Canadian BioSample Repository | Bruce Ritchie, MD | Suite 2: Living Biorepository operations |
+| Alberta Cell Therapy Manufacturing | Greg Korbutt, PhD | GMP cell product manufacturing |
+| Alberta Cryo-EM Facility | Howard Young, PhD / Kalyan Das, PhD | Structural biology integration |
+| GlycoNet/Glycomics Institute | Lara Mahal, PhD (CERC) | Glycan profiling for trials |
+| TMIC Metabolomics | David Wishart, PhD / Liang Li, PhD | Metabolomic endpoints |
+| iSMART | Vivian Mushahwar, PhD (CRC Tier 1) | GLP device validation (Western Canada's only) |
+
+## Disease-Area Expertise and Early-Career Researchers
+
+| Name | Area | Role in CTAP |
+|------|------|--------------|
+| Todd Alexander, MD, PhD | Pediatric Rare Disease | RareKids-CAN Western anchor; Translational Genomics Hub |
+| Oana Caluseriu, MD | Clinical Genetics | VUS resolution; undiagnosed genetic diseases |
+| Patrick Macdonald, PhD | Islet Biology | ADI IsletCore Director; cryopreservation expertise |
+| Giovanni Ferrara, MD | Digital Health | Digital Health Device Validation Program operational lead |
+| Khaled Barakat, PhD | Computational Drug Discovery | Structure-based drug design; off-target toxicity prediction |
+| Amir Tabatabaei Dakhili, PhD | AI Drug Design (ECR) | SCOT inhibitor platform; AI drug design methods |
+
+## EDI and Patient Partnership
+
+The team includes Indigenous scholars, patient partners (Kate Farnsworth, Connect1D Canada Patient Co-Lead), and Community Advisory Board members as co-investigators with governance authority. **Evidence-based EDI actions:** recruitment through Amii's Indigenous AI initiatives; mentorship programs pairing senior investigators with trainees from underrepresented groups; reserved CRAIDL compute resources for underfunded researchers.
+
+## Key Institutional Partnerships
+
+- **Amii:** 10+ CIFAR AI Chairs providing CRAIDL development and validation
+- **Canadian VIGOUR Centre:** 50+ trial templates as CRAIDL training corpus
+- **Connect Care/AHS:** Provincial EMR integration (682 sites, 4.4M Albertans)
+- **AWS Calgary:** Secure cloud infrastructure (Canadian data sovereignty)
+- **Applied Pharmaceutical Innovation (API):** Discovery-to-production pathway
 
 # 4. Equity, Diversity, and Inclusion
 
-CTAP aligns with the University of Alberta's **Access, Community, and Belonging (ACB)** framework and operationalizes CIHR's Strategy for Patient-Oriented Research (SPOR) with patient partners as co-investigators with governance authority. Canada's first **Indigenous Clinical Trials Unit (ICTU)** ensures OCAP principles govern Indigenous data through TRE-enforced access controls, with culturally safe clinical spaces (smudging, Elder consultations, Indigenous language signage) and decentralized tools extending participation to remote communities.
+CTAP aligns with the University of Alberta's **Access, Community, and Belonging (ACB)** framework and operationalizes CIHR's Strategy for Patient-Oriented Research (SPOR) with patient partners as co-investigators with governance authority. Canada's first **Indigenous Clinical Trials Unit (ICTU)** ensures OCAP principles govern Indigenous data through TRE-enforced access controls, with culturally safe clinical spaces (smudging, Elder consultations, Indigenous language signage) and decentralized tools extending participation to remote communities. **Explicit Targets:** 15% Indigenous participation (ICTU-co-designed protocols); 20% rural/remote participation; 20% of 150+ HQP from underrepresented groups. CRAIDL agents undergo systematic bias auditing with Community Advisory Board review. Accessible consent processes (Grade 6-8 reading level, multiple languages including Indigenous languages) and reserved compute resources for underfunded researchers.
 
-**Explicit Targets:** 15% Indigenous participation (ICTU-co-designed protocols); 20% rural/remote participation; 20% of 150+ HQP from underrepresented groups. CRAIDL agents undergo systematic bias auditing with Community Advisory Board review. Accessible consent processes (Grade 6-8 reading level, multiple languages including Indigenous languages) and reserved compute resources for underfunded researchers.
+**Systemic Barriers Addressed:** Clinical trials historically underrepresent Indigenous and rural populations due to geographic barriers, lack of culturally appropriate protocols, and distrust stemming from research harms. CTAP addresses these through: decentralized trial infrastructure reaching remote communities; ICTU-led protocol co-design ensuring cultural safety; Indigenous data governance (OCAP-compliant TRE zones); and Community Advisory Board oversight of AI agent outputs to prevent algorithmic bias in patient selection.
 
 # 5. Benefits to Canada
+
+## Anticipated Benefits and Impact
 
 **Health and Social Benefits:** CTAP will provide **10,000+ patients annually** with earlier therapy access by 2031 through compressed trial timelines (start-up reduced from 12-18 to 4-6 months; 78% reduction in screening time). Connect Care—Canada's largest integrated CIS ($2B, 4.4M Albertans, 682 sites)—becomes accessible nationally via ACT-AEC. Canada's first Indigenous Clinical Trials Unit (ICTU) ensures 15% Indigenous and 20% rural enrollment with OCAP-compliant data governance.
 
 **Economic Benefits:** CTAP attracts **$100M+ pharmaceutical R&D investment** and generates $6M+ additional annual research revenue by 2031. CRAIDL IP (8 AI agents, training datasets, APIs) deployed nationally via open-source licensing. **150+ HQP trained** (20% underrepresented groups) with globally competitive skills.
 
-**National Leadership:** CTAP serves as Western anchor for ACT-AEC, PRAIRIE Hub ($57M CBRF), RareKids-CAN, Connect1D Canada, and VITAL (100+ OHDSI institutions). Open-source CRAIDL agents democratize trial design for small centres, Indigenous communities, and rural hospitals nationally.
+| Benefit Category | Target by 2031 | Impact Pathway |
+|-----------------|----------------|----------------|
+| Patients with earlier therapy access | 10,000+ annually | Compressed trial timelines |
+| Trial start-up reduction | 40-50% | CRAIDL automation; streamlined processes |
+| Pharmaceutical R&D attracted | $100M+ | Industry partnerships; trial-ready infrastructure |
+| HQP trained | 150+ | Training programs; mentorship |
+| Indigenous/rural enrollment | 15%/20% | ICTU protocols; decentralized trials |
+| Canadian sites with CRAIDL access | 20+ | ACT-AEC deployment |
 
-| Benefit | Target by 2031 |
-|---------|----------------|
-| Patients with earlier therapy access | 10,000+ annually |
-| Trial start-up reduction | 50-70% |
-| Pharmaceutical R&D attracted | $100M+ |
-| HQP trained | 150+ |
-| Indigenous/rural enrollment | 15%/20% |
-| Canadian sites with CRAIDL access | 20+ |
+## Pathways to Transfer Results to End Users
+
+| End User | Transfer Mechanism | Expected Outcomes |
+|----------|-------------------|-------------------|
+| **Academic researchers** | Open-source CRAIDL agents; federated data queries | Accelerated protocol development nationwide |
+| **Clinicians** | AI Scribe integration; real-time decision support | Improved patient identification for trials |
+| **Indigenous communities** | ICTU co-designed protocols; community data governance | Culturally safe research; OCAP compliance |
+| **Industry (pharma/biotech)** | Commercial services; partnership agreements | Faster Canadian trial activation |
+| **Policy makers** | Real-world evidence; regulatory submissions | Evidence-based policy development |
+| **Public** | Earlier therapy access; patient registries | Improved health outcomes |
+
+## Training of Highly Qualified Personnel
+
+| Training Program | Annual Trainees | Skills Developed |
+|-----------------|-----------------|------------------|
+| Clinical Trials Operations Certificate | 30 | GCP, regulatory, trial management |
+| CRAIDL AI Development Program | 15 | Health AI, agent design, validation |
+| Biorepository Science | 20 | Sample processing, LIMS, quality systems |
+| Data Science for Clinical Research | 25 | OMOP, analytics, privacy-preserving methods |
+| Indigenous Research Methods | 10 | OCAP, community engagement, cultural safety |
+| **Total** | **100/year** | |
+
+**EDI in Training:** Minimum 20% of training positions reserved for Indigenous trainees and individuals from underrepresented groups; mentorship pairing with senior investigators; flexible scheduling for trainees with caregiving responsibilities; accessibility accommodations.
+
+## National Leadership
+
+CTAP serves as Western anchor for national networks, democratizing trial capabilities across Canada:
+
+| Network | Role | Benefit to Network |
+|---------|------|-------------------|
+| ACT-AEC | Western operational hub | CRAIDL agents available to all sites |
+| PRAIRIE Hub ($57M CBRF) | Trial validation for vaccine candidates | Integrated discovery-to-trials pathway |
+| RareKids-CAN | Pediatric Phase I centre | One of two Canadian pediatric early-phase sites |
+| Connect1D Canada | Decentralized trial methodology | Patient registry and digital trial model |
+| VITAL/OHDSI | Federated data network | 100+ institution queries |
 
 # 6. Infrastructure Request Justification
 
-**Core Facility Model:** CTAP is designed as a formally recognized, institutionally supported **core facility** providing researchers with access to state-of-the-art clinical trials infrastructure, AI tools, and expertise regardless of administrative affiliation. The facility operates with a clearly defined governance structure (Kipnes Institute) and dedicated management overseeing all aspects. All five infrastructure suites are designed for multi-user access, shared utilization, and equitable access policies.
+## Core Facility Model
+
+CTAP is designed as a formally recognized, institutionally supported **core facility** as defined by CFI: providing researchers with access to state-of-the-art clinical trials infrastructure, AI tools, and expertise regardless of administrative affiliation, with no requirement for collaboration or co-authorship. The facility operates with a clearly defined governance structure (Kipnes Health Research Institute) and dedicated management overseeing all aspects.
+
+**Core Facility Characteristics:**
+- **Formal recognition:** Anchored within Kipnes Health Research Institute; institutionally supported through College of Health Sciences
+- **Multi-user access:** All five infrastructure suites designed for shared utilization across faculties and institutions
+- **No collaboration requirement:** Services available through fee-for-service model without co-authorship obligations
+- **Dedicated management:** Program Director, Operations Manager, Data Architect, Biobank Operations Lead, Indigenous Engagement Lead, CRAIDL Development Lead
+- **Equitable access:** Priority allocation policies; reserved capacity for Indigenous researchers and underfunded groups
+
+**Network of Users and Collaborators:**
+
+| User Category | Estimated Annual Users | Access Mechanism |
+|---------------|----------------------|------------------|
+| UAlberta researchers | 150+ | Direct allocation |
+| Other Alberta institutions | 50+ | Provincial partnership agreements |
+| National (ACT-AEC network) | 100+ | CRAIDL agent licensing; federated queries |
+| Industry partners | 20+ | Commercial service agreements |
+| Indigenous communities | 10+ | ICTU-facilitated protocols |
+
+**Facility Website:** CTAP will maintain a public-facing website (integrated with Kipnes Institute portal) providing: service catalogue, pricing, access request forms, training schedules, and equipment specifications.
 
 The total infrastructure request is **$10,365,000 CAD**, organized into five suites aligned with the platform's five integrated domains.
 
@@ -222,50 +336,213 @@ This suite enables decentralized, patient-centric trials:
 
 CTAP will be governed through a multi-tier structure anchored within the **Kipnes Health Research Institute**—CTAP's functional home:
 
-- **CTAP Steering Committee** chaired by UACT Director and co-chaired by Kipnes Institute leadership, with representation from CTO, NACTRC, CVC, WCHRI DCC, CBSR, ACTM, GlycoNet, TMIC, Amii, Indigenous leadership, and patient partners
-- **Data Access Committee** responsible for researcher access, TRE workspace approvals—modeled on UK Biobank Access Committee
-- **Operations Committee** for day-to-day coordination across cores
-- **CRAIDL Development Committee** with AI/computer science and clinical trials expertise
-- **EDI and Indigenous Advisory Council**
-- **Scientific Advisory Board** with external members from ACT-AEC, PRAIRIE Hub, and international partners
+| Committee | Chair | Function | Meeting Frequency |
+|-----------|-------|----------|-------------------|
+| **CTAP Steering Committee** | UACT Director + Kipnes Institute leadership | Strategic oversight; budget allocation; policy | Quarterly |
+| **Data Access Committee** | TRE Director | Researcher access; TRE workspace approvals | Monthly |
+| **Operations Committee** | Program Director | Day-to-day coordination across cores | Bi-weekly |
+| **CRAIDL Development Committee** | AI Lead (Mitchell/Atanackovic) | Agent development; validation protocols | Monthly |
+| **EDI and Indigenous Advisory Council** | ICTU Director | Cultural safety; OCAP compliance | Quarterly |
+| **Scientific Advisory Board** | External chair (rotating) | External review; international benchmarking | Semi-annual |
 
 ## Institutional Supports
 
-The University of Alberta and College of Health Sciences have committed to providing CTAP operational governance through the **Kipnes Health Research Institute**—CTAP's functional home within the College of Health Sciences. Specific commitments include: allocating and maintaining physical space in the Kipnes Health Research Academy and associated clinical facilities; providing base support for key personnel (Program Director, Operations Manager, Data Architect, Biobank Operations Lead, Indigenous Engagement Lead, CRAIDL Development Lead); integrating CTAP into institutional strategic plans and core-facility frameworks; and leveraging the Institute's AI + Health Hub and Health Research Translation Unit for governance and operational support.
+The University of Alberta and College of Health Sciences have committed to:
 
-## Operations and Maintenance
+| Support Category | Specific Commitment | Estimated Value |
+|-----------------|---------------------|-----------------|
+| **Physical Space** | Kipnes Health Research Academy; clinical facilities (UAH, Stollery, Li Ka Shing) | In-kind |
+| **Personnel** | Program Director, Operations Manager, Data Architect, Biobank Lead, Indigenous Lead, CRAIDL Lead | $1.2M/year base |
+| **IT Infrastructure** | IST network integration; DARC compute allocation | In-kind |
+| **Strategic Integration** | Core facility status in institutional plans | Governance |
 
-Major ongoing costs will be covered through a diversified funding model:
+## Operations and Maintenance Costs
 
-**Revenue Streams:**
-- Infrastructure Operating Fund (IOF) allocations tied to CFI investment
-- Cost-recovery user fees for biobanking ($35/sample processing, $5-15/year storage), cell manufacturing, and omics services
-- Industry services: feasibility queries ($2,500/query), TRE workspace provisioning ($15,000/study-year), CRAIDL agent access ($5,000/study), CDISC transformation ($20,000/submission)
-- Grant funding (PRAIRIE Hub, ACT-AEC, CIHR, NFRF)
-- Institutional and philanthropic support, including leveraging the Kipnes gift
+**Detailed 5-Year O&M Projections:**
+
+| Suite | Annual O&M Cost | Primary Cost Drivers |
+|-------|-----------------|---------------------|
+| Suite 1: Clinical Trials Infrastructure | $420,000 | Equipment maintenance; certification; consumables |
+| Suite 2: Living Biorepository | $380,000 | LN₂/power; LIMS licensing; quality assurance |
+| Suite 3: Omics Integration Hub | $250,000 | Core facility access fees; QC consumables |
+| Suite 4: Data Platform & AI/HPC | $520,000 | AWS cloud; software licensing; GPU maintenance |
+| Suite 5: Trial Innovation Tools | $180,000 | Platform licensing; device calibration |
+| **Total Annual O&M** | **$1,750,000** | |
+
+**Revenue Sources to Cover O&M:**
+
+| Revenue Stream | Year 1 | Year 3 | Year 5 | Notes |
+|----------------|--------|--------|--------|-------|
+| Infrastructure Operating Fund (IOF) | $620,000 | $620,000 | $620,000 | ~30% of CFI equipment @ 40% IOF rate |
+| User fees (biobanking) | $150,000 | $250,000 | $350,000 | $35/sample + $10/year storage |
+| Industry services | $200,000 | $500,000 | $800,000 | Feasibility, TRE, CRAIDL access |
+| Grant funding (PRAIRIE Hub, ACT-AEC, CIHR) | $400,000 | $300,000 | $200,000 | Tapering as self-sufficiency grows |
+| Institutional support | $380,000 | $200,000 | $100,000 | Kipnes gift leverage; VPR allocation |
+| **Total Revenue** | **$1,750,000** | **$1,870,000** | **$2,070,000** | |
+
+**Fee-for-Service Schedule:**
+
+| Service | Unit Price | Basis |
+|---------|-----------|-------|
+| Sample processing (basic) | $35 | Per sample |
+| Sample storage (annual) | $5-15 | Per sample by temperature |
+| Feasibility query | $2,500 | Per query |
+| TRE workspace provisioning | $15,000 | Per study-year |
+| CRAIDL agent access | $5,000 | Per study |
+| CDISC transformation | $20,000 | Per submission |
+| Full trial support package | $75,000+ | Custom |
 
 ## Accessibility and Optimal Use
 
-As a core facility, CTAP will ensure optimal utilization through: transparent access and prioritization policies; common SOPs, service menus, and pricing across cores; training and mentorship programs for HQP; making CRAIDL agents available to attract RCT projects; and meeting quality, safety, and regulatory metrics required as a sponsor of RCTs.
+**Utilization Targets:**
+
+| Metric | Year 1 | Year 3 | Year 5 |
+|--------|--------|--------|--------|
+| Active clinical trials supported | 25 | 50 | 100 |
+| Biospecimens processed annually | 10,000 | 25,000 | 50,000 |
+| TRE active users | 50 | 150 | 300 |
+| CRAIDL agent sessions | 500 | 2,000 | 5,000 |
+| HQP trained | 30 | 90 | 150+ |
+
+**Equitable Access Policies:**
+- Priority allocation for Indigenous-led research (minimum 15% capacity)
+- Reserved CRAIDL compute for underfunded researchers
+- Sliding-scale pricing for trainee-led projects
+- Open-source CRAIDL agents for academic use via ACT-AEC
 
 # 8. Supplemental Information
 
 ## 8.1 Research Data Management
 
-Data generated through CTAP will be managed under a unified Data Governance Framework aligned with UofA policies, AHS agreements, and national guidance.
+Data generated through CTAP will be managed under a unified Data Governance Framework aligned with UofA policies, AHS agreements, and national guidance (Tri-Agency Research Data Management Policy).
 
-**Three-Zone Architecture:**
-- Zone 1 (Identifiable): AHS custodian-controlled under formal data sharing agreements
-- Zone 2 (Controlled): De-identification, transformation, AI agent processing with full audit trails
-- Zone 3 (Research): De-identified trial data lake, OMOP analytics, project-isolated workspaces
+### Three-Zone TRE Architecture
 
-**OMOP Common Data Model:** Connect Care data transformed to OMOP CDM v5.4 enabling standardized cohort discovery (OHDSI ATLAS), federated queries with OHDSI network (100+ institutions), VITAL (Canadian), PRAIRIE Hub, and RareKids-CAN.
+| Zone | Data Type | Custodian | Access Controls | Retention |
+|------|-----------|-----------|-----------------|-----------|
+| **Zone 1 (Identifiable)** | Raw EMR, identifiable trial data | AHS | AHS-approved personnel only | Per AHS policy (min. 10 years) |
+| **Zone 2 (Controlled)** | De-identification pipeline, AI processing | CTAP Data Team | Role-based; audit logged | Duration of processing |
+| **Zone 3 (Research)** | De-identified data, OMOP analytics | Research PI | Project-specific workspaces | Per grant requirements (typically 10 years) |
 
-**Regulatory Compliance:** Health Canada Division 5, ICH E6(R3), CDISC, HL7 FHIR, HIA, FAIR Principles; optional 21 CFR Part 11 for FDA submissions.
+### Data Types and Standards
+
+| Data Type | Standard | Storage Format | Sharing Mechanism |
+|-----------|----------|----------------|-------------------|
+| Clinical trial data | CDISC CDASH/SDTM | SAS XPT, CSV | Controlled access repository |
+| EMR extracts | HL7 FHIR R4 | JSON, Parquet | OMOP transformation |
+| Biospecimen data | BRISQ | OpenSpecimen LIMS | Federated queries |
+| Imaging | DICOM, NIFTI | PACS, cloud storage | Anonymized export |
+| Omics | MIAME, MINSEQE | FASTQ, BAM, VCF | Controlled access (EGA model) |
+
+### OMOP Common Data Model
+
+Connect Care data transformed to OMOP CDM v5.4 enabling:
+- Standardized cohort discovery (OHDSI ATLAS)
+- Federated queries with OHDSI network (100+ institutions globally)
+- VITAL (pan-Canadian) integration
+- PRAIRIE Hub and RareKids-CAN data sharing
+
+### Data Retention and Disposal
+
+| Data Category | Retention Period | Disposal Method | Authority |
+|---------------|------------------|-----------------|-----------|
+| Clinical trial source | 25 years post-study | Secure destruction | Health Canada Division 5 |
+| De-identified research | 10 years post-publication | Controlled deletion | Tri-Agency policy |
+| Biospecimen metadata | Duration of sample storage + 10 years | Archive then delete | CTAP policy |
+| AI training datasets | Indefinite (anonymized) | N/A | CRAIDL governance |
+
+### Backup and Disaster Recovery
+
+- **Primary storage:** AWS Canada Central (Calgary region) with 3-zone redundancy
+- **Backup frequency:** Daily incremental, weekly full, monthly archive
+- **Recovery Point Objective (RPO):** 24 hours
+- **Recovery Time Objective (RTO):** 4 hours for critical systems
+- **Annual disaster recovery testing:** Full failover simulation
+
+### FAIR Principles Implementation
+
+| Principle | Implementation |
+|-----------|----------------|
+| **Findable** | DOIs for datasets; searchable metadata catalogue; ORCID integration |
+| **Accessible** | Controlled access portal; documented request process; API access |
+| **Interoperable** | OMOP CDM; CDISC standards; HL7 FHIR; standardized ontologies |
+| **Reusable** | CC-BY licensing for metadata; data dictionaries; provenance tracking |
+
+### Regulatory Compliance
+
+| Regulation | Applicability | Compliance Mechanism |
+|------------|---------------|---------------------|
+| Health Canada Division 5 | All clinical trials | EDC validation; audit trails |
+| ICH E6(R3) | GCP compliance | Risk-based monitoring; eSource |
+| Alberta HIA | Personal health information | TRE access controls; DSAs |
+| 21 CFR Part 11 | FDA submissions (optional) | Electronic signatures; audit trails |
+| TCPS-2 | All human research | REB approval; consent management |
+| OCAP | Indigenous data | ICTU governance; community agreements |
 
 ## 8.2 Technology Transfer
 
-CTAP will work with the university's research innovation office to identify, protect, and mobilize IP. CRAIDL represents significant technology transfer opportunity: AI agents for protocol development, data management, event adjudication, ethics submissions, regulatory compliance, and budgeting have commercial value for pharmaceutical companies, CROs, and academic research organizations. The team will maintain commitment to open-source deployment of core CRAIDL agents across the ACT-AEC network.
+CTAP will work with the University's TEC Edmonton and Research Services Office to identify, protect, and mobilize IP through a dual-track strategy balancing open-source academic access with commercial revenue generation.
+
+### IP Protection Strategy
+
+| IP Category | Protection Mechanism | Commercial Strategy |
+|-------------|---------------------|---------------------|
+| **CRAIDL Core Agents** | Trade secret (algorithms) + Copyright (code) | Open-source academic; licensed commercial |
+| **Training Datasets** | Database rights; contractual controls | Licensed access for commercial users |
+| **Protocol Templates** | Copyright; Creative Commons | Open access with attribution |
+| **TRE Architecture** | Trade secret; know-how | Consulting/implementation services |
+| **Integration APIs** | Apache 2.0 license | Open source |
+
+### CRAIDL Commercialization Pathway
+
+| Agent | Commercial Value | Target Market | Revenue Model |
+|-------|-----------------|---------------|---------------|
+| Protocol Development Agent | Reduce protocol drafting 60-70% | Pharma, CROs | SaaS licensing |
+| Recruitment Optimization Agent | Improve enrollment 40%+ | Sponsors, sites | Per-study fee |
+| Event Adjudication Agent | Automate safety review | CROs, DMCs | Transaction-based |
+| Regulatory Submission Agent | Accelerate filing | Sponsors | Per-submission |
+| Budget Optimization Agent | Reduce budget variance | Academic, industry | Subscription |
+
+### Licensing Framework
+
+**Academic/Non-Profit:**
+- CRAIDL core agents: Open-source (Apache 2.0) via ACT-AEC network
+- Training materials: Creative Commons CC-BY-NC
+- No licensing fees for Canadian academic institutions
+
+**Commercial:**
+- CRAIDL enterprise agents: Annual SaaS license ($50,000-250,000/year by organization size)
+- Custom agent development: Project-based ($100,000+)
+- Data access for AI training: Negotiated licensing
+
+### Revenue Projections from Technology Transfer
+
+| Revenue Stream | Year 1 | Year 3 | Year 5 |
+|----------------|--------|--------|--------|
+| CRAIDL commercial licenses | $0 | $250,000 | $750,000 |
+| Consulting/implementation | $50,000 | $150,000 | $300,000 |
+| Training data licensing | $0 | $100,000 | $200,000 |
+| Spin-off equity returns | $0 | $0 | TBD |
+| **Total** | **$50,000** | **$500,000** | **$1,250,000** |
+
+### Industry Partnership Pipeline
+
+| Partner Type | Engagement Model | Current Discussions |
+|--------------|------------------|---------------------|
+| Large pharma | Trial sponsorship; CRAIDL licensing | 3 active |
+| CROs | Implementation partnerships | 2 active |
+| Health tech startups | Co-development; incubation | 5+ via Health City |
+| Federal government | Consulting (ISED, HC) | Ongoing |
+
+### Knowledge Mobilization
+
+| Output Type | Target | Dissemination Mechanism |
+|-------------|--------|------------------------|
+| Peer-reviewed publications | 50+ over 5 years | Open access journals |
+| CRAIDL documentation | Continuous | Public GitHub repository |
+| Training workshops | 10/year | ACT-AEC network; NACTRC |
+| Policy briefs | 5/year | Health Canada; provincial ministries |
+| Conference presentations | 20/year | ISPE, DIA, ICPE, OHDSI symposia |
 
 ## 8.3 Information Services & Technology
 
@@ -317,18 +594,129 @@ CTAP does not request infrastructure for animal housing. Pre-clinical work will 
 
 Given scale and integration requirements, we anticipate 4-5 years from initiation to fully operational platform. Early components (digital trial-operations platform, CBSR expansion, initial CRAIDL deployments) will be functional within 18-24 months.
 
-**Implementation Phases:**
-- Phase 1 (Months 1-12): TRE infrastructure, EDC deployment, Connect Care bulk extract, OMOP ETL
-- Phase 2 (Months 13-24): GPU cluster, Protocol Agent v1.0, Data Management Agent v1.0, FHIR real-time integration
-- Phase 3 (Months 25-36): All 8 CRAIDL agents deployed, OHDSI participation, industry services launch
-- Phase 4 (Months 37-48): VITAL network integration, CRAIDL agents to ACT-AEC, full sustainability
+### Implementation Timeline
+
+```
+Year 1          Year 2          Year 3          Year 4          Year 5
+|-------|-------|-------|-------|-------|-------|-------|-------|-------|
+Q1  Q2  Q3  Q4  Q1  Q2  Q3  Q4  Q1  Q2  Q3  Q4  Q1  Q2  Q3  Q4  Q1  Q2  Q3  Q4
+
+PHASE 1: Foundation ████████████████
+                    [M1]    [M2][M3]
+
+PHASE 2: Core Deployment     ████████████████
+                                 [M4][M5]    [M6]
+
+PHASE 3: Integration                  ████████████████
+                                          [M7]    [M8]
+
+PHASE 4: Scale & Sustainability                ████████████████████████
+                                                   [M9]        [M10][M11]
+```
+
+### Milestone Definitions
+
+| ID | Milestone | Target Date | Dependencies | Go/No-Go Criteria |
+|----|-----------|-------------|--------------|-------------------|
+| M1 | TRE Zone 1-2 operational | Month 6 | AWS contract; AHS DSA | Security audit passed |
+| M2 | EDC platform deployed | Month 9 | Vendor selection | First study onboarded |
+| M3 | Connect Care bulk extract | Month 12 | AHS approval | OMOP transformation validated |
+| M4 | GPU cluster operational | Month 15 | Hardware procurement | CRAIDL training benchmarks met |
+| M5 | Protocol Agent v1.0 released | Month 18 | M4 | 3 protocols generated; PI validation |
+| M6 | FHIR real-time integration | Month 24 | AHS technical approval | Live data flowing |
+| M7 | All 8 CRAIDL agents deployed | Month 30 | M4, M5 | Validation complete for each |
+| M8 | OHDSI network participation | Month 36 | M3, M6 | Federated query success |
+| M9 | Industry services launch | Month 42 | M7 | First commercial contract signed |
+| M10 | ACT-AEC CRAIDL deployment | Month 48 | M7, M9 | 10+ sites active |
+| M11 | Full sustainability achieved | Month 54 | All | Revenue ≥ O&M costs |
+
+### Phase Details
+
+**Phase 1: Foundation (Months 1-12)**
+
+| Deliverable | Suite | Key Activities |
+|-------------|-------|----------------|
+| TRE infrastructure | Suite 4 | AWS deployment; security certification; Zone 1-2 operational |
+| EDC platform | Suite 4 | Vendor selection; configuration; first study onboarded |
+| Biorepository expansion | Suite 2 | ULT freezers installed; OpenSpecimen deployed |
+| Connect Care integration | Suite 4 | Bulk data extract; OMOP ETL pipeline |
+| Challenge Unit design | Suite 1 | Architectural plans; regulatory consultation |
+
+**Phase 2: Core Deployment (Months 13-24)**
+
+| Deliverable | Suite | Key Activities |
+|-------------|-------|----------------|
+| GPU cluster | Suite 4 | Hardware installation; CRAIDL training environment |
+| Protocol Agent v1.0 | Suite 4 | Development; validation with CVC templates |
+| Data Management Agent v1.0 | Suite 4 | Development; integration with OpenSpecimen |
+| FHIR real-time | Suite 4 | Connect Care live integration; consent management |
+| Living Biorepository | Suite 2 | Full automation; EMR linkage operational |
+
+**Phase 3: Integration (Months 25-36)**
+
+| Deliverable | Suite | Key Activities |
+|-------------|-------|----------------|
+| Full CRAIDL suite | Suite 4 | All 8 agents deployed and validated |
+| OHDSI participation | Suite 4 | Network membership; federated query capability |
+| Omics integration | Suite 3 | Core facility interfaces; data return pipelines |
+| Challenge Unit operational | Suite 1 | Facility commissioned; first protocol approved |
+| Industry services pilot | Suite 5 | Beta testing with partner companies |
+
+**Phase 4: Scale and Sustainability (Months 37-54)**
+
+| Deliverable | Suite | Key Activities |
+|-------------|-------|----------------|
+| VITAL network | Suite 4 | Pan-Canadian data sharing operational |
+| ACT-AEC deployment | Suite 4 | CRAIDL agents available nationally |
+| Full commercial services | Suite 5 | Complete service catalogue; marketing |
+| Sustainability | All | Revenue targets achieved; IOF optimization |
+
+### Critical Dependencies
+
+```
+                    ┌─────────────────┐
+                    │ AHS Data Sharing│
+                    │   Agreement     │
+                    └────────┬────────┘
+                             │
+              ┌──────────────┴──────────────┐
+              ▼                             ▼
+    ┌─────────────────┐           ┌─────────────────┐
+    │ Connect Care    │           │ TRE Security    │
+    │ Bulk Extract    │           │ Certification   │
+    └────────┬────────┘           └────────┬────────┘
+             │                             │
+             └──────────────┬──────────────┘
+                            ▼
+                  ┌─────────────────┐
+                  │ OMOP Data Lake  │
+                  │ Operational     │
+                  └────────┬────────┘
+                           │
+         ┌─────────────────┼─────────────────┐
+         ▼                 ▼                 ▼
+┌─────────────────┐ ┌─────────────────┐ ┌─────────────────┐
+│ CRAIDL Training │ │ OHDSI Network   │ │ FHIR Real-time  │
+│ Data Available  │ │ Participation   │ │ Integration     │
+└─────────────────┘ └─────────────────┘ └─────────────────┘
+```
 
 # Conclusion
 
-This proposal requests **$10.4 million** to build Canada's first AI-native clinical trials platform—infrastructure that exists nowhere else in the country. By integrating SDRE/Amii's computational capacity (1,000 H200 GPUs), Connect Care's unparalleled clinical reach (4.4M Albertans, 682 sites), and a Living Biorepository's precision, CTAP establishes the University of Alberta as the permanent national hub for advanced therapeutic validation.
+This proposal requests **$10,365,000** to build Canada's first AI-native clinical trials platform—infrastructure that exists nowhere else in the country. By integrating SDRE/Amii's computational capacity (1,000 H200 GPUs), Connect Care's unparalleled clinical reach (4.4M Albertans, 682 sites), and a Living Biorepository's precision, CTAP establishes the University of Alberta as the permanent national hub for advanced therapeutic validation.
 
-**Measurable national impact by 2031:** 10,000+ patients annually with earlier therapy access; 50-70% reduction in trial start-up times; $100M+ in pharmaceutical R&D attracted; 150+ highly qualified personnel trained; 15% Indigenous and 20% rural trial participation; 20+ Canadian sites with CRAIDL access through ACT-AEC deployment.
+**Measurable National Impact by 2031:**
 
-CTAP creates infrastructure that Canada needs: the only end-to-end advanced therapeutics corridor (discovery → manufacturing → trials → market); the first Indigenous Clinical Trials Unit; challenge trial capability for pandemic preparedness; and the Western anchor for national clinical trials networks. The $10.4M CFI investment catalyzes transformation across Canadian health research, with economic returns exceeding investment within 5 years through industry attraction, IP generation, and health system efficiencies.
+| Outcome | Target |
+|---------|--------|
+| Patients with earlier therapy access | 10,000+ annually |
+| Trial start-up time reduction | 40-50% |
+| Pharmaceutical R&D attracted | $100M+ |
+| HQP trained | 150+ |
+| Indigenous trial participation | 15% |
+| Rural/remote participation | 20% |
+| Canadian sites with CRAIDL access | 20+ |
+
+CTAP creates infrastructure that Canada needs: the only end-to-end advanced therapeutics corridor (discovery → manufacturing → trials → market); the first Indigenous Clinical Trials Unit ensuring OCAP-compliant research; challenge trial capability for pandemic preparedness; and the Western anchor for national clinical trials networks (ACT-AEC, PRAIRIE Hub, RareKids-CAN, VITAL). The $10,365,000 CFI investment catalyzes transformation across Canadian health research, with economic returns exceeding investment within 5 years through industry attraction, IP generation, and health system efficiencies.
 
 Clinical trials will no longer be bottlenecks—they become accelerators. Where data, biospecimens, and operational knowledge cycle continuously to accelerate discovery. Where the promise of AI-enabled medicine becomes operational reality for patients across Alberta and beyond.
