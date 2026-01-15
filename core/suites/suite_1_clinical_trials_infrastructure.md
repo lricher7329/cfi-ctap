@@ -2,9 +2,9 @@
 
 ## Concise Technical Specification
 
-**Budget: $2,414,000 CAD** (Suite 1a adds $590,000 contingent)
+**Budget: $3,004,000 CAD** (includes Suite 1a Vaccine Challenge Trial Unit at $590,000)
 
-**Version:** 1.4 **Date:** January 2026
+**Version:** 1.5 **Date:** January 2026
 
 ------------------------------------------------------------------------
 
@@ -477,11 +477,12 @@ If Suite 1a proceeds, **partial integration with distinct specialized zones** wo
 | IP pharmacy                     | \$300,000       |
 | Pediatric Rare Disease Unit     | \$200,000       |
 | Autonomic Function Laboratories | \$514,000       |
-| **Suite 1 Total**               | **\$2,414,000** |
+| Suite 1a: Vaccine Challenge Trial Unit | \$590,000 |
+| **Suite 1 Total**               | **\$3,004,000** |
 
 *Note: Pediatric Rare Disease Unit total value is \$400,000, with \$200,000 contributed by Stollery Children's Hospital Foundation as in-kind support for family-friendly spaces and fit-out.*
 
-**Suite 1a (Contingent):** The Vaccine Challenge Trial Unit (\$590,000) is presented separately as Suite 1a due to its contingent space allocation status. See Suite 1a for details.
+*Suite 1a (Vaccine Challenge Trial Unit) is included in the total. See Suite 1a document for details on Canada's first academic controlled human infection model (CHIM) facility.*
 
 ------------------------------------------------------------------------
 

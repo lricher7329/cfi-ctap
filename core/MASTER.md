@@ -66,6 +66,8 @@ The evidence suggests AI tools perform optimally when: integration with existing
 
 **This fragmentation—rather than limitations in AI performance—now represents the dominant barrier to accelerating clinical trials and translating scientific advances into patient benefit.**
 
+**Clinical trials will become the choke point for innovation** unless we act urgently. Investments in AI compute, molecular discovery, and biomanufacturing will not benefit patients if the final mile—human clinical validation—remains stuck in a 1990s operating model. Alberta has made transformative investments in H200 GPU compute, world-class AI expertise through Amii, cutting-edge pre-clinical discovery programs, and the Critical Medicines Production Centre. What is missing is **the glue to pull it all together**: an AI-native platform that connects these assets into a seamless pathway from discovery to patient benefit. CTAP is that glue.
+
 ### 1.2 The Role of Integrated Biobanking in Trial Acceleration
 
 Modern biobanks have evolved from passive specimen repositories into research-ready cohorts with linked clinical, molecular, and outcome data [@gkioka2023]. This transformation creates several acceleration pathways that directly address the startup and recruitment bottlenecks identified above:
@@ -121,11 +123,13 @@ CTAP addresses a unique gap that no existing infrastructure fills:
 
 ## 2. Strategic Arguments
 
-### 2.1 Why Now
+### 2.1 Why Now: The Window is Closing
 
 *Include file: `derived/includes/why_now.md`*
 
-The timing for CTAP is uniquely favourable due to an unprecedented convergence of enabling factors:
+**Patients cannot wait.** The next five years will determine whether Canada leads or follows in clinical trials innovation. Right now, pipelines of breakthrough vaccines, cell therapies, and precision medicines are stalled—not by science, but by the archaic infrastructure of clinical trials. Every month of delay means patients who could benefit from curative therapies remain on waitlists, managing symptoms instead of receiving treatments.
+
+The timing for CTAP is uniquely favourable due to an unprecedented convergence of enabling factors—a window that will not remain open indefinitely:
 
 #### AI Capability Maturation
 
@@ -175,9 +179,13 @@ CFI Innovation Fund 2027 represents a unique opportunity to:
 
 Alberta possesses a convergence of advantages that cannot be easily replicated:
 
-#### Unrivalled AI Capacity
+#### Unrivalled AI and Compute Capacity
 
-The Alberta Machine Intelligence Institute (Amii), with over 10 CIFAR AI Chairs focused on health and life sciences and leadership that includes pioneers of modern reinforcement learning, provides in-house expertise to deploy AI directly into clinical workflows—optimizing trial design, automating recruitment, and analyzing complex multi-omics data—without outsourcing.
+The University of Alberta is making transformative investments in AI compute infrastructure, with plans for **up to 1,000 NVIDIA H200 GPUs**—positioning Alberta as one of North America's premier academic AI compute centres. This investment, combined with the Alberta Machine Intelligence Institute (Amii) with over 10 CIFAR AI Chairs focused on health and life sciences, creates an unprecedented convergence of compute power and AI expertise for clinical trials innovation.
+
+**CTAP as the Clinical AI Gateway:** This compute infrastructure is the engine; CTAP provides the clinical fuel. Without CTAP's integration of clinical trial data, biospecimens, and health records, these GPUs remain general-purpose research tools. With CTAP, they become a clinical trials acceleration platform—training CRAIDL agents on real trial data, running Digital Twin simulations at population scale, and deploying AI models that compress trial timelines from years to months. **Patients cannot wait for innovation to trickle down—CTAP ensures that Alberta's AI investments translate directly into faster access to life-saving therapies.**
+
+Amii's leadership includes pioneers of modern reinforcement learning, providing in-house expertise to deploy AI directly into clinical workflows—optimizing trial design, automating recruitment, and analyzing complex multi-omics data—without outsourcing.
 
 **Key Amii/CIFAR Resources:**
 
@@ -481,14 +489,14 @@ CTAP operates through five tightly coupled domains, unified by an integrated dat
 | Domain                                        | Function                                                    | Suite   | CFI Request         |
 | --------------------------------------------- | ----------------------------------------------------------- | ------- | ------------------- |
 | **1. AI-Enabled Operations Hub**        | CRAIDL agents, trial operations, regulatory navigation      | Suite 4 | Included in Suite 4 |
-| **2. Living Biorepository**             | EMR-linked biospecimens, cell manufacturing                 | Suite 2 | $3,860,000          |
+| **2. Living Biorepository**             | EMR-linked biospecimens, outcome annotation                 | Suite 2 | $2,020,000          |
 | **3. Secure Research Data Environment** | Three-zone TRE, OMOP, Connect Care integration              | Suite 4 | $2,805,000          |
 | **4. Open Science Infrastructure**      | FAIR data, CDISC, regulatory compliance                     | Suite 4 | Included in Suite 4 |
 | **5. Integrated Molecular Phenotyping** | Cryo-EM, glycomics, metabolomics                            | Suite 3 | $1,480,000          |
-| **Clinical Trials Infrastructure**      | Procedure rooms, monitoring, challenge unit, autonomic labs | Suite 1 | $2,904,000          |
+| **Clinical Trials Infrastructure**      | Procedure rooms, monitoring, challenge unit, autonomic labs | Suite 1 | $3,004,000          |
 | **Trial Innovation Tools**              | Digital health, wearables, decentralized trials             | Suite 5 | $1,056,000          |
 
-**Total CFI Request: $12,105,000 CAD** (40% CFI + 60% matching)
+**Total CFI Request: $10,365,000 CAD** (40% CFI + 60% matching)
 
 *Note: Budget figures sourced from Google Sheets CFI_CTAP_Data > Equipment tab (source of truth)*
 
