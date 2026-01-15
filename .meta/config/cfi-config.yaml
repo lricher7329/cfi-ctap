@@ -37,19 +37,31 @@ flagship_programs:
   national_networks:
   - VIDO-InterVac
   - Canadian Immunization Research Network
-- name: Cardio-renal
-  short_name: cardio_renal
+- name: Cardio-Renal-Metabolic
+  short_name: cardio_renal_metabolic
   suites:
   - 1
   - 2
   - 3
+  - 5
   key_equipment:
   - Cardiac monitoring systems
   - Renal biomarker panels
   - TMIC metabolomics access
+  - ADI IsletCore integration
+  - Islet cryopreservation systems
+  - CGM validation infrastructure
+  key_partners:
+  - ADI IsletCore (Patrick Macdonald)
+  - Connect1d Canada (Peter Senior)
+  - Canadian VIGOUR Centre (Justin Ezekowicz)
+  - Edmonton Protocol team (James Shapiro, Gregory Korbutt)
   national_networks:
   - Heart & Stroke Foundation
   - Can-SOLVE CKD
+  - Diabetes Action Canada
+  - Connect1d Canada
+  - JDRF Canada
 - name: Pediatric Rare Disease
   short_name: peds_rare
   suites:

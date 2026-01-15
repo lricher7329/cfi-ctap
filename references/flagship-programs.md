@@ -65,26 +65,43 @@ CTAP infrastructure supports five flagship research programs that demonstrate th
 
 ---
 
-### 3. Cardio-renal Trials
+### 3. Cardio-Renal-Metabolic Trials
 
-**Research Focus:** Heart failure, chronic kidney disease, cardiorenal syndrome
+**Research Focus:** Heart failure, chronic kidney disease, cardiorenal syndrome, diabetes and metabolic disease, islet biology
 
 **Suites Required:**
-- **Suite 1** - Cardiorenal monitoring unit
-- **Suite 2** - Biospecimen collection and banking
-- **Suite 3** - Metabolomics for biomarker discovery
+- **Suite 1** - Cardiorenal monitoring unit, ADI Clinical Research Unit
+- **Suite 2** - Biospecimen collection and banking, islet cryopreservation
+- **Suite 3** - Metabolomics for biomarker discovery, IsletCore integration
+- **Suite 5** - Wearables for CGM validation, remote metabolic monitoring
 
 **Key Infrastructure:**
 | Equipment | Suite | Purpose |
 |-----------|-------|---------|
 | Cardiac monitoring systems | 1 | Continuous hemodynamic assessment |
 | Renal function monitoring | 1 | Real-time GFR, electrolyte tracking |
+| ADI CRU metabolic phenotyping | 1 | Clamp studies, metabolic assessments |
 | Blood/urine biobanking | 2 | Longitudinal sample collection |
+| Islet cryopreservation | 2 | 20+ year viability, Edmonton Protocol samples |
 | TMIC metabolomics access | 3 | Cardiorenal metabolite profiling |
+| ADI IsletCore integration | 3 | Research islet isolation, diabetic donor samples |
+| CGM/wearable validation | 5 | Novel glucose sensing, remote monitoring |
 
-**Key Investigators:** Cardiovascular research, Nephrology, VIGOR Centre
+**ADI IsletCore Capabilities:**
+- Research-focused human islet isolation (non-GMP, median 85% purity)
+- Cryopreservation with 20+ year proven viability retention
+- Isolations from donors with T1D and T2D
+- International distribution via established MTA framework
+- Edmonton Protocol transplant registry integration
 
-**National Networks:** Heart & Stroke Foundation trials, Can-SOLVE CKD
+**Key Investigators:**
+- Canadian VIGOUR Centre (Justin Ezekowicz) - Cardiovascular pragmatic trials
+- Alberta Diabetes Institute (Peter Light, Director) - Diabetes research leadership
+- ADI IsletCore (Patrick Macdonald) - Islet biology, international distribution
+- Connect1d Canada (Peter Senior) - Type 1 diabetes registry, decentralized trials
+- Edmonton Protocol (James Shapiro, Gregory Korbutt) - Islet transplantation
+
+**National Networks:** Heart & Stroke Foundation trials, Can-SOLVE CKD, Diabetes Action Canada, Connect1d Canada, JDRF Canada
 
 ---
 
@@ -158,11 +175,11 @@ Six specialized AI agents operating across TRE zones:
 
 | Suite | Flagship Programs Supported |
 |-------|----------------------------|
-| Suite 1 | Neuro-immunology, Hepatitis C, Cardio-renal, Pediatric Rare |
-| Suite 2 | Neuro-immunology, Hepatitis C, Cardio-renal |
-| Suite 3 | Hepatitis C, Cardio-renal |
+| Suite 1 | Neuro-immunology, Hepatitis C, Cardio-Renal-Metabolic, Pediatric Rare |
+| Suite 2 | Neuro-immunology, Hepatitis C, Cardio-Renal-Metabolic |
+| Suite 3 | Hepatitis C, Cardio-Renal-Metabolic |
 | Suite 4 | Neuro-immunology, Pediatric Rare, CRAIDL |
-| Suite 5 | CRAIDL |
+| Suite 5 | CRAIDL, Cardio-Renal-Metabolic |
 
 ### Equipment Validation Checklist
 
@@ -180,7 +197,7 @@ When reviewing equipment items, verify:
 |----------|-------------------|------------|-------------|
 | Neuro-immunology | 3-5 | 15 trainees | MS treatment acceleration |
 | Hepatitis C | 2-3 | 10 trainees | Vaccine development |
-| Cardio-renal | 4-6 | 20 trainees | Novel endpoint validation |
+| Cardio-Renal-Metabolic | 4-6 | 20 trainees | Novel endpoint validation, islet biology integration |
 | Pediatric Rare | 5-8 | 12 trainees | Natural history datasets |
 | CRAIDL | Embedded | 25 trainees | Agent deployment to ACT-AEC |
 
