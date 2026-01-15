@@ -1,0 +1,12 @@
+# macOS
+.DS_Store
+
+# Microsoft Office temp files
+~$*
+
+# Build outputs
+*.docx
+*.pdf
+
+# Environment
+.env

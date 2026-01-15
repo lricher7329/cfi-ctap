@@ -6,16 +6,13 @@ id,suite_number,suite_name,item_name,description,model_example,quantity,unit_cos
 5,1,Clinical Trials Participant & Procedure Infrastructure,Programmable Infusion Pumps,,Baxter / Alaris Systems,20,5000,100000,,needed,,,,,,,planning,,confirmed,,equipment
 6,1,Clinical Trials Participant & Procedure Infrastructure,Resuscitation Equipment (Crash Carts/Defibs),,Zoll R Series,4,25000,100000,,needed,,,,,,,planning,,confirmed,,equipment
 7,1,Clinical Trials Participant & Procedure Infrastructure,Point-of-Care Lab Analyzers,,Abbott i-STAT / Siemens RAPIDPoint,4,50000,200000,,needed,,,,,,,planning,,confirmed,,equipment
-8,2,Living Biorepository & Cell Manufacturing,Automated Liquid Handling System,,Hamilton Microlab STAR / Tecan,1,650000,650000,,needed,,,,,,,planning,,confirmed,,equipment
-9,2,Living Biorepository & Cell Manufacturing,GMP Bioreactors (Cell Therapy),,Cytiva Xuri / Miltenyi Prodigy,2,450000,900000,,needed,,,,,,,planning,,confirmed,,equipment
-10,2,Living Biorepository & Cell Manufacturing,Automated Cell Washers/Processors,,LOVO Cell Processing System,2,120000,240000,,needed,,,,,,,planning,,confirmed,,equipment
-11,2,Living Biorepository & Cell Manufacturing,Automated PSC Culture Platform,,Sartorius CompacT SelecT,1,700000,700000,,needed,,,,,,,planning,,confirmed,,equipment
-12,2,Living Biorepository & Cell Manufacturing,Ultra-Low Temp Freezers (-80°C),,Thermo Fisher TSX Series,10,20000,200000,,needed,,,,,,,planning,,confirmed,,equipment
-13,2,Living Biorepository & Cell Manufacturing,LN2 Vapour-Phase Storage System,,Chart MVE High Efficiency,4,50000,200000,,needed,,,,,,,planning,,confirmed,,equipment
-14,2,Living Biorepository & Cell Manufacturing,Class II Biosafety Cabinets,,Baker / NuAire,6,15000,90000,,needed,,,,,,,planning,,confirmed,,equipment
-15,2,Living Biorepository & Cell Manufacturing,Refrigerated Centrifuges (Biocontainment),,Beckman Coulter Avanti,4,25000,100000,,needed,,,,,,,planning,,confirmed,,equipment
-16,2,Living Biorepository & Cell Manufacturing,Environmental Monitoring System,,Rees Scientific / Vaisala,1,140000,140000,,needed,,,,,,,planning,,confirmed,,equipment
-17,2,Biospecimen & Cell Manufacturing,Clinical Grade Microscopes & Counters,,Keyence / Countess 3 FL,1,70000,70000,,needed,,,,,,,planning,,confirmed,,equipment
+8,2,Living Biorepository,Automated Liquid Handling System,,Hamilton Microlab STAR / Tecan,1,650000,650000,,needed,,,,,,,planning,,confirmed,,equipment
+12,2,Living Biorepository,Ultra-Low Temp Freezers (-80°C),,Thermo Fisher TSX Series,10,20000,200000,,needed,,,,,,,planning,,confirmed,,equipment
+13,2,Living Biorepository,LN2 Vapour-Phase Storage System,,Chart MVE High Efficiency,4,50000,200000,,needed,,,,,,,planning,,confirmed,,equipment
+14,2,Living Biorepository,Class II Biosafety Cabinets,,Baker / NuAire,6,15000,90000,,needed,,,,,,,planning,,confirmed,,equipment
+15,2,Living Biorepository,Refrigerated Centrifuges (Biocontainment),,Beckman Coulter Avanti,4,25000,100000,,needed,,,,,,,planning,,confirmed,,equipment
+16,2,Living Biorepository,Environmental Monitoring System,,Rees Scientific / Vaisala,1,140000,140000,,needed,,,,,,,planning,,confirmed,,equipment
+17,2,Living Biorepository,Clinical Grade Microscopes & Counters,,Keyence / Countess 3 FL,1,70000,70000,,needed,,,,,,,planning,,confirmed,,equipment
 18,3,Translational Science Integration,High-Throughput Imaging Cytometer,,Amnis ImageStream / Cytiva IN Cell,1,500000,500000,,needed,,,,,,,planning,,confirmed,,equipment
 19,3,Translational Science Integration,Cryo-EM Sample Prep Robotics (Vitrification),,Thermo Fisher Vitrobot / Leica EM GP2,1,150000,150000,,needed,,,,,,,planning,,confirmed,,equipment
 20,3,Translational Science Integration,Plunge Freezers & Grid Prep Tools,,Gatan CP3 / Lot,1,100000,100000,,needed,,,,,,,planning,,confirmed,,equipment
@@ -46,12 +43,12 @@ id,suite_number,suite_name,item_name,description,model_example,quantity,unit_cos
 45,1,Clinical Trials Participant & Procedure Infrastructure,Telehealth/Remote Monitoring System,"For follow-up visits, family convenience, rural patient access",Cisco / Zoom Healthcare,1,30000,30000,,needed,,,,,,,planning,,confirmed,,equipment
 46,1,Clinical Trials Participant & Procedure Infrastructure,Data Integration (Connect Care),"EDC/CDASH linkage for rare disease registry, RareKids-CAN integration",Custom Integration / Epic,1,30000,30000,,needed,,,,,,,planning,,confirmed,,service
 47,4,Data Platform Secure Environments AI/HPC,BioBank-TRE Integration,"OpenSpecimen API, FHIR endpoints, Zone 2/3 data flows for specimen-phenotype linkage",Custom Development / OpenSpecimen,1,75000,75000,,needed,,,,,,,,,,,service
-48,2,Living Biorepository & Cell Manufacturing,OpenSpecimen Enterprise License,"5-year license, 21 CFR Part 11 compliant, multi-site federated model",Krishagni OpenSpecimen,1,200000,200000,,needed,,,,,,,,,,,software
-49,2,Living Biorepository & Cell Manufacturing,OpenSpecimen Plugin Development,"Dynamic consent, FHIR integration, custom workflows",Custom Development,1,125000,125000,,needed,,,,,,,,,,,service
-50,2,Living Biorepository & Cell Manufacturing,OpenSpecimen Data Migration,caTissue to OpenSpecimen migration services,Krishagni / Contractor,1,60000,60000,,needed,,,,,,,,,,,service
-51,2,Living Biorepository & Cell Manufacturing,Connect Care FHIR Integration,Epic FHIR API integration for BioBank specimen-EHR linkage,Epic / Custom Development,1,90000,90000,,needed,,,,,,,,,,,service
-52,2,Living Biorepository & Cell Manufacturing,Dynamic Consent Module,Renewable consent workflow implementation for research participants,OpenSpecimen Plugin / Custom,1,60000,60000,,needed,,,,,,,,,,,service
-53,2,Living Biorepository & Cell Manufacturing,BioBank Staff Training,OpenSpecimen certification training for BioBank personnel,Krishagni / UBC ResTech,1,35000,35000,,needed,,,,,,,,,,,service
+48,2,Living Biorepository,OpenSpecimen Enterprise License,"5-year license, 21 CFR Part 11 compliant, multi-site federated model",Krishagni OpenSpecimen,1,200000,200000,,needed,,,,,,,,,,,software
+49,2,Living Biorepository,OpenSpecimen Plugin Development,"Dynamic consent, FHIR integration, custom workflows",Custom Development,1,125000,125000,,needed,,,,,,,,,,,service
+50,2,Living Biorepository,OpenSpecimen Data Migration,caTissue to OpenSpecimen migration services,Krishagni / Contractor,1,60000,60000,,needed,,,,,,,,,,,service
+51,2,Living Biorepository,Connect Care FHIR Integration,Epic FHIR API integration for BioBank specimen-EHR linkage,Epic / Custom Development,1,90000,90000,,needed,,,,,,,,,,,service
+52,2,Living Biorepository,Dynamic Consent Module,Renewable consent workflow implementation for research participants,OpenSpecimen Plugin / Custom,1,60000,60000,,needed,,,,,,,,,,,service
+53,2,Living Biorepository,BioBank Staff Training,OpenSpecimen certification training for BioBank personnel,Krishagni / UBC ResTech,1,35000,35000,,needed,,,,,,,,,,,service
 54,5,Trial Innovation Tools & Wearables,Device Data Integration APIs,"Custom development for ingesting data from novel UAlberta devices (glucose sensors, wound sensors, VR systems)",Custom Development / FHIR,1,75000,75000,,,,,,,,,,,,,service
 55,5,Trial Innovation Tools & Wearables,Validation Protocol Library,"SOPs, templates for standardized device validation designs (iSMART/Digital Health Unit)",Custom Development,1,25000,25000,,,,,,,,,,,,,service
 56,5,Trial Innovation Tools & Wearables,Sensor Development Equipment,Network analyzer testing equipment to support Gupta/Light labs device development,Keysight / Rohde & Schwarz,1,50000,50000,,,,,,,,,,,,,equipment

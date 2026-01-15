@@ -2,7 +2,7 @@
 
 ## Comprehensive Technical Specification
 
-**Budget: \$6,392,273 CAD**
+**Budget: \$2,020,000 CAD**
 
 **Version:** 1.0 **Date:** January 2026 
 
@@ -14,10 +14,12 @@
 
 Suite 2 establishes the **Living Biorepository**—a fundamental re-conceptualization of biospecimen management that transforms static sample storage into an intelligent, continuously-updated discovery engine. Unlike traditional biobanks that archive specimens with point-in-time metadata, the Living Biorepository maintains dynamic linkages to participants' evolving health records, enabling retrieval based on clinical outcomes that emerge years after collection.
 
-This suite integrates two operational domains:
+This suite focuses on:
 
 1. **Living Biorepository** - Intelligent biospecimen management with real-time EMR linkage
 2. **Trial Integration** - Seamless specimen workflow for all CTAP-supported trials
+
+> **Note:** Cell therapy manufacturing capabilities (GMP bioreactors, cell processing) are provided through existing ACTM infrastructure and are not included in this CFI request.
 
 The Living Biorepository concept addresses a critical gap identified in prior CFI applications: while Alberta has invested substantially in biobanking infrastructure (CBSR, APL Biobank), these systems remain disconnected from clinical trial operations and lack the intelligent capabilities that distinguish world-class biobanks (UK Biobank, All of Us, FinnGen) from simple storage facilities. The Living Biorepository will facilitate translational research by integrating with University of Alberta facilities representing over $400M in cumulative national infrastructure investment:
 
@@ -118,12 +120,12 @@ The Living Biorepository is deeply integrated with Suite 4's data architecture:
                ▼                        ▼              ▼
 ┌─────────────────────────────────────────────────────────────────┐
 │                SUITE 2: LIVING BIOREPOSITORY                     │
-│  ┌──────────────┐  ┌──────────────┐  ┌──────────────────────┐   │
-│  │ BioBank      │  │ LIMS         │  │ Cell Manufacturing   │   │
-│  │ Software     │  │ Integration  │  │ (ACTM)               │   │
-│  │ - Inventory  │  │ - Lab data   │  │ - GMP production     │   │
-│  │ - Tracking   │  │ - QC results │  │ - Batch tracking     │   │
-│  └──────────────┘  └──────────────┘  └──────────────────────┘   │
+│  ┌──────────────────────────────┐  ┌──────────────────────┐     │
+│  │ BioBank Software             │  │ LIMS Integration     │     │
+│  │ - OpenSpecimen Platform      │  │ - Lab data           │     │
+│  │ - Inventory & Tracking       │  │ - QC results         │     │
+│  │ - Dynamic Consent            │  │ - Sample routing     │     │
+│  └──────────────────────────────┘  └──────────────────────┘     │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -307,91 +309,9 @@ This architecture aligns with federal research security requirements by centrali
 
 ---
 
-## 3. Cell Manufacturing (ACTM Integration)
+## 3. Trial Integration Workflows
 
-> **Note:** ACTM equipment expansion ($850,000) and iPSC Platform ($400,000) are funded through separate institutional investments. These capabilities are fully integrated with Suite 2 biorepository operations and CTAP trial workflows but are not included in the CFI budget request.
-
-### 3.1 Alberta Cell Therapy Manufacturing (ACTM)
-
-Suite 2 integrates with ACTM's capabilities to support CTAP flagship programs, particularly MS Cell Therapies and neuro-immunology trials. This integration leverages the University of Alberta's **MS Centre**—29 multidisciplinary affiliates spanning clinical neuroimmunology (Blevins, McCombe, Smyth), glial biology (Voronova, Plemel, Todd), glycomics (Mahal), and the MS Experimental Therapeutics Program (Giuliani). Dr. Voronova's CHARM platform (CFI IF 2025) provides complementary hiPSC capabilities for patient-derived neural models.
-
-**Current ACTM Capabilities:** - GMP-compliant cell manufacturing - Regulatory T-cell expansion - Engineered lymphocyte production - Quality management system (QMS)
-
-#### Existing Translational Pipeline: CAR-T Cell Therapy
-
-The ACTM's translational capability is already demonstrated through the CAR-T cell therapy program led by Dr. Michael Chiu. This operational program validates the complete bedside-to-bench-to-bedside pathway that CTAP will scale:
-
-| Workflow Stage          | Current Operation                    | CTAP Enhancement             |
-| ----------------------- | ------------------------------------ | ---------------------------- |
-| Patient cells collected | Cross Cancer Institute leukapheresis | Expanded collection sites    |
-| Manufacturing           | ACTM GMP processing                  | Increased capacity           |
-| Quality control         | Batch release testing                | Automated QC integration     |
-| Product administration  | Cross Cancer infusion                | Multi-site capability        |
-| Long-term follow-up     | Standard clinical care               | Living Biorepository linkage |
-
-This existing workflow demonstrates that: 1. **The clinical pathway exists** - Patient cells are already flowing through ACTM for therapeutic manufacturing 2. **Cross Cancer partnership is active** - Not proposed but operational 3. **Cell therapy expertise is proven** - Dr. Chiu's team has navigated the regulatory and operational complexities 4. **The model is validated** - CTAP infrastructure expands a working system, not a theoretical concept
-
-Separately-funded ACTM equipment expansion will scale this proven pathway to support multiple cell and gene therapy trials across the CAR-T, regulatory T-cell, and emerging modalities.
-
-**ACTM Equipment (Institutional Investment - Integrated with CTAP):**
-
-| Enhancement               | Investment          | Impact                              |
-| ------------------------- | ------------------- | ----------------------------------- |
-| GMP bioreactors           | \$400,000           | Scale-up capacity for larger trials |
-| Cell washers              | \$150,000           | Automated, closed-system processing |
-| Clinical-grade incubators | \$200,000           | Expanded culture capacity           |
-| Environmental monitoring  | \$100,000           | 24/7 GMP compliance                 |
-| **ACTM Subtotal**   | **\$850,000** | *Funded separately*               |
-
-### 3.2 Pluripotent Stem Cell Platform
-
-Separately-funded iPSC platform establishes new induced pluripotent stem cell capabilities:
-
-**iPSC Equipment (Institutional Investment - Integrated with CTAP):**
-
-| Component                  | Investment          | Purpose                                                 |
-| -------------------------- | ------------------- | ------------------------------------------------------- |
-| Automated culture platform | \$300,000           | Standardized iPSC expansion (CloneSelect or equivalent) |
-| QC equipment               | \$100,000           | Karyotyping, pluripotency markers for release testing   |
-| **iPSC Subtotal**    | **\$400,000** | *Funded separately*                                   |
-
-Differentiation protocols (cardiomyocytes, neurons, hepatocytes) enable disease modeling and drug screening applications.
-
-### 3.3 Integration with Trial Workflows
-
-```
-┌──────────────────────────────────────────────────────────────────┐
-│                    CELL THERAPY TRIAL WORKFLOW                   │
-├──────────────────────────────────────────────────────────────────┤
-│                                                                  │
-│  Patient          →  Leukapheresis  →  ACTM Manufacturing       │
-│  Enrollment           Collection          GMP Processing         │
-│      │                    │                    │                 │
-│      ▼                    ▼                    ▼                 │
-│  Consent &           Sample to           Product Release        │
-│  Eligibility         CBSR Archive        Testing & QC           │
-│      │                    │                    │                 │
-│      ▼                    ▼                    ▼                 │
-│  Connect Care ←──── Living Biobank ←──── Batch Records         │
-│  Outcome Link        Specimen Track       GMP Documentation     │
-│                                                                  │
-│                           ↓                                      │
-│                                                                  │
-│                    Product Infusion                              │
-│                    & Patient Follow-up                           │
-│                           │                                      │
-│                           ▼                                      │
-│                    Long-term Outcome                             │
-│                    via Connect Care                              │
-│                                                                  │
-└──────────────────────────────────────────────────────────────────┘
-```
-
----
-
-## 4. Trial Integration Workflows
-
-### 4.1 Pre-Trial Setup
+### 3.1 Pre-Trial Setup
 
 | Step                           | Responsibility      | Timeline |
 | ------------------------------ | ------------------- | -------- |
@@ -402,7 +322,7 @@ Differentiation protocols (cardiomyocytes, neurons, hepatocytes) enable disease 
 | Consent template integration   | Ethics Agent + CBSR | Week 4-5 |
 | Connect Care linkage setup     | Suite 4 + CBSR      | Week 5-6 |
 
-### 4.2 Active Trial Operations
+### 3.2 Active Trial Operations
 
 | Process             | Frequency      | Automation Level    |
 | ------------------- | -------------- | ------------------- |
@@ -414,7 +334,7 @@ Differentiation protocols (cardiomyocytes, neurons, hepatocytes) enable disease 
 | Shipment management | As needed      | Tracked             |
 | EMR linkage refresh | Daily          | Automated           |
 
-### 4.3 Post-Trial Transition
+### 3.3 Post-Trial Transition
 
 | Step                       | Description                         | Timeline          |
 | -------------------------- | ----------------------------------- | ----------------- |
@@ -426,9 +346,9 @@ Differentiation protocols (cardiomyocytes, neurons, hepatocytes) enable disease 
 
 ---
 
-## 5. Cross-Trial Reuse Governance
+## 4. Cross-Trial Reuse Governance
 
-### 5.1 Reuse Framework
+### 4.1 Reuse Framework
 
 The Living Biorepository enables secondary use of trial specimens through governed processes:
 
@@ -439,7 +359,7 @@ The Living Biorepository enables secondary use of trial specimens through govern
 | Different PI, different disease | Re-consent       | Full review                 |
 | Commercial use                  | Explicit consent | Full review + institutional |
 
-### 5.2 Consent Categories
+### 4.2 Consent Categories
 
 | Category                   | Description                             | Reuse Scope          |
 | -------------------------- | --------------------------------------- | -------------------- |
@@ -448,7 +368,7 @@ The Living Biorepository enables secondary use of trial specimens through govern
 | **Study-specific**   | "This study only"                       | No reuse             |
 | **Dynamic**          | Participant-controlled preferences      | As specified         |
 
-### 5.3 Discovery Portal Integration
+### 4.3 Discovery Portal Integration
 
 Researchers access available specimens through the Researcher Discovery Portal (Suite 5):
 
@@ -460,9 +380,9 @@ Researchers access available specimens through the Researcher Discovery Portal (
 
 ---
 
-## 6. Quality Management
+## 5. Quality Management
 
-### 6.1 Quality System Framework
+### 5.1 Quality System Framework
 
 | Element                 | Standard   | Implementation             |
 | ----------------------- | ---------- | -------------------------- |
@@ -473,7 +393,7 @@ Researchers access available specimens through the Researcher Discovery Portal (
 | Chain of custody        | ISBER      | Full traceability          |
 | Deviation management    | ICH Q10    | CAPA system                |
 
-### 6.2 ISBER Best Practices
+### 5.2 ISBER Best Practices
 
 Suite 2 adheres to International Society for Biological and Environmental Repositories (ISBER) best practices:
 
@@ -487,7 +407,7 @@ Suite 2 adheres to International Society for Biological and Environmental Reposi
 | Training   | Competency-based     | Mandatory curriculum        |
 | IT         | Validated systems    | BioBank software validation |
 
-### 6.3 Regulatory Compliance
+### 5.3 Regulatory Compliance
 
 | Regulation                                 | Applicability      | Suite 2 Response          |
 | ------------------------------------------ | ------------------ | ------------------------- |
@@ -499,9 +419,9 @@ Suite 2 adheres to International Society for Biological and Environmental Reposi
 
 ---
 
-## 7. Partner Facilities
+## 6. Partner Facilities
 
-### 7.1 Canadian BioSample Repository (CBSR)
+### 6.1 Canadian BioSample Repository (CBSR)
 
 **Role:** Primary biorepository operator
 
@@ -540,15 +460,17 @@ Suite 2 adheres to International Society for Biological and Environmental Reposi
 - AI-assisted inventory management
 - Cross-trial reuse governance
 
-### 7.2 Alberta Cell Therapy Manufacturing (ACTM)
+### 6.2 Alberta Cell Therapy Manufacturing (ACTM)
 
-**Role:** GMP cell manufacturing
+> **Note:** ACTM provides GMP cell manufacturing as an existing institutional resource. ACTM equipment is not included in this CFI request; cell therapy trials supported by CTAP will use ACTM services with specimen archiving through the Living Biorepository.
 
-**Capabilities:** - Regulatory T-cell expansion - Engineered lymphocyte production - GMP quality systems - Regulatory expertise
+**Role:** GMP cell manufacturing partner (existing infrastructure)
 
-**CTAP Contribution:** - Expanded bioreactor capacity - MS Cell Therapies flagship support - iPSC platform development coordinated with CHARM (CFI IF 2025, Voronova) hiPSC capabilities
+**Capabilities:** Regulatory T-cell expansion, engineered lymphocyte production, GMP quality systems, regulatory expertise
 
-### 7.3 Applied Pharmaceutical Innovation (API) Partnership
+**CTAP Integration:** Cell therapy trials will leverage ACTM's existing capabilities, with specimen archiving and long-term outcome tracking through the Living Biorepository.
+
+### 6.3 Applied Pharmaceutical Innovation (API) Partnership
 
 **Role:** Integrated biomanufacturing pathway from CTAP trials to production
 
@@ -578,7 +500,7 @@ Manufacturing Batch → CTAP Trial → Participant Outcomes → QSP Refinement �
 
 **Workforce Integration:** Living Biorepository staff participate in API's GMP training rotations, creating dual-competent personnel who understand both biospecimen quality requirements and manufacturing process controls.
 
-### 7.4 PRAIRIE Hub
+### 6.4 PRAIRIE Hub
 
 **Role:** Vaccine and pandemic preparedness trials
 
@@ -604,9 +526,9 @@ The B-PREPARED infrastructure directly supports PRAIRIE Hub objectives, with 75-
 
 ---
 
-## 8. Sustainability Model
+## 7. Sustainability Model
 
-### 8.1 Revenue Streams
+### 7.1 Revenue Streams
 
 | Year | CFI/IOF | Fee-for-Service | Grants | Industry | Total    |
 | ---- | ------- | --------------- | ------ | -------- | -------- |
@@ -617,7 +539,7 @@ The B-PREPARED infrastructure directly supports PRAIRIE Hub objectives, with 75-
 | 5    | \$200K  | \$400K          | \$150K | \$250K   | \$1,000K |
 | 6+   | \$0     | \$500K          | \$150K | \$350K   | \$1,000K |
 
-### 8.2 Service Pricing
+### 7.2 Service Pricing
 
 | Service                       | Unit            | Price      |
 | ----------------------------- | --------------- | ---------- |
@@ -628,9 +550,7 @@ The B-PREPARED infrastructure directly supports PRAIRIE Hub objectives, with 75-
 | Long-term storage (LN₂)      | Per year/sample | \$15       |
 | Sample retrieval and shipping | Per request     | \$150      |
 | Custom processing             | Per hour        | \$85       |
-| Cell manufacturing (ACTM)     | Per batch       | Negotiated |
-
-### 8.3 Cost Recovery Model
+### 7.3 Cost Recovery Model
 
 | Cost Category          | Recovery Mechanism             |
 | ---------------------- | ------------------------------ |
@@ -642,62 +562,52 @@ The B-PREPARED infrastructure directly supports PRAIRIE Hub objectives, with 75-
 
 ---
 
-## 9. Equipment and Infrastructure Budget
+## 8. Equipment and Infrastructure Budget
 
-### 9.1 Detailed Budget
+### 8.1 Detailed Budget
 
-Budget incorporates detailed specifications from the B-PREPARED biorepository proposal (CBRF2-2023-00132).
+Budget focuses on Living Biorepository equipment and software. Space renovations are consolidated in Suite 1 infrastructure costs.
 
-| Category                        | Item                            | Description                                                 | Total                 |
-| ------------------------------- | ------------------------------- | ----------------------------------------------------------- | --------------------- |
-| **Cold Storage**          | -80°C Chest Freezers (20)      | New Brunswick, 230V/60Hz, 2-stage compressors               |                       |
-|                                 | CO₂ Backup System              | 20 controllers, 68 tanks, scales, safety brackets           |                       |
-|                                 | LN₂ Vapor-Phase Dewars (3)     | Existing, relocated                                         |                       |
-|                                 | NUNC Hotels (1,320 total)       | 66/freezer, aluminum cryotube storage                       |                       |
-|                                 | Peroxide Generator              | Contamination prevention                                    |                       |
-|                                 | **Cold Storage Subtotal** |                                                             | **\$946,333**   |
-| **Processing Equipment**  | Centrifuges                     | 2× Sorvall ST4 Plus, 4× Beckman Microfuge 20R             |                       |
-|                                 | Incubators                      | 2× VWR Water Jacketed CO₂                                 |                       |
-|                                 | Microscopy                      | Evident CKX53 with EP50 camera, anti-vibration table        |                       |
-|                                 | Liquid Handling                 | Tecan Freedom Evo 200 upgrade (\$379,787)                   |                       |
-|                                 | Cell Analysis                   | TapeStation 4150, BioTek EL406, Synergy Neo 2, Countess 3FL |                       |
-|                                 | FACS                            | Chip-based microfluidics cell sorter                        |                       |
-|                                 | Water Systems                   | Millipore Mili-Q EQ 7000, Sartorius Arium Comfort II        |                       |
-|                                 | **Processing Subtotal**   |                                                             | **\$1,825,566** |
-| **Space Renovations**     | LKS Basement                    | B-017 Freezer Farm, B-025/B-025A Labs, B-037 Storage        |                       |
-|                                 | Katz 3rd Floor                  | Room 3-075 Suite Clean Room Complex                         |                       |
-|                                 | Electrical                      | 400A standby power distribution, dual-generator backup      |                       |
-|                                 | HVAC                            | Dehumidification, 4-ton supplemental cooling                |                       |
-|                                 | **Renovation Subtotal**   |                                                             | **\$3,025,374** |
-| **OpenSpecimen Platform** | Institutional license           | Unlimited users, cloud/on-premise                           | \$210,000             |
-|                                 | Data migration                  | caTissue to OpenSpecimen                                    | \$56,000              |
-|                                 | Integration: Connect Care       | Epic FHIR API                                               | \$49,000              |
-|                                 | Integration: REDCap             | EDC-biobank coordination                                    | \$49,000              |
-|                                 | Integration: Freezer/Scanners   | Automated specimen tracking                                 | \$49,000              |
-|                                 | Custom plugin development       | Dynamic consent, CTAP workflows                             | \$105,000             |
-|                                 | Annual support (Year 1)         | Technical support, upgrades                                 | \$42,000              |
-|                                 | Staff training                  | OpenSpecimen certification                                  | \$35,000              |
-|                                 | **OpenSpecimen Subtotal** |                                                             | **\$595,000**   |
-| **Suite 2 Total**         |                                 |                                                             | **\$6,392,273** |
+| Category                              | Item                                    | Description                                          | Total               |
+| ------------------------------------- | --------------------------------------- | ---------------------------------------------------- | ------------------- |
+| **Automated Sample Processing** | Hamilton/Tecan Liquid Handler           | High-throughput sample aliquoting and preparation    | **\$650,000** |
+| **Cryogenic Storage**           | Ultra-Low Temp Freezers (-80°C)        | 10× Thermo Fisher TSX Series                        | \$200,000           |
+|                                       | LN₂ Vapour-Phase Storage               | 4× Chart MVE High Efficiency dewars                 | \$200,000           |
+|                                       | **Cryogenic Subtotal**            |                                                      | **\$400,000** |
+| **Biocontainment Equipment**    | Class II Biosafety Cabinets             | 6× Baker/NuAire BSCs                                | \$90,000            |
+|                                       | Refrigerated Centrifuges                | 4× Beckman Coulter Avanti (biocontainment)          | \$100,000           |
+|                                       | **Biocontainment Subtotal**       |                                                      | **\$190,000** |
+| **Monitoring & Microscopy**     | Environmental Monitoring System         | Rees Scientific/Vaisala 24/7 monitoring             | \$140,000           |
+|                                       | Clinical Grade Microscopes & Counters   | Keyence/Countess 3 FL                               | \$70,000            |
+|                                       | **Monitoring Subtotal**           |                                                      | **\$210,000** |
+| **BioBank LIMS Platform**       | OpenSpecimen Enterprise License         | 5-year, 21 CFR Part 11 compliant, multi-site        | \$200,000           |
+|                                       | Plugin Development & Data Migration     | Dynamic consent, FHIR integration, caTissue migration| \$185,000           |
+|                                       | Connect Care FHIR Integration           | Epic API integration for specimen-EHR linkage       | \$90,000            |
+|                                       | Dynamic Consent Module                  | Renewable consent workflow implementation           | \$60,000            |
+|                                       | Staff Training                          | OpenSpecimen certification                          | \$35,000            |
+|                                       | **LIMS Subtotal**                 |                                                      | **\$570,000** |
+| **Suite 2 Total**               |                                         |                                                      | **\$2,020,000**|
 
 **Notes:**
 
-1. **Cell Manufacturing (ACTM)** and **iPSC Platform** equipment ($1,250,000 combined) are funded through separate institutional investments but will be fully integrated with Suite 2 biorepository operations and CTAP trial workflows.
-2. Data infrastructure originally proposed in B-PREPARED (federated biobank data platform) is now consolidated within **Suite 4: Data Platform** as part of the integrated TRE architecture. This enables unified consent management, de-identification services, and OMOP-based research queries across all CTAP suites.
+1. **Cell therapy manufacturing** capabilities (GMP bioreactors, cell processors) are provided through existing ACTM infrastructure and are not included in this CFI request.
+2. **Space renovations** for biorepository facilities (LKS basement, Katz 3rd floor) are consolidated within Suite 1 infrastructure costs.
+3. Data infrastructure originally proposed in B-PREPARED is consolidated within **Suite 4: Data Platform** as part of the integrated TRE architecture.
 
-### 9.2 Budget Summary by Category
+### 8.2 Budget Summary by Category
 
-| Category              | Amount                | % of Total |
-| --------------------- | --------------------- | ---------- |
-| Cold Storage          | \$946,333             | 14.8%      |
-| Processing Equipment  | \$1,825,566           | 28.6%      |
-| Space Renovations     | \$3,025,374           | 47.3%      |
-| OpenSpecimen Platform | \$595,000             | 9.3%       |
-| **Total**       | **\$6,392,273** | 100%       |
+| Category                    | Amount                | % of Total |
+| --------------------------- | --------------------- | ---------- |
+| Automated Sample Processing | \$650,000             | 32.2%      |
+| Cryogenic Storage           | \$400,000             | 19.8%      |
+| Biocontainment Equipment    | \$190,000             | 9.4%       |
+| Monitoring & Microscopy     | \$210,000             | 10.4%      |
+| BioBank LIMS Platform       | \$570,000             | 28.2%      |
+| **Total**             | **\$2,020,000** | 100%       |
 
-*Cell Manufacturing (ACTM, $850,000) and iPSC Platform ($400,000) are funded separately but integrated with CTAP.*
+*Cell therapy manufacturing is provided through existing ACTM infrastructure. Space renovations are consolidated in Suite 1.*
 
-### 9.3 Space Planning and Renovations
+### 8.3 Space Planning and Renovations
 
 Suite 2 leverages detailed architectural specifications from the B-PREPARED biorepository proposal (CBRF2-2023-00132), designed by GEC Architecture.
 
@@ -855,9 +765,9 @@ Architectural floor plans prepared by GEC Architecture (issued August 1, 2023):
 
 ---
 
-## 10. Key Personnel and Staffing
+## 9. Key Personnel and Staffing
 
-### 10.1 Biorepository Staffing (B-PREPARED Model)
+### 9.1 Biorepository Staffing (B-PREPARED Model)
 
 | Role                                | Responsibility                                    | FTE       | Funding             |
 | ----------------------------------- | ------------------------------------------------- | --------- | ------------------- |
@@ -868,15 +778,7 @@ Architectural floor plans prepared by GEC Architecture (issued August 1, 2023):
 | **Quality Manager**           | QMS, compliance                                   | 0.5       | Institutional       |
 | **IT Specialist**             | BioBank software, TRE integration                 | 0.5       | Shared with Suite 4 |
 
-### 10.2 Cell Manufacturing Staffing (ACTM)
-
-| Role                              | Responsibility        | FTE | Funding        |
-| --------------------------------- | --------------------- | --- | -------------- |
-| **Cell Manufacturing Lead** | ACTM operations       | 1.0 | Institutional  |
-| **GMP Specialists**         | Cell production       | 2.0 | Grant/Industry |
-| **QC Technologist**         | Batch release testing | 0.5 | Grant/Industry |
-
-### 10.3 Governance
+### 9.2 Governance
 
 **Biobank Users Group (BUG) - UAlberta**
 
@@ -895,7 +797,7 @@ Architectural floor plans prepared by GEC Architecture (issued August 1, 2023):
 - Ensures Tri-Council Policy Statement compliance
 - Oversees data/sample curation, release, and collection policies
 
-### 10.4 Operations and Maintenance
+### 9.3 Operations and Maintenance
 
 **Annual Maintenance Costs:**
 
@@ -925,7 +827,7 @@ Architectural floor plans prepared by GEC Architecture (issued August 1, 2023):
 
 ---
 
-## 11. Implementation Timeline
+## 10. Implementation Timeline
 
 ### Phase 1: Foundation (Months 1-12)
 
@@ -943,25 +845,25 @@ Architectural floor plans prepared by GEC Architecture (issued August 1, 2023):
 | Connect Care FHIR integration | Month 16 | Suite 4, AHS |
 | Automated outcome annotation  | Month 18 | Suite 4      |
 | AI inventory pilot            | Month 20 | Suite 4 AI   |
-| GMP expansion complete        | Month 24 | ACTM         |
+| Cross-trial reuse governance  | Month 24 | Portal, Suite 4 |
 
 ### Phase 3: Full Operations (Months 25-36)
 
 | Milestone                        | Target   | Dependencies         |
 | -------------------------------- | -------- | -------------------- |
-| iPSC platform operational        | Month 28 | Equipment, personnel |
-| Cross-trial reuse governance     | Month 30 | Portal, Suite 4      |
+| Discovery portal integration     | Month 28 | Suite 5              |
+| Radiogenomic atlas pilot         | Month 30 | Suite 4 PACS         |
 | Full Living Biorepository launch | Month 36 | All integrations     |
 
 ---
 
-## 12. Risk Mitigation
+## 11. Risk Mitigation
 
 | Risk                            | Likelihood | Impact | Mitigation                           |
 | ------------------------------- | ---------- | ------ | ------------------------------------ |
 | Freezer failure                 | Low        | High   | Redundancy, monitoring, backup power |
 | Connect Care integration delays | Medium     | Medium | Early AHS engagement                 |
-| Cell manufacturing QC failure   | Low        | High   | Robust QMS, redundant batches        |
+| OpenSpecimen migration issues   | Low        | Medium | Krishagni professional services      |
 | Consent complexity              | Medium     | Medium | Clear frameworks, dynamic consent    |
 | Staff recruitment               | Medium     | Medium | Competitive compensation, training   |
 

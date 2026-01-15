@@ -215,3 +215,33 @@ documents:
   data_directory: core/data/
 
 objectives_count: 7
+
+# =============================================================================
+# RTA Budget Template Configuration
+# =============================================================================
+# Google Sheet template for CFI RTA submission
+# Use /cfi-rta-budget to manage this template
+# =============================================================================
+
+rta_budget:
+  sheet_id: "1D8nC2qd7OE1gbB8gtb-1RxLu09z4U36D1fpmyVU63lc"
+  sheet_name: "CFI CTAP RTA Budget Template"
+  default_inkind_pct: 20
+  cfi_contribution_pct: 40
+  alberta_match_pct: 40
+  contingency_pct: 13
+  gst_pct: 5
+  max_line_items: 40
+  data_rows:
+    start: 7
+    end: 46
+  summary_rows:
+    subtotal: 48
+    contingency: 49
+    total_before_tax: 50
+    gst: 51
+    total_project_cost: 52
+    cfi_envelope: 54
+    alberta_match: 55
+    inkind_contributions: 56
+    balance: 57

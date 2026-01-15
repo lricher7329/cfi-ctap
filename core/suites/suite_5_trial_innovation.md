@@ -196,27 +196,184 @@ Each flagship program's CAB provides input on Suite 5 tool deployment:
 
 ## 4. Participant Engagement Portal
 
-The portal differentiates CTAP through **active participant partnership**:
+The Participant Engagement Portal differentiates CTAP through **active participant partnership**, transforming research participants from passive sample donors to engaged partners in their health research journey. This approach builds on CBSR's 20+ years of biobanking experience—managing over 1 million samples from 26,676 participants across 78 studies—while addressing participant expectations for transparency and agency that emerged during COVID-19 surveillance collaborations.
 
-| Feature                          | Description                                 |
-| -------------------------------- | ------------------------------------------- |
-| **Trial Matching**         | AI-assisted notification of relevant trials |
-| **Dynamic Consent**        | Update preferences in real-time             |
-| **Transparency Dashboard** | See how samples/data are used               |
-| **Return of Results**      | Receive findings (per consent)              |
-| **Community Outcomes**     | Aggregate research impact reports           |
+### 4.1 Core Capabilities
+
+| Feature                          | Description                                                              |
+| -------------------------------- | ------------------------------------------------------------------------ |
+| **Trial Matching**         | AI-assisted notification of relevant trials based on health profile      |
+| **Dynamic Consent**        | Update preferences in real-time; granular control over data/sample use   |
+| **Transparency Dashboard** | See how samples and data are used across studies                         |
+| **Return of Results**      | Receive individual and aggregate findings (per consent preferences)      |
+| **Community Outcomes**     | Aggregate research impact reports showing contribution to discoveries    |
+
+### 4.2 Trial Matching Engine
+
+The AI-assisted trial matching system connects participants with relevant research opportunities while respecting preferences and consent scope:
+
+| Component                       | Specification                                                            |
+| ------------------------------- | ------------------------------------------------------------------------ |
+| **Eligibility Screening**       | Automated pre-screening against protocol criteria via Connect Care data  |
+| **Preference Filtering**        | Match only to studies within participant-specified interests             |
+| **Notification System**         | Multi-channel alerts (email, SMS, app) with participant-controlled frequency |
+| **Opt-In Architecture**         | Participants initiate contact; researchers cannot directly recruit       |
+| **Language Support**            | Notifications in participant's preferred language (10+ languages)        |
+
+**Privacy-Preserving Design:** The matching engine operates within Suite 4's Zone 1 (identifiable) environment. Researchers receive only aggregate counts of potentially eligible participants; individual identities are disclosed only after participant opt-in.
+
+### 4.3 Dynamic Consent Management
+
+Building on CBSR's governance framework (Biobank Users Group, Data and Sample Stewardship Committee), the portal implements a four-tier consent model that balances participant autonomy with research utility:
+
+| Consent Tier                 | Description                                    | Reuse Scope           | Management                |
+| ---------------------------- | ---------------------------------------------- | --------------------- | ------------------------- |
+| **Broad**                    | "Future research in health and disease"        | Wide reuse permitted  | Annual reminder           |
+| **Disease-specific**         | "Research on [condition]"                      | Same disease area     | New study notification    |
+| **Study-specific**           | "This study only"                              | No reuse              | Study closure notice      |
+| **Dynamic**                  | Participant-controlled preferences             | As specified          | Real-time updates         |
+
+**Consent Workflow Features:**
+
+| Feature                         | Implementation                                                           |
+| ------------------------------- | ------------------------------------------------------------------------ |
+| **Preference Dashboard**        | Visual interface showing all active consents, uses, and requests         |
+| **Withdrawal Management**       | Clear process for partial or complete withdrawal at any time             |
+| **Re-consent Requests**         | Automated requests for new studies outside original consent scope        |
+| **Consent History**             | Immutable audit trail of all consent decisions (21 CFR Part 11 compliant)|
+| **Proxy Consent**               | Family/caregiver access for pediatric and cognitive impairment situations|
+
+### 4.4 Transparency Dashboard
+
+The transparency dashboard addresses participant concerns identified in CBSR's 48,340 collection events: participants want to see how their contribution matters. The dashboard provides visibility without compromising research integrity or participant privacy:
+
+| View                            | Content                                                                  |
+| ------------------------------- | ------------------------------------------------------------------------ |
+| **My Samples**                  | Number, types, storage locations, and use history                        |
+| **My Data**                     | Categories of data collected and linked (EMR, genomics, imaging)         |
+| **Active Studies**              | Studies currently using my samples/data, with lay descriptions           |
+| **Research Impact**             | Publications, discoveries, and treatments linked to my contribution      |
+| **Community Contribution**      | Aggregate statistics on biorepository holdings and research outputs      |
+
+**Living Biorepository Integration:** The transparency dashboard connects directly to OpenSpecimen's participant-facing module (Suite 2), enabling real-time visibility into sample status, storage conditions, and utilization history. This bidirectional integration supports the Living Biorepository's "consent-aware sample routing" capability.
+
+### 4.5 Return of Results Framework
+
+Return of results addresses participant expectations while managing clinical and ethical complexity:
+
+| Result Type                     | Handling                                                                 |
+| ------------------------------- | ------------------------------------------------------------------------ |
+| **Aggregate Research**          | Annual summary of studies and publications available to all participants |
+| **Individual Non-Clinical**     | Ancestry, non-pathogenic variants (per consent)                          |
+| **Individual Clinical**         | Pathogenic findings routed through clinical pathway with genetic counselling |
+| **Incidental Findings**         | Managed per protocol-specific incidental findings policy                 |
+
+**TCPS2 Compliance:** Return of results processes adhere to TCPS2 Article 3.4 guidelines on disclosure of research results to participants, with appropriate genetic counselling infrastructure for clinically actionable findings.
+
+### 4.6 Indigenous Participant Features
+
+In partnership with ICTU (Indigenous Clinical Trials Unit), the portal implements OCAP-compliant features for Indigenous participants:
+
+| Feature                         | Implementation                                                           |
+| ------------------------------- | ------------------------------------------------------------------------ |
+| **Community Consent**           | Option for community-level consent alongside individual consent          |
+| **Data Steward Routing**        | All access requests routed to designated Indigenous Data Steward         |
+| **Community Results First**     | Research results shared with communities before broader publication      |
+| **Cultural Protocols**          | Respect for ceremonies, spiritual considerations in sample handling      |
+| **Language Support**            | Cree (Plains/Woods), Blackfoot, Dene, Michif interface options           |
 
 ---
 
-## 5. Integration Points
+## 5. Researcher Discovery Portal
 
-- **Suite 2:** Consent status flows to Living Biorepository for sample release
-- **Suite 4:** eConsent data captured in EDC; CRAIDL Ethics Agent integration
+The Researcher Discovery Portal transforms CTAP's biospecimen and data holdings into an accessible, query-able resource for investigators across Canada. This capability addresses a critical gap identified in CBSR's operations: despite holding over 1 million samples across 78 studies, researchers outside the immediate network often remain unaware of available resources.
+
+### 5.1 Discovery Without Disclosure
+
+The portal operates on a "discover without disclose" principle—researchers can identify that specimens meeting their criteria exist without accessing identifiable information:
+
+| Layer                           | Visibility                                                               |
+| ------------------------------- | ------------------------------------------------------------------------ |
+| **Public Catalog**              | High-level descriptions of collections, diseases, sample types           |
+| **Authenticated Browse**        | Aggregate counts by demographics, diagnoses, sample characteristics      |
+| **Feasibility Queries**         | Refined counts with specific inclusion/exclusion criteria                |
+| **Access Request**              | Formal application initiated only after feasibility confirmed            |
+
+### 5.2 Query Capabilities
+
+Researchers query available specimens through an interface integrated with Suite 4's OMOP common data model:
+
+| Query Type                      | Description                                                              |
+| ------------------------------- | ------------------------------------------------------------------------ |
+| **Clinical Phenotype**          | ICD-10 diagnoses, procedures, medications (from Connect Care linkage)    |
+| **Sample Characteristics**      | Type, volume, collection date, processing method, freeze-thaw cycles     |
+| **Consent Scope**               | Broad vs. disease-specific vs. study-specific                            |
+| **Outcome Annotation**          | 5-10 year outcomes (mortality, disease progression, treatment response)  |
+| **Linked Data**                 | Availability of genomics, imaging, metabolomics from partner facilities  |
+| **Trial Origin**                | Specimens from completed CTAP-supported trials vs. population collections|
+
+**Living Biorepository Advantage:** Unlike traditional biobank queries limited to point-in-time collection metadata, the Living Biorepository enables outcome-based queries. Researchers can identify "all samples from patients who subsequently developed [condition]" or "samples from treatment responders vs. non-responders"—capabilities impossible with static biobank systems.
+
+### 5.3 Access Request Workflow
+
+| Step                            | Process                                                                  |
+| ------------------------------- | ------------------------------------------------------------------------ |
+| **1. Browse**                   | Summary-level descriptions of specimen holdings (public)                 |
+| **2. Query**                    | Filter by disease, sample type, outcomes, consent scope (authenticated)  |
+| **3. Feasibility**              | System returns aggregate counts meeting criteria; no individual data     |
+| **4. Request**                  | Submit access application with scientific justification, budget, timeline|
+| **5. Review**                   | Data Access Committee evaluation (see Section 5.4)                       |
+| **6. Agreement**                | Execution of material transfer agreement or data use agreement           |
+| **7. Release**                  | Approved samples prepared for shipment; data access provisioned          |
+
+### 5.4 Governance Integration
+
+Access requests route through CTAP's tiered governance structure, building on CBSR's established frameworks:
+
+| Committee                       | Role                                                                     |
+| ------------------------------- | ------------------------------------------------------------------------ |
+| **Data Access Committee**       | Scientific and ethical review of all requests                            |
+| **Biobank Users Group (BUG)**   | Operational approval; sample availability and feasibility                |
+| **Data and Sample Stewardship Committee (DSSC)** | Policy oversight; consent scope interpretation           |
+| **Indigenous Data Steward**     | Required approval for any request involving Indigenous samples/data      |
+| **Ethics (REB)**                | Secondary use approval per institutional requirements                    |
+
+**Turnaround Targets:** Standard requests: 30 business days. Expedited (same PI, related question): 10 business days. Indigenous community consultation: timeline determined by community.
+
+### 5.5 Cross-Institutional Access
+
+The Researcher Discovery Portal supports federated queries across CTAP partner institutions and national networks:
+
+| Network                         | Integration                                                              |
+| ------------------------------- | ------------------------------------------------------------------------ |
+| **CTAP Satellite Sites**        | Real-time inventory visibility across all CTAP-connected biorepositories |
+| **CTRNet**                      | Canadian Tissue Repository Network federated search                      |
+| **PRAIRIE Hub Partners**        | Pandemic preparedness specimen sharing agreements                        |
+| **SPOR Network**                | Patient-oriented research specimen access pathways                       |
+
+### 5.6 Industry Access
+
+Industry-sponsored research follows enhanced governance requirements:
+
+| Requirement                     | Rationale                                                                |
+| ------------------------------- | ------------------------------------------------------------------------ |
+| **Explicit Commercial Consent** | Participants must have consented to commercial use                       |
+| **Canadian Benefit**            | Preference for research benefiting Canadian health system                |
+| **Publication Rights**          | Academic freedom protected; no suppression of results                    |
+| **IP Clarity**                  | Clear intellectual property agreements before sample release             |
+| **Fair Pricing**                | Industry rates support sustainability; academic rates subsidized         |
+
+---
+
+## 6. Integration Points
+
+- **Suite 2:** Consent status flows to Living Biorepository for sample release; Researcher Discovery Portal queries OpenSpecimen inventory; transparency dashboard pulls sample utilization data
+- **Suite 4:** eConsent data captured in EDC; CRAIDL Ethics Agent integration; participant matching uses Zone 1 identifiable data; researcher queries use Zone 3 de-identified OMOP data
 - **Wearables → Suite 4:** Continuous data streams to TRE Zone 3
 
 ---
 
-## 6. Budget Summary
+## 7. Budget Summary
 
 | Category                         | Amount               |
 | -------------------------------- | -------------------- |
@@ -230,7 +387,7 @@ The portal differentiates CTAP through **active participant partnership**:
 
 ---
 
-## 7. Key Personnel
+## 8. Key Personnel
 
 | Role                            | Responsibility         |
 | ------------------------------- | ---------------------- |
@@ -241,7 +398,7 @@ The portal differentiates CTAP through **active participant partnership**:
 
 ---
 
-## 8. Implementation Timeline
+## 9. Implementation Timeline
 
 | Phase              | Timeline     | Milestones                         |
 | ------------------ | ------------ | ---------------------------------- |
@@ -253,7 +410,7 @@ The portal differentiates CTAP through **active participant partnership**:
 
 ---
 
-## 9. Privacy and Security
+## 10. Privacy and Security
 
 | Consideration    | Approach                         |
 | ---------------- | -------------------------------- |
@@ -265,7 +422,7 @@ The portal differentiates CTAP through **active participant partnership**:
 
 ---
 
-## 10. Flagship Program Support
+## 11. Flagship Program Support
 
 | Program                          | Suite 5 Tools                                   |
 | -------------------------------- | ----------------------------------------------- |
@@ -277,7 +434,7 @@ The portal differentiates CTAP through **active participant partnership**:
 
 ---
 
-## 11. Digital Health Ecosystem Partners
+## 12. Digital Health Ecosystem Partners
 
 Suite 5's Digital Health Device Validation Program integrates multiple UAlberta research groups and facilities:
 
