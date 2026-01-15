@@ -1,16 +1,18 @@
-# Suite 3: Clinical Trials Omics Integration Hub
+# Suite 3: Translational Science Integration Hub
 
 ## Concise Technical Specification
 
-**Budget: \$1,700,000 CAD**
+**Budget: $2,350,000 CAD**
 
-**Version:** 2.0 **Date:** January 2026
+**Version:** 3.0 **Date:** January 2026
 
 ---
 
 ## Executive Summary
 
-Suite 3 provides the **trial-to-facility interface layer**—standardized protocols, quality systems, and data pipelines that connect clinical trial operations with the University of Alberta's world-class omics infrastructure. Rather than duplicating existing excellence, Suite 3 makes it accessible to clinical research through three integrated pillars: Protocol Integration Services, Quality Bridge Infrastructure, and Data Return Pipeline.
+Suite 3 provides the **trial-to-facility interface layer**—standardized protocols, quality systems, data pipelines, and compute infrastructure that connect clinical trial operations with the University of Alberta's world-class omics infrastructure. The suite operates through five integrated pillars: Protocol Integration Services, Quality Bridge Infrastructure, Data Return Pipeline, CTMS Integration Layer, and AI/ML Development Workstations.
+
+This design follows a **develop locally, scale provincially** philosophy: CFI funds build robust local infrastructure that connects to Alberta's existing provincial systems (OnCore CTMS, CyberaNet, AHS data repositories) through well-defined interfaces. The architecture minimizes cloud compute costs through local AI workstations while maintaining pathways to SDRE and provincial HPC when scale demands.
 
 The University of Alberta's omics infrastructure is world-class. What's missing is the systematic connection to clinical trials. Suite 3 builds the bridges, not the buildings.
 
@@ -26,15 +28,27 @@ The CTAP leadership team includes clinical trialists, methodologists, and regula
 
 Suite 3 operates through formal partnerships with existing core facilities rather than building parallel capabilities:
 
-| Partner Facility                    | Capability                                                                                                 | CTAP Provides                                                   | Facility Provides                                           |
-| ----------------------------------- | ---------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------- | ----------------------------------------------------------- |
-| **ACE Core**                  | Single-cell sequencing (10x Chromium X), spatial transcriptomics (MERSCOPE), metabolic analysis (Seahorse) | Trial sample pipeline, regulatory context, outcome data linkage | Instrumentation, technical expertise, established workflows |
-| **Alberta Cryo-EM Facility**  | Atomic-scale imaging                                                                                       | Structural biology endpoints in trial protocols                 | Structure-guided drug insights                              |
-| **Glycomics Institute (GIA)** | Glycan profiling                                                                                           | Standardized sample handling, clinical metadata                 | Therapeutic glycoprotein analysis                           |
-| **TMIC**                      | Metabolomics (50K samples/year)                                                                            | Quality-controlled trial samples                                | Biomarker discovery                                         |
-| **Alberta Proteomics (APM)**  | Protein identification                                                                                     | Pre-analytical quality assurance                                | Protein biomarker analysis                                  |
+| Partner Facility | Capability | CTAP Provides | Facility Provides |
+|------------------|------------|---------------|-------------------|
+| **ACE Core** | Single-cell sequencing (10x Chromium X), spatial transcriptomics (MERSCOPE), metabolic analysis (Seahorse) | Trial sample pipeline, regulatory context, outcome data linkage | Instrumentation, technical expertise, established workflows |
+| **Alberta Cryo-EM Facility** | Atomic-scale imaging | Structural biology endpoints in trial protocols | Structure-guided drug insights |
+| **Glycomics Institute (GIA)** | Glycan profiling | Standardized sample handling, clinical metadata | Therapeutic glycoprotein analysis |
+| **TMIC** | Metabolomics (50K samples/year) | Quality-controlled trial samples | Biomarker discovery |
+| **Alberta Proteomics (APM)** | Protein identification | Pre-analytical quality assurance | Protein biomarker analysis |
 
 **Note:** The WCHRI Translational Genomics Hub is a research coordination platform (not an instrumentation core) that aligns with CTAP's Pediatric Rare Disease Clinical Trials Unit (Suite 1). The Hub facilitates genomic characterization for undiagnosed families by coordinating ethics, enrollment, sample logistics, and connections to scientists—a complementary coordination function rather than an omics facility partnership.
+
+### 1.3 Develop Locally, Scale Provincially
+
+Suite 3 infrastructure is designed for local development with provincial scaling pathways:
+
+| Component | Local (CFI-Funded) | Provincial Connection |
+|-----------|-------------------|----------------------|
+| **Data** | OMOP data lake, facility adapters | Interfaces to AHS repositories (DARC/MARC) |
+| **Compute** | DGX Spark workstations | SDRE burst capacity, CyberaNet backbone |
+| **Trials** | OnCore integration layer | Provincial CTMS already deployed |
+| **Samples** | LIMS at CBSR | Provincial biobank network federation |
+| **Network** | Secure local infrastructure | CyberaNet connectivity for multi-site |
 
 ---
 
@@ -42,85 +56,165 @@ Suite 3 operates through formal partnerships with existing core facilities rathe
 
 ### 2.1 Pillar 1: Protocol Integration Services
 
-**Budget: \$300,000**
+**Budget: $300,000**
 
 Standardized SOPs, consent language, and sample handling protocols that allow trial teams to seamlessly incorporate omics endpoints without needing deep domain expertise.
 
-| Component                         | Description                                                     | Cost     |
-| --------------------------------- | --------------------------------------------------------------- | -------- |
-| Consent module library            | Pre-approved consent language for omics analysis (ethics-ready) | \$50,000 |
-| Sample collection kit development | Facility-specific requirements built into standardized kits     | \$80,000 |
-| Protocol template library         | Omics endpoint language validated by each partner facility      | \$70,000 |
-| Regulatory dossier templates      | Templates for omics biomarker regulatory submissions            | \$50,000 |
-| SOP development & validation      | Working group coordination with facility partners               | \$50,000 |
+| Component | Description | Cost |
+|-----------|-------------|------|
+| Consent module library | Pre-approved consent language for omics analysis (ethics-ready) | $50,000 |
+| Sample collection kit development | Facility-specific requirements built into standardized kits | $80,000 |
+| Protocol template library | Omics endpoint language validated by each partner facility | $70,000 |
+| Regulatory dossier templates | Templates for omics biomarker regulatory submissions | $50,000 |
+| SOP development & validation | Working group coordination with facility partners | $50,000 |
 
 **Why this works:** Trial teams can add omics endpoints by using validated templates rather than building expertise from scratch.
 
 ### 2.2 Pillar 2: Quality Bridge Infrastructure
 
-**Budget: \$500,000**
+**Budget: $550,000**
 
 Equipment and systems that ensure samples collected at clinical sites meet the stringent quality requirements of downstream omics facilities. The #1 failure mode for translational samples is pre-analytical variability—Suite 3 solves this problem at the source.
 
-| Equipment                                    | Specification                                  | Purpose                                    | Cost      |
-| -------------------------------------------- | ---------------------------------------------- | ------------------------------------------ | --------- |
-| **Pre-analytical QC systems**          |                                                |                                            |           |
-| RNA integrity analyzer                       | Agilent Bioanalyzer/TapeStation                | Verify RNA quality before facility handoff | \$80,000  |
-| Protein degradation markers                  | Automated assessment system                    | Ensure protein sample quality              | \$60,000  |
-| **Cold-chain logistics**               |                                                |                                            |           |
-| Dry ice shippers                             | 20 units                                       | Multi-site trial logistics                 | \$30,000  |
-| Portable -80°C units                        | 4 units                                        | Field sample transport                     | \$80,000  |
-| Temperature loggers                          | 100 units with real-time alerts                | Chain-of-custody documentation             | \$30,000  |
-| Shipping coordination system                 | Software with facility-specific alerting       | Real-time tracking                         | \$70,000  |
-| **Sample preparation standardization** |                                                |                                            |           |
-| Universal processing equipment               | Located at CBSR (Suite 2)                      | Consistent sample handling                 | \$100,000 |
-| Quality control checkpoints                  | Automated verification before facility handoff | Gate-keeping for quality                   | \$50,000  |
+| Equipment | Specification | Purpose | Cost |
+|-----------|---------------|---------|------|
+| **Pre-analytical QC systems** | | | |
+| RNA integrity analyzer | Agilent Bioanalyzer/TapeStation | Verify RNA quality before facility handoff | $80,000 |
+| Protein degradation markers | Automated assessment system | Ensure protein sample quality | $60,000 |
+| **Cold-chain logistics** | | | |
+| Dry ice shippers | 20 units | Multi-site trial logistics | $30,000 |
+| Portable -80°C units | 4 units | Field sample transport | $80,000 |
+| Temperature monitoring system | IoT sensors with central dashboard | Real-time alerts, audit trail, ISBER compliance | $80,000 |
+| **Sample preparation standardization** | | | |
+| Universal processing equipment | Located at CBSR (Suite 2) | Consistent sample handling | $100,000 |
+| Quality control checkpoints | Automated verification before facility handoff | Gate-keeping for quality | $50,000 |
+| **LIMS Integration** | | | |
+| BioBank-CTMS bridge | API layer connecting sample tracking to trial management | Chain-of-custody with trial context | $70,000 |
 
 **Integration with Suite 2:** Quality Bridge equipment is physically co-located with CBSR biorepository operations, creating a seamless sample flow from collection to facility-ready aliquots.
 
+**Temperature Monitoring Architecture:** Continuous IoT monitoring across all storage and transport assets feeds a central dashboard. Excursion alerts trigger within 5 minutes, with automatic notification to sample logistics staff. All temperature data is logged for regulatory audit trails, meeting ISBER best practices for biobanking quality.
+
 ### 2.3 Pillar 3: Data Return Pipeline
 
-**Budget: \$250,000**
+**Budget: $350,000**
 
 Infrastructure to receive omics results from partner facilities and integrate them with trial data in Suite 4's OMOP data lake.
 
-| Component                 | Description                                                     | Cost     |
-| ------------------------- | --------------------------------------------------------------- | -------- |
-| Facility data adapters    | Custom ETL pipelines for each partner facility's output formats | \$80,000 |
-| OMOP molecular extensions | Mapping for omics data types to OMOP CDM                        | \$50,000 |
-| Analysis workstations     | Pre-configured environments for clinical-molecular correlation  | \$70,000 |
-| Visualization tools       | Trial team dashboards showing molecular correlates of response  | \$30,000 |
-| Regulatory reporting      | Submission-ready biomarker analysis packages                    | \$20,000 |
+| Component | Description | Cost |
+|-----------|-------------|------|
+| Facility data adapters | Custom ETL pipelines for each partner facility's output formats | $100,000 |
+| OMOP molecular extensions | Mapping for omics data types to OMOP CDM | $60,000 |
+| Data lake infrastructure | Scalable storage for raw omics + processed results | $80,000 |
+| Visualization tools | Trial team dashboards showing molecular correlates of response | $50,000 |
+| Regulatory reporting | Submission-ready biomarker analysis packages | $30,000 |
+| Provincial data interfaces | API specifications for AHS DARC/MARC connectivity | $30,000 |
 
-**SDRE Integration:** Computationally intensive omics analyses—multi-sample batch processing, machine learning biomarker discovery, and large-scale integrative analyses—leverage the University of Alberta's Sensitive Data Research Environment (SDRE) rather than dedicated CTAP infrastructure. Suite 3's Data Return Pipeline focuses on operational data transformation and OMOP integration, while SDRE provides GPU compute for batch bioinformatics workloads. This partnership model extends to partner facilities, which can utilize SDRE allocations for CTAP-related analyses.
+**Data Architecture:**
 
-**Why this works:** This is the unique value CTAP provides—turning facility outputs into clinical trial endpoints that regulators accept.
+```
+Partner Facilities → Facility Adapters → Raw Data Lake (S3-compatible)
+                                              ↓
+                                    OMOP Transformation
+                                              ↓
+                            Suite 4 Clinical Data Platform
+                                              ↓
+                              Integrated Analysis Layer
+                                    ↙         ↘
+                        Local Workstations   SDRE/Provincial HPC
+```
 
-### 2.4 ACE Core Access & Coordination
+**Provincial Readiness:** Data interfaces are designed to connect with Alberta's existing health data infrastructure (DARC at UofA, MARC at UofC, AHS Data & Analytics). This enables future linkage of trial molecular data with provincial health outcomes—but the CFI investment focuses on the local integration layer.
 
-**Budget: \$150,000**
+### 2.4 Pillar 4: CTMS Integration Layer
+
+**Budget: $200,000**
+
+Alberta has deployed **OnCore (Advarra)** as the provincial Clinical Trial Management System. Suite 3 builds the integration layer that connects translational research workflows to this existing infrastructure.
+
+| Component | Description | Cost |
+|-----------|-------------|------|
+| OnCore API integration | Bidirectional data flow between CTMS and translational systems | $80,000 |
+| Study configuration templates | Pre-built OnCore templates for omics-enabled trial designs | $30,000 |
+| Sample-to-subject linking | Automated association of biobank samples with trial participants | $40,000 |
+| Molecular endpoint capture | OnCore extensions for omics result entry and tracking | $30,000 |
+| Regulatory workflow automation | Automated dossier generation from integrated data sources | $20,000 |
+
+**Why this matters:** OnCore already tracks every clinical trial in Alberta. By integrating translational workflows directly, we avoid parallel data systems and ensure that molecular endpoints are first-class citizens in trial management—not afterthoughts requiring manual reconciliation.
+
+**Integration Architecture:**
+
+```
+OnCore CTMS (Provincial)
+       ↕ API Layer
+Suite 3 Integration Hub
+       ↕
+┌──────┴──────┐
+↓             ↓
+Suite 2       Partner
+BioBank       Facilities
+(Samples)     (Omics Data)
+```
+
+### 2.5 Pillar 5: AI/ML Development Workstations
+
+**Budget: $250,000**
+
+Local AI compute infrastructure for model development, validation, and interactive analysis—reducing dependence on shared HPC resources and cloud compute costs.
+
+| Equipment | Specification | Purpose | Cost |
+|-----------|---------------|---------|------|
+| **NVIDIA DGX Spark** (×2) | Grace-Blackwell architecture, 128GB unified memory, 1 PFLOP AI performance | Local model training, inference, data exploration | $150,000 |
+| **Analysis workstation** | 128-core, 512GB RAM, 4× RTX 4090 | Bioinformatics, statistical analysis | $50,000 |
+| **Development environment** | Pre-configured containers, NVIDIA AI stack | Reproducible analysis environments | $30,000 |
+| **NVLink interconnect** | High-speed workstation linking | Scale to 400B+ parameter models when needed | $20,000 |
+
+**Use Case Justification:**
+
+| Scenario | Without Local AI | With DGX Spark |
+|----------|-----------------|----------------|
+| Model prototyping | Wait for SDRE queue (hours-days) | Immediate iteration |
+| Interactive exploration | Cloud compute costs accumulate | Fixed local cost |
+| Sensitive data analysis | Transfer to external systems | Process in secure local environment |
+| Student/trainee projects | Compete for shared resources | Dedicated development capacity |
+
+**SDRE Relationship:** Local workstations handle development, prototyping, and small-to-medium workloads. SDRE provides burst capacity for production-scale analyses. This tiered approach:
+- Reduces SDRE queue pressure
+- Minimizes cloud compute costs
+- Keeps sensitive data local during development
+- Enables 24/7 researcher access without scheduling
+
+**Sustainability:** DGX Spark consumes ~300W under load—comparable to a high-end desktop. Annual power cost is approximately $500/unit, making this sustainable infrastructure rather than an operational burden.
+
+### 2.6 ACE Core Access & Coordination
+
+**Budget: $150,000**
 
 Dedicated coordination and access fees to ensure seamless integration with ACE Core capabilities.
 
-| Component            | Description                                       | Cost     |
-| -------------------- | ------------------------------------------------- | -------- |
-| ACE Core access fees | Reserved capacity for CTAP trial samples          | \$80,000 |
-| Protocol development | Trial-specific SOPs developed with ACE Core staff | \$40,000 |
-| Liaison coordination | Embedded coordination role (0.2 FTE equivalent)   | \$30,000 |
+| Component | Description | Cost |
+|-----------|-------------|------|
+| ACE Core access fees | Reserved capacity for CTAP trial samples | $80,000 |
+| Protocol development | Trial-specific SOPs developed with ACE Core staff | $40,000 |
+| Liaison coordination | Embedded coordination role (0.2 FTE equivalent) | $30,000 |
 
-**ACE Core Capabilities Accessed:** - **10x Genomics Chromium X** (installed June 2025): Single-cell transcriptomics with 3' v4 GEM-X gene expression - **Vizgen MERSCOPE**: Spatial transcriptomics using MERFISH (100nm resolution, 140-500 gene panels, FF/FFPE compatible) - **Agilent Seahorse XFe96**: Metabolic analysis (OCR/ECAR measurements) - **Sequencing**: MiSeq on-site, NextSeq access via MBSU partnership
+**ACE Core Capabilities Accessed:**
+- **10x Genomics Chromium X** (installed June 2025): Single-cell transcriptomics with 3' v4 GEM-X gene expression
+- **Vizgen MERSCOPE**: Spatial transcriptomics using MERFISH (100nm resolution, 140-500 gene panels, FF/FFPE compatible)
+- **Agilent Seahorse XFe96**: Metabolic analysis (OCR/ECAR measurements)
+- **Sequencing**: MiSeq on-site, NextSeq access via MBSU partnership
 
-### 2.5 High-Throughput Clinical Instrumentation
+### 2.7 High-Throughput Clinical Instrumentation
 
-**Budget: \$500,000**
+**Budget: $550,000**
 
 Dedicated equipment that bridges the throughput gap between discovery-mode omics and clinical trial timelines. Partner facilities are optimized for deep discovery (comprehensive but slow); clinical trials require rapid turnaround for actionable biomarker feedback. This equipment enables "clinical-mode" operation within existing facilities.
 
 | Equipment | Specification | Current Gap | Clinical Trial Need | Cost |
-| --------- | ------------- | ----------- | ------------------- | ---- |
-| **Rapid Proteomics System** | Bruker timsTOF HT with clinical batch automation | APM: 20 samples/week (discovery mode) | 50+ samples/day for real-time PD biomarkers | \$280,000 |
-| **Clinical Metabolomics LC-MS/MS** | Triple-quad system with automated sample prep | TMIC: 24h/sample (comprehensive) | 15 min/sample for PK monitoring | \$150,000 |
-| **High-Throughput Glycan Profiler** | Automated CE-LIF with 96-well format | GIA: Manual workflows | Batch glycan QC for biologics trials | \$70,000 |
+|-----------|---------------|-------------|---------------------|------|
+| **Rapid Proteomics System** | Bruker timsTOF HT with clinical batch automation | APM: 20 samples/week (discovery mode) | 50+ samples/day for real-time PD biomarkers | $300,000 |
+| **Clinical Metabolomics LC-MS/MS** | Triple-quad system with automated sample prep | TMIC: 24h/sample (comprehensive) | 15 min/sample for PK monitoring | $170,000 |
+| **High-Throughput Glycan Profiler** | Automated CE-LIF with 96-well format | GIA: Manual workflows | Batch glycan QC for biologics trials | $80,000 |
 
 **Why Clinical-Mode Matters:**
 
@@ -141,38 +235,78 @@ This equipment is co-located at partner facilities (not CTAP space), operated by
 
 ---
 
-## 3. Objectives Supported
+## 3. Provincial Scaling Pathway
 
-| Objective             | Suite 3 Contribution                                                           |
-| --------------------- | ------------------------------------------------------------------------------ |
-| **Objective 3** | Molecular characterization of novel therapeutics through facility partnerships |
-| **Objective 4** | Multi-omics data linked to biospecimens and outcomes via Data Return Pipeline  |
-| **Objective 5** | Omics data feeds AI models for biomarker discovery through OMOP integration    |
+Suite 3 is designed for local deployment with clear pathways to provincial scale:
+
+### 3.1 Network Connectivity
+
+**Current State:** University of Alberta campus network
+**Provincial Pathway:** CyberaNet backbone provides multi-gigabit connectivity across Alberta
+
+Suite 3 infrastructure connects to CyberaNet through standard university network services. When multi-site trials require real-time data sharing (e.g., samples processed in Edmonton, analysis in Calgary), the provincial backbone is already in place.
+
+### 3.2 Health Data Linkage
+
+**Current State:** Suite 4 OMOP data lake
+**Provincial Pathway:** AHS Data & Analytics (DARC/MARC)
+
+The Data Return Pipeline includes API specifications for connecting to provincial health data repositories. This enables future linkage of trial molecular endpoints with population health outcomes—pending appropriate governance and ethics approvals.
+
+### 3.3 Provincial Biobank Federation
+
+**Current State:** Suite 2 CBSR integration
+**Provincial Pathway:** Alberta biobank network
+
+The LIMS and sample tracking infrastructure uses standard identifiers and APIs that can federate with other Alberta biobanks. This enables province-wide sample sharing while maintaining local custody and quality control.
+
+### 3.4 Compute Scaling
+
+**Current State:** Local DGX Spark workstations
+**Provincial Pathway:** SDRE → Compute Canada → Cloud burst
+
+```
+Development/Prototyping     Production Scale          Peak Demand
+      ↓                           ↓                        ↓
+  DGX Spark (local)    →    SDRE (UofA)    →    Cloud (cost-controlled)
+  128GB, 1 PFLOP           440 cores, V100s        On-demand GPU
+  Immediate access         Scheduled access        Pay-per-use
+```
 
 ---
 
-## 4. Flagship Program Support
+## 4. Objectives Supported
 
-| Program                | Omics Integration                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| MS Cell Therapies      | **MS Centre Integration:** Immune profiling via GIA glycomics (Mahal), cell product characterization via Cryo-EM, T-cell functional states via ACE Core single-cell analysis, neuroimmunology expertise via MS Experimental Therapeutics Program (Giuliani), glial biology collaboration (Voronova, Plemel, Todd). **CHARM Synergy:** Voronova's CHARM hiPSC platform (CFI IF 2025) provides patient-derived neural models for MS therapeutic target validation and cell therapy optimization. |
-| Hepatitis C/Vaccines   | Vaccine antigen structure via Cryo-EM, immune response via TMIC metabolomics, spatial immune mapping via ACE Core MERSCOPE                                                                                                                                                                                                                                                                                                                                                                                 |
-| Cardio-Renal-Metabolic | Metabolic biomarkers via TMIC, glycan signatures via GIA                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| Pediatric Rare Disease | Genomic characterization coordinated via WCHRI Translational Genomics Hub, protein analysis via APM                                                                                                                                                                                                                                                                                                                                                                                                        |
-| Oncology Trials        | Radiomic biomarkers, tumor microenvironment spatial analysis via ACE Core MERSCOPE                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| Objective | Suite 3 Contribution |
+|-----------|---------------------|
+| **Objective 3** | Molecular characterization of novel therapeutics through facility partnerships |
+| **Objective 4** | Multi-omics data linked to biospecimens and outcomes via Data Return Pipeline |
+| **Objective 5** | Omics data feeds AI models for biomarker discovery through OMOP integration and local AI workstations |
 
-### 4.1 Biomanufacturing-Relevant Omics Integration
+---
+
+## 5. Flagship Program Support
+
+| Program | Omics Integration |
+|---------|-------------------|
+| MS Cell Therapies | **MS Centre Integration:** Immune profiling via GIA glycomics (Mahal), cell product characterization via Cryo-EM, T-cell functional states via ACE Core single-cell analysis, neuroimmunology expertise via MS Experimental Therapeutics Program (Giuliani), glial biology collaboration (Voronova, Plemel, Todd). **CHARM Synergy:** Voronova's CHARM hiPSC platform (CFI IF 2025) provides patient-derived neural models for MS therapeutic target validation and cell therapy optimization. |
+| Hepatitis C/Vaccines | Vaccine antigen structure via Cryo-EM, immune response via TMIC metabolomics, spatial immune mapping via ACE Core MERSCOPE |
+| Cardio-Renal-Metabolic | Metabolic biomarkers via TMIC, glycan signatures via GIA |
+| Pediatric Rare Disease | Genomic characterization coordinated via WCHRI Translational Genomics Hub, protein analysis via APM |
+| Oncology Trials | Radiomic biomarkers, tumor microenvironment spatial analysis via ACE Core MERSCOPE |
+
+### 5.1 Biomanufacturing-Relevant Omics Integration
 
 Suite 3's omics infrastructure supports API's biomanufacturing programs by providing analytical capabilities that bridge clinical trial outcomes to manufacturing optimization. This integration operationalizes the CTAP-API partnership described in RTA Section 2.2.1.
 
 #### Manufacturing Quality Correlation
 
-| Partner Facility                    | Manufacturing Application                        | Clinical Trial Endpoint                   | API Integration                                                      |
-| ----------------------------------- | ------------------------------------------------ | ----------------------------------------- | -------------------------------------------------------------------- |
-| **Glycomics Institute (GIA)** | Therapeutic glycoprotein batch consistency       | Immunogenicity biomarkers, PK variability | Glycan profiles linked to manufacturing lot → efficacy correlations |
-| **Alberta Cryo-EM**           | Therapeutic protein manufacturability assessment | Structural endpoints for biologics trials | Structure-guided process optimization                                |
-| **TMIC**                      | Metabolic dose optimization                      | PK/PD biomarkers, metabolic response      | Metabolomics data feeds QSP model refinement                         |
-| **APM**                       | Product quality attributes                       | Degradation product biomarkers            | Stability-outcome correlations                                       |
+| Partner Facility | Manufacturing Application | Clinical Trial Endpoint | API Integration |
+|------------------|--------------------------|------------------------|-----------------|
+| **Glycomics Institute (GIA)** | Therapeutic glycoprotein batch consistency | Immunogenicity biomarkers, PK variability | Glycan profiles linked to manufacturing lot → efficacy correlations |
+| **Alberta Cryo-EM** | Therapeutic protein manufacturability assessment | Structural endpoints for biologics trials | Structure-guided process optimization |
+| **TMIC** | Metabolic dose optimization | PK/PD biomarkers, metabolic response | Metabolomics data feeds QSP model refinement |
+| **APM** | Product quality attributes | Degradation product biomarkers | Stability-outcome correlations |
 
 #### Glycomics for Biologics Manufacturing
 
@@ -193,11 +327,11 @@ GIA glycomics analysis is particularly critical for biologic therapeutics manufa
 
 Cryo-EM provides atomic-scale imaging that supports both PRAIRIE Hub drug discovery and API manufacturing:
 
-| Application                           | CTAP Function                              | API Benefit                              |
-| ------------------------------------- | ------------------------------------------ | ---------------------------------------- |
-| **Target validation**           | Structural endpoints in early-phase trials | Confirmation of drug-target interaction  |
-| **Formulation optimization**    | Stability assessments                      | Structure-guided formulation development |
-| **Biosimilar characterization** | Higher-order structure comparability       | CMPC biosimilar manufacturing support    |
+| Application | CTAP Function | API Benefit |
+|-------------|---------------|-------------|
+| **Target validation** | Structural endpoints in early-phase trials | Confirmation of drug-target interaction |
+| **Formulation optimization** | Stability assessments | Structure-guided formulation development |
+| **Biosimilar characterization** | Higher-order structure comparability | CMPC biosimilar manufacturing support |
 
 #### Metabolomics for Dose Optimization
 
@@ -211,7 +345,7 @@ CTAP Trial → TMIC Metabolomics → Metabolic Biomarkers → API QSP Models →
 
 This integration enables precision dosing that accounts for metabolic variability—critical for the small-molecule therapeutics produced at DDIC and CMPC.
 
-### 4.2 Imaging Biomarker Development
+### 5.2 Imaging Biomarker Development
 
 Flagship trials incorporating imaging endpoints benefit from radiomic biomarker validation capabilities, with particular strength in neuroimaging through the **MS Centre's imaging expertise** (Wilman, Beaulieu, Emery):
 
@@ -227,7 +361,7 @@ Flagship trials incorporating imaging endpoints benefit from radiomic biomarker 
 
 ---
 
-## 5. Sample Flow Architecture
+## 6. Sample Flow Architecture
 
 ```
 Trial Participant → Sample Collection → CBSR Processing → Quality Bridge → Partner Facility
@@ -239,89 +373,152 @@ Trial Participant → Sample Collection → CBSR Processing → Quality Bridge �
        │                   │                   │               │               │
        └───────────────────┴───────────────────┴───────────────┴───────────────┘
                                                                        │
-                                               Data Return Pipeline ◄──┘
-                                                       │
-                                                       ▼
-                                        Suite 4 Data Platform
-                                        (OMOP, Trial Data Lake)
-                                                       │
-                                                       ▼
-                                        Integrated Analysis
-                                        (Clinical + Molecular)
+                              ┌────────────────────────────────────────┘
+                              ▼
+                    Data Return Pipeline
+                              │
+            ┌─────────────────┼─────────────────┐
+            ▼                 ▼                 ▼
+    OnCore CTMS        Suite 4 OMOP      AI Workstations
+    (Trial Context)    (Data Lake)       (Analysis)
+            │                 │                 │
+            └─────────────────┼─────────────────┘
+                              ▼
+                    Integrated Analysis
+                    (Clinical + Molecular)
 ```
 
 ---
 
-## 6. Budget Summary
+## 7. Budget Summary
 
-| Category                                          | Amount                |
-| ------------------------------------------------- | --------------------- |
-| **Pillar 1: Protocol Integration Services** | \$300,000             |
-| **Pillar 2: Quality Bridge Infrastructure** | \$500,000             |
-| **Pillar 3: Data Return Pipeline**          | \$250,000             |
-| **ACE Core Access & Coordination**          | \$150,000             |
-| **High-Throughput Clinical Instrumentation** | \$500,000             |
-| **Total**                                   | **\$1,700,000** |
+| Category | Amount |
+|----------|--------|
+| **Pillar 1: Protocol Integration Services** | $300,000 |
+| **Pillar 2: Quality Bridge Infrastructure** | $550,000 |
+| **Pillar 3: Data Return Pipeline** | $350,000 |
+| **Pillar 4: CTMS Integration Layer** | $200,000 |
+| **Pillar 5: AI/ML Development Workstations** | $250,000 |
+| **ACE Core Access & Coordination** | $150,000 |
+| **High-Throughput Clinical Instrumentation** | $550,000 |
+| **Total** | **$2,350,000** |
 
-**Note:** This represents a \$1,280,000 reduction from the original \$2,980,000 budget, demonstrating efficient use of CFI funds by partnering with existing capabilities rather than duplicating them. All equipment is specified with clinical trial throughput requirements—no vague "reserves" or unspecified allocations.
-
----
-
-## 7. Key Personnel
-
-| Role                              | Responsibility                                                        |
-| --------------------------------- | --------------------------------------------------------------------- |
-| Translational Science Coordinator | Workflow coordination across all facility partnerships                |
-| ACE Core Liaison                  | Embedded coordination with ACE Core for single-cell/spatial workflows |
-| Core Facility Liaisons            | Facility-specific expertise for each partner                          |
-| Sample Logistics Manager          | Multi-site coordination and cold-chain oversight                      |
-| Bioinformatician                  | Omics data integration and OMOP mapping                               |
+**Budget Change from v2.0:** +$650,000 reflecting addition of:
+- CTMS Integration Layer ($200,000) - leverages existing OnCore deployment
+- AI/ML Development Workstations ($250,000) - reduces cloud costs, enables local development
+- Enhanced temperature monitoring ($50,000) - real-time IoT system
+- Enhanced data pipeline ($100,000) - provincial interface specifications
+- Clinical instrumentation adjustment ($50,000) - Bruker timsTOF HT specification update
 
 ---
 
-## 8. Implementation Timeline
+## 8. Sustainability Model
 
-| Phase                     | Timeline     | Milestones                                                               |
-| ------------------------- | ------------ | ------------------------------------------------------------------------ |
-| Partnership formalization | Months 1-4   | Letters of support, access agreements with ACE Core and other facilities |
-| Procurement               | Months 4-10  | Quality Bridge equipment orders, Data Return Pipeline development        |
-| Installation              | Months 10-14 | Equipment setup at CBSR, data adapter deployment                         |
-| Protocol development      | Months 14-18 | SOP development with each facility partner                               |
-| Validation                | Months 18-22 | End-to-end workflow testing with pilot samples                           |
-| Integration               | Months 22-24 | Suite 2/4 data flow validation                                           |
-| Operational               | Month 24+    | Routine trial support                                                    |
+### 8.1 Operational Cost Structure
+
+| Component | Annual Cost | Funding Source |
+|-----------|-------------|----------------|
+| DGX Spark power (×2) | $1,000 | Institutional utilities |
+| Software licenses | $15,000 | CTAP operational |
+| Facility access fees | $50,000 | Per-trial budgets |
+| LIMS maintenance | $10,000 | CTAP operational |
+| OnCore integration support | $20,000 | Provincial CTMS budget |
+
+### 8.2 Revenue/Cost Recovery
+
+| Service | Model | Projected Annual |
+|---------|-------|-----------------|
+| Omics coordination for external trials | Fee-for-service | $100,000 |
+| Sample processing for industry sponsors | Cost recovery | $150,000 |
+| Data integration services | Per-project | $50,000 |
+| AI compute for collaborators | Time allocation | $25,000 |
+
+### 8.3 Cloud Cost Avoidance
+
+Local DGX Spark workstations provide estimated annual savings:
+
+| Workload | Cloud Cost (estimated) | Local Cost | Savings |
+|----------|----------------------|------------|---------|
+| Model development (2000 GPU-hours) | $8,000 | $500 (power) | $7,500 |
+| Interactive analysis (1000 hours) | $4,000 | $250 | $3,750 |
+| Student projects (500 hours) | $2,000 | $125 | $1,875 |
+| **Annual Total** | **$14,000** | **$875** | **$13,125** |
+
+Note: Cloud costs based on AWS p4d.24xlarge at ~$4/hour. Actual savings depend on utilization.
 
 ---
 
-## 9. Quality Considerations
+## 9. Key Personnel
 
-| Element                | Approach                                                               |
-| ---------------------- | ---------------------------------------------------------------------- |
-| Pre-analytical quality | Quality Bridge checkpoints before facility handoff                     |
-| Method validation      | Per facility SOPs, documented in Protocol Integration library          |
-| Sample tracking        | BioBank software (Suite 2), chain of custody with real-time monitoring |
-| Data standards         | FAIR principles, OMOP mapping for interoperability                     |
-| Turnaround times       | SLA agreements with each facility partner                              |
-| Facility coordination  | Quarterly Facility Advisory Committee meetings                         |
+| Role | Responsibility |
+|------|----------------|
+| Translational Science Coordinator | Workflow coordination across all facility partnerships |
+| ACE Core Liaison | Embedded coordination with ACE Core for single-cell/spatial workflows |
+| Core Facility Liaisons | Facility-specific expertise for each partner |
+| Sample Logistics Manager | Multi-site coordination and cold-chain oversight |
+| Bioinformatician | Omics data integration and OMOP mapping |
+| CTMS Integration Specialist | OnCore configuration and API maintenance |
 
 ---
 
-## 10. Partnership Engagement Strategy
+## 10. Implementation Timeline
 
-### 10.1 Facility Advisory Committee
+| Phase | Timeline | Milestones |
+|-------|----------|------------|
+| Partnership formalization | Months 1-4 | Letters of support, access agreements with ACE Core and other facilities |
+| Procurement | Months 4-10 | Quality Bridge equipment, DGX Spark workstations, CTMS integration development |
+| Installation | Months 10-14 | Equipment setup at CBSR, workstation deployment, data adapter development |
+| OnCore integration | Months 12-16 | API development, testing with provincial CTMS team |
+| Protocol development | Months 14-18 | SOP development with each facility partner |
+| Validation | Months 18-22 | End-to-end workflow testing with pilot samples |
+| Integration | Months 22-24 | Suite 2/4 data flow validation, OnCore production deployment |
+| Operational | Month 24+ | Routine trial support |
 
-Quarterly meetings with all partner facility directors to: - Review integration protocol performance - Identify new capability needs - Resolve operational issues - Plan capacity for upcoming trials
+---
 
-### 10.2 Embedded Liaison Model
+## 11. Quality Considerations
+
+| Element | Approach |
+|---------|----------|
+| Pre-analytical quality | Quality Bridge checkpoints before facility handoff |
+| Method validation | Per facility SOPs, documented in Protocol Integration library |
+| Sample tracking | BioBank software (Suite 2), chain of custody with real-time monitoring |
+| Data standards | FAIR principles, OMOP mapping for interoperability |
+| Turnaround times | SLA agreements with each facility partner |
+| Facility coordination | Quarterly Facility Advisory Committee meetings |
+| Temperature compliance | Continuous IoT monitoring, automated alerts, ISBER-compliant audit trails |
+
+---
+
+## 12. Partnership Engagement Strategy
+
+### 12.1 Facility Advisory Committee
+
+Quarterly meetings with all partner facility directors to:
+- Review integration protocol performance
+- Identify new capability needs
+- Resolve operational issues
+- Plan capacity for upcoming trials
+
+### 12.2 Embedded Liaison Model
 
 - 0.2 FTE allocation for "Facility Liaison" role at each key partner
 - Funded by CTAP operational budget (not CFI equipment)
 - Responsible for protocol troubleshooting and quality monitoring
 
-### 10.3 Letters of Support
+### 12.3 Letters of Support
 
-Each partner facility provides letter describing: - Confirmation of interest in clinical trial sample pipeline - Identification of 1-2 specific quality/access barriers CTAP addresses - Willingness to participate in SOP development working group
+Each partner facility provides letter describing:
+- Confirmation of interest in clinical trial sample pipeline
+- Identification of 1-2 specific quality/access barriers CTAP addresses
+- Willingness to participate in SOP development working group
+
+### 12.4 Provincial System Integration
+
+- Clinical Trials Alberta: OnCore CTMS coordination
+- AHS Data & Analytics: Data linkage pathway planning
+- Cybera: Network infrastructure consultation
 
 ---
 
-*Document Version: 2.2 \| January 2026 (High-throughput clinical instrumentation) \| CFI Innovation Fund 2027*
+*Document Version: 3.0 | January 2026 (Translational Integration Hub expansion) | CFI Innovation Fund 2027*
