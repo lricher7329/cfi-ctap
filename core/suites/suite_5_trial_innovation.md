@@ -370,8 +370,9 @@ Industry-sponsored research follows enhanced governance requirements:
 
 ## 6. Integration Points
 
-- **Suite 2:** Consent status flows to Living Biorepository for sample release; Researcher Discovery Portal queries OpenSpecimen inventory; transparency dashboard pulls sample utilization data
-- **Suite 4:** eConsent data captured in EDC; CRAIDL Ethics Agent integration; participant matching uses Zone 1 identifiable data; researcher queries use Zone 3 de-identified OMOP data
+- **Suite 1:** Telehealth kits and remote monitoring equipment deployed to Indigenous community sites; ICTU-informed culturally safe clinical spaces (Suite 1, Section 2.6); specimen transport logistics for remote communities
+- **Suite 2:** Consent status flows to Living Biorepository for sample release; Researcher Discovery Portal queries OpenSpecimen inventory; transparency dashboard pulls sample utilization data; OCAP-compliant specimen handling for Indigenous participants
+- **Suite 4:** eConsent data captured in EDC; CRAIDL Ethics Agent integration; participant matching uses Zone 1 identifiable data; researcher queries use Zone 3 de-identified OMOP data; Indigenous Data Steward approval required for Indigenous participant data access
 - **Wearables → Suite 4:** Continuous data streams to TRE Zone 3
 
 ---

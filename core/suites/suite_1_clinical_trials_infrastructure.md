@@ -318,6 +318,49 @@ Located at the Stollery Children's Hospital Clinical Investigation Unit (Oilers 
 
 **Total Unit Value: \$400,000** (50% CTAP, 50% Stollery)
 
+### 2.6 Indigenous Participant Infrastructure & Cultural Safety
+
+CTAP's clinical infrastructure is designed in collaboration with the **Indigenous Clinical Trials Unit (ICTU)**—Canada's first Indigenous-designed clinical trials infrastructure—to ensure physical spaces and protocols reflect Indigenous self-determination in health research.
+
+**Physical Infrastructure Considerations:**
+
+| Element | Implementation | ICTU Consultation Role |
+|---------|----------------|------------------------|
+| **Cultural safety spaces** | Quiet rooms for smudging ceremonies, Elder consultations, family gatherings | Space design and protocol co-development |
+| **Wayfinding and signage** | Indigenous language signage (Cree, Blackfoot, Dene, Michif) in clinical areas | Language selection and translation verification |
+| **Privacy accommodations** | Family-centered care rooms accommodating multiple family members | Cultural practice guidance |
+| **Traditional medicine integration** | Secure storage for traditional medicines; protocol for integration with study treatments | Safety protocols and spiritual considerations |
+| **Community liaison spaces** | Dedicated space for Indigenous health navigators and community liaisons | Workflow design and staffing model |
+
+**OCAP-Compliant Infrastructure Design:**
+
+Suite 1 infrastructure enforces OCAP (Ownership, Control, Access, Possession) principles through physical and procedural design:
+
+- **Specimen collection protocols**: Indigenous participants informed about specimen handling, storage locations, and community data stewardship before collection
+- **Data sovereignty**: Point-of-care laboratory results subject to ICTU data governance protocols before integration with Suite 4 TRE
+- **Community consent processes**: Infrastructure supports both individual and community-level consent collection
+- **Return of samples**: Protocols for specimen return or culturally appropriate disposition at study conclusion
+
+**Remote and Northern Community Support:**
+
+CTAP's infrastructure extends beyond Edmonton-based facilities to serve Indigenous communities across Northern Alberta, the Territories, and remote reserves:
+
+| Capability | Implementation | Partner |
+|------------|----------------|---------|
+| **Telehealth-enabled clinical spaces** | Suite 5 telehealth kits deployed to satellite sites | ICTU community liaisons |
+| **Mobile clinical support** | Phlebotomy and monitoring equipment for community-based visits | AHS Indigenous Health Program |
+| **Specimen transport logistics** | Cold-chain capability for remote specimen collection | Living Biorepository (Suite 2) |
+| **Cultural safety training** | All CIU staff complete Indigenous cultural safety training | University of Alberta Indigenous Canada |
+
+**Equity Targets:**
+
+Suite 1 infrastructure directly supports CTAP's commitment to **15% Indigenous participation** across interventional trials:
+
+- Clinical Investigation Unit staff trained in culturally safe care delivery
+- Indigenous health navigators integrated into recruitment workflows
+- Flexible scheduling accommodating travel from remote communities
+- Family-centered care model recognizing collective decision-making traditions
+
 ------------------------------------------------------------------------
 
 ## 3. Pediatric Rare Disease Unit: Background and Rationale
@@ -423,9 +466,10 @@ If Suite 1a proceeds, **partial integration with distinct specialized zones** wo
 | Objective | Suite 1 Contribution |
 |-------------------|-----------------------------------------------------|
 | **Objective 1** | Rare disease network integration reduces trial startup time |
-| **Objective 2** | Safe participant monitoring enables increased recruitment |
+| **Objective 2** | Safe participant monitoring enables increased recruitment; culturally safe infrastructure supports 15% Indigenous and 20% rural participation targets (Section 2.6) |
 | **Objective 3** | First-in-human capability requires specialized procedure rooms |
-| **Objective 4** | POC labs integrate with Connect Care for real-time data |
+| **Objective 4** | POC labs integrate with Connect Care for real-time data; OCAP-compliant specimen collection protocols |
+| **Objective 8** | HQP training includes Indigenous cultural safety certification for all clinical staff |
 
 ------------------------------------------------------------------------
 
@@ -434,6 +478,7 @@ If Suite 1a proceeds, **partial integration with distinct specialized zones** wo
 | Partner | Role |
 |------------------------------|------------------------------------------|
 | **UACT** | Trial coordination, space allocation |
+| **ICTU (Indigenous Clinical Trials Unit)** | Indigenous community engagement, culturally safe trial design, OCAP compliance |
 | **Kipnes Institute** | Governance, strategic alignment |
 | **Stollery Children's Hospital** | Pediatric rare disease trials, Phase I capability |
 | **WCHRI** | Data coordination, Translational Genomics Hub |
@@ -452,9 +497,10 @@ If Suite 1a proceeds, **partial integration with distinct specialized zones** wo
 | MS Cell Therapies | Infusion suites, intensive monitoring |
 | Neuro-immunology & Autonomic | Autonomic Function Labs (tilt, QSART, TCD, NIRS) for Long COVID/POTS trials |
 | Vaccine Trials | **See Suite 1a** (Challenge Trial Unit); Suite 1 provides adverse event monitoring |
-| Cardio-Renal-Metabolic | ADI CRU metabolic assessment, ECG monitoring, POC labs |
+| Cardio-Renal-Metabolic | ADI CRU metabolic assessment, ECG monitoring, POC labs; Indigenous diabetes trial support via ICTU |
 | Pediatric Rare Disease | Stollery CIU, Translational Genomics Hub, RareKids-CAN network |
 | Gene Therapy | Long-term monitoring stations, family accommodation |
+| **Indigenous Health Research** | Culturally safe infrastructure (Section 2.6), ICTU partnership, remote community support, OCAP-compliant protocols |
 
 ------------------------------------------------------------------------
 

@@ -287,6 +287,8 @@ CTAP's approach to EDI aligns with the University of Alberta's **Access, Communi
 
 **Indigenous Clinical Trials:** CTAP benefits from UACT's **Indigenous Clinical Trials Unit (ICTU)**—Canada's first Indigenous-designed clinical trials infrastructure. ICTU enables self-determination in health research innovation and ensures OCAP principles (Ownership, Control, Access, Possession) govern Indigenous data and specimens through TRE IAM-enforced access controls, with Indigenous Data Stewards embedded in governance structures.
 
+CTAP's physical infrastructure is designed in collaboration with ICTU to reflect Indigenous values and cultural practices. Suite 1's clinical facilities include culturally safe spaces for smudging ceremonies and Elder consultations, Indigenous language signage (Cree, Blackfoot, Dene, Michif), and community liaison spaces for Indigenous health navigators. Suite 5's decentralized trial tools—telehealth kits, wearables, and eConsent platforms—extend trial participation to remote and Northern communities while respecting data sovereignty requirements. All Suite 1 clinical staff complete Indigenous cultural safety training.
+
 **Explicit Participation Targets:** CTAP commits to measurable targets tracked annually:
 - **15% Indigenous participation** in applicable trials, with ICTU-co-designed protocols
 - **20% rural/remote participation** enabled by decentralized trial designs and Suite 5 digital tools
