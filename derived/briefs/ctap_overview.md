@@ -118,7 +118,7 @@ Suite 3 provides the **trial-to-facility interface layer**—standardised protoc
 |-----------------|-----------|--------------|-------------------|
 | **ACE Core** | Single-cell sequencing, spatial transcriptomics, metabolic analysis | Trial sample pipeline, outcome linkage | Instrumentation, expertise |
 | **Alberta Cryo-EM** | Atomic-scale imaging | Structural biology endpoints | Structure-guided insights |
-| **Glycomics Institute (GIA)** | Glycan profiling | Standardised sample handling | Therapeutic glycoprotein analysis |
+| **GlycoNet** | Glycan profiling | Standardised sample handling | Therapeutic glycoprotein analysis |
 | **TMIC** | Metabolomics (50K samples/year) | Quality-controlled trial samples | Biomarker discovery |
 | **Alberta Proteomics** | Protein identification | Pre-analytical QA | Protein biomarker analysis |
 
@@ -221,7 +221,7 @@ CTAP infrastructure supports four flagship clinical trials programs representing
 
 CTAP does not duplicate existing excellence—it connects:
 
-**Discovery Infrastructure ($400M+ cumulative investment):** University of Alberta Cryo-EM Facility ($20M), Glycomics Institute (GIA), TMIC metabolomics (50K samples/year), Alberta Cell Therapy Manufacturing
+**Discovery Infrastructure ($400M+ cumulative investment):** University of Alberta Cryo-EM Facility ($20M), GlycoNet (glycomics), TMIC metabolomics (50K samples/year), Alberta Cell Therapy Manufacturing
 
 **Biomanufacturing Capacity:** Critical Medicines Production Centre ($200M, 70M doses/year by 2026), PRAIRIE Hub ($109.9M pandemic preparedness), Applied Pharmaceutical Innovation partnership
 

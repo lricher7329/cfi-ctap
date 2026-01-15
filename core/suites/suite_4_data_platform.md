@@ -12,7 +12,7 @@
 
 ## Executive Summary
 
-Suite 4 establishes the digital backbone of the Clinical Trials Acceleration Platform (CTAP), creating Canada's first AI-native clinical trials data infrastructure. This suite addresses a critical gap: while the University of Alberta possesses exceptional discovery assets (Cryo-EM, TMIC, GIA) and manufacturing capabilities (ACTM, CMPC), there is no unified data architecture that connects these upstream investments to downstream clinical validation.
+Suite 4 establishes the digital backbone of the Clinical Trials Acceleration Platform (CTAP), creating Canada's first AI-native clinical trials data infrastructure. This suite addresses a critical gap: while the University of Alberta possesses exceptional discovery assets (Cryo-EM, TMIC, GlycoNet) and manufacturing capabilities (ACTM, CMPC), there is no unified data architecture that connects these upstream investments to downstream clinical validation.
 
 Suite 4 integrates three previously fragmented components:
 
@@ -700,7 +700,7 @@ The In Silico Assessment Agent represents CTAP's most ambitious AI capability—
 │  │ Patient      │           │ Multi-Omics:     │         │ Patient Data │  │
 │  │ Biopsy +     │──────────▶│ • DNA (genomics) │────────▶│ Cube (OMOP   │  │
 │  │ Blood Sample │           │ • NMR (TMIC)     │         │ CDM unified) │  │
-│  │ (Suite 2)    │           │ • Glycan (GIA)   │         │              │  │
+│  │ (Suite 2)    │           │ • Glycan (GlycoNet) │      │              │  │
 │  └──────────────┘           └──────────────────┘         └──────┬───────┘  │
 │                                                                  │          │
 │  4. GENERATIVE MODEL                         5. OUTPUT          │          │
@@ -727,7 +727,7 @@ The In Silico Assessment Agent represents CTAP's most ambitious AI capability—
 | Suite                                     | Integration Point                                    |
 | ----------------------------------------- | ---------------------------------------------------- |
 | **Suite 2 (Living Biorepository)**  | Multi-omics sample processing → Digital Twin input  |
-| **Suite 3 (Translational Science)** | Cryo-EM, TMIC, GIA molecular data → Patient profile |
+| **Suite 3 (Translational Science)** | Cryo-EM, TMIC, GlycoNet molecular data → Patient profile |
 | **Suite 4 (TRE)**                   | Historical RWE → Synthetic control generation       |
 | **Suite 5 (Trial Innovation)**      | Digital endpoints → Response prediction validation  |
 
