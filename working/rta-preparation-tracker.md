@@ -489,6 +489,27 @@ _Use this section for ongoing notes during preparation._
   - Clarified ACTM as partner facility (not equipment request)
 - Google Sheet budget template updated with 36 line items (was 37)
 
+### 2026-01-15 - Applied AI Innovation Flagship and PHAIR Lab Integration
+
+**New Flagship Program Added:**
+- Added "Applied AI Innovation in Healthcare" as 5th flagship program
+- PHAIR Lab (Dr. Ross Mitchell, CIFAR AI Chair) anchors the program
+- AI + Health Hub (Drs. Neesh Pannu, Gillian Lemermeyer) provides institutional home
+- Emphasizes science of AI implementation as research frontier
+- CFI Investment → Research Innovation linkage strengthened throughout
+
+**Key Additions:**
+- MASTER.md: Full flagship program section with CFI-research innovation table
+- objectives.csv: Updated Objectives 1 & 5 to reference Applied AI Innovation flagship
+- Suite 4: Enhanced PHAIR Lab and AI + Health Hub integration in Section 4A
+- RTA: Added Applied AI Innovation flagship and strengthened AI + Health Hub narrative
+
+**Collaborator Network:**
+- Amber Simpson (Queen's, CRC in Biomedical Computing): Radiomics, federated learning
+- Lazar Atanackovic (Amii Fellow): Generative AI, Digital Twin Engine
+- Mohamed Abdalla (CIFAR AI Chair): Clinical NLP, de-identification
+- Randy Goebel (Amii Co-Founder): Explainable AI, AI governance
+
 ### 2026-01-15 - Budget Reconciliation and Narrative Strengthening
 
 **Budget Reconciliation Completed:**

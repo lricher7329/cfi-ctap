@@ -187,15 +187,17 @@ The University of Alberta is making transformative investments in AI compute inf
 
 Amii's leadership includes pioneers of modern reinforcement learning, providing in-house expertise to deploy AI directly into clinical workflows—optimizing trial design, automating recruitment, and analyzing complex multi-omics data—without outsourcing.
 
-**Key Amii/CIFAR Resources:**
+**AI + Health Hub (Kipnes Institute):** Launched May 2025, the AI + Health Hub brings together researchers across 10 faculties with a singular mission: "to bridge the gap between academic research and clinical deployment of AI and digital tools for precision health." Led by **Dr. Neesh Pannu** and **Dr. Gillian Lemermeyer**, the Hub provides the institutional home for CTAP's Applied AI Innovation flagship, ensuring CRAIDL development occurs within a community dedicated to responsible AI implementation. Two recently recruited Canada CIFAR AI Chairs (Mohamed Abdalla, Lazar Atanackovic) strengthen this ecosystem alongside established leaders.
 
-- Dr. Richard Sutton (CIFAR AI Chair, reinforcement learning pioneer)
-- Dr. Russell Greiner (CIFAR AI Chair, health applications)
-- TODO: Add Dr. Randy Goebel (Fellow and co-founder of the Alberta Machine Intelligence Institute (Amii))
-- Dr. Ross Mitchell (CIFAR AI Chair, clinical NLP, health applications)
-- Dr. Mohamed Abdalla (CIFAR AI Chair, clinical NLP, de-identification)
-- Multiple faculty focused on health AI applications
-- TODO: Amber L. Simpson, recent recruitment to the U of Alberta - key participant - radiomics
+**Key Amii/CIFAR AI Chairs in Health:**
+
+- **Dr. Ross Mitchell** (CIFAR AI Chair, AHS Chair in AI in Health): PHAIR Lab director; AI Scribe deployed across 10 Alberta EDs; CRAIDL leadership
+- **Dr. Mohamed Abdalla** (CIFAR AI Chair): Clinical NLP, de-identification, privacy-preserving AI for health data
+- **Dr. Lazar Atanackovic** (Amii Fellow, ECE/Biochemistry): Generative AI, Digital Twin Engine, causal inference
+- Dr. Richard Sutton (CIFAR AI Chair): Reinforcement learning pioneer
+- Dr. Russell Greiner (CIFAR AI Chair): Health applications, machine learning
+- Dr. Randy Goebel (Amii Co-Founder): Explainable AI, AI governance
+- **Collaborator: Dr. Amber Simpson** (Queen's University, CRC in Biomedical Computing): Radiomics, federated learning—joining UAlberta collaboration for multi-site imaging AI
 
 #### A Unified Health System
 
@@ -565,14 +567,54 @@ Connect Care (Epic) ─── FHIR API ──┬── Zone 1 (Identifiable)
 
 ### 4.4 Flagship Programs
 
-CTAP will be operationalized through four high-impact flagship programs representing Alberta's research strengths, each serving as living testbeds for CRAIDL agent development and validation:
+CTAP will be operationalized through five high-impact flagship programs representing Alberta's research strengths, each serving as living testbeds for CRAIDL agent development and validation:
 
 | Program                                                               | Leadership and Partnership                                                                                                                                                                                                                                                                                                                                                                                        | CTAP Role                                                                                                                                                                                    |
 | --------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Applied AI Innovation in Healthcare**                         | PHAIR Lab (Ross Mitchell, CIFAR AI Chair); AI + Health Hub (Neesh Pannu, Gillian Lemermeyer—Kipnes Institute); Amii Fellows (Lazar Atanackovic, Mohamed Abdalla); Queen's radiomics collaboration (Amber Simpson, CRC); AHS Clinical AI Deployment                                                                                                                                                              | Science of AI implementation in clinical trials; CRAIDL agent development and validation; AI Scribe integration; translating AI research to clinical deployment at scale                     |
 | **Neuro-immunology, MS Cell Therapies & Autonomic Dysfunction** | MS Centre (Cris Power, Anatasia Voronova, 29 affiliates); Autonomic Function Labs (Lawrence Richer); collaboration with UCSF - Quantitative Biosciences Institute; leveraging translational core facilities including Cell Imaging Facilities, Advanced Cell Exploration Core, Glycomics Institute of Alberta, The Metabolomics Innovation Centre (TMIC), Alberta Proteomics and Mass Spectrometry (APM), Cryo-EM | Accelerated human trials for innovative cell therapies, deep phenotyping via Omics Integration Hub; Long COVID/POTS trials via Autonomic Function Labs                                       |
 | **Hepatitis C & Vaccine Trials**                                | Hepatitis C (Michael Houghton; Nobel 2020), Li Ka Shing Institute, PRAIRIE Hub (Joanne Lemieux, Maya Shmulevitz)                                                                                                                                                                                                                                                                                                  | Alberta's first academic Challenge Trial Unit; accelerated CHIM protocols                                                                                                                    |
 | **Cardio-Renal-Metabolic Population Health**                    | Canadian VIGOUR Centre (Justin Ezekowitz), Alberta Diabetes Institute, Connect1d Canada, Islet Cell Core (Peter Senior, Patrick Macdonald)                                                                                                                                                                                                                                                                        | Pragmatic trials, decentralized designs, trial innovation suite for innovative remote monitoring (e.g. novel continuous glucose monitoring), wearables integration, digital health platforms |
 | **Pediatric Rare Disease**                                      | Stollery Children's Hospital (1 of 2 Canadian Phase I sites), Women and Children's Health Research Institute - Translational Genomics Hub, RareKids-CAN - national trials network for pediatric rare disease                                                                                                                                                                                                      | Pediatric Rare Disease Trials Unit, accelerated patient impact                                                                                                                               |
+
+#### Applied AI Innovation in Healthcare
+
+**The science of AI implementation is itself a research frontier.** Most AI tools fail to translate from research to clinical deployment—not because the algorithms underperform, but because implementation science is underdeveloped. The Applied AI Innovation flagship program addresses this gap directly, making CTAP not just a consumer of AI tools but a **generator of new knowledge about how AI systems succeed or fail in clinical trials settings**.
+
+**PHAIR Lab Leadership:** Dr. Ross Mitchell's Precision Health AI Research (PHAIR) Lab anchors this program. As Canada CIFAR AI Chair and Alberta Health Services Chair in AI in Health, Dr. Mitchell brings 30+ years of expertise from Mayo Clinic, Moffitt Cancer Center, and University of Calgary. His AI Scribe ("Jenkins")—already deployed across 10 Alberta emergency departments with 58 physicians and 7,500+ clinical conversations—demonstrates what implementation success looks like: banking/military-grade security, physician adoption, and measurable workflow improvement (approximately 3 additional patients seen per physician per shift).
+
+**AI + Health Hub Integration:** The AI + Health Hub, launched May 2025 within the Kipnes Institute and led by **Dr. Neesh Pannu** and **Dr. Gillian Lemermeyer**, provides the institutional home for this flagship. The Hub's mission—"to bridge the gap between academic research and clinical deployment of AI and digital tools for precision health"—aligns precisely with CTAP's objectives. With seed grants already supporting AI-enabled health translation (Hartling, Laratta), the Hub provides governance, community, and institutional support for implementation research.
+
+**CFI Investment → Research Innovation:** This flagship exemplifies the direct relationship between CFI infrastructure investment and innovative research outcomes. CTAP infrastructure enables research that cannot occur without it:
+
+| CFI-Funded Infrastructure | Research Innovation Enabled |
+|--------------------------|----------------------------|
+| TRE with Connect Care integration | AI algorithm validation at population scale (4.4M Albertans) |
+| GPU compute cluster | CRAIDL agent training on real clinical trials data |
+| Living Biorepository | Outcome-linked biomarker discovery for AI model development |
+| OMOP CDM infrastructure | Federated learning research across OHDSI network (100+ sites) |
+| Digital Twin Engine | Synthetic control arm generation for rare disease trials |
+
+**Research Outputs:**
+
+1. **Implementation Science Publications:** Rigorous studies of CRAIDL agent deployment—success factors, failure modes, adoption barriers—generating generalizable knowledge for AI implementation in healthcare
+2. **Algorithm Development:** Novel AI methods for clinical trials, building on Atanackovic's generative models, Simpson's radiomics, Abdalla's de-identification, and Mitchell's clinical NLP
+3. **Benchmark Datasets:** Curated, de-identified trial datasets enabling reproducible AI research across the community
+4. **Open-Source Tools:** CRAIDL agents released as open-source infrastructure, extending Alberta's AI innovations nationally via ACT-AEC
+
+**Collaborator Network:**
+
+- **Dr. Amber Simpson** (Queen's University, CRC in Biomedical Computing): Radiomics and computational biomarkers for imaging-based trial endpoints
+- **Dr. Lazar Atanackovic** (Amii Fellow, ECE/Biochemistry): Generative AI, Digital Twin Engine, synthetic control arms
+- **Dr. Mohamed Abdalla** (CIFAR AI Chair): Clinical NLP, de-identification, privacy-preserving AI
+- **Dr. Randy Goebel** (Amii Co-Founder): Explainable AI, AI governance
+
+**Patient Partnership:**
+
+- AI ethics advisory including patient representatives
+- Transparent AI development with explainability requirements
+- Patient input on acceptable AI use cases in clinical trials
+- Community Advisory Board ensuring AI development reflects diverse perspectives
 
 #### Neuro-immunology, MS Cell Therapies, and Autonomic Dysfunction
 
@@ -668,7 +710,7 @@ CTAP establishes a dedicated **Pediatric Rare Disease Clinical Trials Unit** at 
 
 #### CRAIDL AI Methodology Development
 
-All flagship programs serve as testbeds for CRAIDL agent development and validation, enabling iterative refinement across diverse trial designs, disease areas, and regulatory contexts—extending the evidence base beyond oncology to neuro-immunology, infectious disease, cardiometabolic medicine, and pediatrics.
+The **Applied AI Innovation in Healthcare** flagship provides the methodological foundation for CRAIDL development, while all other flagship programs serve as testbeds for agent deployment and validation. This bidirectional relationship—where PHAIR Lab develops methods and clinical flagships stress-test them—enables iterative refinement across diverse trial designs, disease areas, and regulatory contexts. The evidence base extends beyond oncology to neuro-immunology, infectious disease, cardiometabolic medicine, and pediatrics, generating implementation science knowledge that transfers nationally via ACT-AEC.
 
 ---
 
