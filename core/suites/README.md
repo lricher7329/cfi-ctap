@@ -10,7 +10,7 @@ This folder contains comprehensive technical specifications for each of the five
 | 2 | [Living Biorepository & Cell Manufacturing](suite_2_living_biorepository.md) | **Comprehensive** | $3,290,000 |
 | 3 | [Translational Science Integration](suite_3_translational_science.md) | Concise | $1,400,000 |
 | 4 | [Data Platform, Secure Environments, AI/HPC](suite_4_data_platform.md) | **Comprehensive** | $2,480,000 |
-| 5 | [Trial Innovation Tools & Wearables](suite_5_trial_innovation.md) | Concise | $1,130,000 |
+| 5 | [Remote and Decentralized Trials](suite_5_remote_decentralized_trials.md) | Concise | $376,000 |
 
 **Total CTAP Request: $10,000,000 CAD**
 

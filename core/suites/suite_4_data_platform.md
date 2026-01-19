@@ -22,6 +22,26 @@ Suite 4 integrates three previously fragmented components:
 
 The result is a unified data platform where trial data flows seamlessly from enrollment through regulatory submission, biospecimens link to evolving clinical outcomes, and AI agents accelerate every stage of the RCT lifecycle.
 
+### Institutional Investment Foundation
+
+CTAP's TRE infrastructure builds on substantial prior institutional investment, demonstrating proven technology and reducing implementation risk:
+
+| Investment | Amount | Status | Purpose |
+|------------|--------|--------|---------|
+| TRE Architecture & Setup | ~$350,000 | Deployed | Three-zone architecture, security controls, AHS integration |
+| AWS Credits (Amii/UofA) | $500,000+ | Active | AI Scribe development, TRE compute, pilot operations |
+| AWS ProServe (In-Kind) | ~$500,000 | Complete | Expert architecture consulting, security design |
+| **Total Prior Investment** | **~$1,350,000** | | |
+
+This foundation demonstrates:
+
+1. **Proven technology stack** - Architecture validated in production with AI Scribe across 10 Alberta emergency departments
+2. **Institutional commitment** - University of Alberta and Amii have invested substantially before CFI request
+3. **CFI as scale investment** - Request extends proven infrastructure to clinical trials, not funding experiments
+4. **Reduced risk** - TRE concepts operational; CFI funds production-grade expansion
+
+**Leverage Ratio:** CFI's $550K AWS infrastructure request builds on ~$1,350K prior investment (2.4:1 leverage).
+
 ---
 
 ## 1. Unified Data Architecture
@@ -383,7 +403,7 @@ This partnership exemplifies efficient use of CFI funds: CTAP's request focuses 
 
 | Capability                  | SDRE Provision                                | CTAP Utilization                                                     |
 | --------------------------- | --------------------------------------------- | -------------------------------------------------------------------- |
-| **GPU Compute**       | High-performance AI/deep learning clusters    | CRAIDL LLM training, model fine-tuning, radiomics feature extraction |
+| **GPU Compute**       | Hopper (H200) and Blackwell architecture GPUs | CRAIDL LLM training, model fine-tuning, radiomics feature extraction |
 | **Secure Storage**    | Petabyte-scale storage with HIA compliance    | OMOP data lake archives, rawdiomics cold storage                     |
 | **Physical Security** | Secured data centre, strict access controls   | Meets CTAP Zone 2 security requirements                              |
 | **Cybersecurity**     | Regular evaluations, comprehensive governance | Aligns with TRE NIST CSF 2.0 controls                                |
@@ -531,26 +551,38 @@ CTAP's OMOP implementation enables participation in:
 
 ### 3.5 VITAL/GEMINI Leveraged Investment
 
-CTAP's OMOP implementation builds on foundational work already funded through the VITAL project (Virtual Integrated Translational Analytics Lab), which operates as part of the GEMINI multi-hospital network.
+CTAP's data platform builds on substantial provincial and federal investments already operational in Alberta, eliminating the need for OMOP ETL infrastructure that VITAL has already deployed.
 
-#### Existing Infrastructure
+#### Provincial Data Infrastructure Already in Place
 
-| Component                      | VITAL/GEMINI Contribution     | CTAP Extension                      |
-| ------------------------------ | ----------------------------- | ----------------------------------- |
-| OMOP ETL pipelines             | Core transformation scripts   | Clinical trials-specific extensions |
-| OHDSI vocabulary management    | Standard terminology mappings | Trial-specific concept additions    |
-| Data quality framework         | Achilles profiling            | Regulatory-grade validation         |
-| Federated query infrastructure | Network architecture          | Cross-site trial feasibility        |
+| Investment | Status | CTAP Leverage |
+| ---------- | ------ | ------------- |
+| **VITAL Federated Infrastructure** | Operational | OMOP ETL pipelines, vocabulary management, OHDSI tooling (Achilles, ATLAS) already deployed; CTAP uses existing mappings |
+| **AHS Research Snowflake Instance** | Operational | Provincial data warehouse with Connect Care extracts; CTAP accesses via approved research protocols |
+| **GEMINI Multi-Hospital Network** | Operational | Proven federated query architecture; CTAP joins as Alberta node |
+| **DHDP National Federation** | Deploying 2025-26 | Pan-Canadian federated learning infrastructure; CTAP participates without separate investment |
+
+#### What CTAP Adds (Not Duplicates)
+
+CTAP investments focus exclusively on capabilities not provided by existing infrastructure:
+
+| Capability | Why Needed | Existing Gap |
+| ---------- | ---------- | ------------ |
+| **Clinical Trials Zone** | Prospective data capture with GCP audit trails | VITAL/Snowflake designed for retrospective research |
+| **CDISC Transformation** | CDASH → SDTM → ADaM for regulatory submission | Not part of OMOP workflow |
+| **Real-time Safety Monitoring** | ICH E2A compliant adverse event detection | Existing systems batch-oriented |
+| **Regulatory-Grade E-Signatures** | CAN/CGSB-72.34-2017 compliance | Research platforms lack this |
+| **AI Agent Integration** | CRAIDL agents with defined TRE zone access | Novel capability |
 
 #### Strategic Implications
 
-**Reduced Implementation Risk:** The VITAL project has validated OMOP deployment in Canadian healthcare settings, resolving many technical challenges CTAP would otherwise face.
+**No OMOP ETL Investment Required:** VITAL has validated OMOP deployment in Canadian healthcare settings and operates production ETL pipelines. CTAP extends existing mappings with trial-specific concept additions rather than building from scratch.
 
-**Accelerated Timeline:** Rather than building OMOP infrastructure from scratch, CTAP extends proven patterns, enabling Year 1 deployment rather than Year 2.
+**Snowflake as Zone 1 Source:** AHS's research Snowflake instance provides the data source for CTAP's Zone 1, with approved bulk extracts flowing through established governance. This eliminates need for separate AHS data integration.
+
+**Federation Without Infrastructure:** VITAL's federated query infrastructure enables cross-site trial feasibility queries using existing network architecture. CTAP joins as a participant node, not a separate network.
 
 **Partnership Evidence:** Cross-project coordination demonstrates Alberta's commitment to national health data infrastructure and provides sustainability beyond CFI funding.
-
-**Cost Efficiency:** CTAP investments focus on clinical trials-specific capabilities (CDISC integration, regulatory compliance, prospective capture) rather than duplicating general OMOP infrastructure.
 
 ---
 
@@ -729,7 +761,7 @@ The In Silico Assessment Agent represents CTAP's most ambitious AI capability—
 | **Suite 2 (Living Biorepository)**  | Multi-omics sample processing → Digital Twin input  |
 | **Suite 3 (Translational Science)** | Cryo-EM, TMIC, GlycoNet molecular data → Patient profile |
 | **Suite 4 (TRE)**                   | Historical RWE → Synthetic control generation       |
-| **Suite 5 (Trial Innovation)**      | Digital endpoints → Response prediction validation  |
+| **Suite 5 (Decentralized Trials)**  | Digital endpoints → Response prediction validation  |
 
 #### Synthetic Data Generation
 
@@ -1435,18 +1467,42 @@ Rather than full platform integration, CTAP proposes targeted collaboration for 
 
 ## 8. Sustainability Model
 
-### 8.1 Revenue Streams
+### 8.1 O&M Cost and IOF Offset
 
-| Year | CFI/IOF       | Industry Services | Grants  | Institutional | Total |
-| ---- | ------------- | ----------------- | ------- | ------------- | ----- |
-| 1    | $600K | $0    | $100K | $100K     | $800K   |               |       |
-| 2    | $500K | $100K | $150K | $100K     | $850K   |               |       |
-| 3    | $400K | $250K | $200K | $100K     | $950K   |               |       |
-| 4    | $300K | $400K | $200K | $100K     | $1,000K |               |       |
-| 5    | $200K | $500K | $200K | $100K     | $1,000K |               |       |
-| 6+   | $0 | $600K    | $200K | $200K     | $1,000K |               |       |
+**Suite 4 O&M Requirements:**
 
-### 8.2 Industry Service Pricing
+| Component | Amount |
+|-----------|--------|
+| Suite 4 Capital | $2,635,000 |
+| Annual O&M (12% + $40K software) | $356,200 |
+| 5-Year O&M Total | $1,781,000 |
+
+**IOF Contribution (Suite 4 share):**
+
+Suite 4 represents 32% of total CTAP capital ($2.635M / $8.314M), receiving proportional IOF:
+
+| Component | Amount |
+|-----------|--------|
+| Suite 4 IOF Share (32% of $2.49M) | ~$790,000 |
+| Net Institutional O&M (5-year) | ~$991,000 |
+| Net Annual Institutional Commitment | ~$198,000/yr |
+
+*Note: Suite 4 has the highest O&M rate (12%) due to cloud compute, software maintenance, and security compliance requirements. Industry service revenue is projected to cover the majority of net institutional commitment by Year 3.*
+
+### 8.2 Revenue Streams
+
+| Year | CFI/IOF | Industry Services | Grants | Institutional | Total |
+| ---- | ------- | ----------------- | ------ | ------------- | ----- |
+| 1    | $158K   | $0                | $100K  | $100K         | $358K |
+| 2    | $158K   | $100K             | $150K  | $100K         | $508K |
+| 3    | $158K   | $250K             | $200K  | $100K         | $708K |
+| 4    | $158K   | $400K             | $200K  | $100K         | $858K |
+| 5    | $158K   | $500K             | $200K  | $100K         | $958K |
+| 6+   | $0      | $600K             | $200K  | $200K         | $1,000K |
+
+*Note: CFI/IOF reflects proportional IOF allocation (~$158K/yr for 5 years). Industry services (TRE access, CRAIDL, CDISC) projected to reach full cost recovery by Year 5.*
+
+### 8.3 Industry Service Pricing
 
 | Service                      | Unit           | Price      |
 | ---------------------------- | -------------- | ---------- |
@@ -1473,29 +1529,54 @@ Rather than full platform integration, CTAP proposes targeted collaboration for 
 
 ### 9.1 Budget Breakdown
 
-*Note: This budget reflects SDRE integration optimization. See Section 2A for detailed rationale.*
+*Note: This budget reflects SDRE integration optimization and Tier 1 cost reductions. Software licensing converted from perpetual to phased contracts. AWS infrastructure builds on ~$1,350K prior institutional investment (see Institutional Investment Foundation above).*
 
-| Item                                            | Est. Cost            | Justification                                                                     |
-| ----------------------------------------------- | -------------------- | --------------------------------------------------------------------------------- |
-| **CRAIDL Inference Servers**              | $200,000             | Production inference for 8 CRAIDL AI agents; 24/7 availability. Training on SDRE. |
-| **TRE Zone 2 Operational Storage**        | $150,000             | Fast NVMe tier for OMOP ETL, CDISC transforms. Bulk storage on SDRE.              |
-| **Networking, firewalls, VPN**            | $180,000             | Zero-trust perimeter, zone isolation, NIST CSF 2.0                                |
-| **Identity management system**            | $100,000             | RBAC, MFA, audit integration                                                      |
-| **EDC/eSource platform (5-year)**         | $400,000             | 21 CFR 11 compliant, CDASH-configured                                             |
-| **Clinical Trial Data Platform Licenses** | $300,000             | REDCap Cloud, Medidata                                                            |
-| **AWS professional services**             | $300,000             | Architecture, security, MLOps (in-kind committed)                                 |
-| **AWS cloud credits (5-year)**            | $500,000             | Zone 3 compute, AI services, storage (Calgary region)                             |
-| **PACS/DICOM Integration Gateway**        | $100,000             | Provincial PACS connection for imaging AI                                         |
-| **SDRE GPU Allocation (Radiomics)**       | $0                   | Reserved SDRE capacity; replaces dedicated nodes                                  |
-| **Image Harmonization Software**          | $50,000              | ComBat normalization, multi-site standardization                                  |
-| **Rawdiomics Hot Cache**                  | $50,000              | High-speed cache for active CT sinograms, MRI k-space. Archive on SDRE.           |
-| **BioBank-TRE Integration**               | $75,000              | OpenSpecimen API, FHIR endpoints, Zone 2/3 data flows                             |
-| **OMOP ETL & OHDSI Tooling**              | $100,000             | Leverages VITAL; ATLAS, Achilles deployment                                       |
-| **SDRE Integration & Access**             | $100,000             | Reserved SDRE capacity, access fees, integration development                      |
-| **AI Scribe-EDC Integration**             | $75,000              | Voice-to-structured clinical trial data pipeline (Mitchell lab)                   |
-| **CRAIDL LLM Development Environment**    | $50,000              | SDRE GPU allocation for model versioning, evaluation                              |
-| **AHS Snowflake Integration**             | $75,000              | Secure pipeline for Zone 1 bulk extracts from Connect Care                        |
-| **Total**                                 | **$2,805,000** |                                                                                   |
+| Item                                            | Original     | Revised      | Notes                                                                     |
+| ----------------------------------------------- | ------------ | ------------ | ------------------------------------------------------------------------- |
+| **CRAIDL Inference Servers**              | $200,000     | $200,000     | Production inference for 8 CRAIDL AI agents; 24/7 availability            |
+| **TRE Zone 2 Operational Storage**        | $150,000     | $150,000     | Fast NVMe tier for OMOP ETL, CDISC transforms                             |
+| **Networking, firewalls, VPN**            | $180,000     | $180,000     | Zero-trust perimeter, zone isolation, NIST CSF 2.0                        |
+| **Identity management system**            | $100,000     | **$0**       | *Deferred to Year 2; AWS IAM provides initial capability*                 |
+| **EDC/eSource platform (3-year contract)** | $400,000    | **$160,000** | *Phased from perpetual; 21 CFR 11 compliant*                              |
+| **Clinical Trial Data Platform (3-year)** | $300,000     | **$120,000** | *Phased from perpetual; REDCap Cloud, Medidata*                           |
+| **AWS professional services (Year 1)**    | $300,000     | **$150,000** | *Phased: $150K Year 1, remainder to O&M*                                  |
+| **AWS cloud credits (5-year)**            | $500,000     | $500,000     | Zone 3 compute, AI services, storage (Calgary region)                     |
+| **PACS/DICOM Integration Gateway**        | $100,000     | $100,000     | Provincial PACS connection for imaging AI                                 |
+| **Image Harmonization Software**          | $50,000      | $50,000      | ComBat normalization, multi-site standardization                          |
+| **Rawdiomics Hot Cache**                  | $50,000      | $50,000      | High-speed cache for active CT sinograms, MRI k-space                     |
+| **BioBank-TRE Integration**               | $75,000      | $75,000      | OpenSpecimen API, FHIR endpoints, Zone 2/3 data flows                     |
+| **OMOP ETL & OHDSI Tooling**              | $100,000     | $100,000     | Leverages VITAL; ATLAS, Achilles deployment                               |
+| **SDRE Integration & Access**             | $100,000     | $100,000     | Reserved SDRE capacity, access fees, integration development              |
+| **AI Scribe-EDC Integration**             | $75,000      | $75,000      | Voice-to-structured clinical trial data pipeline (Mitchell lab)           |
+| **CRAIDL LLM Development Environment**    | $50,000      | $50,000      | SDRE GPU allocation for model versioning, evaluation                      |
+| **AHS Snowflake Integration**             | $75,000      | $75,000      | Secure pipeline for Zone 1 bulk extracts from Connect Care                |
+| **Total**                                 | $2,805,000   | **$2,335,000** | **$470,000 savings (Tier 1)**                                           |
+
+**Tier 1 Software Licensing Reduction Summary:**
+
+| Item | Original | Revised | Savings | Rationale |
+|------|----------|---------|---------|-----------|
+| Identity Management | $100,000 | $0 | $100,000 | Deferred to Year 2; AWS IAM for initial deployment |
+| EDC/eSource Platform | $400,000 | $160,000 | $240,000 | 3-year contract vs. perpetual license |
+| Clinical Data Platform | $300,000 | $120,000 | $180,000 | 3-year contract vs. perpetual license |
+| AWS Pro-Serve | $300,000 | $150,000 | $150,000 | Phased: Year 1 only; remainder to O&M |
+| **Total Software Savings** | | | **$670,000** | |
+
+**CFI Eligibility Rationale for Multi-Year Software Contracts:**
+
+Multi-year software contracts are explicitly CFI-eligible as capital expenditure when structured as:
+
+1. **Fixed-term committed agreements** - 3-year contracts represent infrastructure lifecycle commitments, not annual subscriptions
+2. **Prepaid or committed pricing** - Negotiated pricing locks in rates for the commitment period
+3. **Essential research infrastructure** - Platforms (EDC, CTDMS) are foundational infrastructure enabling clinical trials
+4. **21 CFR Part 11 compliance requirement** - Regulatory-grade platforms require validated environments only available through enterprise licensing
+
+**CFI Precedent:** Multi-year software licenses and cloud capacity commitments have been approved in prior CFI Innovation Fund competitions (IF2020, IF2023) for research platforms where:
+- The software is essential to the research capability (not general-purpose IT)
+- Fixed-term agreements provide cost predictability for institutional budget planning
+- On-premises alternatives would require significantly greater capital investment
+
+*Note: Identity management deferred as AWS IAM provides sufficient capability for Year 1 deployment.*
 
 ### 9.2 Vendor Considerations
 

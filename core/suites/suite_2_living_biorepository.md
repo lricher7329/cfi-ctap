@@ -2,9 +2,9 @@
 
 ## Comprehensive Technical Specification
 
-**Budget: \$2,020,000 CAD**
+**Budget: \$5,837,911 CAD** (equipment \$2,510,000 + renovation \$3,327,911)
 
-**Version:** 1.0 **Date:** January 2026 
+**Version:** 1.1 **Date:** January 2026 
 
 **Status:** Draft for CFI IF2027 RTA
 
@@ -528,18 +528,42 @@ The B-PREPARED infrastructure directly supports PRAIRIE Hub objectives, with 75-
 
 ## 7. Sustainability Model
 
-### 7.1 Revenue Streams
+### 7.1 O&M Cost and IOF Offset
+
+**Suite 2 O&M Requirements:**
+
+| Component | Amount |
+|-----------|--------|
+| Suite 2 Equipment Capital | \$2,510,000 |
+| Suite 2 Renovation Capital | \$3,327,911 |
+| **Suite 2 Total Capital** | **\$5,837,911** |
+| Annual O&M (equipment 6% + renovation 2% + \$16K software) | \$233,200 |
+| 5-Year O&M Total | \$1,166,000 |
+
+**IOF Contribution (Suite 2 share):**
+
+Suite 2 represents a significant portion of total CTAP capital, receiving proportional IOF:
+
+| Component | Amount |
+|-----------|--------|
+| Suite 2 IOF Share (proportional) | ~\$1,750,000 |
+| Net Institutional O&M (5-year) | Offset by IOF |
+| Net Annual Institutional Commitment | Covered by IOF |
+
+### 7.2 Revenue Streams
 
 | Year | CFI/IOF | Fee-for-Service | Grants | Industry | Total    |
 | ---- | ------- | --------------- | ------ | -------- | -------- |
-| 1    | \$500K  | \$100K          | \$100K | \$50K    | \$750K   |
-| 2    | \$450K  | \$200K          | \$150K | \$100K   | \$900K   |
-| 3    | \$400K  | \$300K          | \$150K | \$150K   | \$1,000K |
-| 4    | \$300K  | \$350K          | \$150K | \$200K   | \$1,000K |
-| 5    | \$200K  | \$400K          | \$150K | \$250K   | \$1,000K |
+| 1    | \$107K  | \$100K          | \$100K | \$50K    | \$357K   |
+| 2    | \$107K  | \$200K          | \$150K | \$100K   | \$557K   |
+| 3    | \$107K  | \$300K          | \$150K | \$150K   | \$707K   |
+| 4    | \$107K  | \$350K          | \$150K | \$200K   | \$807K   |
+| 5    | \$107K  | \$400K          | \$150K | \$250K   | \$907K   |
 | 6+   | \$0     | \$500K          | \$150K | \$350K   | \$1,000K |
 
-### 7.2 Service Pricing
+*Note: CFI/IOF reflects proportional IOF allocation (~\$107K/yr for 5 years). Fee-for-service revenue exceeds O&M requirements by Year 2, ensuring long-term sustainability.*
+
+### 7.3 Service Pricing
 
 | Service                       | Unit            | Price      |
 | ----------------------------- | --------------- | ---------- |
@@ -550,7 +574,8 @@ The B-PREPARED infrastructure directly supports PRAIRIE Hub objectives, with 75-
 | Long-term storage (LN₂)      | Per year/sample | \$15       |
 | Sample retrieval and shipping | Per request     | \$150      |
 | Custom processing             | Per hour        | \$85       |
-### 7.3 Cost Recovery Model
+
+### 7.4 Cost Recovery Model
 
 | Cost Category          | Recovery Mechanism             |
 | ---------------------- | ------------------------------ |
@@ -580,47 +605,62 @@ Budget focuses on Living Biorepository equipment and software. Space renovations
 | **Monitoring & Microscopy**     | Environmental Monitoring System         | Rees Scientific/Vaisala 24/7 monitoring             | \$140,000           |
 |                                       | Clinical Grade Microscopes & Counters   | Keyence/Countess 3 FL                               | \$70,000            |
 |                                       | **Monitoring Subtotal**           |                                                      | **\$210,000** |
-| **BioBank LIMS Platform**       | OpenSpecimen Enterprise License         | 5-year, 21 CFR Part 11 compliant, multi-site        | \$200,000           |
-|                                       | Plugin Development & Data Migration     | Dynamic consent, FHIR integration, caTissue migration| \$185,000           |
-|                                       | Connect Care FHIR Integration           | Epic API integration for specimen-EHR linkage       | \$90,000            |
+| **BioBank LIMS Platform**       | OpenSpecimen Basic Support License      | 5-year basic support (reduced from Enterprise)      | \$60,000            |
+|                                       | Plugin Development (Year 1)             | Dynamic consent, caTissue migration (phased)        | \$75,000            |
+|                                       | Data Migration                          | caTissue to OpenSpecimen migration                  | \$60,000            |
+|                                       | Connect Care FHIR Integration           | Consolidated with Suite 4 TRE work                  | \$45,000            |
 |                                       | Dynamic Consent Module                  | Renewable consent workflow implementation           | \$60,000            |
 |                                       | Staff Training                          | OpenSpecimen certification                          | \$35,000            |
-|                                       | **LIMS Subtotal**                 |                                                      | **\$570,000** |
-| **Suite 2 Total**               |                                         |                                                      | **\$2,020,000**|
+|                                       | **LIMS Subtotal**                 | (reduced from \$570,000)                            | **\$335,000** |
+| **Suite 2 Equipment Subtotal**  |                                         |                                                     | **\$2,510,000** |
+| **Renovation**                  | Biorepository Renovation & Infrastructure (LKS/Katz) | Freezer farm fit-out; electrical/HVAC upgrades; processing lab (B-PREPARED + 10%) | **\$3,327,911** |
+| **Suite 2 Total**               |                                         |                                                     | **\$5,837,911** |
 
 **Notes:**
 
 1. **Cell therapy manufacturing** capabilities (GMP bioreactors, cell processors) are provided through existing ACTM infrastructure and are not included in this CFI request.
-2. **Space renovations** for biorepository facilities (LKS basement, Katz 3rd floor) are consolidated within Suite 1 infrastructure costs.
+2. **Space renovations** for biorepository facilities (LKS basement, Katz 3rd floor) are included in Suite 2 (see Section 8.3).
 3. Data infrastructure originally proposed in B-PREPARED is consolidated within **Suite 4: Data Platform** as part of the integrated TRE architecture.
 
 ### 8.2 Budget Summary by Category
 
-| Category                    | Amount                | % of Total |
-| --------------------------- | --------------------- | ---------- |
-| Automated Sample Processing | \$650,000             | 32.2%      |
-| Cryogenic Storage           | \$400,000             | 19.8%      |
-| Biocontainment Equipment    | \$190,000             | 9.4%       |
-| Monitoring & Microscopy     | \$210,000             | 10.4%      |
-| BioBank LIMS Platform       | \$570,000             | 28.2%      |
-| **Total**             | **\$2,020,000** | 100%       |
+| Category                    | Amount        |
+| --------------------------- | ------------- |
+| Automated Sample Processing | \$650,000     |
+| Cryogenic Storage           | \$400,000     |
+| Biocontainment Equipment    | \$190,000     |
+| Monitoring & Microscopy     | \$210,000     |
+| BioBank LIMS Platform       | \$335,000     |
+| Capacity Expansion (SDRE reallocation) | \$725,000 |
+| **Equipment Subtotal**      | **\$2,510,000** |
+| **Renovation & Infrastructure** | **\$3,327,911** |
+| **Suite 2 Total**           | **\$5,837,911** |
 
-*Cell therapy manufacturing is provided through existing ACTM infrastructure. Space renovations are consolidated in Suite 1.*
+**Renovation Cost Basis:**
+
+The renovation budget is based on the B-PREPARED proposal (CBRF2-2023-00132) with 10% inflation adjustment:
+- Original B-PREPARED estimate: \$3,025,374
+- Inflation adjustment (10%): \$302,537
+- **Total renovation budget: \$3,327,911**
+
+*Note: Cell therapy manufacturing is provided through existing ACTM infrastructure. BioBank LIMS includes LIMS platform optimization savings from Tier 1 implementation.*
 
 ### 8.3 Space Planning and Renovations
 
 Suite 2 leverages detailed architectural specifications from the B-PREPARED biorepository proposal (CBRF2-2023-00132), designed by GEC Architecture.
 
-**Total Renovation Estimate:** $3,025,374 CAD
+**Total Renovation Estimate:** $3,327,911 CAD (B-PREPARED base $3,025,374 + 10% inflation)
 
 | Category                        | Amount               |
 | ------------------------------- | -------------------- |
-| Hard Costs (Renovation)         | $1,750,000           |
-| Soft Costs (Design, PM, QA/QC)  | $862,445             |
-| Contingency (10%)               | $261,245             |
-| GST (1.65%) + Inflation (3.35%) | $143,685             |
-| Programming Costs               | $8,000               |
-| **Total**                 | **$3,025,374** |
+| Hard Costs (Renovation)         | $1,925,000           |
+| Soft Costs (Design, PM, QA/QC)  | $948,690             |
+| Contingency (10%)               | $287,369             |
+| GST (1.65%) + Inflation (3.35%) | $158,052             |
+| Programming Costs               | $8,800               |
+| **Total**                 | **$3,327,911** |
+
+*Note: Original B-PREPARED estimate (CBRF2-2023-00132) was $3,025,374 CAD. Updated with 10% inflation adjustment for 2027 construction costs.*
 
 #### Li Ka Shing Centre (LKS) - Basement Level
 

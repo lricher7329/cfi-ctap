@@ -235,8 +235,11 @@ Over $400M in cumulative investment creates an unmatched bench-to-trials ecosyst
 | **ACTM**                                 | GMP cell therapy manufacturing                         | CFI                                                      |
 | **DDIC**                                 | Phase I dosage forms, cGMP cleanrooms                  | Health Canada licensed                                   |
 | **CBSR**                                 | Automated biobanking, EMR-linked samples               | CFI                                                      |
+| **TRE & AI Infrastructure**              | Secure compute, AI Scribe (10 Alberta EDs), TRE pilot  | ~$1.35M (UofA/Amii + AWS in-kind)                        |
 
 **The Gap:** These world-class discovery assets currently lack a unified downstream pathway to human validation. CTAP provides that pathway.
+
+**Digital Infrastructure Foundation:** The University of Alberta and Amii have invested ~$1.35M in Trusted Research Environment (TRE) and AI infrastructure: ~$350K in TRE architecture, $500K+ in AWS credits supporting AI Scribe deployment across 10 Alberta emergency departments, and ~$500K in-kind AWS ProServe consulting. This proven foundation reduces CFI risk—the CFI request extends operational infrastructure to clinical trials, not unproven experiments.
 
 #### Expanding Biomanufacturing Capacity
 
@@ -499,16 +502,16 @@ CTAP operates through five tightly coupled domains, unified by an integrated dat
 | Domain                                        | Function                                                    | Suite   | CFI Request         |
 | --------------------------------------------- | ----------------------------------------------------------- | ------- | ------------------- |
 | **1. AI-Enabled Operations Hub**        | CRAIDL agents, trial operations, regulatory navigation      | Suite 4 | Included in Suite 4 |
-| **2. Living Biorepository**             | EMR-linked biospecimens, outcome annotation                 | Suite 2 | $2,020,000          |
-| **3. Secure Research Data Environment** | Three-zone TRE, OMOP, Connect Care integration              | Suite 4 | $2,805,000          |
+| **2. Living Biorepository**             | EMR-linked biospecimens, outcome annotation, renovation     | Suite 2 | $5,837,911          |
+| **3. Secure Research Data Environment** | Three-zone TRE, OMOP, Connect Care integration              | Suite 4 | $1,130,000          |
 | **4. Open Science Infrastructure**      | FAIR data, CDISC, regulatory compliance                     | Suite 4 | Included in Suite 4 |
-| **5. Integrated Molecular Phenotyping** | Cryo-EM, glycomics, metabolomics                            | Suite 3 | $1,480,000          |
-| **Clinical Trials Infrastructure**      | Procedure rooms, monitoring, challenge unit, autonomic labs | Suite 1 | $3,004,000          |
-| **Trial Innovation Tools**              | Digital health, wearables, decentralized trials             | Suite 5 | $1,056,000          |
+| **5. Integrated Molecular Phenotyping** | Cryo-EM, glycomics, metabolomics                            | Suite 3 | $555,000            |
+| **Clinical Trials Infrastructure**      | Procedure rooms, monitoring, challenge unit, autonomic labs | Suite 1 | $2,290,000          |
+| **Remote and Decentralized Trials**     | Digital health, wearables, decentralized trials             | Suite 5 | $376,000            |
 
-**Total CFI Request: $10,365,000 CAD** (40% CFI + 60% matching)
+**Total CFI Request: $10,188,911 CAD** (40% CFI + 60% matching)
 
-*Note: Budget figures sourced from Google Sheets CFI_CTAP_Data > Equipment tab (source of truth)*
+*Note: Budget figures sourced from budget_items.csv (source of truth)*
 
 **SDRE Partnership:** Suite 4 leverages the University of Alberta's Sensitive Data Research Environment (SDRE), launching January 2026, for developmental data science and AI model development workloads. This reduces the CFI request by ~$850,000 while increasing capability through access to institutional HPC infrastructure. CTAP retains dedicated on-premise infrastructure for clinical trials-specific systems requiring 24/7 availability (OpenSpecimen, CRAIDL inference servers) and regulatory-compliant platforms (21 CFR Part 11 EDC). See Suite 4 Section 2A for detailed workload allocation.
 
@@ -1425,7 +1428,7 @@ Full Application has no page limits on most sections—expand from MASTER:
 | Suite 2                 | `core/suites/suite_2_living_biorepository.md`                     | Technical specification            |
 | Suite 3                 | `core/suites/suite_3_translational_science.md`                    | Technical specification            |
 | Suite 4                 | `core/suites/suite_4_data_platform.md`                            | Technical specification            |
-| Suite 5                 | `core/suites/suite_5_trial_innovation.md`                         | Technical specification            |
+| Suite 5                 | `core/suites/suite_5_remote_decentralized_trials.md`              | Technical specification            |
 | CFI Evaluation Criteria | `reference/competition_instructions/cfi_evaluation_criteria.md`   | Assessment framework               |
 | CFI Proposal Outline    | `reference/competition_instructions/cfi_proposal_outline.md`      | Submission structure               |
 | Google Sheets           | CFI_CTAP_Data                                           | Budget, participants, equipment    |

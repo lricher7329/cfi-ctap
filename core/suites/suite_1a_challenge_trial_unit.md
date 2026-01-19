@@ -2,7 +2,7 @@
 
 ## Concise Technical Specification
 
-**Budget: $590,000 CAD** (contingent on space allocation)
+**Budget: $990,000 CAD** (contingent on space allocation)
 
 **Version:** 1.0
 **Date:** January 2026
@@ -30,12 +30,12 @@ Suite 1a establishes Alberta's first academic **Vaccine Challenge Trial Unit** (
 
 | Component | Quantity | Specification | Cost |
 |-----------------|-------------|-------------------------------|-------------|
-| Challenge Unit renovation & construction | 1 | Negative pressure (-25 Pa), 4 isolation rooms with en-suite bathrooms, airlock entries, HVAC modifications | $400,000 |
+| Challenge Unit renovation & construction | 1 | Negative pressure (-25 Pa), 4 isolation rooms with en-suite bathrooms, airlock entries, HVAC modifications | $800,000 |
 | HEPA filtration upgrade | 4 rooms | ≥12 ACH, HEPA exhaust, pressure monitoring | $80,000 |
 | Continuous monitoring stations | 4 | Telemetry, SpO2, temperature, video surveillance | $60,000 |
 | Pathogen preparation area | 1 | BSL-2+ biosafety cabinet, validated containment | $50,000 |
 
-**Total: $590,000**
+**Total: $990,000**
 
 ### 1.2 Extended-Stay Participant Accommodation
 
@@ -45,12 +45,12 @@ Challenge trial participants remain in quarantine for 14+ days (pathogen-depende
 
 | Requirement | Specification | Included In |
 |-------------------|-------------------------------|----------------------|
-| Private sleeping area | Hospital-grade bed, quality bedding | Room fit-out ($400K) |
-| En-suite bathroom | Toilet, shower, sink | Room fit-out ($400K) |
-| Entertainment | TV/streaming, WiFi access | Room fit-out ($400K) |
+| Private sleeping area | Hospital-grade bed, quality bedding | Room fit-out ($800K) |
+| En-suite bathroom | Toilet, shower, sink | Room fit-out ($800K) |
+| Entertainment | TV/streaming, WiFi access | Room fit-out ($800K) |
 | Communication | Intercom to nursing station, phone | Monitoring system ($60K) |
 | Meal service | In-room delivery (not communal) | Operational |
-| Work surface | Desk area for extended stay comfort | Room fit-out ($400K) |
+| Work surface | Desk area for extended stay comfort | Room fit-out ($800K) |
 
 **Space Requirements (per room):**
 
@@ -125,7 +125,7 @@ International comparators (Royal Free Hospital London, hVivo Canary Wharf) use p
 
 ### 3.1 Space Allocation Dependency
 
-The Challenge Unit ($590,000) requires dedicated space with negative pressure isolation capability. Space allocation is subject to University of Alberta Facilities approval.
+The Challenge Unit ($990,000) requires dedicated space with negative pressure isolation capability. Space allocation is subject to University of Alberta Facilities approval.
 
 | Risk Element | Likelihood | Impact | Mitigation |
 |--------------------|------------|------------|----------------------------|
@@ -399,11 +399,11 @@ This integrated pathway—unique in Canada—enables rapid vaccine evaluation: w
 
 | Category                        | Amount          | Status |
 |---------------------------------|-----------------|--------|
-| Challenge Unit renovation & construction | $400,000 | Contingent |
+| Challenge Unit renovation & construction | $800,000 | Contingent |
 | HEPA filtration upgrade | $80,000 | Contingent |
 | Continuous monitoring stations | $60,000 | Contingent |
 | Pathogen preparation area | $50,000 | Contingent |
-| **Total** | **$590,000** | **Contingent on space allocation** |
+| **Total** | **$990,000** | **Contingent on space allocation** |
 
 ---
 

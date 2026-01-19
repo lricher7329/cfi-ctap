@@ -1,20 +1,20 @@
-# Suite 3: Translational Science Integration Hub
+# Suite 3: Translational Science Integration & Imaging
 
 ## Concise Technical Specification
 
-**Budget: $2,350,000 CAD**
+**Budget: $550,000 CAD**
 
-**Version:** 3.0 **Date:** January 2026
+**Version:** 3.1 **Date:** January 2026
 
 ---
 
 ## Executive Summary
 
-Suite 3 provides the **trial-to-facility interface layer**—standardized protocols, quality systems, data pipelines, and compute infrastructure that connect clinical trial operations with the University of Alberta's world-class omics infrastructure. The suite operates through five integrated pillars: Protocol Integration Services, Quality Bridge Infrastructure, Data Return Pipeline, CTMS Integration Layer, and AI/ML Development Workstations.
+Suite 3 provides the **translational integration and imaging biomarker platform**—standardized protocols, quality systems, data pipelines, cold-chain logistics, and imaging infrastructure that connect clinical trial operations with the University of Alberta's world-class omics and imaging capabilities. The suite enables **multi-modal biomarker correlation** (imaging + omics + clinical) through dedicated infrastructure at PAMRC (Peter Allen MRI Research Centre) and sample transport logistics to partner core facilities.
 
-This design follows a **develop locally, scale provincially** philosophy: CFI funds build robust local infrastructure that connects to Alberta's existing provincial systems (OnCore CTMS, CyberaNet, AHS data repositories) through well-defined interfaces. The architecture minimizes cloud compute costs through local AI workstations while maintaining pathways to SDRE and provincial HPC when scale demands.
+This design follows a **develop locally, scale provincially** philosophy: CFI funds build robust local infrastructure that connects to Alberta's existing provincial systems (OnCore CTMS, CyberaNet, AHS data repositories) through well-defined interfaces. The PAMRC imaging infrastructure follows the Montreal Neurological Institute's open-source model (Orthanc PACS + LORIS), ensuring institutional data sovereignty while enabling seamless multi-site imaging collaboration.
 
-The University of Alberta's omics infrastructure is world-class. What's missing is the systematic connection to clinical trials. Suite 3 builds the bridges, not the buildings.
+The University of Alberta's omics and imaging infrastructure is world-class. What's missing is the systematic connection to clinical trials and the data backbone for multi-modal biomarker correlation. Suite 3 builds the bridges and imaging data infrastructure—not duplicate instruments.
 
 ---
 
@@ -206,34 +206,39 @@ Dedicated coordination and access fees to ensure seamless integration with ACE C
 - **Agilent Seahorse XFe96**: Metabolic analysis (OCR/ECAR measurements)
 - **Sequencing**: MiSeq on-site, NextSeq access via MBSU partnership
 
-### 2.7 High-Throughput Clinical Instrumentation
+### 2.7 Cold-Chain Logistics Infrastructure
 
-**Budget: $550,000**
+**Budget: $200,000** (Suite 3 total CFI request)
 
-Dedicated equipment that bridges the throughput gap between discovery-mode omics and clinical trial timelines. Partner facilities are optimized for deep discovery (comprehensive but slow); clinical trials require rapid turnaround for actionable biomarker feedback. This equipment enables "clinical-mode" operation within existing facilities.
+Suite 3's physical infrastructure is limited to **cold-chain logistics equipment** that enables sample transport between clinical trial sites and partner core facilities. All analytical instrumentation is accessed through formal service agreements with TMIC, GlycoNet, ACE Core, and other partners—consistent with Suite 3's role as an **integration layer, not an instrumentation hub**.
 
-| Equipment | Specification | Current Gap | Clinical Trial Need | Cost |
-|-----------|---------------|-------------|---------------------|------|
-| **Rapid Proteomics System** | Bruker timsTOF HT with clinical batch automation | APM: 20 samples/week (discovery mode) | 50+ samples/day for real-time PD biomarkers | $300,000 |
-| **Clinical Metabolomics LC-MS/MS** | Triple-quad system with automated sample prep | TMIC: 24h/sample (comprehensive) | 15 min/sample for PK monitoring | $170,000 |
-| **High-Throughput Glycan Profiler** | Automated CE-LIF with 96-well format | GlycoNet: Manual workflows | Batch glycan QC for biologics trials | $80,000 |
+| Equipment | Specification | Purpose | Cost |
+|-----------|---------------|---------|------|
+| **Dry ice shippers** | 20 units | Multi-site trial sample transport | $30,000 |
+| **Portable -80°C units** | 4 units | Field sample transport to cores | $80,000 |
+| **Temperature monitoring system** | IoT sensors + dashboard | Real-time alerts, ISBER audit trail | $60,000 |
+| **Specialty transport containers** | Validated for omics samples | Vitrified/cryo-EM sample integrity | $30,000 |
 
-**Why Clinical-Mode Matters:**
+**Partnership-Based Analytical Capabilities:**
 
-Discovery omics prioritizes depth—thousands of analytes per sample, comprehensive characterization. Clinical trials prioritize speed—return results to investigators within the decision window. A Phase I dose-escalation trial cannot wait 2 weeks for metabolomics; the next cohort is already enrolling.
+| Capability | Partner | Access Model |
+|------------|---------|--------------|
+| Rapid proteomics | APM | Service agreement, prioritized queue |
+| Clinical metabolomics | TMIC | Fee-for-service, 50K samples/year capacity |
+| Glycan profiling | GlycoNet | Service agreement, established workflows |
+| Single-cell/spatial | ACE Core | Service agreement, reserved capacity |
+| Cryo-EM | Alberta Cryo-EM | Service agreement |
+| Imaging biomarkers | PAMRC | Trial protocol collaboration |
 
-**Example Use Case (Hepatitis C Vaccine Trial):**
-- Day 0: Challenge dose administered in Suite 1 Vaccine Challenge Unit
-- Day 1-7: Daily blood samples collected, processed via Quality Bridge
-- Day 1-7: Same-day metabolomic profiling on Clinical Metabolomics LC-MS/MS
-- Day 7: Safety review committee has complete metabolic trajectory before escalation decision
+**Integration, Not Instrumentation:**
 
-**Facility Integration:**
-This equipment is co-located at partner facilities (not CTAP space), operated by facility staff, with CTAP priority access defined by SLA. This model:
-- Leverages existing technical expertise
-- Avoids duplicating facility infrastructure
-- Ensures equipment serves both discovery and clinical modes
-- Provides sustainability through facility fee-for-service model
+Suite 3's value lies in connecting trial operations to world-class omics infrastructure—not duplicating equipment that partners already operate at scale. By investing in logistics and coordination rather than instruments:
+- CTAP avoids $1M+ in redundant equipment costs
+- Partner facilities receive trial-ready samples (not raw specimens requiring processing)
+- Trial teams access established expertise without building parallel capabilities
+- CFI funds create coordination infrastructure that enhances the entire provincial research ecosystem
+
+**Temperature Monitoring Architecture:** Continuous IoT monitoring across all transport assets feeds a central dashboard. Excursion alerts trigger within 5 minutes, with automatic notification to sample logistics staff. All temperature data is logged for regulatory audit trails, meeting ISBER best practices for biobanking quality.
 
 ---
 
@@ -406,6 +411,40 @@ MS Centre neuroimaging affiliates (Wilman, Beaulieu, Emery) provide specialized 
 
 **PAMRC as Reference Standard:** PAMRC serves as the imaging reference site for multi-site trials, with standardized phantoms and quality assurance protocols that enable reliable pooling of imaging data across Alberta sites.
 
+#### PAMRC CFI-Funded Infrastructure
+
+To enable the imaging biomarker workflows described above, CFI funds dedicated infrastructure at PAMRC:
+
+| Component | Amount | Purpose |
+|-----------|--------|---------|
+| **Network Link (10Gbps Fiber)** | $25,000 | High-bandwidth connection to TRE Zone 2 for DICOM/k-space transfer |
+| **Storage Node (NVMe Cache + LORIS DB)** | $75,000 | Local staging for MRI studies, LORIS database hosting |
+| **Research PACS (Orthanc)** | $50,000 | Open-source PACS server (GPLv3) with dedicated hardware |
+| **LORIS Platform** | $60,000 | MNI open-source research data management (server + deployment) |
+| **Radiomic Workstations (2×)** | $20,000 | GPU-enabled workstations for AI/radiomics analysis |
+| **PACS/LORIS-TRE Integration** | $40,000 | One-time DICOM-OMOP mapping, Suite 4 data platform connection |
+| **Total PAMRC Infrastructure** | **$270,000** | |
+
+**Orthanc + LORIS Architecture:**
+
+This infrastructure follows the Montreal Neurological Institute's proven open-source model:
+
+- **Orthanc** serves as the lightweight research PACS (DICOM archive), handling image storage, retrieval, and de-identification with an extensive plugin ecosystem and excellent documentation ("Orthanc Book")
+- **LORIS** (Longitudinal Online Research and Imaging System) provides comprehensive research data management—longitudinal study tracking, imaging QC workflows, data querying, and multi-modal integration (imaging + clinical + biospecimen)
+- Both platforms are fully open source (Orthanc: GPLv3; LORIS: github.com/aces/Loris), eliminating licensing costs while maintaining institutional data sovereignty
+- LORIS currently operates across 150+ research sites globally, managing 40TB+ of neuroimaging data
+
+**Technical Requirements:**
+- LORIS: Linux server (Ubuntu/CentOS), Apache, MySQL 8
+- Orthanc: C++ application, minimal dependencies, runs on commodity hardware
+- Storage node provides NVMe cache for DICOM/k-space files plus MySQL database storage for LORIS
+
+**Data Integration:**
+- DICOM metadata maps to OMOP CDM via standardized ETL pipelines
+- LORIS REST APIs enable bidirectional data flow with Suite 4 TRE
+- Radiomic features extracted on GPU workstations flow directly to OMOP data lake
+- Patient imaging linked to clinical outcomes via Connect Care integration
+
 ### 5.3 ADI IsletCore & Diabetes Research Integration
 
 The **Alberta Diabetes Institute IsletCore** provides CTAP's core infrastructure for diabetes and metabolic disease clinical trials, establishing a unique bridge between the world-renowned Edmonton Protocol islet transplantation program and translational clinical research.
@@ -514,34 +553,72 @@ Trial Participant → Sample Collection → CBSR Processing → Quality Bridge �
 
 ## 7. Budget Summary
 
-**CFI RTA Budget: $1,480,000 CAD** (consolidated for RTA submission)
+**CFI RTA Budget: $470,000 CAD** (integration and imaging infrastructure)
 
-| Category | Full Scope | RTA Request |
-|----------|-----------|-------------|
-| **Pillar 1: Protocol Integration Services** | $300,000 | $200,000 |
-| **Pillar 2: Quality Bridge Infrastructure** | $550,000 | $400,000 |
-| **Pillar 3: Data Return Pipeline** | $350,000 | $280,000 |
-| **Pillar 4: CTMS Integration Layer** | $200,000 | $150,000 |
-| **Pillar 5: AI/ML Development Workstations** | $250,000 | $200,000 |
-| **ACE Core Access & Coordination** | $150,000 | $100,000 |
-| **High-Throughput Clinical Instrumentation** | $550,000 | $150,000 |
-| **Full Scope Total** | $2,350,000 | |
-| **RTA Request** | | **$1,480,000** |
+| Category | Amount | Notes |
+|----------|--------|-------|
+| **Cold-Chain Logistics Equipment** | $200,000 | Dry ice shippers, portable -80°C units, IoT monitoring, specialty containers |
+| **PAMRC Network Link** | $25,000 | 10Gbps fiber connection to TRE Zone 2 |
+| **PAMRC Storage Node** | $75,000 | NVMe cache for DICOM/k-space + LORIS database |
+| **Research PACS (Orthanc)** | $50,000 | Open-source PACS server + dedicated hardware |
+| **LORIS Platform** | $60,000 | MNI open-source research data management (server + deployment) |
+| **Radiomic Workstations (2×)** | $20,000 | GPU-enabled workstations for AI/radiomics |
+| **PACS/LORIS-TRE Integration** | $40,000 | One-time DICOM-OMOP mapping, Suite 4 integration |
+| **RTA Request** | **$470,000** | |
 
-*Note: RTA budget prioritizes core integration infrastructure. Additional high-throughput instrumentation may be phased or funded through partner facility contributions. Suite 3's primary value is integration, not instrumentation—equipment beyond core QC is accessed through established facility partnerships.*
+**Integration Platform Model:**
 
-**Budget Change from v2.0:** +$650,000 reflecting addition of:
-- CTMS Integration Layer ($200,000) - leverages existing OnCore deployment
-- AI/ML Development Workstations ($250,000) - reduces cloud costs, enables local development
-- Enhanced temperature monitoring ($50,000) - real-time IoT system
-- Enhanced data pipeline ($100,000) - provincial interface specifications
-- Clinical instrumentation adjustment ($50,000) - Bruker timsTOF HT specification update
+Suite 3 functions as the **Translational Science Integration & Imaging** platform—providing cold-chain logistics for sample transport to partner facilities plus dedicated imaging infrastructure at PAMRC for multi-modal biomarker correlation. All analytical capabilities (omics, spatial transcriptomics, etc.) are accessed through formal service agreements:
+
+| Capability | Partner Facility | Access Model | Estimated Capacity |
+|------------|------------------|--------------|-------------------|
+| Clinical metabolomics | TMIC | Fee-for-service | 50,000 samples/year |
+| Glycan profiling | GlycoNet | Service agreement | Established workflows |
+| Single-cell transcriptomics | ACE Core | Reserved capacity | 10x Chromium X |
+| Spatial transcriptomics | ACE Core | Reserved capacity | MERSCOPE |
+| Cryo-EM | Alberta Cryo-EM Facility | Service agreement | Structural biology |
+| Proteomics | APM | Prioritized queue | Protein biomarkers |
+| Imaging biomarkers | PAMRC | Trial protocols | 3T/7T MRI |
+| Islet biology | ADI IsletCore | Research partnership | Edmonton Protocol |
+
+**Why This Model Works:**
+
+Suite 3's value is **integration and multi-modal correlation**:
+- Partner facilities have world-class omics equipment already operational
+- CTAP provides trial context, regulatory compliance, and sample logistics
+- PAMRC imaging infrastructure enables multi-modal biomarker correlation (imaging + omics + clinical)
+- CFI funds build bridges and the imaging data backbone—not duplicate analytical instruments
+- $470K in integration infrastructure enables access to $400M+ in provincial omics and imaging infrastructure
+
+*This approach exemplifies CFI's goal of coordinated national infrastructure—maximizing research capability through strategic integration. The PAMRC investment follows the Montreal Neurological Institute's open-source model (Orthanc + LORIS), ensuring institutional data sovereignty while enabling seamless multi-site imaging collaboration.*
 
 ---
 
 ## 8. Sustainability Model
 
-### 8.1 Operational Cost Structure
+### 8.1 O&M Cost and IOF Offset
+
+**Suite 3 O&M Requirements:**
+
+| Component | Amount |
+|-----------|--------|
+| Suite 3 Capital | $470,000 |
+| Annual O&M (7%) | $32,900 |
+| 5-Year O&M Total | $164,500 |
+
+**IOF Contribution (Suite 3 share):**
+
+Suite 3 represents 5.9% of total CTAP capital ($470K / $7.964M), receiving proportional IOF:
+
+| Component | Amount |
+|-----------|--------|
+| Suite 3 IOF Share (5.9% of $2.39M) | ~$141,000 |
+| Net Institutional O&M (5-year) | ~$23,500 |
+| Net Annual Institutional Commitment | ~$4,700/yr |
+
+*Note: Suite 3's integration platform model (cold-chain logistics + PAMRC imaging infrastructure) leverages open-source software (Orthanc, LORIS) to minimize licensing costs. IOF more than covers O&M. Service agreement fees for partner facility access are budgeted in trial protocols, not infrastructure O&M.*
+
+### 8.2 Operational Cost Structure
 
 | Component | Annual Cost | Funding Source |
 |-----------|-------------|----------------|
@@ -551,7 +628,7 @@ Trial Participant → Sample Collection → CBSR Processing → Quality Bridge �
 | LIMS maintenance | $10,000 | CTAP operational |
 | OnCore integration support | $20,000 | Provincial CTMS budget |
 
-### 8.2 Revenue/Cost Recovery
+### 8.3 Revenue/Cost Recovery
 
 | Service | Model | Projected Annual |
 |---------|-------|-----------------|
@@ -560,7 +637,7 @@ Trial Participant → Sample Collection → CBSR Processing → Quality Bridge �
 | Data integration services | Per-project | $50,000 |
 | AI compute for collaborators | Time allocation | $25,000 |
 
-### 8.3 Cloud Cost Avoidance
+### 8.4 Cloud Cost Avoidance
 
 Local DGX Spark workstations provide estimated annual savings:
 

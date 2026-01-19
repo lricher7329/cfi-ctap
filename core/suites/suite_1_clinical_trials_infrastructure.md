@@ -171,7 +171,7 @@ CTAP's clinical infrastructure investments enhance three established clinical re
 2.  **Device Validation**: Motion capture and biomechanics equipment for digital health device validation
 3.  **Population Expertise**: Established research programs in spinal cord injury, stroke, and neural disease populations
 4.  **Technology Translation**: FES and exoskeleton technologies bridging research to clinical application
-5.  **Suite 5 Integration**: Digital health device validation capability complements Trial Innovation Unit
+5.  **Suite 5 Integration**: Digital health device validation capability complements Remote and Decentralized Trials
 
 ### 1.0.5 Autonomic Function Laboratories
 
@@ -208,7 +208,7 @@ The Autonomic Function Laboratories support clinical trials in Long COVID, diabe
 2.  **Long COVID Research**: Essential infrastructure for evaluating therapeutic interventions in post-acute sequelae of SARS-CoV-2
 3.  **Biospecimen Collection**: Autonomic testing visits enable specimen collection for Suite 2 Living Biorepository
 4.  **Connect Care Linkage**: Longitudinal autonomic function data integrates with Suite 4 for outcome tracking
-5.  **Wearable Validation**: Remote autonomic monitoring device validation supports Suite 5 Trial Innovation Tools
+5.  **Wearable Validation**: Remote autonomic monitoring device validation supports Suite 5 Remote and Decentralized Trials
 
 **Autonomic Lab Equipment (CTAP Investment):**
 
@@ -360,6 +360,17 @@ Suite 1 infrastructure directly supports CTAP's commitment to **15% Indigenous p
 - Indigenous health navigators integrated into recruitment workflows
 - Flexible scheduling accommodating travel from remote communities
 - Family-centered care model recognizing collective decision-making traditions
+
+**Funding Model:**
+
+ICTU operational infrastructure (cultural safety spaces, Indigenous language signage, health navigator positions, cultural safety training) is funded through the University of Alberta's institutional O&M commitment rather than the CFI capital request. This is appropriate because:
+
+1. **Operational nature**: Signage, training, and navigator positions are ongoing operational costs, not one-time capital equipment
+2. **Institutional commitment**: The University has committed to sustained Indigenous health infrastructure as part of its reconciliation commitment
+3. **ICTU partnership**: Co-funding with ICTU (CFI-funded infrastructure at Poundmaker's Lodge) ensures community ownership and sustainability
+4. **O&M alignment**: Suite 1's 5% annual O&M allocation ($114,500/year) includes Indigenous infrastructure operational support
+
+This approach ensures Indigenous participant infrastructure is sustainably funded beyond the CFI project period, not dependent on time-limited capital funding.
 
 ------------------------------------------------------------------------
 
@@ -515,18 +526,41 @@ If Suite 1a proceeds, **partial integration with distinct specialized zones** wo
 
 ## 8. Budget Summary
 
-| Category                        | Amount          |
-|---------------------------------|-----------------|
-| Renovations and fit-out         | \$800,000       |
-| Monitoring equipment            | \$400,000       |
-| POC laboratory                  | \$200,000       |
-| IP pharmacy                     | \$300,000       |
-| Pediatric Rare Disease Unit     | \$200,000       |
-| Autonomic Function Laboratories | \$514,000       |
-| Suite 1a: Vaccine Challenge Trial Unit | \$590,000 |
-| **Suite 1 Total**               | **\$3,004,000** |
+| Category                        | CFI Request | Notes |
+|---------------------------------|-------------|-------|
+| Renovations (CIU/CRU integration) | \$200,000 | Equipment integration; major renovation to CHIM |
+| Monitoring equipment (Adult CIU) | \$400,000 | Includes pediatric reallocation |
+| POC laboratory                  | \$200,000 | |
+| IP pharmacy                     | \$300,000 | |
+| Long-term monitoring & telehealth | \$100,000 | Gene therapy follow-up support |
+| Connect Care integration        | \$30,000 | One-time data integration |
+| **Suite 1 Base Subtotal**       | **\$1,300,000** | |
+| Suite 1a: Vaccine Challenge Trial Unit | \$990,000 | Canada's first academic CHIM |
+| **Suite 1 Total**               | **\$2,290,000** | |
 
-*Note: Pediatric Rare Disease Unit total value is \$400,000, with \$200,000 contributed by Stollery Children's Hospital Foundation as in-kind support for family-friendly spaces and fit-out.*
+**Pediatric CIU (Stollery):** The Stollery Children's Hospital Foundation has committed in-kind investment in the Pediatric Clinical Investigation Unit. Existing pediatric-appropriate equipment (vital sign monitors, infusion pumps, age-appropriate supplies) is already operational. No new pediatric equipment is requested in this CFI proposal. The Foundation's in-kind contribution for family-friendly spaces and facility enhancements is valued at approximately $200,000.
+
+### 8.1 O&M Cost and IOF Offset
+
+**Suite 1 O&M Requirements:**
+
+| Component | Amount |
+|-----------|--------|
+| Suite 1 Capital (incl. Suite 1a) | \$2,290,000 |
+| Annual O&M (5%) | \$114,500 |
+| 5-Year O&M Total | \$572,500 |
+
+**IOF Contribution (Suite 1 share):**
+
+Suite 1 represents 28% of total CTAP capital (\$2.29M / \$8.21M), receiving proportional IOF:
+
+| Component | Amount |
+|-----------|--------|
+| Suite 1 IOF Share (28% of \$2.46M) | ~\$689,000 |
+| Net Institutional O&M (5-year) | IOF exceeds O&M |
+| Net Annual Institutional Commitment | \$0 (IOF fully covers) |
+
+*Note: Suite 1's 5% O&M rate reflects predominantly clinical procedure infrastructure (monitoring equipment, POC labs, pharmacy storage) with lower maintenance requirements than computational infrastructure. The IOF allocation exceeds Suite 1's O&M requirements, enabling cross-subsidization of higher-maintenance suites (Suite 4 Data Platform at 12%).*
 
 *Suite 1a (Vaccine Challenge Trial Unit) is included in the total. See Suite 1a document for details on Canada's first academic controlled human infection model (CHIM) facility.*
 

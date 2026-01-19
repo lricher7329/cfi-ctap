@@ -1,8 +1,8 @@
-# Suite 5: Trial Innovation Tools & Wearables
+# Suite 5: Remote and Decentralized Trials
 
 ## Concise Technical Specification
 
-**Budget: $1,305,000 CAD**
+**Budget: $376,000 CAD**
 
 **Version:** 1.3
 **Date:** January 2026
@@ -21,14 +21,28 @@ Suite 5 enables decentralized, patient-centric clinical trials through modern eC
 
 ### 1.1 eConsent and Digital Recruitment Platform
 
-| Component                    | Specification           | Purpose                        | Cost     |
-| ---------------------------- | ----------------------- | ------------------------------ | -------- |
-| Enterprise eConsent platform | 5-year license          | Electronic consent, re-consent | $250,000 |
-| Patient portal integration   | Connect Care compatible | Participant access             | $50,000  |
-| Digital recruitment module   | AI-assisted matching    | Trial-participant matching     | $100,000 |
-| Multilingual support         | 10+ languages           | Equity access                  | Included |
+**Existing Infrastructure:** The University of Alberta has established eConsent capability through **REDCap + DocuSign** integration, providing a foundation for electronic consent workflows. CFI funding supports a **deliverable-based professional services contract** to extend this platform for CTAP's specialized requirements.
 
-**CRAIDL Integration:** Ethics Agent generates consent forms directly into eConsent platform.
+| Deliverable | Description | Cost |
+| ----------- | ----------- | ---- |
+| REDCap/DocuSign → TRE Integration | Consent data flows to Suite 4 Trusted Research Environment | $60,000 |
+| Pediatric Assent Orchestrator | Multi-parent consent, age-appropriate assent, re-consent at majority | $40,000 |
+| Indigenous Language Module | Cree (Plains/Woods), Blackfoot, Dene, Michif interface support | $40,000 |
+| CRAIDL/AI Scribe API Integration | Ethics Agent and voice-first consent connectivity | $40,000 |
+| **Total Professional Services** | | **$180,000** |
+
+**Integration Scope:**
+
+| Integration | Description | Priority |
+|-------------|-------------|----------|
+| REDCap/DocuSign → TRE | Consent data flows to Suite 4 Trusted Research Environment | Critical |
+| Pediatric Assent Orchestrator | Multi-parent consent, age-appropriate assent, re-consent at majority | High |
+| Indigenous Language Module | Cree (Plains/Woods), Blackfoot, Dene, Michif interface support | High |
+| CRAIDL Ethics Agent | AI-assisted consent form generation from protocol | High |
+| AI Scribe Integration | Voice-first consent documentation and audit trails | Medium |
+| Connect Care Linkage | Patient portal integration for participant access | Medium |
+
+**CRAIDL Integration:** Ethics Agent generates consent forms directly into the REDCap eConsent module.
 
 **AI Scribe Consent Integration:** Dr. Ross Mitchell's AI Scribe ("Jenkins")—developed with Amii and deployed across 10 Alberta emergency departments—extends CTAP's consent capabilities through voice-first documentation. During consent conversations, AI Scribe generates real-time transcripts documenting participant questions, comprehension markers, and the complete consent dialogue. This creates a regulatory-compliant audit trail while improving the consent experience—"patients report better face-to-face interactions and eye contact, instead of looking at computer screens." The open-source AI Scribe platform enables CTAP customization for multilingual consent support and culturally appropriate Indigenous community engagement.
 
@@ -102,7 +116,7 @@ The following UAlberta-developed devices and platforms represent the initial val
 | Device/Platform               | Developer                                  | Stage                                                | CTAP Validation Role |
 | ----------------------------- | ------------------------------------------ | ---------------------------------------------------- | -------------------- |
 | AI Scribe ("Jenkins")         | Dr. Ross Mitchell / Amii                   | **Deployed** (10 Alberta EDs, 6,700+ sessions) | Data integration, trial documentation |
-| Chronic disease apps*         | Dr. Puneeta Tandon                         | RCT-validated                                        | Decentralized trial deployment |
+| Ameya digital health platform* | Dr. Puneeta Tandon                         | RCT-validated                                        | Trial endpoint integration |
 | Microwave glucose sensor      | Dr. Peter Light / Dr. Masoud Baghelani     | Proof-of-concept                                     | Early feasibility trials |
 | Diabetic wound sensor         | Dr. Manisha Gupta                          | Development                                          | Validation protocol design |
 | Neuropathy sensor             | Dr. Manisha Gupta                          | Development                                          | Validation protocol design |
@@ -110,7 +124,7 @@ The following UAlberta-developed devices and platforms represent the initial val
 | Smart-e-Pants / SOCC          | iSMART / Dr. Vivian Mushahwar              | Clinical validation                                  | Pivotal trial support |
 | Wearable respiratory monitors | Digital Health Unit / Dr. Giovanni Ferrara | Pilot studies                                        | Data integration, remote monitoring |
 
-*Platform development for chronic disease management apps (Heal-Me, EMPOWER) is led by Dr. Tandon through separate funding. CTAP provides validation infrastructure and decentralized trial operations support.
+*The Ameya digital health platform (www.ameya.ca) provides chronic disease assessment via 3D motion capture, food image analysis, activity tracking, and validated ePRO instruments. Ameya infrastructure is supported through a separate CFI application led by Dr. Tandon. CTAP's flagship chronic disease trials will leverage Ameya endpoints while CTAP provides the trial operations layer (eConsent, recruitment, telehealth, data management). This collaborative model delivers complete decentralized trial capability without duplicating infrastructure.
 
 **iSMART Equipment Access:** iSMART provides access to specialized validation equipment including Vicon/OptiTrack motion capture, Trigno EMG systems, Valve Index VR, and Indego Exoskeleton with FES for rehabilitation device trials.
 
@@ -375,24 +389,69 @@ Industry-sponsored research follows enhanced governance requirements:
 - **Suite 4:** eConsent data captured in EDC; CRAIDL Ethics Agent integration; participant matching uses Zone 1 identifiable data; researcher queries use Zone 3 de-identified OMOP data; Indigenous Data Steward approval required for Indigenous participant data access
 - **Wearables → Suite 4:** Continuous data streams to TRE Zone 3
 
+### 6.1 Integrated External Assessment Platforms
+
+CTAP's trial operations architecture integrates with external validated assessment platforms, maximizing research capacity without duplicating infrastructure:
+
+| External Platform | Lead | Capabilities | CTAP Integration |
+|------------------|------|--------------|------------------|
+| **Ameya** (separate CFI) | Dr. Puneeta Tandon | 3D motion capture, food image analysis, activity tracking, validated ePRO | Assessment endpoints for chronic disease trials |
+| **Connect1D Canada** | Dr. Peter Senior | T1D registry, CGM data streams, 6,000+ participants | TRE-hosted data platform (Section 12) |
+| **AI Scribe ("Jenkins")** | Dr. Ross Mitchell / Amii | Voice-first clinical documentation | Consent audit trails, structured data extraction |
+
+**Ameya Integration:** Dr. Tandon's Ameya platform (www.ameya.ca) provides specialized chronic disease assessment capabilities—validated 3D motion capture for physical function, AI-powered food image analysis for nutritional assessment, wearable integration for activity tracking, and condition-specific ePRO instruments. Ameya infrastructure is supported through a separate CFI application. CTAP flagship programs (Chronic Complications of Infection, Cardio-Renal-Metabolic) will leverage Ameya endpoints while CTAP provides the complementary trial operations layer: eConsent, decentralized recruitment, telehealth, and regulatory data management.
+
+This collaborative model exemplifies CFI's goal of coordinated infrastructure investment—distinct platforms supporting common research objectives without duplication.
+
 ---
 
 ## 7. Budget Summary
 
-**CFI RTA Budget: $1,056,000 CAD** (consolidated for RTA submission)
+**CFI RTA Budget: $784,000 CAD** (consolidated for RTA submission)
 
-| Category                         | Full Scope | RTA Request |
-| -------------------------------- | ---------- | ----------- |
-| eConsent platform                | $400,000   | $300,000    |
-| Mobile devices and kiosks        | $200,000   | $175,000    |
-| Wearable devices                 | $325,000   | $250,000    |
-| Telehealth infrastructure        | $175,000   | $150,000    |
-| Dashboards and apps              | $130,000   | $100,000    |
-| Digital Health Device Validation | $175,000   | $81,000     |
-| **Full Scope Total**             | $1,305,000 |             |
-| **RTA Request**                  |            | **$1,056,000** |
+| Category                         | Full Scope | RTA Request | Notes |
+| -------------------------------- | ---------- | ----------- | ----- |
+| eConsent Platform Integration (Professional Services) | $180,000   | $180,000    | Deliverable-based contract: TRE integration, Pediatric Assent, Indigenous Languages, CRAIDL/AI Scribe APIs |
+| Mobile devices and kiosks        | $200,000   | $100,000    | Tablets, kiosks for participant self-service |
+| Wearable devices                 | $151,000   | $51,000     | Sensors ($1K) + Sensor Dev Equipment ($50K) |
+| Telehealth infrastructure        | $175,000   | $100,000    | Remote Monitoring / Telehealth Kits |
+| Dashboards and apps              | $228,000   | $228,000    | Data Visualization & Dashboard Software (perpetual license) |
+| Digital Health Device Validation | $175,000   | $125,000    | APIs ($75K) + Validation Library ($25K) + Reference Pool ($25K) |
+| **Total**                        | **$1,109,000** | **$784,000** | |
 
-*Note: RTA budget prioritizes core decentralized trial infrastructure. Additional wearable device inventory and device validation capacity may be expanded through industry partnerships and per-study budgets. Core platform costs are included; consumable device costs for specific trials are budgeted per-study.*
+*Note: eConsent integrates with existing University of Alberta REDCap + DocuSign infrastructure rather than acquiring a new platform. RTA budget prioritizes core decentralized trial infrastructure. Additional wearable device inventory and device validation capacity may be expanded through industry partnerships and per-study budgets. Core platform costs are included; consumable device costs for specific trials are budgeted per-study.*
+
+### 7.1 O&M Cost and IOF Offset
+
+**Suite 5 O&M Requirements:**
+
+| Component | Amount |
+|-----------|--------|
+| Suite 5 Capital | $784,000 |
+| Annual O&M (8% + $54.4K software) | $117,120 |
+| 5-Year O&M Total | $585,600 |
+
+**IOF Contribution (Suite 5 share):**
+
+Suite 5 represents 9% of total CTAP capital ($784K / $8.314M), receiving proportional IOF:
+
+| Component | Amount |
+|-----------|--------|
+| Suite 5 IOF Share (9% of $2.49M) | ~$225,000 |
+| Net Institutional O&M (5-year) | ~$360,600 |
+| Net Annual Institutional Commitment | ~$72,100/yr |
+
+**Revenue Streams (Net O&M Coverage):**
+
+| Source | Projected Annual | 5-Year Total |
+|--------|-----------------|--------------|
+| IOF allocation | $45,000 | $225,000 |
+| Industry device validation fees | $30,000 | $150,000 |
+| Per-study eConsent licensing | $20,000 | $100,000 |
+| Decentralized trial services | $15,000 | $75,000 |
+| **Total Coverage** | **$110,000** | **$550,000** |
+
+*Suite 5's 8% O&M rate reflects software licensing for eConsent, ePRO, and remote monitoring platforms. Industry device validation partnerships provide sustainable revenue to offset platform maintenance costs.*
 
 ---
 
@@ -716,13 +775,13 @@ CTAP provides validation infrastructure for digital health innovations developed
 | **Dr. Giovanni Ferrara**           | Medicine - Pulmonary                     | Digital Health Unit Lead; wearable respiratory monitors  | Trial operations coordination |
 | **Dr. Vivian Mushahwar**           | iSMART Director                          | Smart-e-Pants, SOCC (pressure injury prevention)         | Pivotal trial infrastructure |
 | **Dr. Patrick Pilarski**           | BLINC Lab, Amii CIFAR Chair              | AI for assistive devices; prosthetic control             | Validation protocol design |
-| **Dr. Puneeta Tandon**             | Medicine - GI                            | Chronic disease management platforms*                    | Decentralized trial operations |
+| **Dr. Puneeta Tandon**             | Medicine - GI                            | Ameya digital health platform*                           | Trial endpoint integration |
 | **Dr. Peter Light**                | ADI Director                             | Microwave glucose sensor                                 | Device validation trials |
 | **Dr. Masoud Baghelani**           | ECE                                      | Microwave glucose sensor (engineering lead)              | Early feasibility trials |
 | **Dr. Manisha Gupta**              | ECE                                      | Diabetic wound and neuropathy sensors                    | Validation protocol design |
 | **Dr. Suzette Brémault-Phillips**  | Rehabilitation Medicine                  | 3MDR VR therapy for PTSD                                 | Multi-site trial coordination |
 
-*Dr. Tandon's Heal-Me and EMPOWER platforms are developed through separate funding. CTAP provides decentralized trial operations infrastructure for rural/remote deployment and clinical validation studies.
+*Dr. Tandon's Ameya platform (www.ameya.ca) is supported through a separate CFI application. CTAP flagship programs (particularly Chronic Complications of Infection and Cardio-Renal-Metabolic) will integrate Ameya's validated assessment endpoints (3D motion capture for physical function, food analysis for nutritional studies, ePRO instruments) with CTAP's trial operations infrastructure.
 
 ### Cross-Suite Integration
 
