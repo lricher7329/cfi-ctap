@@ -3,9 +3,31 @@
 
 ## Suite 4: Data Platform, Secure Environments, AI/HPC
 
-**Budget: $3,155,000**
+**Budget: $1,130,000**
 
-This suite builds the unified data architecture integrating clinical trial operations with the three-zone Trusted Research Environment, OMOP Common Data Model, and CRAIDL AI agent infrastructure. Building on the University of Alberta's AWS TRE Assessment, Suite 4 positions CTAP alongside international leaders (UK Biobank RAP, All of Us, FinnGen, Genomics England) while serving Canada's unique regulatory context. This is the digital backbone of CTAP.
+This suite builds the unified data architecture integrating clinical trial operations with the three-zone Trusted Research Environment, OMOP Common Data Model, and CRAIDL AI agent infrastructure. Building on the University of Alberta's AWS TRE Assessment and ~$1.35M in prior institutional investment, Suite 4 positions CTAP alongside international leaders (UK Biobank RAP, All of Us, FinnGen, Genomics England) while serving Canada's unique regulatory context. This is the digital backbone of CTAP.
+
+### Per-Trial Cloud Cost Framework
+
+Based on AWS guidance, CTAP models cloud costs on a per-trial basis rather than as aggregate platform costs—tying infrastructure spending directly to research activity and demonstrating scalability:
+
+| Trial Category | Examples | Cost Driver | Per-Trial Annual |
+|----------------|----------|-------------|------------------|
+| **Genomics** | PRAIRIE Hub vaccines, precision oncology | Compute-dominant (75%) | ~$24,000 |
+| **Imaging** | Radiomics biomarker studies, cardiac MRI | Balanced (60/40) | ~$20,000 |
+| **Standard Clinical** | Taurine Long COVID, diabetes, RareKids-CAN | Operational | ~$8,000 |
+
+For modern AI-enabled platforms, **compute costs materially exceed storage costs**—reflecting CRAIDL agent inference, real-time OMOP queries, radiomics feature extraction, and LLM workflows. Growth model: 5 active trials Year 1, scaling 50% year-over-year to 27 trials by Year 5.
+
+### Cloud as Equity Enabler
+
+Cloud-based infrastructure is essential for CTAP's equity commitments:
+
+* **Store-and-forward synchronization** enables trial participation from northern communities where reliable real-time connectivity does not exist
+* **Voice-first AI documentation** (AI Scribe) reduces connectivity burden further
+* **OCAP principles technically enforced** through IAM roles, with Zone 1 custodian-controlled by Indigenous governance bodies (First Nations Health Consortium)
+* **Canadian data sovereignty**: AWS Calgary region ensures data remains under Canadian law while Indigenous communities maintain data custody
+* **Geographic equity**: A researcher in Fort McMurray accesses the same infrastructure as one at the University of Alberta; a clinical site in Nunavut participates through the same platform as the Stollery CIU
 
 ### Learning Health System Architecture
 

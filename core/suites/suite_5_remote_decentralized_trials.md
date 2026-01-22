@@ -169,14 +169,20 @@ The eConsent platform and Participant Engagement Portal enforce OCAP principles 
 
 ### 3.2 Rural and Remote Access
 
+**Infrastructure Realism Philosophy:** Previous mobile health platform deployments in northern and remote settings failed not due to lack of interest, but because they assumed continuous connectivity, imposed workflows that increased frontline burden, and required hardware that communities did not have. Frontline teams reverted to paper. CTAP adopts a different design philosophy—infrastructure realism over feature richness.
+
 | Element                    | Approach                                                                        |
 | -------------------------- | ------------------------------------------------------------------------------- |
-| Telehealth kits            | Enable remote participation without travel to Edmonton                          |
+| **Store-and-forward sync** | TRE architecture captures data during connectivity windows, syncs when bandwidth available |
+| Telehealth kits            | Enable remote participation without travel to Edmonton; designed for reliability and durability |
 | Mobile connectivity        | Cellular data plans for devices in areas with limited infrastructure            |
 | Local partnerships         | Rural clinic collaboration (satellite sites in Peace Country, Northern Alberta) |
 | Travel support             | Covered where in-person visits required                                         |
+| **Voice-first AI Scribe**  | Reduces connectivity burden—clinicians speak rather than type; transcription during available bandwidth |
 | Decentralized trial design | AI Scribe enables trial documentation from any location                         |
 | Asynchronous communication | Participant portal allows engagement outside business hours                     |
+
+**Northern Health Security:** The Government of Canada is investing significantly in northern communications infrastructure, framed as national security. CTAP leverages these investments: store-and-forward works with intermittent connectivity; telehealth kits designed for operational reality enable trial participation from Nunavut, NWT, and northern Indigenous communities; voice-first AI documentation reduces transcription burden; OCAP-compliant governance ensures improved connectivity strengthens rather than threatens Indigenous data sovereignty.
 
 ### 3.3 Accessibility
 

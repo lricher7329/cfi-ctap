@@ -3,7 +3,7 @@
 
 ## Suite 2: Living Biorepository & Cell Manufacturing
 
-**Budget: $3,290,000**
+**Budget: $5,837,911**
 
 This suite establishes the **Living Biorepository**—a fundamental reconceptualization that transforms biospecimen management from static storage into an intelligent, continuously-updated discovery engine—while expanding ACTM and the future pluripotent stem cell core.
 

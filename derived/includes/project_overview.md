@@ -16,4 +16,4 @@ The platform operates through five tightly integrated infrastructure suites:
 4. **Data Platform, Secure Environments, AI/HPC** - Three-zone Trusted Research Environment (TRE) and CRAIDL AI agents for end-to-end trial automation
 5. **Trial Innovation Tools & Wearables** - Decentralized, patient-centric trial infrastructure with eConsent, wearables, and telehealth for equity
 
-**Total CFI Request: $11,591,000 CAD** (40% CFI + 60% matching)
+**Total CFI Request: $10,188,911 CAD** (40% CFI + 60% matching)

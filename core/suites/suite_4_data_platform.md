@@ -499,6 +499,115 @@ The SDRE partnership reduces CTAP's CFI infrastructure request while increasing 
 
 ---
 
+## 2B. AWS Per-Trial Cloud Cost Framework
+
+### 2B.1 Per-Trial Cost Philosophy
+
+Based on AWS guidance, CTAP models cloud infrastructure costs on a per-trial basis rather than as aggregate platform costs. This approach:
+
+- **Ties costs to research activity** rather than fixed infrastructure, enabling transparent cost recovery
+- **Demonstrates scalability** as trial volume increases
+- **Supports accountability** by linking infrastructure spending directly to research output
+- **Aligns with CFI's value-for-money expectations** through activity-based budgeting
+
+### 2B.2 Compute vs Storage Cost Balance
+
+For modern AI-enabled clinical research platforms, **compute costs materially exceed storage costs**. This reflects:
+
+- CRAIDL agent inference requiring sustained GPU/CPU resources
+- Real-time OMOP ETL and population-scale cohort queries
+- Radiomics feature extraction and deep learning inference
+- LLM-based workflows for protocol assistance and adverse event coding
+
+CTAP's cost structure intentionally emphasizes compute allocation over storage, reflecting contemporary AI-enabled trial operations rather than legacy data warehouse assumptions.
+
+### 2B.3 Trial Category Stratification
+
+CTAP's flagship programs span three distinct trial categories with different infrastructure profiles:
+
+| Trial Category | Example Programs | Compute Profile | Storage Profile | Primary Cost Driver |
+|----------------|------------------|-----------------|-----------------|---------------------|
+| **Genomics Trials** | PRAIRIE Hub vaccine trials, precision oncology | Burst GPU workloads for WGS pipelines, variant calling, AI interpretation | Moderate (compressed BAM/CRAM, VCF) | **Compute-dominant** |
+| **Imaging Trials** | Radiomics biomarker studies, cardiac MRI | Batch GPU for feature extraction, DL segmentation | High (DICOM, longitudinal series) | **Balanced** |
+| **Standard Clinical** | Taurine Long COVID, diabetes trials, RareKids-CAN | AI text processing, EDC operations, cohort queries | Low (structured clinical data, PROs) | **Operational** |
+
+### 2B.4 Growth Model and Scaling Assumptions
+
+| Year | Active Trials | Growth | Genomics | Imaging | Standard |
+|------|---------------|--------|----------|---------|----------|
+| 1 | 5 | Baseline | 1 | 1 | 3 |
+| 2 | 8 | +50% | 2 | 2 | 4 |
+| 3 | 12 | +50% | 3 | 3 | 6 |
+| 4 | 18 | +50% | 4 | 5 | 9 |
+| 5 | 27 | +50% | 6 | 7 | 14 |
+
+This 50% year-over-year growth reflects realistic programmatic scaling once CTAP infrastructure and workflows are established, aligned with the ramp-up of flagship programs (PRAIRIE Hub vaccines, RareKids-CAN, Connect1D expansion).
+
+### 2B.5 Per-Trial Cost Estimates
+
+| Trial Category | Compute (Annual) | Storage (Annual) | Total Per-Trial | Compute % |
+|----------------|------------------|------------------|-----------------|-----------|
+| **Genomics** | $18,000 | $6,000 | $24,000 | 75% |
+| **Imaging** | $12,000 | $8,000 | $20,000 | 60% |
+| **Standard** | $6,000 | $2,000 | $8,000 | 75% |
+
+*Notes: Estimates based on AWS reserved capacity pricing for Calgary region; actual costs will vary based on workload intensity and data volumes. Genomics estimates assume burst GPU for pipeline execution; imaging assumes periodic batch processing with cold storage tiering.*
+
+---
+
+## 2C. Cloud Infrastructure Rationale: Why AWS for Clinical Trials
+
+### 2C.1 Northern and Remote Community Reach
+
+Cloud-based infrastructure is essential for CTAP's commitment to 15% Indigenous and 20% rural/remote trial participation. The TRE's architecture directly enables this:
+
+**Store-and-Forward Data Synchronization:** Unlike traditional on-premise systems requiring persistent connectivity, CTAP's cloud architecture supports data capture during connectivity windows. Telehealth kits deployed to rural/Indigenous sites (Suite 5) synchronize when bandwidth is available, eliminating the requirement for reliable real-time connections that do not exist in many northern communities.
+
+**Voice-First AI Documentation:** AI Scribe's voice-first data capture reduces connectivity burden further—clinicians speak rather than type, with transcription and structuring occurring during available bandwidth.
+
+**Lessons from Northern Experience:** Previous REDCap deployments in similar settings failed because of connectivity constraints and workflows that increased burden. CTAP's cloud architecture learns from this: infrastructure realism over feature richness. The Hemophilus influenzae type A vaccine trial in Nunavut demonstrates that northern clinical research is feasible with appropriate technical approaches.
+
+### 2C.2 Indigenous Data Sovereignty and OCAP
+
+Cloud architecture strengthens rather than threatens Indigenous data sovereignty by enabling technical enforcement of OCAP principles:
+
+**Ownership:** TRE Zone 1 can be custodian-controlled by Indigenous governance bodies (First Nations Health Consortium), not merely AHS. Indigenous communities retain ownership of their data at the governance level.
+
+**Control:** IAM roles technically enforce that Indigenous-identified data requires explicit approval from Indigenous Data Stewards before researcher access. This is not merely policy—it is architecture.
+
+**Access:** Cloud enables data to remain under Indigenous control while being accessible for community-approved research. Researchers "come to the data" rather than data being extracted to academic centres.
+
+**Possession:** Data remains in Canadian jurisdiction (AWS Calgary) under Canadian law. Physical possession is distributed but legally possession is unambiguous.
+
+**Contrast with On-Premise:** Traditional on-premise academic infrastructure would require Indigenous data to physically move to University data centres—placing possession control in institutional hands. Cloud's virtual architecture enables Indigenous bodies to maintain data custody while enabling approved research.
+
+### 2C.3 Canadian Data Residency
+
+- **AWS Canada West (Calgary Region):** All CTAP clinical data remains within Canadian legal jurisdiction
+- **AHS-Controlled Encryption:** Encryption keys remain under Alberta custodian control
+- **Health Information Act Compliance:** Three-zone architecture meets HIA data minimization and proportionality requirements
+- **Health Canada Division 5:** Audit trail and data integrity requirements satisfied
+- **STRAC/NSGRP Compliance:** No data accessible from foreign infrastructure; AI models run in private VPC
+
+### 2C.4 Cloud Economics for Clinical Trials
+
+Clinical trial workloads are inherently **burst-intensive**:
+
+- Enrollment periods generate high data capture volume
+- Interim analyses require concentrated compute for OMOP queries and statistical processing
+- Regulatory submissions demand CDISC transformation capacity
+- Between milestones, infrastructure utilization drops significantly
+
+**On-Premise Alternative:** Would require provisioning for peak demand, resulting in 60-80% underutilization during normal operations. Capital cost would be higher; operational flexibility lower.
+
+**Hybrid Model:** CTAP's architecture pairs:
+- **SDRE** for sustained batch workloads (LLM training, OMOP bulk ETL, radiomics batch processing)
+- **AWS** for elastic operational needs (EDC, real-time safety monitoring, burst analytics)
+
+This hybrid model optimizes both cost and capability, avoiding duplication while ensuring appropriate infrastructure for each workload type.
+
+---
+
 ## 3. OMOP Common Data Model Strategy
 
 ### 3.1 Why OMOP

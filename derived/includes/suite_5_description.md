@@ -3,7 +3,7 @@
 
 ## Suite 5: Trial Innovation Tools & Wearables
 
-**Budget: $1,130,000**
+**Budget: $376,000**
 
 This suite enables decentralized, embedded, and pragmatic trials—especially for Precision Population Health and Indigenous streams—with modern eConsent, digital recruitment, telehealth, and wearable-based monitoring.
 
@@ -15,7 +15,7 @@ This suite enables decentralized, embedded, and pragmatic trials—especially fo
 
 * **Wearable Monitoring Devices** - 250 units including ECG patches, blood pressure monitors, and actigraphy devices for decentralized trial endpoints
 
-* **Remote Telehealth Kits** - 20 kits for rural and Indigenous sites enabling remote participation without travel to Edmonton; AI Scribe integration enables automatic documentation of telehealth trial visits with Alberta-only data residency
+* **Remote Telehealth Kits** - 20 kits for rural and Indigenous sites enabling remote participation without travel to Edmonton; AI Scribe integration enables automatic documentation of telehealth trial visits with Alberta-only data residency. Designed for infrastructure realism: store-and-forward data sync during connectivity windows, durable hardware, and voice-first documentation that reduces workload. Previous REDCap deployments in northern settings failed because of connectivity constraints and workflows that increased burden—CTAP prioritizes reliability over feature richness.
 
 * **Data Visualization Dashboards** - Trial oversight dashboards integrating with CRAIDL's Data Management Agent outputs for real-time monitoring
 

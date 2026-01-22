@@ -3,7 +3,7 @@
 
 ## Suite 3: Clinical Trials Omics Integration Hub
 
-**Budget: $1,700,000**
+**Budget: $555,000**
 
 Suite 3 provides the **trial-to-facility interface layer**—standardized protocols, quality systems, and data pipelines that connect clinical trial operations with the University of Alberta's world-class omics infrastructure. Rather than duplicating existing excellence, Suite 3 makes it accessible to clinical research.
 

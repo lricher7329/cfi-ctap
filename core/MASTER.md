@@ -796,6 +796,21 @@ CTAP's infrastructure specifically addresses systemic barriers affecting:
 - **2SLGBTQIA+ communities:** AI bias auditing ensures equitable representation
 - **Racialized communities:** Diverse training datasets and stratified performance testing
 
+#### Cloud as Equity Enabler
+
+CTAP's cloud architecture is not merely a technical choice—it is an equity strategy. Traditional on-premise academic infrastructure creates geographic hierarchies: researchers at major centres have direct access; those at smaller institutions, rural hospitals, and northern communities do not.
+
+Cloud-based TRE eliminates this hierarchy. A researcher in Fort McMurray accesses the same infrastructure as a researcher at the University of Alberta. A clinical site in Nunavut participates in trials through the same platform as the Stollery CIU. Indigenous communities maintain data sovereignty through OCAP-compliant governance arrangements that cloud architecture enables.
+
+**Northern Health Security:** The Government of Canada is investing significantly in northern communications infrastructure, framed as national security and defence of the North. CTAP leverages these investments:
+
+- Store-and-forward data synchronization works with intermittent connectivity—telehealth kits capture data during available bandwidth windows
+- Voice-first AI documentation (AI Scribe) reduces the transcription burden that connectivity-dependent systems impose
+- OCAP-compliant governance ensures improved connectivity strengthens rather than threatens Indigenous data sovereignty
+- Data remains in Canadian jurisdiction (AWS Calgary region) under Canadian law
+
+This is not theoretical equity—it is architectural equity, built into the infrastructure from day one.
+
 ### 5.2 Economic and Innovation Benefits
 
 #### Strengthening Canada's Biopharmaceutical Competitiveness

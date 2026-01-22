@@ -3,7 +3,7 @@
 
 ## Suite 1: High-Consequence Interventional Infrastructure
 
- **Budget: $3,004,000**
+**Budget: $2,290,000**
 
  This suite establishes the **specialized high-consequence environments** required for advanced interventional trials that cannot be safely conducted in standard clinical settings. It upgrades existing research units to support **Level 2+ containment** for vaccine challenge trials, **long-term gene therapy monitoring**, **complex cell therapy infusions**, and **autonomic function clinical trials**.
 
