@@ -502,16 +502,17 @@ CTAP operates through five tightly coupled domains, unified by an integrated dat
 | Domain                                        | Function                                                    | Suite   | CFI Request         |
 | --------------------------------------------- | ----------------------------------------------------------- | ------- | ------------------- |
 | **1. AI-Enabled Operations Hub**        | CRAIDL agents, trial operations, regulatory navigation      | Suite 4 | Included in Suite 4 |
-| **2. Living Biorepository**             | EMR-linked biospecimens, outcome annotation, renovation     | Suite 2 | $5,837,911          |
-| **3. Secure Research Data Environment** | Three-zone TRE, OMOP, Connect Care integration              | Suite 4 | $1,130,000          |
+| **2. Living Biorepository**             | EMR-linked biospecimens, outcome annotation                 | Suite 2 | $2,510,000          |
+| **3. Secure Research Data Environment** | Three-zone TRE, OMOP, Connect Care integration              | Suite 4 | $1,338,000          |
 | **4. Open Science Infrastructure**      | FAIR data, CDISC, regulatory compliance                     | Suite 4 | Included in Suite 4 |
 | **5. Integrated Molecular Phenotyping** | Cryo-EM, glycomics, metabolomics                            | Suite 3 | $555,000            |
 | **Clinical Trials Infrastructure**      | Procedure rooms, monitoring, challenge unit, autonomic labs | Suite 1 | $2,290,000          |
 | **Remote and Decentralized Trials**     | Digital health, wearables, decentralized trials             | Suite 5 | $376,000            |
+| **Renovation Contingency**              | 13% contingency for renovation estimates                    |         | $1,250,000          |
 
-**Total CFI Request: $10,188,911 CAD** (40% CFI + 60% matching)
+**Total CFI Request: $8,318,879 CAD** (40% CFI + 60% matching)
 
-*Note: Budget figures sourced from budget_items.csv (source of truth)*
+*Note: Budget figures sourced from Google Sheets RTA Budget (source of truth)*
 
 **SDRE Partnership:** Suite 4 leverages the University of Alberta's Sensitive Data Research Environment (SDRE), launching January 2026, for developmental data science and AI model development workloads. This reduces the CFI request by ~$850,000 while increasing capability through access to institutional HPC infrastructure. CTAP retains dedicated on-premise infrastructure for clinical trials-specific systems requiring 24/7 availability (OpenSpecimen, CRAIDL inference servers) and regulatory-compliant platforms (21 CFR Part 11 EDC). See Suite 4 Section 2A for detailed workload allocation.
 

@@ -1,6 +1,6 @@
 # Infrastructure Request Justification
 
-The total infrastructure request is $7,069,000 CAD, organized into five suites aligned with the platform's integrated domains.
+The total infrastructure request is $8,318,879 CAD (including 13% renovation contingency), organized into five suites aligned with the platform's integrated domains.
 
 ## Suite 1: Clinical Trials Participant & Procedure Infrastructure ($2,290,000)
 
@@ -24,14 +24,15 @@ This suite enhances an existing network of three clinical research units while e
 
 This suite establishes the Living Biorepository—transforming biospecimen management from static storage into an intelligent, continuously-updated discovery engine with real-time EMR linkage enabling automated outcome annotation.
 
-**Sample Processing & Storage ($1,450,000):**
-- Automated liquid handling system (Hamilton/Tecan, $650,000) for high-throughput sample aliquoting
-- 10 ULT freezers (-80°C Thermo Fisher TSX Series, $200,000)
-- 4 LN2 vapour-phase tanks (Chart MVE High Efficiency, $200,000)
+**Sample Processing & Storage ($2,175,000):**
+- Automated liquid handling system with Tecan upgrades, plate reader/washer ($447,396) for high-throughput sample aliquoting
+- 20 ULT freezers (-80°C Thermo Fisher TSX Series, $775,400) with CO2 backup, weigh scales ($4,904), tank mounts ($3,334), and freezer racks ($322,917)
+- 4 LN2 vapour-phase tanks (Chart MVE High Efficiency, $189,992)
 - 6 Class II biosafety cabinets ($90,000)
-- 4 refrigerated centrifuges (Beckman Coulter Avanti, $100,000)
-- Environmental monitoring system (Rees Scientific/Vaisala, $140,000)
-- Clinical-grade microscopes and counters ($70,000)
+- 4 refrigerated centrifuges and microcentrifuges (Beckman Coulter, $81,961)
+- Environmental monitoring system with incubators, water purifier, heat baths (Rees Scientific/Various, $216,000)
+- Clinical-grade microscopes and Countess 3 cell counter ($31,426)
+- Biobank IT equipment including computers, scanners, FTA DNA storage ($11,670)
 
 **BioBank LIMS Platform ($335,000):**
 - OpenSpecimen basic support license (5-year, 21 CFR Part 11 compliant, $60,000)
@@ -39,8 +40,6 @@ This suite establishes the Living Biorepository—transforming biospecimen manag
 - Connect Care FHIR integration ($45,000)
 - Dynamic consent module ($60,000)
 - Staff training ($35,000)
-
-**Capacity Expansion ($725,000):** Additional freezers, storage, and automation reallocated from Suite 4 SDRE consolidation.
 
 *Note: Cell therapy manufacturing capabilities are provided through existing ACTM infrastructure and are not included in this request.*
 
@@ -68,18 +67,15 @@ This suite provides the trial-to-facility interface layer connecting clinical tr
 
 This suite builds the unified data architecture connecting trial data to the TRE and CRAIDL agents. CTAP leverages ~$1.35M in prior institutional AWS investment (TRE architecture, AI Scribe credits, ProServe consulting) and UAlberta's substantial existing SDRE/Amii HPC infrastructure rather than duplicating it.
 
-**Clinical Trials Platform ($1,058,000):**
-- EDC/eSource platform (21 CFR Part 11 compliant, 3-year contract, $160,000)
-- Clinical trial data platform licenses ($120,000)
+**Clinical Trials Platform ($1,218,000):**
+- Clinical trials EDC/data platform (21 CFR Part 11 compliant, 3-year contract, $280,000)
 - AWS TRE infrastructure and reserved compute/storage ($458,000)
 - AWS Bedrock reserved AI capacity for health data compliance ($150,000)
 - AWS Pro-Serve TRE architecture consulting ($150,000)
 - Networking and security core with zero-trust architecture ($180,000)
 
-**SDRE & AHS Integration ($200,000):**
-- SDRE integration and access allocation ($100,000)
-- AHS Snowflake research instance integration ($75,000)
-- BioBank/OpenSpecimen-TRE integration ($75,000)
+**Data Integration Layer ($120,000):**
+- BioBank/OpenSpecimen-TRE-Connect Care integration with expanded scope including SDRE access allocation, AHS Snowflake research instance pipeline, and Epic FHIR connectivity ($120,000)
 
 **Per-Trial Cost Framework:** Based on AWS guidance, CTAP models cloud costs per-trial: genomics trials (~$24,000/year, compute-dominant), imaging trials (~$20,000/year, balanced), and standard clinical trials (~$8,000/year, operational). This activity-based model ties infrastructure spending directly to research output.
 

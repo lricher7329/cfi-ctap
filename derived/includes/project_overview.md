@@ -1,6 +1,6 @@
 <!-- Shared CTAP project overview - used by executive brief and RTA -->
 <!-- Source of truth: MASTER.md Section 1, Google Sheets cfi-ctap-data -->
-<!-- Last synced: 2026-01-06 -->
+<!-- Last synced: 2026-01-23 -->
 
 Advances in artificial intelligence, molecular biology, and biomanufacturing have dramatically expanded the pipeline of candidate vaccines, biologics, and cell therapies. Yet the fundamental constraint on patient benefit remains unchanged: **the speed, cost, and system-level integration of human clinical trials**. Although AI-enabled tools can reduce eligibility screening time by up to 78% and achieve over 90% sensitivity in patient identification, these capabilities are typically deployed in isolation, addressing discrete steps rather than the trial lifecycle as a whole. **This fragmentation—rather than limitations in AI performance—has become the dominant barrier to translating scientific advances into real-world patient impact.**
 
@@ -16,4 +16,4 @@ The platform operates through five tightly integrated infrastructure suites:
 4. **Data Platform, Secure Environments, AI/HPC** - Three-zone Trusted Research Environment (TRE) and CRAIDL AI agents for end-to-end trial automation
 5. **Trial Innovation Tools & Wearables** - Decentralized, patient-centric trial infrastructure with eConsent, wearables, and telehealth for equity
 
-**Total CFI Request: $10,188,911 CAD** (40% CFI + 60% matching)
+**Total CFI Request: $8,318,879 CAD** (40% CFI + 60% matching)

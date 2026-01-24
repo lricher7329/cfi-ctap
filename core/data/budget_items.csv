@@ -22,7 +22,7 @@ id,category,equipment_id,suite,description,amount,funding_source,year,status,om_
 24,equipment,24,4,GPU-Enabled Secure Compute Nodes - REMOVED (SDRE provides),0,CFI/institutional,0,removed,,Removed - SDRE provides GPU compute infrastructure; avoids duplication,suite_4_data_platform/aws_cloud_bedrock.md
 25,equipment,25,4,Secure Storage Nodes (On-Prem) - REMOVED (SDRE provides),0,CFI/institutional,0,removed,,Removed - SDRE provides secure storage infrastructure; avoids duplication,suite_4_data_platform/secure_storage_nodes.md
 26,equipment,26,4,Networking & Security Core,180000,CFI/institutional,0,estimated,,Capital,suite_4_data_platform/networking_security.md
-27,software,27,4,Clinical Trial Data Platform (3-Year Contract),120000,CFI/institutional,0,estimated,,Capital - phased from perpetual; $60K savings,suite_4_data_platform/clinical_data_platform.md
+27,software,27,4,Clinical Trials EDC/Data Platform (3-Year Contract - 21 CFR 11),280000,CFI/institutional,0,estimated,,Capital - consolidated EDC/eSource + data platform; 21 CFR Part 11 compliant with audit trails,suite_4_data_platform/edc_esource_platform.md
 28,equipment,28,4,On-Premises HPC Cluster - REMOVED (SDRE provides),0,CFI/institutional,0,removed,,Removed - SDRE provides HPC/GPU infrastructure; avoids duplication,suite_4_data_platform/aws_cloud_bedrock.md
 83,service,83,4,AWS TRE Infrastructure Setup & Reserved Capacity,458000,CFI/institutional,0,quoted,,Capital - TRE environment build-out (SOC2/HIPAA/PIPEDA compliant); based on AWS quote for trial volume ($608K total compute/storage),suite_4_data_platform/aws_tre_frontier_ai.md
 84,service,84,4,AWS Bedrock Reserved AI Capacity (Health Data Compliant),150000,CFI/institutional,0,estimated,,Capital - committed use agreement for PIPEDA/PHIA-compliant AI inference capacity (3-year reserved),suite_4_data_platform/aws_tre_frontier_ai.md
@@ -33,7 +33,7 @@ id,category,equipment_id,suite,description,amount,funding_source,year,status,om_
 33,equipment,33,5,Mobile Data Capture Kiosks/Tablets,100000,CFI/institutional,0,estimated,,Capital,
 34,software,34,5,Data Visualization & Dashboard Software - REMOVED (use existing institutional tools),0,CFI/institutional,0,removed,,Removed - leverage existing UAlberta/AHS visualization tools (Power BI, Tableau institutional licenses),
 35,software,35,4,Identity Management - DEFERRED (use AWS IAM Year 1),0,CFI/institutional,0,deferred,,Deferred to Year 2; AWS IAM provides initial capability,suite_4_data_platform/identity_management.md
-36,software,36,4,EDC/eSource Platform (3-Year Contract - 21 CFR 11),160000,CFI/institutional,0,estimated,,Capital - phased from perpetual; $80K savings,suite_4_data_platform/edc_esource_platform.md
+36,software,36,4,EDC/eSource Platform - REMOVED (consolidated into item 27),0,CFI/institutional,0,removed,,Removed - consolidated with Clinical Trial Data Platform into single EDC/Data Platform item,suite_4_data_platform/edc_esource_platform.md
 37,service,37,4,OMOP ETL & OHDSI Tooling - REMOVED (VITAL/GEMINI provides),0,CFI/institutional,0,removed,,Removed - leverages VITAL federated infrastructure and provincial Snowflake research instance; OMOP mapping already established,suite_4_data_platform/omop_ohdsi_tooling.md
 38,renovation,38,1,CHIM Unit Renovation & Containment Fit-Out,800000,CFI/institutional,0,estimated,,Capital - negative pressure HVAC; 4 isolation rooms with en-suite; airlock entries; Canada's first academic CHIM,
 39,renovation,39,1,HEPA Filtration System Upgrade,80000,CFI/institutional,0,estimated,,Capital,
