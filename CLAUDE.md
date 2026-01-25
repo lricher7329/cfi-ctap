@@ -47,6 +47,7 @@ Edit these files when developing content:
 | Sustainability | `1nu4g1UwBguojD_Behz4K41GE-9riSIdMtm8r_RPVv3w` | `derived/rta/sustainability.md` |
 | Research Team | `1s2Utsa0F0crQWM3MPE59TyOFkIS7x3CDOSQ79mQ3pNw` | `derived/rta/research-team.md` |
 | Equipment Data | `1ITVovyok7si8dIRz07Vi9J3R0IoWjP6-3ueqgA5Xnko` | `derived/rta/equipment-data.md` |
+| Space Map | `1ITVovyok7si8dIRz07Vi9J3R0IoWjP6-3ueqgA5Xnko` (Sheet: "Space Map") | `derived/rta/space-map.md` |
 | Budget | `1IQwHSe_SD0P3FtgoygfZW_4MEctD8MkUQed_kHu7Pbg` | `derived/rta/budget.md` |
 
 ### 4. Derived RTA Documents
@@ -62,16 +63,47 @@ Markdown mirrors of Google Docs for easy editing and version control:
 | `derived/rta/sustainability.md` | Sustainability mirror |
 | `derived/rta/research-team.md` | Research team mirror |
 | `derived/rta/equipment-data.md` | Equipment data mirror |
+| `derived/rta/space-map.md` | Physical space assignments mirror |
 | `derived/rta/budget.md` | Budget summary mirror |
 | `derived/rta/exports/` | DOCX, XLSX exports |
 
-### 5. Archive (Superseded Documents)
+### 5. Reference Materials
+
+| Folder | Contents |
+|--------|----------|
+| `reference/quotes/` | Vendor quotes organized by suite (linked via `quote_reference` in budget_items.csv) |
+| `reference/spaces/` | Floor plans, renovation sketches, space layouts |
+| `reference/technical/` | Detailed technical specifications (ICTU, TRE, vaccine challenge, rare disease) |
+| `reference/competition_instructions/` | CFI IF2027 RTA instructions, budget template, evaluation criteria |
+| `reference/background/` | Background research, previous applications, competitive analysis |
+| `reference/team/` | Team member CVs and documents |
+
+### 6. Working (Active Development)
+
+| Folder | Contents |
+|--------|----------|
+| `working/actions/` | Task tracking (actions.json) |
+| `working/ideas/` | Idea capture and research notes |
+
+### 7. Archive (Superseded Documents)
 
 | Folder | Contents |
 |--------|----------|
 | `archive/rta-versions/` | Old RTA versions (v2-v6) |
 | `archive/briefs/` | Old stakeholder briefs |
 | `archive/includes/` | Old include fragments |
+| `archive/working/` | RTA-era collaboration docs and tracker |
+
+### 8. Assets (Figures and Visualizations)
+
+| Folder | Contents |
+|--------|----------|
+| `assets/figures/` | CTAP diagrams, AI-generated visuals, visualization prompts |
+
+Key files:
+- `ctap-overall-preferred.png` - Main CTAP architecture diagram
+- `visualization_prompts.md` - AI image generation prompts for key concepts
+- `ctap-overall-prompt.md` - Detailed prompt for overall diagram
 
 ---
 
