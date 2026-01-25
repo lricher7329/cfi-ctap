@@ -2,7 +2,7 @@
 
 ## Comprehensive Technical Specification
 
-**Budget: $2,805,000 CAD**
+**Budget: $3,455,000 CAD** (includes $650,000 CRAIDL AI Agent Software Development Contract funded via non-airborne CHIM reallocation)
 
 **Version:** 2.0
 **Date:** January 2026
@@ -26,12 +26,13 @@ The result is a unified data platform where trial data flows seamlessly from enr
 
 CTAP's TRE infrastructure builds on substantial prior institutional investment, demonstrating proven technology and reducing implementation risk:
 
-| Investment | Amount | Status | Purpose |
-|------------|--------|--------|---------|
-| TRE Architecture & Setup | ~$350,000 | Deployed | Three-zone architecture, security controls, AHS integration |
-| AWS Credits (Amii/UofA) | $500,000+ | Active | AI Scribe development, TRE compute, pilot operations |
-| AWS ProServe (In-Kind) | ~$500,000 | Complete | Expert architecture consulting, security design |
-| **Total Prior Investment** | **~$1,350,000** | | |
+| Investment | Amount | Type | Status | Purpose |
+|------------|--------|------|--------|---------|
+| TRE Architecture & Setup | $350,000 | Direct | Deployed | Three-zone architecture, security controls, AHS integration |
+| AWS Credits (UofA/Amii) | $500,000 | In-kind | Active | AI Scribe development, TRE compute, pilot operations |
+| AWS Credits (CTAP) | $500,000+ | In-kind | In discussion | CTAP infrastructure expansion, production deployment |
+| **Total Secured** | **$850,000** | | | |
+| **Total (incl. in discussion)** | **$1,350,000+** | | | |
 
 This foundation demonstrates:
 
@@ -40,7 +41,7 @@ This foundation demonstrates:
 3. **CFI as scale investment** - Request extends proven infrastructure to clinical trials, not funding experiments
 4. **Reduced risk** - TRE concepts operational; CFI funds production-grade expansion
 
-**Leverage Ratio:** CFI's $550K AWS infrastructure request builds on ~$1,350K prior investment (2.4:1 leverage).
+**Leverage Ratio:** CFI's $550K AWS infrastructure request builds on $850K secured investment ($350K direct + $500K in-kind credits) with $500K+ additional credits in discussion (1.5:1 secured leverage, 2.5:1 including credits in discussion).
 
 ---
 
@@ -1119,9 +1120,9 @@ AI Scribe's architecture aligns with CTAP's three-zone TRE model and NIST CSF 2.
 - **Open-Source Platform**: Being released for commercial and research use, enabling CTAP customization
 - **Health Canada GCP Compatible**: Audit trails, version control, and electronic signature integration meeting ICH E6(R3) and CAN/CGSB-72.34-2017 requirements; 21 CFR Part 11 modules available for FDA-bound trials
 
-### 4A.4 Amii Partnership and PHAIR Lab Value
+### 4A.4 Amii Collaboration and PHAIR Lab Value
 
-The AI Scribe integration exemplifies CTAP's partnership with Amii and the **Applied AI Innovation in Healthcare** flagship:
+The AI Scribe integration exemplifies CTAP's collaboration with Amii and the **Applied AI Innovation in Healthcare** flagship:
 
 | Contribution                       | Description                                                                                  |
 | ---------------------------------- | -------------------------------------------------------------------------------------------- |
@@ -1134,6 +1135,79 @@ The AI Scribe integration exemplifies CTAP's partnership with Amii and the **App
 | **CIFAR AI Chair Network**         | Collaboration with Abdalla (de-identification), Atanackovic (generative AI), Simpson (radiomics) |
 
 **CFI Investment → Research Innovation:** This partnership transforms AI Scribe from an emergency department efficiency tool into a clinical trials data capture innovation—extending Amii's health AI expertise into the regulatory-compliant trial environment. The CFI investment directly enables research that cannot occur without it: validating AI Scribe in trial settings, developing CRAIDL agents with clinical trial data, and generating implementation science publications that advance the field nationally.
+
+---
+
+## 4B. CRAIDL AI Agent Software Development Contract
+
+### 4B.1 Strategic Reallocation
+
+Suite 4 includes $650,000 for contracted CRAIDL AI agent software development through the Alberta Machine Intelligence Institute (Amii), enabled through strategic reallocation from Suite 1a. By focusing the Vaccine Challenge Trial Unit on non-airborne pathogens (hepatitis C, enteric infections), CTAP reduced containment infrastructure requirements, freeing capital for AI software assets that accelerate the entire platform.
+
+**Reallocation Rationale:**
+
+| Factor | Airborne CHIM Design | Non-Airborne CHIM Design | Impact |
+|--------|---------------------|-------------------------|--------|
+| Containment | Negative pressure, HEPA exhaust, airlocks | Standard clinical ventilation | -$550,000 infrastructure |
+| Pathogen focus | Broad (respiratory, enteric, blood-borne) | HCV (Houghton), enteric pathogens | Aligned with Alberta strengths |
+| Regulatory pathway | Complex (BSL-2+ airborne) | Standard (BSL-2) | Faster approval |
+| Savings realized | — | — | **$650,000 → CRAIDL Software Contract** |
+
+This reallocation demonstrates strategic resource optimization: rather than building airborne containment that duplicates other Canadian facilities, CTAP invests in AI software infrastructure that is unique nationally.
+
+### 4B.2 Contract Structure
+
+The CRAIDL Software Development Contract with Amii delivers production-ready clinical trial AI agent software with perpetual institutional licenses:
+
+| Deliverable | Description | Contract Value |
+|-------------|-------------|----------------|
+| **Protocol Agent Software** | Production-ready software for hypothesis-to-protocol conversion; perpetual license | $100,000 |
+| **Data Management Agent Software** | CDISC-compliant data dictionary generation and validation software; perpetual license | $80,000 |
+| **Ethics/Regulatory Agent Software** | Automated compliance checking and submission preparation software; perpetual license | $100,000 |
+| **Statistical Analysis Agent Software** | Power calculation and adaptive design software; perpetual license | $80,000 |
+| **Events/Safety Monitoring Agent Software** | Real-time adverse event detection software; perpetual license | $80,000 |
+| **Budget & Contracts Agent Software** | Fair market value estimation software; perpetual license | $60,000 |
+| **In Silico Assessment Agent Software** | Digital twin and synthetic control generation software; perpetual license | $100,000 |
+| **Imaging/Radiomics Agent Software** | Quantitative imaging analysis software; perpetual license | $50,000 |
+
+**Software Development Milestone Schedule:**
+
+| Year | Contract Payment | Software Deliverables (with acceptance criteria) |
+|------|-----------------|--------------------------------------------------|
+| Year 1 | $150,000 | Protocol Agent v1.0 (production); Data Management Agent v0.9 (beta); source code delivery |
+| Year 2 | $150,000 | Ethics Agent v1.0; Regulatory Agent v1.0; integration testing complete |
+| Year 3 | $150,000 | In Silico Assessment Agent v1.0; synthetic control validation against historical trials |
+| Year 4 | $100,000 | Full 8-agent suite v1.0; ACT-AEC deployment packaging; documentation |
+| Year 5 | $100,000 | Performance optimization; national deployment support; maintenance handoff |
+| **Total** | **$650,000** | **8 production AI agents with perpetual licenses** |
+
+### 4B.3 Amii Letter of Support
+
+Amii has provided formal commitment to this software development contract via letter from CEO Cam Linke (January 2026), confirming:
+
+1. **CRAIDL Software Deliverables** — Contracted development of 8 clinical trial AI agents with defined acceptance criteria
+2. **Perpetual Licensing** — All delivered software licensed to University of Alberta in perpetuity
+3. **SDRE Compute Access** — GPU resources for development, testing, and production deployment
+4. **Source Code Delivery** — Full source code and documentation transferred upon milestone completion
+
+**Capital Asset Classification:** The $650,000 investment yields perpetual software licenses—a capital asset—not ongoing personnel or service costs. The software becomes institutional infrastructure, deployable indefinitely without recurring licensing fees.
+
+### 4B.4 CRAIDL Development Acceleration
+
+The contracted Amii software development accelerates CRAIDL delivery across all eight agents:
+
+| Agent | Without Partnership | With Partnership | Acceleration |
+|-------|--------------------|--------------------|--------------|
+| Protocol Agent | Month 18 | Month 12 | 6 months |
+| Data Management Agent | Month 24 | Month 15 | 9 months |
+| Ethics Agent | Month 24 | Month 18 | 6 months |
+| Regulatory Agent | Month 30 | Month 21 | 9 months |
+| In Silico Assessment Agent | Month 36 | Month 27 | 9 months |
+| Events Agent | Month 36 | Month 30 | 6 months |
+| Budget & Contracts Agent | Month 42 | Month 33 | 9 months |
+| Imaging/Radiomics Agent | Month 42 | Month 36 | 6 months |
+
+**Impact:** Full CRAIDL software deployment shifts from Month 42 to Month 36, enabling earlier research output and faster path to sustainability through trial service revenue. The contracted approach delivers defined software assets rather than ongoing personnel costs.
 
 ---
 
@@ -1638,7 +1712,7 @@ Suite 4 represents 32% of total CTAP capital ($2.635M / $8.314M), receiving prop
 
 ### 9.1 Budget Breakdown
 
-*Note: This budget reflects SDRE integration optimization and Tier 1 cost reductions. Software licensing converted from perpetual to phased contracts. AWS infrastructure builds on ~$1,350K prior institutional investment (see Institutional Investment Foundation above).*
+*Note: This budget reflects SDRE integration optimization and Tier 1 cost reductions. Software licensing converted from perpetual to phased contracts. AWS infrastructure builds on $850K secured investment plus $500K+ in discussion (see Institutional Investment Foundation above).*
 
 | Item                                            | Original     | Revised      | Notes                                                                     |
 | ----------------------------------------------- | ------------ | ------------ | ------------------------------------------------------------------------- |
@@ -1659,7 +1733,8 @@ Suite 4 represents 32% of total CTAP capital ($2.635M / $8.314M), receiving prop
 | **AI Scribe-EDC Integration**             | $75,000      | $75,000      | Voice-to-structured clinical trial data pipeline (Mitchell lab)           |
 | **CRAIDL LLM Development Environment**    | $50,000      | $50,000      | SDRE GPU allocation for model versioning, evaluation                      |
 | **AHS Snowflake Integration**             | $75,000      | $75,000      | Secure pipeline for Zone 1 bulk extracts from Connect Care                |
-| **Total**                                 | $2,805,000   | **$2,335,000** | **$470,000 savings (Tier 1)**                                           |
+| **CRAIDL AI Agent Software Contract**     | $650,000     | $650,000     | Contracted software development for 8 CRAIDL agents with perpetual licenses; funded via non-airborne CHIM reallocation (see Section 4B) |
+| **Total**                                 | $3,455,000   | **$2,985,000** | **$470,000 savings (Tier 1)**                                           |
 
 **Tier 1 Software Licensing Reduction Summary:**
 
@@ -1704,13 +1779,15 @@ Multi-year software contracts are explicitly CFI-eligible as capital expenditure
 | Role                                    | Responsibility                            | FTE     | Funding       |
 | --------------------------------------- | ----------------------------------------- | ------- | ------------- |
 | **CTAP Data Architect**           | Platform design, integration              | 1.0     | Institutional |
-| **CRAIDL Development Lead**       | AI agent development                      | 1.0     | CFI/Grants    |
+| **CRAIDL Development Lead**       | AI agent integration, acceptance testing  | 1.0     | CFI/Grants    |
 | **Data Engineer (OMOP)**          | ETL, data quality                         | 1.0     | CFI           |
 | **Data Engineer (CDISC)**         | Regulatory transforms                     | 0.5     | Cost recovery |
 | **Security & Compliance Officer** | Audit, validation                         | 0.5     | Institutional |
 | **Amii CIFAR AI Chairs**          | Research direction, AI Scribe integration | In-kind | Amii          |
 | **Dr. Ross Mitchell**             | AI Scribe clinical documentation lead     | In-kind | Amii/Medicine |
 | **AHS Informatics Liaison**       | Connect Care integration                  | In-kind | AHS           |
+
+**Note:** CRAIDL AI agent software is developed under contract with Amii (see Section 4B). The contracted deliverables include production-ready software with perpetual licenses; Amii's internal staffing of the contract is their operational decision, not a CFI personnel allocation.
 
 ---
 
@@ -1760,7 +1837,7 @@ Multi-year software contracts are explicitly CFI-eligible as capital expenditure
 | AHS data agreement delays      | Medium     | High   | Early engagement, platform-level agreement  |
 | CRAIDL performance variability | Medium     | Medium | Iterative development, human-in-loop        |
 | Regulatory changes             | Low        | Medium | Modular architecture, compliance monitoring |
-| Talent recruitment             | Medium     | Medium | Amii partnership, training programs         |
+| Talent recruitment             | Medium     | Medium | Training programs, competitive salaries     |
 | Cost overruns                  | Medium     | Medium | Phased implementation, cost tracking        |
 
 ---

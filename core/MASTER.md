@@ -235,11 +235,11 @@ Over $400M in cumulative investment creates an unmatched bench-to-trials ecosyst
 | **ACTM**                                 | GMP cell therapy manufacturing                         | CFI                                                      |
 | **DDIC**                                 | Phase I dosage forms, cGMP cleanrooms                  | Health Canada licensed                                   |
 | **CBSR**                                 | Automated biobanking, EMR-linked samples               | CFI                                                      |
-| **TRE & AI Infrastructure**              | Secure compute, AI Scribe (10 Alberta EDs), TRE pilot  | ~$1.35M (UofA/Amii + AWS in-kind)                        |
+| **TRE & AI Infrastructure**              | Secure compute, AI Scribe (10 Alberta EDs), TRE pilot  | $850K secured ($350K direct + $500K AWS in-kind) + $500K+ in discussion |
 
 **The Gap:** These world-class discovery assets currently lack a unified downstream pathway to human validation. CTAP provides that pathway.
 
-**Digital Infrastructure Foundation:** The University of Alberta and Amii have invested ~$1.35M in Trusted Research Environment (TRE) and AI infrastructure: ~$350K in TRE architecture, $500K+ in AWS credits supporting AI Scribe deployment across 10 Alberta emergency departments, and ~$500K in-kind AWS ProServe consulting. This proven foundation reduces CFI risk—the CFI request extends operational infrastructure to clinical trials, not unproven experiments.
+**Digital Infrastructure Foundation:** The University of Alberta, Amii, and AWS have invested $850K in Trusted Research Environment (TRE) and AI infrastructure: $350K direct institutional investment in TRE architecture, $500K in-kind AWS credits supporting AI Scribe deployment across 10 Alberta emergency departments. An additional $500K+ in AWS credits for CTAP expansion is in discussion. This proven foundation reduces CFI risk—the CFI request extends operational infrastructure to clinical trials, not unproven experiments.
 
 #### Expanding Biomanufacturing Capacity
 
@@ -477,10 +477,10 @@ By 2031, CTAP will:
 
    - *Target: 8 agents deployed*
    - *Target: adopted by 5+ institutions*
-6. **Establish pandemic preparedness clinical validation capacity** through the Challenge Trial Unit, supporting PRAIRIE Hub vaccine programs (saRNA platform, Comparative Vaccine Platform) with human challenge studies that provide efficacy signals in months rather than years.
+6. **Establish vaccine challenge trial capacity** through the Challenge Trial Unit, supporting PRAIRIE Hub vaccine programs with human challenge studies for non-airborne pathogens (HCV, enteric infections). This strategic focus—aligned with Houghton's Nobel Prize-winning HCV research—provides efficacy signals in months rather than years for blood-borne and enteric vaccine candidates.
 
-   - *Target: 3+ controlled human infection model protocols validated*
-   - *Target: surge capacity for outbreak response*
+   - *Target: 3+ controlled human infection model protocols validated (HCV, enteric pathogens)*
+   - *Target: first HCV challenge study supporting Houghton vaccine program*
 7. **Create a nationally interoperable clinical trials backbone**, serving as a Western anchor for ACT-AEC, PRAIRIE Hub, and RareKids-CAN, with 10+ institutional partners. CTAP will function as the clinical validation engine connecting PRAIRIE Hub discoveries to API manufacturing to population-scale production.
 8. **Train 150+ highly qualified personnel** in AI-enabled trial design and operations, including clinician-scientists and data scientists, with 20% from Indigenous communities and underrepresented groups. Shared GMP training rotations with API will create dual-competent personnel bridging clinical and manufacturing domains.
 
@@ -506,15 +506,20 @@ CTAP operates through five tightly coupled domains, unified by an integrated dat
 | **3. Secure Research Data Environment** | Three-zone TRE, OMOP, Connect Care integration              | Suite 4 | $1,338,000          |
 | **4. Open Science Infrastructure**      | FAIR data, CDISC, regulatory compliance                     | Suite 4 | Included in Suite 4 |
 | **5. Integrated Molecular Phenotyping** | Cryo-EM, glycomics, metabolomics                            | Suite 3 | $555,000            |
-| **Clinical Trials Infrastructure**      | Procedure rooms, monitoring, challenge unit, autonomic labs | Suite 1 | $2,290,000          |
+| **Clinical Trials Infrastructure**      | Non-airborne CHIM, rare disease unit, autonomic labs        | Suite 1 | $1,640,000          |
+| **CRAIDL AI Agent Software Contract**   | Contracted AI software development (Amii)                   | Suite 4 | $650,000            |
 | **Remote and Decentralized Trials**     | Digital health, wearables, decentralized trials             | Suite 5 | $376,000            |
 | **Renovation Contingency**              | 13% contingency for renovation estimates                    |         | $1,250,000          |
 
 **Total CFI Request: $8,318,879 CAD** (40% CFI + 60% matching)
 
+*Note: Suite 1 reduced by $650,000 through non-airborne CHIM design (blood-borne/enteric focus); savings reallocated to CRAIDL AI Agent Software Development Contract.*
+
 *Note: Budget figures sourced from Google Sheets RTA Budget (source of truth)*
 
 **SDRE Partnership:** Suite 4 leverages the University of Alberta's Sensitive Data Research Environment (SDRE), launching January 2026, for developmental data science and AI model development workloads. This reduces the CFI request by ~$850,000 while increasing capability through access to institutional HPC infrastructure. CTAP retains dedicated on-premise infrastructure for clinical trials-specific systems requiring 24/7 availability (OpenSpecimen, CRAIDL inference servers) and regulatory-compliant platforms (21 CFR Part 11 EDC). See Suite 4 Section 2A for detailed workload allocation.
+
+**CRAIDL AI Agent Software Contract:** CTAP includes $650,000 for contracted development of CRAIDL AI agent software through Amii—enabled through strategic reallocation from Suite 1's Challenge Trial Unit (non-airborne design reduces infrastructure requirements). This contract delivers 8 production-ready clinical trial AI agents with perpetual institutional licenses, accelerating deployment by 6-9 months per agent. Amii CEO Cam Linke has provided formal commitment via letter of support (January 2026), confirming software deliverables, source code delivery, perpetual licensing, and SDRE compute access for development and testing. The $650,000 investment yields capital software assets—not ongoing personnel costs—creating Canada's first dedicated clinical trials AI infrastructure. See Suite 4 Section 4B for detailed contract structure and deliverables.
 
 ### 4.2 Domain Descriptions (Full)
 
@@ -655,7 +660,7 @@ Long COVID and diabetic neuropathy frequently manifest as autonomic dysfunction,
 
 #### Hepatitis C and Vaccine Trials
 
-Led by Dr. Michael Houghton (Nobel laureate 2020 for Hepatitis C virus discovery), this program leverages Canada's first academic **Vaccine Challenge Trial Unit**—a controlled human infection model (CHIM) facility enabling accelerated vaccine efficacy evaluation with dramatically smaller participant numbers and compressed timelines.
+Led by Dr. Michael Houghton (Nobel laureate 2020 for Hepatitis C virus discovery), this program leverages Canada's first academic **Vaccine Challenge Trial Unit**—a controlled human infection model (CHIM) facility focused on non-airborne pathogens (blood-borne and enteric). This strategic focus enables accelerated vaccine efficacy evaluation for HCV and enteric infections with dramatically smaller participant numbers and compressed timelines, while avoiding duplication of airborne pathogen facilities available elsewhere in Canada.
 
 **Infrastructure:**
 
@@ -855,7 +860,7 @@ CTAP will generate significant IP with national commercialization potential:
 Canada loses clinical research talent to US and European institutions with better infrastructure. CTAP creates compelling reasons for Canadian researchers to stay and international researchers to come:
 
 **Talent Attraction:**
-- World-class AI infrastructure through Amii partnership (Canada's largest AI institute)
+- World-class AI infrastructure through Amii collaboration (Canada's largest AI institute)
 - Connect Care access unavailable elsewhere
 - Integration with PRAIRIE Hub ($57M pandemic preparedness) and other national networks
 - Competitive salaries enabled by diversified revenue streams
@@ -880,7 +885,7 @@ CTAP positions Alberta as Canada's only end-to-end advanced therapeutics corrido
 
 **National Significance:** No other Canadian jurisdiction offers this integration. Cell therapies, gene therapies, and advanced biologics developed anywhere in Canada can access Alberta's manufacturing-to-trials infrastructure.
 
-**Pandemic Preparedness:** Challenge trial unit capability enables rapid vaccine validation—a critical national security asset demonstrated by COVID-19.
+**Vaccine Challenge Capability:** The Challenge Trial Unit's focus on non-airborne pathogens (HCV, enteric infections) enables rapid vaccine efficacy evaluation—advancing Houghton's Nobel Prize-winning HCV vaccine program while creating challenge study expertise applicable to future blood-borne and enteric pathogen threats.
 
 ### 5.3 Knowledge Mobilization and National Leadership
 
@@ -896,9 +901,9 @@ CTAP serves as the Western Canadian anchor for multiple national research networ
 
 **PRAIRIE Hub ($57M CBRF):**
 - Comparative Vaccine Platform Program integration
-- Challenge trial validation capabilities
-- Pandemic preparedness coordination
-- Virology-to-trials pathway
+- Challenge trial validation capabilities (non-airborne pathogens)
+- HCV vaccine development pathway (Houghton program)
+- Virology-to-trials coordination
 
 **RareKids-CAN:**
 - Stollery Children's Hospital as Western anchor
@@ -1091,6 +1096,28 @@ The University of Alberta and College of Health Sciences have committed to:
 - Allocating and maintaining physical space in the Kipnes Health Research Academy and associated clinical facilities for CTAP operations
 - Providing base support for key personnel (Program Director, Operations Manager, Data Architect)
 - Integrating CTAP into institutional strategic plans and core-facility frameworks
+
+#### Infrastructure Utilization Efficiency
+
+CTAP's sustainability is strengthened by deliberate infrastructure synergies across clinical trial units—particularly for biologics and cell-based therapies:
+
+**Shared Biologics Infrastructure:** The Pediatric Rare Disease Unit and Vaccine Challenge Unit share substantial infrastructure requirements for advanced therapies. Next-generation vaccines increasingly employ mRNA platforms, viral vectors, and cell-based immunotherapies—the same modalities used in gene and cell therapies for rare diseases. Rather than building separate capabilities, CTAP invests once in:
+
+- **Cold chain logistics** (-80°C/-150°C storage, validated transport) serving vaccine and gene therapy programs
+- **Infusion monitoring** (cardiac monitoring, anaphylaxis response) supporting both immunotherapy and cell therapy administration
+- **ACTM supply chain** connecting GMP cell manufacturing to clinical trials across disease areas
+- **Cytokine surveillance** (POC panels, trained staff) for vaccine reactogenicity and CAR-T safety monitoring
+
+**Utilization Benefits:**
+
+| Efficiency Mechanism | Impact |
+|---------------------|--------|
+| Equipment pooling | Specialized monitoring deployed across units based on trial schedules |
+| Staff cross-training | Biologics-certified nurses support vaccine and rare disease programs |
+| Fixed cost distribution | Cold chain and IP pharmacy investments serve larger trial portfolio |
+| Scheduling flexibility | Challenge Unit (adult) and Rare Disease Unit (pediatric) operate on complementary schedules |
+
+This convergence means higher equipment utilization rates, reduced per-trial infrastructure costs, and a workforce capable of supporting the full spectrum of advanced therapy trials—from vaccine challenge studies to pediatric gene therapy.
 
 ---
 
@@ -1292,7 +1319,7 @@ The efficacy of the proposed data architecture is validated by the **GEMINI (Gen
 | Risk                                | Likelihood | Impact | Mitigation                                               |
 | ----------------------------------- | ---------- | ------ | -------------------------------------------------------- |
 | Infrastructure procurement delays   | Medium     | High   | Phased implementation, early engagement with procurement |
-| Workforce recruitment/retention     | Medium     | High   | Competitive salary, Amii partnership, training programs  |
+| Workforce recruitment/retention     | Medium     | High   | Competitive salary, training programs  |
 | Connect Care integration complexity | Medium     | Medium | Dedicated integration team, early proof-of-concept       |
 
 #### Technical Risks
@@ -1301,7 +1328,7 @@ The efficacy of the proposed data architecture is validated by the **GEMINI (Gen
 | ------------------------------ | ---------- | ------ | ---------------------------------------------------------------------------------------------------------------------- |
 | Heterogeneous data integration | Medium     | Medium | OMOP CDM adoption, dedicated engineering resources                                                                     |
 | CRAIDL performance variability | Medium     | Medium | Context-specific validation, human-in-the-loop                                                                         |
-| Novel agentic AI design        | Medium     | Medium | **Prototype validates core methodology**; CVC templates as ground truth; Amii partnership for enterprise scaling |
+| Novel agentic AI design        | Medium     | Medium | **Prototype validates core methodology**; CVC templates as ground truth; Amii software contract for enterprise development |
 
 #### Strategic Risks
 

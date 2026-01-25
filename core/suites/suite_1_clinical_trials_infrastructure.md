@@ -2,7 +2,7 @@
 
 ## Concise Technical Specification
 
-**Budget: $3,004,000 CAD** (includes Suite 1a Vaccine Challenge Trial Unit at $590,000)
+**Budget: $1,640,000 CAD** (includes Suite 1a Non-Airborne Vaccine Challenge Trial Unit at $340,000)
 
 **Version:** 1.5 **Date:** January 2026
 
@@ -17,7 +17,7 @@ In addition to upgrading critical equipment in the existing facilities, the foll
 - Further integration with the **Alberta Diabetes Institute Clinical Research Unit** for metabolic and cardio-renal-metabolic trial support
 - Further integration with the **Digital Health Unit** for evaluation of novel digital health solutions and platforms
 
-**Note:** The **Vaccine Challenge Trial Unit** (CHIM capability) is presented separately as **Suite 1a** due to its contingent space allocation status. See Suite 1a for details on this $590,000 component supporting Dr. Michael Houghton's (Nobel laureate 2020) Hepatitis C vaccine program and pandemic preparedness.
+**Note:** The **Vaccine Challenge Trial Unit** (CHIM capability) is presented separately as **Suite 1a** due to its contingent space allocation status. See Suite 1a for details on this $340,000 component supporting Dr. Michael Houghton's (Nobel laureate 2020) Hepatitis C vaccine program. The non-airborne design focuses on blood-borne (HCV) and enteric pathogens, with $650,000 in savings reallocated to the Amii CRAIDL Partnership (Suite 4).
 
 ------------------------------------------------------------------------
 
@@ -441,23 +441,44 @@ Gene and cell therapies for rare diseases have specific long-term monitoring req
 | **Pediatric-to-adult transition** | Care pathway planning | Telehealth/remote monitoring |
 | **Family support** | Ongoing engagement | Family accommodation space |
 
-### 3.7 Potential Integration with Suite 1a (Challenge Trial Unit)
+### 3.7 Potential Integration with Suite 1a (Non-Airborne Challenge Trial Unit)
 
 **Note:** This section describes potential shared infrastructure between the Pediatric Rare Disease Unit and the Vaccine Challenge Trial Unit (Suite 1a). Integration is contingent on Suite 1a space allocation being confirmed. See Suite 1a for details on the Challenge Unit status.
 
-If Suite 1a proceeds, **partial integration with distinct specialized zones** would optimize efficiency while maintaining specialized capabilities:
+The non-airborne CHIM design (focusing on HCV and enteric pathogens) simplifies integration considerations:
 
 | Requirement | Challenge Trial Unit (Suite 1a) | Rare Disease Unit | Integration |
 |--------------------|------------------|------------------|------------------|
-| **Negative pressure** | Required (-25 Pa, HEPA) | Not required | Separate |
-| **Isolation/quarantine** | Required (14+ days) | Outpatient focus | Separate |
+| **Air handling** | Standard clinical (no negative pressure) | Standard clinical | Compatible |
+| **Observation/quarantine** | Required (14+ days) | Outpatient focus | Separate |
 | **Monitoring equipment** | Continuous 24/7 | Intensive but episodic | **Shared** (if co-located) |
-| **POC laboratory** | Pathogen focus | Metabolic/genetic focus | **Shared analyzers** (if co-located) |
-| **IP pharmacy** | Pathogen handling | Gene therapy IP | **Shared cleanroom** (if co-located) |
+| **POC laboratory** | Blood/enteric focus | Metabolic/genetic focus | **Shared analyzers** (if co-located) |
+| **IP pharmacy** | BSL-2 standard | Gene therapy IP | **Shared cleanroom** (if co-located) |
 | **Age focus** | Adult (healthy volunteers) | Pediatric (patients) | Separate populations |
 | **Location** | Li Ka Shing Centre (pending) | Stollery CIU | Separate sites (likely) |
 
 **Shared Core Infrastructure** (if Suite 1a proceeds in proximity) would include POC laboratory, IP pharmacy capabilities, monitoring equipment pool, and data systems (EDC/CDASH, Connect Care integration).
+
+#### 3.7.1 Biologics and Cell Therapy Infrastructure Synergies
+
+Beyond the shared core infrastructure, the Rare Disease Unit and Challenge Trial Unit share significant infrastructure requirements for biologics and cell-based therapies—an increasingly important convergence as next-generation vaccines and rare disease treatments employ similar modalities:
+
+| Capability | Challenge Unit Application | Rare Disease Application | Shared Investment Rationale |
+|------------|---------------------------|--------------------------|----------------------------|
+| **Cold chain logistics** | mRNA/viral vector vaccine candidates; HCV immunogens | Gene therapy vectors; CAR-T and cell products | Shared -80°C/-150°C storage, validated transport protocols, cold chain monitoring |
+| **Infusion suite monitoring** | Post-challenge immunotherapy; therapeutic vaccination | Gene therapy infusions; enzyme replacement | Shared infusion pumps, cardiac monitoring, anaphylaxis response capability |
+| **Cytokine monitoring** | Vaccine reactogenicity assessment | CAR-T cytokine release syndrome surveillance | Shared POC cytokine panels, IL-6/CRP rapid assays |
+| **ACTM integration** | Cell-based immunotherapy trials | Autologous/allogeneic cell therapies | Single supply chain from GMP manufacturing (Li Ka Shing 7th-8th floors) |
+| **Long-term safety monitoring** | Post-challenge immune durability studies | FDA-mandated 15-year gene therapy follow-up | Shared registry infrastructure, Connect Care linkage |
+
+**Sustainability Implications:** This infrastructure convergence strengthens CTAP's investment case. Rather than building separate biologics capabilities for vaccine and rare disease programs, shared infrastructure achieves:
+
+- **Higher utilization rates:** Cell therapy cold chain and infusion monitoring serve both populations
+- **Staff cross-training:** Nurses certified in biologics administration support both programs
+- **Equipment pooling:** Specialized monitoring equipment (continuous vital signs, cytokine analyzers) deployed across units
+- **Reduced per-trial costs:** Fixed infrastructure costs distributed across more studies
+
+**ACTM Pathway:** Both units benefit from Alberta Cell Therapy Manufacturing (ACTM) proximity—the only GMP cell therapy facility in Western Canada. Challenge trials evaluating cell-based immunotherapies and rare disease trials administering gene-modified cells share the same manufacturing-to-clinic pathway, justifying investment in robust IP pharmacy and infusion infrastructure.
 
 ### 3.8 Strategic Value
 
@@ -528,15 +549,15 @@ If Suite 1a proceeds, **partial integration with distinct specialized zones** wo
 
 | Category                        | CFI Request | Notes |
 |---------------------------------|-------------|-------|
-| Renovations (CIU/CRU integration) | \$200,000 | Equipment integration; major renovation to CHIM |
+| Renovations (CIU/CRU integration) | \$200,000 | Equipment integration |
 | Monitoring equipment (Adult CIU) | \$400,000 | Includes pediatric reallocation |
 | POC laboratory                  | \$200,000 | |
 | IP pharmacy                     | \$300,000 | |
 | Long-term monitoring & telehealth | \$100,000 | Gene therapy follow-up support |
 | Connect Care integration        | \$30,000 | One-time data integration |
 | **Suite 1 Base Subtotal**       | **\$1,300,000** | |
-| Suite 1a: Vaccine Challenge Trial Unit | \$990,000 | Canada's first academic CHIM |
-| **Suite 1 Total**               | **\$2,290,000** | |
+| Suite 1a: Vaccine Challenge Trial Unit (Non-Airborne) | \$340,000 | HCV and enteric pathogen focus; $650K savings to Amii |
+| **Suite 1 Total**               | **\$1,640,000** | |
 
 **Pediatric CIU (Stollery):** The Stollery Children's Hospital Foundation has committed in-kind investment in the Pediatric Clinical Investigation Unit. Existing pediatric-appropriate equipment (vital sign monitors, infusion pumps, age-appropriate supplies) is already operational. No new pediatric equipment is requested in this CFI proposal. The Foundation's in-kind contribution for family-friendly spaces and facility enhancements is valued at approximately $200,000.
 
@@ -546,23 +567,23 @@ If Suite 1a proceeds, **partial integration with distinct specialized zones** wo
 
 | Component | Amount |
 |-----------|--------|
-| Suite 1 Capital (incl. Suite 1a) | \$2,290,000 |
-| Annual O&M (5%) | \$114,500 |
-| 5-Year O&M Total | \$572,500 |
+| Suite 1 Capital (incl. Suite 1a Non-Airborne CHIM) | \$1,640,000 |
+| Annual O&M (5%) | \$82,000 |
+| 5-Year O&M Total | \$410,000 |
 
 **IOF Contribution (Suite 1 share):**
 
-Suite 1 represents 28% of total CTAP capital (\$2.29M / \$8.21M), receiving proportional IOF:
+Suite 1 represents 20% of total CTAP capital (\$1.64M / \$8.32M), receiving proportional IOF:
 
 | Component | Amount |
 |-----------|--------|
-| Suite 1 IOF Share (28% of \$2.46M) | ~\$689,000 |
+| Suite 1 IOF Share (20% of \$2.5M) | ~\$500,000 |
 | Net Institutional O&M (5-year) | IOF exceeds O&M |
 | Net Annual Institutional Commitment | \$0 (IOF fully covers) |
 
 *Note: Suite 1's 5% O&M rate reflects predominantly clinical procedure infrastructure (monitoring equipment, POC labs, pharmacy storage) with lower maintenance requirements than computational infrastructure. The IOF allocation exceeds Suite 1's O&M requirements, enabling cross-subsidization of higher-maintenance suites (Suite 4 Data Platform at 12%).*
 
-*Suite 1a (Vaccine Challenge Trial Unit) is included in the total. See Suite 1a document for details on Canada's first academic controlled human infection model (CHIM) facility.*
+*Suite 1a (Non-Airborne Vaccine Challenge Trial Unit) is included in the total. See Suite 1a document for details on Canada's first academic controlled human infection model (CHIM) facility focusing on HCV and enteric pathogens. The non-airborne design saved $650,000, reallocated to the Amii CRAIDL Partnership (Suite 4).*
 
 ------------------------------------------------------------------------
 
