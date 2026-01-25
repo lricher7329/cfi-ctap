@@ -87,12 +87,15 @@ Markdown mirrors of Google Docs for easy editing and version control:
 
 ### 7. Archive (Superseded Documents)
 
+**Note: Skip `archive/` when searching for current documents unless explicitly requested.**
+
 | Folder | Contents |
 |--------|----------|
 | `archive/rta-versions/` | Old RTA versions (v2-v6) |
 | `archive/briefs/` | Old stakeholder briefs |
 | `archive/includes/` | Old include fragments |
 | `archive/working/` | RTA-era collaboration docs and tracker |
+| `archive/assets-figures/` | Previous visualization prompts and AI-generated images |
 
 ### 8. Assets (Figures and Visualizations)
 
@@ -100,10 +103,7 @@ Markdown mirrors of Google Docs for easy editing and version control:
 |--------|----------|
 | `assets/figures/` | CTAP diagrams, AI-generated visuals, visualization prompts |
 
-Key files:
-- `ctap-overall-preferred.png` - Main CTAP architecture diagram
-- `visualization_prompts.md` - AI image generation prompts for key concepts
-- `ctap-overall-prompt.md` - Detailed prompt for overall diagram
+Use `figure-prompt-writer` skill to generate new visualization prompts.
 
 ---
 
